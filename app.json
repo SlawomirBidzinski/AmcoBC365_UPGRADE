@@ -1,0 +1,50 @@
+{
+  "id": "5399893a-f66f-4b25-ba6a-c48ddd2b284e",
+  "name": "AMCO Main",
+  "publisher": "Activity Auditors Sp. z o.o.",
+  "version": "27.0.0.0",
+  "brief": "Per-Tenant Customization",
+  "description": "Custom App for Amco BC 27",
+  "privacyStatement": "http://www.amco.pl/",
+  "EULA": "http://www.amco.pl/",
+  "help": "http://www.amco.pl/",
+  "url": "http://www.amco.pl/",
+  "logo": "",
+  "target": "Cloud",
+  "dependencies": [
+    {
+    "id": "a41facb4-aa1f-4f4b-a6d5-a574d9a33911",
+    "name": "Polish Localization",
+    "publisher": "IT.integro sp. z o.o.",
+    "version": "10.11.0.2"
+    },
+    {
+      "id": "dc5453b1-d0bf-4340-9f17-07d1fd605bd9",
+      "publisher": "IT.integro sp. z o.o.",
+      "name": "HR & Payroll Manager",
+      "version": "5.9.1.2"
+    }
+  ],
+
+  "platform": "27.0.0.0",
+  "application": "27.0.0.0",
+  "runtime": "16.0",
+
+  "idRanges": [
+    {
+      "from": 60001,
+      "to": 60500
+    }
+  ],
+
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+
+  "features": [
+    "NoImplicitWith",
+    "TranslationFile"
+  ]
+}
