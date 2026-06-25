@@ -9,7 +9,7 @@ tableextension 50020 "AMC Customer" extends Customer
         }
         field(50002; "AMC ILN"; Code[30])
         {
-            Caption = 'ILN Kupujący';
+            Caption = 'ILN';
             DataClassification = CustomerContent;
         }
         field(50003; "AMC EDI Customer"; Boolean)
@@ -19,12 +19,12 @@ tableextension 50020 "AMC Customer" extends Customer
         }
         field(50004; "AMC ILN Buyer"; Code[30])
         {
-            Caption = 'ILN Płacący';
+            Caption = 'ILN Buyer';
             DataClassification = CustomerContent;
         }
         field(50005; "AMC Invoice per Pieces"; Boolean)
         {
-            Caption = 'Faktury w Szt';
+            Caption = 'Invoice per Pieces';
             DataClassification = CustomerContent;
         }
         field(50006; "AMC EDI Transaction Type"; Enum "AMC EDI Transaction Type")
