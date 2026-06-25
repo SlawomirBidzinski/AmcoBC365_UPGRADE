@@ -147,7 +147,7 @@ pageextension 50023 "AMC Item List" extends "Item List"
                 Caption = 'Item Bin Contents';
                 Image = BinContent;
 
-                RunObject = Page "Item Bin Contents";
+                RunObject = Page "Bin Contents";
                 RunPageLink = "Item No." = field("No.");
             }
             action(AMCItemAvailabilityByBatch)

@@ -1188,7 +1188,7 @@ tableextension 50025 "AMC Item" extends Item
     procedure AMCCreateBarcode()
     var
         ItemCategory: Record "Item Category";
-        NoSeriesMgt: Codeunit NoSeriesManagement;
+        NoSeriesMgt: Codeunit "No. Series";
         lcNoSeries: Code[10];
         errBarCodeAlreadyCreated: Label 'Barcode for Item %1 already created';
     begin
@@ -1198,7 +1198,11 @@ tableextension 50025 "AMC Item" extends Item
 
         IF ("No. 2" <> '') THEN
             ERROR(errBarCodeAlreadyCreated, "No.");
-        NoSeriesMgt.InitSeries(ItemCategory."AMC EAN-13 Barcode Nos.", '', 0D, "No. 2", lcNoSeries);
+        "No. Series" := ItemCategory."AMC EAN-13 Barcode Nos.";
+
+        NoSeriesMgt.TestManual("No. Series");
+
+        "No. 2" := NoSeriesMgt.GetNextNo("No. Series");
 
         VALIDATE("No. 2");
 

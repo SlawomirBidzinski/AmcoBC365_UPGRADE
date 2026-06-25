@@ -226,11 +226,9 @@ tableextension 50021 "AMC Sales Invoice Header" extends "Sales Invoice Header"
         field(50150; "AMC Correction Invoice No."; Code[20])
         {
             FieldClass = FlowField;
-            //FIXME            CalcFormula = Lookup("Sales Cr.Memo Header"."No." WHERE ("Corr. Document Type" = CONST("Posted Invoice"),
-            //FIXME                                                                   "Corr. Document No." = FIELD("No.")));
+            CalcFormula = Lookup("Sales Cr.Memo Header"."No." WHERE("ITI Corr. Invoice No." = FIELD("No.")));
             Caption = 'Nr Faktury Korygującej';
             Editable = false;
-
         }
         field(50151; "AMC Customer Balance"; Decimal)
         {
@@ -240,8 +238,8 @@ tableextension 50021 "AMC Sales Invoice Header" extends "Sales Invoice Header"
         }
         field(50152; "AMC Invoice Email Send Date"; DateTime)
         {
-            CalcFormula = lookup("AMC PDF Documents"."Date of Last Send" where("Document Type" = const("Posted Invoice"),
-                                                                            "Document No" = field("No.")));
+            CalcFormula = lookup("AMC PDF Document"."Date of Last Send" where("Document Type" = const("Posted Invoice"),
+                                                                            "Document No." = field("No.")));
             Caption = 'Data Wysłania Faktury Mailem';
             Editable = false;
             FieldClass = FlowField;
@@ -267,8 +265,8 @@ tableextension 50021 "AMC Sales Invoice Header" extends "Sales Invoice Header"
         }
         field(50302; "AMC PDF Document Qty"; Integer)
         {
-            CalcFormula = count("AMC PDF Documents" where("Document Type" = const("Posted Invoice"),
-                                                       "Document No" = field("No.")));
+            CalcFormula = count("AMC PDF Document" where("Document Type" = const("Posted Invoice"),
+                                                       "Document No." = field("No.")));
             Caption = 'Ilość Załączników PDF';
             Editable = false;
             FieldClass = FlowField;
