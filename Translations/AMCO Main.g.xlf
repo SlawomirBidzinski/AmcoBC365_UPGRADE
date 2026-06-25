@@ -2,7 +2,333 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
   <file datatype="xml" source-language="en-US" target-language="en-US" original="AMCO Main">
     <body>
-      <group id="body" />
+      <group id="body">
+        <trans-unit id="Table 3681448041 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Colour</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Colour - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3681448041 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Colour - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3681448041 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Colour - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3681448041 - Field 1594621544 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Picture</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Colour - Field Picture - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3100073494 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PDF Document</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC PDF Document - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3100073494 - Field 1171137197 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC PDF Document - Field Customer Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3100073494 - Field 4190130733 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC PDF Document - Field Customer No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3100073494 - Field 3088349925 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date of Last Send</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC PDF Document - Field Date of Last Send - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3100073494 - Field 3229603484 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Duplicate</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC PDF Document - Field Document Duplicate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3100073494 - Field 486908828 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC PDF Document - Field Document No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3100073494 - Field 2363328873 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC PDF Document - Field Document Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3100073494 - Field 4158449029 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Duplicate Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC PDF Document - Field Duplicate Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3100073494 - Field 1751305645 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>E-mail Address Sent</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC PDF Document - Field E-mail Address Sent - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3100073494 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC PDF Document - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3100073494 - Field 3380196542 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Generation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC PDF Document - Field Generation Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3100073494 - Field 27194574 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PDF Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC PDF Document - Field PDF Document No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3100073494 - Field 1207956839 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PDF Document Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC PDF Document - Field PDF Document Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3100073494 - Field 1207956839 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Proforma Invoice,Sales Invoice,Correction Invoice,Warehause Shipment,Atest,Query</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC PDF Document - Field PDF Document Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 3100073494 - Field 682677400 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PDF File Link</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC PDF Document - Field PDF File Link - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3100073494 - Field 668708464 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sign to Send</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC PDF Document - Field Sign to Send - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3100073494 - Field 129688762 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>User Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC PDF Document - Field User Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3208769022 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Planning Dimension</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Planning Dimension - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3208769022 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Planning Dimension - Field Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3208769022 - Field 2864062899 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Default Priority</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Planning Dimension - Field Default Priority - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3208769022 - Field 2753312178 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fixed Sorting Field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Planning Dimension - Field Fixed Sorting Field - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3208769022 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Planning Dimension - Field Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3208769022 - Field 1758538756 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Numeric Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Planning Dimension - Field Numeric Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3208769022 - Field 3298293065 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value Prioritisation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Planning Dimension - Field Value Prioritisation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 938075200 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AMC Colours</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Colours - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 938075200 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Code field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Colours - Control Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 938075200 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Description field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Colours - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 938075200 - Control 1594621544 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Picture field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Colours - Control Picture - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1636392707 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AMC PDF Documents</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC PDF Documents - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1636392707 - Control 1171137197 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Customer Name field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC PDF Documents - Control Customer Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1636392707 - Control 4190130733 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Customer No. field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC PDF Documents - Control Customer No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1636392707 - Control 3088349925 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Date of Last Send field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC PDF Documents - Control Date of Last Send - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1636392707 - Control 3229603484 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Document Duplicate field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC PDF Documents - Control Document Duplicate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1636392707 - Control 486908828 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Document No. field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC PDF Documents - Control Document No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1636392707 - Control 2363328873 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Document Type field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC PDF Documents - Control Document Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1636392707 - Control 4158449029 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Duplicate Date field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC PDF Documents - Control Duplicate Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1636392707 - Control 1751305645 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the E-mail Address Sent field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC PDF Documents - Control E-mail Address Sent - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1636392707 - Control 883711285 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Entry No. field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC PDF Documents - Control Entry No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1636392707 - Control 3380196542 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Generation Date field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC PDF Documents - Control Generation Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1636392707 - Control 27194574 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the PDF Document No. field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC PDF Documents - Control PDF Document No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1636392707 - Control 1207956839 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the PDF Document Type field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC PDF Documents - Control PDF Document Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1636392707 - Control 682677400 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the PDF File Link field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC PDF Documents - Control PDF File Link - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1636392707 - Control 668708464 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Sign to Send field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC PDF Documents - Control Sign to Send - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1636392707 - Control 129688762 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the User Name field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC PDF Documents - Control User Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2153195115 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AMC Planning Dimensions</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Planning Dimensions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2153195115 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Code field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Planning Dimensions - Control Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2153195115 - Control 2864062899 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Default Priority field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Planning Dimensions - Control Default Priority - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2153195115 - Control 2753312178 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Fixed Sorting Field field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Planning Dimensions - Control Fixed Sorting Field - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2153195115 - Control 2961552353 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Name field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Planning Dimensions - Control Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2153195115 - Control 1758538756 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Numeric Value field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Planning Dimensions - Control Numeric Value - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2153195115 - Control 3298293065 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Value Prioritisation field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Planning Dimensions - Control Value Prioritisation - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Enum 306349131 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Fixed Sorting Field - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 306349131 - EnumValue 4085727052 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Due Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Fixed Sorting Field - EnumValue Due Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 306349131 - EnumValue 3276313895 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Fixed Sorting Field - EnumValue Item - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3242445910 - EnumValue 2004364593 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Credit Memo</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC PDF Document Type - EnumValue Credit Memo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3242445910 - EnumValue 146219450 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC PDF Document Type - EnumValue Order - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3242445910 - EnumValue 3888822604 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Invoice</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC PDF Document Type - EnumValue Posted Invoice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3242445910 - EnumValue 3809237070 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quote</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC PDF Document Type - EnumValue Quote - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2874507708 - EnumValue 4130293374 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Priority</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Value Prioritisation - EnumValue Priority - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2874507708 - EnumValue 1302426399 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value Ascending</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Value Prioritisation - EnumValue Value Ascending - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2874507708 - EnumValue 2148016047 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value Descending</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Value Prioritisation - EnumValue Value Descending - Property Caption</note>
+        </trans-unit>
+      </group>
     </body>
   </file>
 </xliff>
