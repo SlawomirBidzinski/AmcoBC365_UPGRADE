@@ -18,7 +18,7 @@ page 50020 "AMC Colours"
                 }
                 field(Description; Rec.Description)
                 {
-                    ToolTip = 'Specifies test the value of the Description field.', Comment = '%';
+                    ToolTip = 'Specifies the value of the Description field.', Comment = '%';
                 }
                 field(Picture; Rec.Picture)
                 {
