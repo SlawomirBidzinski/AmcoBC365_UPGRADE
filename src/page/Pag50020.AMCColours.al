@@ -5,7 +5,7 @@ page 50020 "AMC Colours"
     PageType = List;
     SourceTable = "AMC Colour";
     UsageCategory = Administration;
-    
+
     layout
     {
         area(Content)
