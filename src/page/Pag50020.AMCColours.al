@@ -5,7 +5,7 @@ page 50020 "AMC Colours"
     PageType = List;
     SourceTable = "AMC Colour";
     UsageCategory = Administration;
-    
+
     layout
     {
         area(Content)
@@ -18,7 +18,7 @@ page 50020 "AMC Colours"
                 }
                 field(Description; Rec.Description)
                 {
-                    ToolTip = 'Specifies the value of the Description field.', Comment = '%';
+                    ToolTip = 'Specifies test the value of the Description field.', Comment = '%';
                 }
                 field(Picture; Rec.Picture)
                 {
