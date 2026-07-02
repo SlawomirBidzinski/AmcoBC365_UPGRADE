@@ -86,11 +86,9 @@ table 50046 "AMC Profit Item Contr."
         {
             Caption = 'Skalulowany Zysk  [%]';
         }
-        field(104; "Profit Status"; Option)
+        field(104; "Profit Status"; Enum "AMC Control Status")
         {
             Caption = 'Status Kontroli';
-            OptionCaption = ' ,W Normie,Poniżej Progu,Brak Kosztu Magazyn.';
-            OptionMembers = " ","W Normie","Poniżej Progu","Brak Kosztu Magazyn.";
         }
         field(105; "Sales Unit Price"; Decimal)
         {

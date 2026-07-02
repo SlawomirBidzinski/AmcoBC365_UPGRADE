@@ -53,11 +53,9 @@ tableextension 50020 "AMC Customer" extends Customer
             Caption = 'Umowa rabatu okresowego z dnia';
             DataClassification = CustomerContent;
         }
-        field(50022; "AMC Period Discount Type"; Option)
+        field(50022; "AMC Period Discount Type"; Enum "AMC Period Discount Type")
         {
             Caption = 'Typ rabatu okresowego';
-            OptionCaption = ' ,Month,Quarter,Half year,Year';
-            OptionMembers = " ",Month,Quarter,"Half year",Year;
             DataClassification = CustomerContent;
         }
         field(50023; "AMC Qty of Discount Corr. Inv"; Integer)

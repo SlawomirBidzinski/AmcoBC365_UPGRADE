@@ -29,11 +29,9 @@ table 50045 "AMC Update BOM Document Header"
             //TestTableRelation = false;
             ValidateTableRelation = false;
         }
-        field(6; "BOM Type Filter"; Option)
+        field(6; "BOM Type Filter"; Enum "AMC BOM Type")
         {
             Caption = 'Filtr Typu BOMu';
-            OptionCaption = 'All,Production,R&D';
-            OptionMembers = All,Production,"R&D";
         }
         field(7; "Item Filter"; Code[200])
         {

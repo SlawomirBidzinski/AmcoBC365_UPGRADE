@@ -50,12 +50,10 @@ tableextension 50028 "AMC Item Category" extends "Item Category"
             TableRelation = Location;
             DataClassification = CustomerContent;
         }
-        field(50007; "AMC Reordering Policy"; Option)
+        field(50007; "AMC Reordering Policy"; enum "Reordering Policy")
         {
             Caption = 'Reordering Policy';
             Description = 'AL.04Mar13';
-            OptionCaption = ' ,Fixed Reorder Qty.,Maximum Qty.,Order,Lot-for-Lot';
-            OptionMembers = " ","Fixed Reorder Qty.","Maximum Qty.","Order","Lot-for-Lot";
             DataClassification = CustomerContent;
         }
         field(50008; "AMC Replenishment System"; Option)

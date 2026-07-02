@@ -109,7 +109,7 @@ page 50035 "AMC Forecast Planning List"
                     Filter_Sr: Text[50];
                     Filter_Cz: Text[50];
                     Filter_Pt: Text[50];
-                    SetDay: Option " ",Pn,Wt,Sr,Cz,Pt,Sb,Ni;
+                    SetDay: Enum "AMC Day of Week";
                 begin
                     Filter_Pn := Rec.GETFILTER(Monday);
                     Filter_Wt := Rec.GETFILTER(Tuesday);

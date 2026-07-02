@@ -63,9 +63,8 @@ table 50033 "AMC Karta Technologiczna"
         field(30; "Wzorzec Karty"; Boolean)
         {
         }
-        field(50; Status; Option)
+        field(50; Status; Enum "AMC Technology Card")
         {
-            OptionMembers = Otwarty,Zwolniony;
         }
         field(60; "Utworzono z Karty Technolog."; Code[20])
         {
@@ -143,10 +142,8 @@ table 50033 "AMC Karta Technologiczna"
         field(203; "Propozycja smaków III"; Text[100])
         {
         }
-        field(300; "Status Karty"; Option)
+        field(300; "Card Printed"; Boolean)
         {
-            OptionCaption = ' ,Wydrukowana';
-            OptionMembers = " ",Wydrukowana;
         }
         field(400; "Kopiuj do Regionu"; Code[10])
         {

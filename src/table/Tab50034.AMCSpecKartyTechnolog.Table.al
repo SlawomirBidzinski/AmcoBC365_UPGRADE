@@ -9,11 +9,9 @@ table 50034 "AMC Spec. Karty Technolog."
         {
             Caption = '"Karta Technologiczna Nr"';
         }
-        field(2; "Typ Specyfikacji"; Option)
+        field(2; "Typ Specyfikacji"; Enum "AMC Specification Type")
         {
             Caption = '"Typ Specyfikacji"';
-            OptionCaption = 'Surowiec Podstawowy,Przyprawy,Materiały Pomocnicze';
-            OptionMembers = "Surowiec Podstawowy",Przyprawy,"Materiały Pomocnicze","Obróbka Termiczna";
         }
         field(3; "Line No"; Integer)
         {
@@ -25,7 +23,7 @@ table 50034 "AMC Spec. Karty Technolog."
             OptionCaption = ' ,Item,Nonstock Item';
             OptionMembers = " ",Item,"Nonstock Item";
         }
-        field(5; "Matrial Type"; Option)
+        field(5; "Material Type"; Option)
         {
             Caption = 'Typ Surowca';
             OptionCaption = 'Surowiec Mięsny,Inny';
@@ -34,7 +32,7 @@ table 50034 "AMC Spec. Karty Technolog."
         field(6; "Material Code"; Code[10])
         {
             Caption = 'Kod Surowca';
-            TableRelation = if ("Matrial Type" = const("Surowiec Mięsny")) "AMC Material Group"."Material Code" where ("Material Group" = const("Podział Mięsa"));
+            TableRelation = if ("Material Type" = const("Surowiec Mięsny")) "AMC Material Group"."Material Code" where ("Material Group" = const("Podział Mięsa"));
         }
         field(8; "Nr Zapasu"; Code[20])
         {

@@ -63,7 +63,7 @@ report 50020 "AMC Forecast Planning List"
                             ELSE
                                 DocumentNo := STRSUBSTNO('Nr: %1/%2', SetYear, SetWeekNo);
                         END ELSE BEGIN
-                        DayNo := SetDay - 1;
+                        DayNo := SetDay.AsInteger() - 1;
                         ExprDate := STRSUBSTNO('<+%1D>', DayNo);
                         ReportDate := CALCDATE(ExprDate, SetDateFrom);
                         ReportDay := STRSUBSTNO(Text_008, FORMAT(ReportDate, 0, '<day,2>-<month,2>-<year4>'), Daytext);
@@ -237,7 +237,7 @@ report 50020 "AMC Forecast Planning List"
         end;
     }
 
-    procedure SetInitDate(Year_Set: Integer; WeekNo_Set: Integer; Day_Set: Integer)
+    procedure SetInitDate(Year_Set: Integer; WeekNo_Set: Integer; Day_Set: Enum "AMC Day of Week")
     begin
         SetYear := Year_Set;
         SetWeekNo := WeekNo_Set;
@@ -268,7 +268,7 @@ report 50020 "AMC Forecast Planning List"
         SetForecastCode: Code[20];
         SetYear: Integer;
         SetWeekNo: Integer;
-        SetDay: Option " ",Pn,Wt,Sr,Cz,Pt,Sb,Ni;
+        SetDay: Enum "AMC Day of Week";
         SetDateFrom: Date;
         SetDateTo: Date;
         ReportQty: Decimal;

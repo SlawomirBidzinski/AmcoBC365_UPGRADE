@@ -9,11 +9,9 @@ table 50039 "AMC Materials Group"
 
     fields
     {
-        field(1; "Item Type"; Option)
+        field(1; "Item Type"; Enum "AMC Material Item Type")
         {
             Caption = 'Typ Zapasu';
-            OptionCaption = 'Material,Packing,Wares,Goods';
-            OptionMembers = Material,Packing,Wares,Goods;
         }
         field(2; "Group Code"; Code[10])
         {
