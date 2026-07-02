@@ -6,10 +6,9 @@ table 50031 "AMC Item Production"
 
     fields
     {
-        field(1; "Entry Type"; Option)
+        field(1; "Entry Type"; Enum "AMC Production Entry Type")
         {
             Caption = 'Typ Zapisu';
-            OptionMembers = Producent,Fabryka;
         }
         field(2; Producent; Code[20])
         {

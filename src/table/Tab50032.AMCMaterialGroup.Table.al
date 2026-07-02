@@ -4,11 +4,9 @@ table 50032 "AMC Material Group"
 
     fields
     {
-        field(1; "Material Group"; Option)
+        field(1; "Material Group"; Enum "AMC Material Group")
         {
             Caption = 'Kod Grupy';
-            OptionCaption = 'Podział Kart,Podział Mięsa';
-            OptionMembers = "Podział Kart","Podział Mięsa";
         }
         field(2; "Material Code"; Code[10])
         {

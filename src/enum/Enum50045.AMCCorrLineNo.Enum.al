@@ -1,4 +1,4 @@
-enum 50035 "AMC Corr. Line No."
+enum 50045 "AMC Corr. Line No."
 {
     Extensible = false;
 
