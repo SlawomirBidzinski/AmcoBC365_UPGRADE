@@ -45,11 +45,9 @@ table 50045 "AMC Update BOM Document Header"
         {
             Caption = 'Data Dokumentu';
         }
-        field(9; "Document Status"; Option)
+        field(9; "Document Status"; Enum "AMC Document Status")
         {
             Caption = 'Status Dokumentu';
-            OptionCaption = 'Open,Release,Finished,Canceled';
-            OptionMembers = Open,Release,Finished,Canceled;
         }
         field(10; Registered; Boolean)
         {
@@ -65,11 +63,9 @@ table 50045 "AMC Update BOM Document Header"
             Caption = 'Item FlowFilter';
             FieldClass = FlowFilter;
         }
-        field(13; "BOM Type FlowFilter"; Option)
+        field(13; "BOM Type FlowFilter"; Enum "AMC BOM Type")
         {
             Caption = 'BOM Type FlowFilter';
-            FieldClass = FlowFilter;
-            OptionMembers = Production,"R&D";
         }
         field(21; "BOM Updated by User"; Code[20])
         {

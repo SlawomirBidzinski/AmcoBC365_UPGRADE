@@ -2,11 +2,9 @@ tableextension 50032 "AMC Transaction Specification" extends "Transaction Specif
 {
     fields
     {
-        field(50000; "AMC Documenty Type"; Option)
+        field(50000; "AMC Documenty Type"; Enum "AMC Tran. Spec. Doc. Typ")
         {
             Caption = 'Typ Dokumentu';
-            OptionCaption = 'Invoice Proforma,Sales Invoice,Credit Memo Invoice';
-            OptionMembers = "Invoice Proforma","Sales Invoice","Credit Memo Invoice";
             DataClassification = CustomerContent;
         }
         field(50001; "AMC Document No"; Code[20])

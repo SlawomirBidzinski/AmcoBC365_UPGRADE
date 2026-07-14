@@ -49,11 +49,9 @@ table 50044 "AMC Item Budget Instance"
             Caption = 'Curency Rate CHF';
             DecimalPlaces = 4 : 4;
         }
-        field(25; "Typ Wyceny"; Option)
+        field(25; "Typ Wyceny"; Enum "AMC Item Budget Instance Type")
         {
             Caption = 'Calculation Type';
-            OptionCaption = ' ,based on costs,based on price list';
-            OptionMembers = " ","wg kosztów","wg. cennika";
         }
         field(26; "Sprzedaż Data Od"; Date)
         {

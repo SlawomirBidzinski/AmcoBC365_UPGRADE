@@ -39,11 +39,9 @@ table 50038 "AMC Dimension Value Transl."
             Editable = false;
             FieldClass = FlowField;
         }
-        field(7; Type; Option)
+        field(7; Type; Enum "AMC Dim. Translation Type")
         {
             Caption = 'Type';
-            OptionCaption = 'Tłumaczenie,Wymiar,Wartość wymiaru,Tłumaczenie wartości wymiaru';
-            OptionMembers = DimValTranslation,ExtDim,ExtDimVal,ExtDimValTranslation;
         }
         field(8; Name; Text[50])
         {

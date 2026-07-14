@@ -10,7 +10,7 @@ enum 50042 "AMC BOM Type"
     {
         Caption = 'Production';
     }
-    value(2; "R&D")
+    value(2; RiD)
     {
         Caption = 'R&D';
     }

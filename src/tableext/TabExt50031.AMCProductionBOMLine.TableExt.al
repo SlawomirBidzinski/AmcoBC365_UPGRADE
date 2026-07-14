@@ -8,12 +8,10 @@ tableextension 50031 "AMC Production BOM Line" extends "Production BOM Line"
             Description = 'AL.16Nov12';
             DataClassification = CustomerContent;
         }
-        field(50001; "AMC BOM Type"; Option)
+        field(50001; "AMC BOM Type"; Enum "AMC BOM Type")
         {
             Caption = 'BOM Type';
             Editable = false;
-            OptionCaption = 'Production,RiD';
-            OptionMembers = Production,RiD;
             DataClassification = CustomerContent;
         }
         field(50002; "AMC Direct Unit Cost [PLN/kg]"; Decimal)

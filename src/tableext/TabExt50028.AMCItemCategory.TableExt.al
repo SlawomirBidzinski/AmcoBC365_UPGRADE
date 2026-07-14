@@ -56,12 +56,10 @@ tableextension 50028 "AMC Item Category" extends "Item Category"
             Description = 'AL.04Mar13';
             DataClassification = CustomerContent;
         }
-        field(50008; "AMC Replenishment System"; Option)
+        field(50008; "AMC Replenishment System"; Enum "AMC Item Cat. Replen. System")
         {
             Caption = 'Replenishment System';
             Description = 'AL.04Mar13';
-            OptionCaption = 'Purchase,Prod. Order, ';
-            OptionMembers = Purchase,"Prod. Order"," ";
             DataClassification = CustomerContent;
         }
         field(50009; "AMC Item Label Code Add."; Code[20])

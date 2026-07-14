@@ -15,13 +15,11 @@ tableextension 50030 "AMC Production BOM Header" extends "Production BOM Header"
             Editable = false;
             FieldClass = FlowField;
         }
-        field(50001; "AMC BOM Type"; Option)
+        field(50001; "AMC BOM Type"; Enum "AMC BOM Type")
         {
             Caption = 'BOM Type';
             DataClassification = CustomerContent;
             Editable = false;
-            OptionCaption = 'Production,RiD';
-            OptionMembers = Production,RiD;
         }
         field(50002; "AMC UserID Last Modified"; Code[20])
         {
