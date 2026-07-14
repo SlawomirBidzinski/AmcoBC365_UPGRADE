@@ -56,11 +56,9 @@ tableextension 50032 "AMC Transaction Specification" extends "Transaction Specif
             Caption = 'Wysłano Dw';
             DataClassification = CustomerContent;
         }
-        field(50010; "AMC Transaction Type"; Option)
+        field(50010; "AMC Transaction Type"; Enum "AMC Tran. Spec. Tran. Type")
         {
             Caption = 'Typ transakcji';
-            OptionCaption = 'E-mail,Letter';
-            OptionMembers = "E-mail",Letter;
             DataClassification = CustomerContent;
         }
         field(50011; "AMC Ext Doc. No"; Text[20])
