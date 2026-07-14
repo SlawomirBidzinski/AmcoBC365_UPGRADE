@@ -673,6 +673,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Item Production - Field Producent Count - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 4218019038 - Field 2791984960 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Card Printed</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Karta Technologiczna - Field Card Printed - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 4218019038 - Field 1862536731 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Cena + koszty prod + zysk [kg]</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -893,16 +898,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Karta Technologiczna - Field Status - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 4218019038 - Field 299316571 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Status Karty</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Karta Technologiczna - Field Status Karty - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 4218019038 - Field 299316571 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source> ,Wydrukowana</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Karta Technologiczna - Field Status Karty - Property OptionCaption</note>
-        </trans-unit>
         <trans-unit id="Table 4218019038 - Field 1847763378 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Straty na masz. wartość</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1013,11 +1008,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Material Group - Field Material Group - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 1148284653 - Field 1753120296 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Podział Kart,Podział Mięsa</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Material Group - Field Material Group - Property OptionCaption</note>
-        </trans-unit>
         <trans-unit id="Table 1148284653 - Field 2191324928 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Nazwa</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1032,11 +1022,6 @@
           <source>Typ Zapasu</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Material SubGroups - Field Item Type - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 381940272 - Field 4093180191 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Material,Packing,Wares,Goods</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Material SubGroups - Field Item Type - Property OptionCaption</note>
         </trans-unit>
         <trans-unit id="Table 381940272 - Field 1753120296 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Kod Grupa Zapasów</source>
@@ -1072,11 +1057,6 @@
           <source>Typ Zapasu</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Materials Group - Field Item Type - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2249298444 - Field 4093180191 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Material,Packing,Wares,Goods</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Materials Group - Field Item Type - Property OptionCaption</note>
         </trans-unit>
         <trans-unit id="Table 2249298444 - Field 1004886292 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Kod Serii Zapasów</source>
@@ -1223,11 +1203,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC PDF Document - Field PDF Document Type - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 3100073494 - Field 1207956839 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Proforma Invoice,Sales Invoice,Correction Invoice,Warehause Shipment,Atest,Query</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC PDF Document - Field PDF Document Type - Property OptionCaption</note>
-        </trans-unit>
         <trans-unit id="Table 3100073494 - Field 682677400 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>PDF File Link</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1342,11 +1317,6 @@
           <source>Status Kontroli</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Profit Item Contr. - Field Profit Status - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 482018178 - Field 1423932742 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source> ,W Normie,Poniżej Progu,Brak Kosztu Magazyn.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Profit Item Contr. - Field Profit Status - Property OptionCaption</note>
         </trans-unit>
         <trans-unit id="Table 482018178 - Field 272378061 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Ilość Wydana</source>
@@ -1598,15 +1568,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Spec. Karty Technolog. - Field Material Code - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 595488836 - Field 2690095970 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 595488836 - Field 1782093709 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Typ Surowca</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Spec. Karty Technolog. - Field Matrial Type - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Spec. Karty Technolog. - Field Material Type - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 595488836 - Field 2690095970 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 595488836 - Field 1782093709 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
           <source>Surowiec Mięsny,Inny</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Spec. Karty Technolog. - Field Matrial Type - Property OptionCaption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Spec. Karty Technolog. - Field Material Type - Property OptionCaption</note>
         </trans-unit>
         <trans-unit id="Table 595488836 - Field 1737282533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Nazwa</source>
@@ -1698,11 +1668,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Spec. Karty Technolog. - Field Typ Specyfikacji - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 595488836 - Field 3128352632 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Surowiec Podstawowy,Przyprawy,Materiały Pomocnicze</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Spec. Karty Technolog. - Field Typ Specyfikacji - Property OptionCaption</note>
-        </trans-unit>
         <trans-unit id="Table 595488836 - Field 2242394549 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Uszczegółowienie</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1737,11 +1702,6 @@
           <source>Filtr Typu BOMu</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Update BOM Document Header - Field BOM Type Filter - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 137855794 - Field 3218100772 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source>All,Production,R&amp;D</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Update BOM Document Header - Field BOM Type Filter - Property OptionCaption</note>
         </trans-unit>
         <trans-unit id="Table 137855794 - Field 2472473230 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>BOM Type FlowFilter</source>
@@ -4828,11 +4788,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Customer - Field AMC Period Discount Type - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 3182203493 - Field 1680930625 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
-          <source> ,Month,Quarter,Half year,Year</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Customer - Field AMC Period Discount Type - Property OptionCaption</note>
-        </trans-unit>
         <trans-unit id="TableExtension 3182203493 - Field 726028744 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
           <source>Wielkość Rabatu Okresowego</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -5972,11 +5927,6 @@
           <source>Reordering Policy</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Category - Field AMC Reordering Policy - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 657677974 - Field 309434570 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1487222247">
-          <source> ,Fixed Reorder Qty.,Maximum Qty.,Order,Lot-for-Lot</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Category - Field AMC Reordering Policy - Property OptionCaption</note>
         </trans-unit>
         <trans-unit id="TableExtension 657677974 - Field 1631526878 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1487222247">
           <source>Replenishment System</source>
@@ -8693,6 +8643,21 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Vendor Ledger Entry - Field AMC Vendor Name - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Enum 3430704785 - EnumValue 3703598467 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>All</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC BOM Type - EnumValue All - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3430704785 - EnumValue 1065337893 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Production</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC BOM Type - EnumValue Production - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3430704785 - EnumValue 3638487996 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>R&amp;D</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC BOM Type - EnumValue R&amp;D - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Enum 550343814 - EnumValue 3487568930 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Blue</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -8758,6 +8723,26 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Consolidate Item Code - EnumValue 54.000.20 - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Enum 2549442328 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Control Status - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2549442328 - EnumValue 1242059699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Brak Kosztu Magazyn</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Control Status - EnumValue Brak Kosztu Magazyn - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2549442328 - EnumValue 4248613445 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Poniżej Progu</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Control Status - EnumValue Poniżej Progu - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2549442328 - EnumValue 1607134695 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>W Normie</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Control Status - EnumValue W Normie - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Enum 2487368856 - EnumValue 3768250944 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>After</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -8797,6 +8782,46 @@
           <source>Unknown</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Customer Type - EnumValue Unknown - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2193412266 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Day of Week - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2193412266 - EnumValue 1403764843 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cz</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Day of Week - EnumValue Cz - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2193412266 - EnumValue 3968789369 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ni</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Day of Week - EnumValue Ni - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2193412266 - EnumValue 2283749674 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pn</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Day of Week - EnumValue Pn - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2193412266 - EnumValue 201750800 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Day of Week - EnumValue Pt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2193412266 - EnumValue 140465027 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sb</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Day of Week - EnumValue Sb - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2193412266 - EnumValue 1753676307 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sr</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Day of Week - EnumValue Sr - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2193412266 - EnumValue 2315849093 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Wt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Day of Week - EnumValue Wt - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 2823574524 - EnumValue 2350996030 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>EAN</source>
@@ -8978,6 +9003,66 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Label Printer - EnumValue Standard - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Enum 1148284653 - EnumValue 2244273260 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Podział Kart</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Material Group - EnumValue Podział Kart - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1148284653 - EnumValue 3742818180 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Podział Mięsa</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Material Group - EnumValue Podział Mięsa - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1783164683 - EnumValue 597820164 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Goods</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Material Item Type - EnumValue Goods - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1783164683 - EnumValue 3965678037 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Material</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Material Item Type - EnumValue Material - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1783164683 - EnumValue 2907923339 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Packing</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Material Item Type - EnumValue Packing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1783164683 - EnumValue 4109245982 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Wares</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Material Item Type - EnumValue Wares - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1667916261 - EnumValue 3478138521 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Atest</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC PDF Doc. Type - EnumValue Atest - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1667916261 - EnumValue 4159638289 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Correction Invoice</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC PDF Doc. Type - EnumValue Correction Invoice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1667916261 - EnumValue 2810600989 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Proforma Invoice</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC PDF Doc. Type - EnumValue Proforma Invoice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1667916261 - EnumValue 1269526094 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Query</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC PDF Doc. Type - EnumValue Query - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1667916261 - EnumValue 4034894651 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Invoice</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC PDF Doc. Type - EnumValue Sales Invoice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1667916261 - EnumValue 1021700613 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Warehause Shipment</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC PDF Doc. Type - EnumValue Warehause Shipment - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Enum 3242445910 - EnumValue 2004364593 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Credit Memo</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -8998,6 +9083,31 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC PDF Document Type - EnumValue Quote - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Enum 1680930625 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Period Discount Type - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1680930625 - EnumValue 3544970328 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Half year</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Period Discount Type - EnumValue Half year - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1680930625 - EnumValue 3465500804 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Month</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Period Discount Type - EnumValue Month - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1680930625 - EnumValue 316457880 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quarter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Period Discount Type - EnumValue Quarter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1680930625 - EnumValue 2832340769 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Year</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Period Discount Type - EnumValue Year - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Enum 1916893138 - EnumValue 3817527484 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Modify</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -9017,6 +9127,16 @@
           <source>Read Only</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC PermissionWebServRWOrders - EnumValue Read Only - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3466866548 - EnumValue 3203050440 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fabryka</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Production Entry Type - EnumValue Fabryka - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3466866548 - EnumValue 186661284 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Producent</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Production Entry Type - EnumValue Producent - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 1150070955 - EnumValue 1668868500 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Printed</source>
@@ -9082,6 +9202,31 @@
           <source>Trial</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Shipment Type - EnumValue Trial - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3719433822 - EnumValue 139046358 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Materiały Pomocnicze</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Specification Type - EnumValue Materiały Pomocnicze - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3719433822 - EnumValue 3473035600 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Przyprawy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Specification Type - EnumValue Przyprawy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3719433822 - EnumValue 663580276 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Surowiec Podstawowy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Specification Type - EnumValue Surowiec Podstawowy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 121554631 - EnumValue 3589220486 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Otwarty</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Technology Card - EnumValue Otwarty - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 121554631 - EnumValue 2582800531 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zwolniony</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Technology Card - EnumValue Zwolniony - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 2842341003 - EnumValue 2572667290 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>All Customers</source>
