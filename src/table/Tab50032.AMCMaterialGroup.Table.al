@@ -16,21 +16,6 @@ table 50032 "AMC Material Group"
         {
             Caption = 'Nazwa';
         }
-        field(4; "Ilość Kart Technologicznych"; Integer)
-        {
-            CalcFormula = count("AMC Karta Technologiczna" where("Kod Grupy Produktu" = field("Material Code"),
-                                                              "Wzorzec Karty" = const(false)));
-            Caption = 'Ilość Kart Technologicznych';
-            Editable = false;
-            FieldClass = FlowField;
-        }
-        field(5; "Ilość Linii Surowców"; Integer)
-        {
-            CalcFormula = count("AMC Spec. Karty Technolog." where("Material Code" = field("Material Code")));
-            Caption = 'Ilość Linii Surowców';
-            Editable = false;
-            FieldClass = FlowField;
-        }
     }
 
     keys

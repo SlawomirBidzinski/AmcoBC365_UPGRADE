@@ -236,14 +236,6 @@ tableextension 50021 "AMC Sales Invoice Header" extends "Sales Invoice Header"
             Caption = 'Saldo Nabywcy';
             FieldClass = FlowField;
         }
-        field(50152; "AMC Invoice Email Send Date"; DateTime)
-        {
-            CalcFormula = lookup("AMC PDF Document"."Date of Last Send" where("Document Type" = const("Posted Invoice"),
-                                                                            "Document No." = field("No.")));
-            Caption = 'Data Wysłania Faktury Mailem';
-            Editable = false;
-            FieldClass = FlowField;
-        }
         field(50160; "AMC Item Weight Total"; Decimal)
         {
             CalcFormula = sum("Sales Invoice Line".Quantity where("Document No." = field("No."),
@@ -262,14 +254,6 @@ tableextension 50021 "AMC Sales Invoice Header" extends "Sales Invoice Header"
         {
             Caption = 'Użytkownik Oznaczenie Wysyłki';
             DataClassification = CustomerContent;
-        }
-        field(50302; "AMC PDF Document Qty"; Integer)
-        {
-            CalcFormula = count("AMC PDF Document" where("Document Type" = const("Posted Invoice"),
-                                                       "Document No." = field("No.")));
-            Caption = 'Ilość Załączników PDF';
-            Editable = false;
-            FieldClass = FlowField;
         }
         field(50303; "AMC Invoice Sent"; Boolean)
         {
