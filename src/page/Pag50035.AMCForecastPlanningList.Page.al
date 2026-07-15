@@ -2,11 +2,12 @@ page 50035 "AMC Forecast Planning List"
 {
     ApplicationArea = All;
     Caption = 'Forecast Planning List';
-    PageType = Worksheet;
+    PageType = List;
     SourceTable = "AMC Forecast Planning";
     UsageCategory = Lists;
     Editable = false;
-
+    CardPageId = "AMC Item Forecast Planning";
+    
     layout
     {
         area(Content)

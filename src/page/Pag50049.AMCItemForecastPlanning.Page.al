@@ -4,8 +4,6 @@ page 50049 "AMC Item Forecast Planning"
     Caption = 'Item Forecast Planning';
     PageType = List;
     SourceTable = "AMC Forecast Planning";
-    UsageCategory = Administration;
-    InsertAllowed = false;
 
     layout
     {
@@ -28,7 +26,7 @@ page 50049 "AMC Item Forecast Planning"
                     {
                         ApplicationArea = All;
                         Caption = 'Year';
-                        //Importance = Additional;
+                        Importance = Additional;
                         trigger OnValidate()
                         begin
                             UpdateForecast();
@@ -39,7 +37,7 @@ page 50049 "AMC Item Forecast Planning"
                     {
                         ApplicationArea = All;
                         Caption = 'Week';
-                        //Importance = Additional;
+                        Importance = Additional;
                         trigger OnValidate()
                         begin
                             UpdateForecast();
@@ -429,6 +427,8 @@ page 50049 "AMC Item Forecast Planning"
                 part("AMC Customer Sales Statistics"; "AMC Customer Sales Statistics")
                 {
                     ApplicationArea = All;
+                    Caption = 'Customer Sales Statistics';
+
                     SubPageLink = "AMC Item Filter" = FIELD("Item No."),
                               "AMC Date Filter CM" = FIELD("Date Filter CM"),
                               "AMC Date Filter CM-1M" = FIELD("Date Filter CM-1M"),
@@ -1450,53 +1450,53 @@ page 50049 "AMC Item Forecast Planning"
         ProdOrder: Record "Production Order";
         NoSeriesMgt: Codeunit "No. Series";
         ItemList: Page "Item List";
-        ForecastPlanningList: Report "AMC Forecast Planning List";
-        SetYear: Integer;
-        SetWeekNo: Integer;
-        SetForecastCode: Code[20];
-        SetDateFrom: Date;
-        SetDateTo: Date;
-        RemainingForecast: Decimal;
-        NoZeroForecast: Boolean;
-        LowItemLevel: Boolean;
-        EntryNo: Integer;
-        SetDeleteLine: Boolean;
-        ProdDate: array[7] of Date;
-        ProdOrderNo: Code[20];
-        RemainForec: Decimal;
-        ContrForRemain: Boolean;
-        SetPn: Boolean;
-        SetWt: Boolean;
-        SetSr: Boolean;
-        SetCz: Boolean;
-        SetPt: Boolean;
-        SetSb: Boolean;
-        SetNi: Boolean;
-        FirstDayofCM: Date;
-        FirstDayofCM1: Date;
-        FirstDayofCM2: Date;
-        FirstDayofCM3: Date;
-        FirstDayofCM4: Date;
-        LastDayofCM: Date;
-        LastDayofCM1: Date;
-        LastDayofCM2: Date;
-        LastDayofCM3: Date;
-        LastDayofCM4: Date;
-        CurrMonth: Integer;
-        ProdOrderTemp: Record "Production Order" temporary;
-        SetLotQty: Decimal;
-        SetMinimStock: Decimal;
-        SetMaximStok: Decimal;
-        QuestConfirm: Text[200];
-        Question2: Text[200];
-        DateFilter_CM: Text[100];
-        DateFilter_CM_1M: Text[100];
-        DateFilter_CM_2M: Text[100];
-        DateFilter_CM_3M: Text[100];
-        DateFilter_CM_4M: Text[100];
-        DateFilter_5M: Text[100];
+                      ForecastPlanningList: Report "AMC Forecast Planning List";
+                      SetYear: Integer;
+                      SetWeekNo: Integer;
+                      SetForecastCode: Code[20];
+                      SetDateFrom: Date;
+                      SetDateTo: Date;
+                      RemainingForecast: Decimal;
+                      NoZeroForecast: Boolean;
+                      LowItemLevel: Boolean;
+                      EntryNo: Integer;
+                      SetDeleteLine: Boolean;
+                      ProdDate: array[7] of Date;
+                      ProdOrderNo: Code[20];
+                      RemainForec: Decimal;
+                      ContrForRemain: Boolean;
+                      SetPn: Boolean;
+                      SetWt: Boolean;
+                      SetSr: Boolean;
+                      SetCz: Boolean;
+                      SetPt: Boolean;
+                      SetSb: Boolean;
+                      SetNi: Boolean;
+                      FirstDayofCM: Date;
+                      FirstDayofCM1: Date;
+                      FirstDayofCM2: Date;
+                      FirstDayofCM3: Date;
+                      FirstDayofCM4: Date;
+                      LastDayofCM: Date;
+                      LastDayofCM1: Date;
+                      LastDayofCM2: Date;
+                      LastDayofCM3: Date;
+                      LastDayofCM4: Date;
+                      CurrMonth: Integer;
+                      ProdOrderTemp: Record "Production Order" temporary;
+                      SetLotQty: Decimal;
+                      SetMinimStock: Decimal;
+                      SetMaximStok: Decimal;
+                      QuestConfirm: Text[200];
+                      Question2: Text[200];
+                      DateFilter_CM: Text[100];
+                      DateFilter_CM_1M: Text[100];
+                      DateFilter_CM_2M: Text[100];
+                      DateFilter_CM_3M: Text[100];
+                      DateFilter_CM_4M: Text[100];
+                      DateFilter_5M: Text[100];
 
-        Text_001: Label 'Prognozy zawierają planowaną produkcję \ Czy usunąć oznaczone linie?';
+                      Text_001: Label 'Prognozy zawierają planowaną produkcję \ Czy usunąć oznaczone linie?';
         Text_002: Label 'Zaniechano Usunięcia Linii';
         Text_003: Label 'Zapas %1 posiada nierozpisaną ilość planowania.\ Czy kontynuować?';
         Text_004: Label 'Czy przypisać Ilość %1 \do Szarży Produkcji Zapasu: %2?';
