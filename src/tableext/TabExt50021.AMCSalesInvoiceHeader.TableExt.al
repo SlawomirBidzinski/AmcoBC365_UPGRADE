@@ -33,7 +33,7 @@ tableextension 50021 "AMC Sales Invoice Header" extends "Sales Invoice Header"
             Caption = 'Data Kursu Wymiany';
             DataClassification = CustomerContent;
         }
-        field(50020; "AMC Create by IdUser"; Code[20])
+        field(50020; "AMC Create by IdUser"; Code[50])
         {
             Caption = 'Utworzone przez';
             Editable = false;
