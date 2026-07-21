@@ -1913,6 +1913,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control Stats - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1692070376 - Control 2069624082 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Sales Statistics</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control AMC Customer Sales Statistics - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 1692070376 - Control 2166945456 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Summary</source>
           <note from="Developer" annotates="general" priority="2"></note>
