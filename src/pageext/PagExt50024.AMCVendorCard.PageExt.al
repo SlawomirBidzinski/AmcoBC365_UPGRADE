@@ -1,4 +1,4 @@
-pageextension 50033 AMCVendorCardExt extends "Vendor Card"
+pageextension 50024 AMCVendorCardExt extends "Vendor Card"
 {
     layout
     {
