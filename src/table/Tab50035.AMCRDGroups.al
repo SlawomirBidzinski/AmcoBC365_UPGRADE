@@ -1,4 +1,4 @@
-table 50049 "AMC R&D Groups"
+table 50035 "AMC R&D Groups"
 {
     Caption = 'R&D Groups';
     DataClassification = CustomerContent;

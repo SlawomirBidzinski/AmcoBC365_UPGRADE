@@ -1,4 +1,4 @@
-table 50048 "AMC Salesperson Territory"
+table 50042 "AMC Salesperson Territory"
 {
     DataClassification = CustomerContent;
 
