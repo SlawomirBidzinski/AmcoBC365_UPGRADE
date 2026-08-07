@@ -273,11 +273,6 @@ page 50042 "AMC New Item Generate"
                         NewItemSearchName := NewItemName;
                     end;
                 }
-                //field(NewItemLongName; NewItemLongName)
-                //{
-                //    ApplicationArea = All;
-                //    Caption = 'New Item Long Name';
-                //}
                 field(NewItemSearchName; NewItemSearchName)
                 {
                     ApplicationArea = All;

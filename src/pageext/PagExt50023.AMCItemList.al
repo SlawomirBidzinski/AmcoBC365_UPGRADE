@@ -159,6 +159,14 @@ pageextension 50023 "AMC Item List" extends "Item List"
                 RunObject = Page "Lot No. Information List";
                 RunPageLink = "Item No." = field("No.");
             }
+            action(AMCNewMaterial)
+            {
+                ApplicationArea = All;
+                Caption = 'New Material/Packaging';
+                Image = NewBranch;
+
+                RunObject = page "AMC New Item Generate";
+            }
         }
     }
     var
