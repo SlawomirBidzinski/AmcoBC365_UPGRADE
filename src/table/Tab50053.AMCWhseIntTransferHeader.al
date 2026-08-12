@@ -172,7 +172,7 @@ table 50053 "AMC Whse. Int. Transfer Header"
 
         IF "Document No." = '' THEN BEGIN
             TestNoSeries();
-            NoSeriesMgt.InitSeries(GetNoSeriesCode(), xRec."No. Series", "Document Date", "Document No.", "No. Series");
+            "No. Series" := GetNoSeriesCode();
         END;
 
         InitRecord();
@@ -222,16 +222,18 @@ table 50053 "AMC Whse. Int. Transfer Header"
     end;
 
     procedure AssistEdit(OldWhseMagHeader: Record "AMC Whse. Int. Transfer Header"): Boolean
+    var
+        PurchSetup: Record "Purchases & Payables Setup";
     begin
         WhseSetup.GET();
         TestNoSeries();
 
-        IF NoSeriesMgt.SelectSeries(GetNoSeriesCode(), OldWhseMagHeader."No. Series", "No. Series") THEN BEGIN
-            WhseSetup.GET();
+        if NoSeriesMgt.LookupRelatedNoSeries(GetNoSeriesCode(), OldWhseMagHeader."No. Series", "No. Series") then begin
+            PurchSetup.TestField("AMC Item Calculation Nos.");
             TestNoSeries();
-            NoSeriesMgt.SetSeries("Document No.");
-            EXIT(TRUE);
-        END;
+            "Document No." := NoSeriesMgt.GetNextNo("No. Series");
+            exit(true);
+        end;
     end;
 
     local procedure TestNoSeries(): Boolean
@@ -313,7 +315,7 @@ table 50053 "AMC Whse. Int. Transfer Header"
     procedure PostDocument()
     var
         ItemJnlLine: Record "Item Journal Line";
-        NoSeriesMgt: Codeunit NoSeriesManagement;
+        NoSeriesMgt: Codeunit "No. Series";
         WarehousePosting: Codeunit "AMC Warehouse Posting";
     begin
         IF Rec."Document Status" = Rec."Document Status"::Open THEN
@@ -325,8 +327,6 @@ table 50053 "AMC Whse. Int. Transfer Header"
                     Rec."Transaction Type"::"Internal Transfer":
                         Rec."Post No. Series" := WhseSetup."AMC PostedInt.Transf.No.Series";
                 END;
-            NoSeriesMgt.InitSeries(Rec."Post No. Series", xRec."No. Series",
-                                   Rec."Posting Date", Rec."Posted Document No.", Rec."No. Series");
             Rec.MODIFY();
         END;
 

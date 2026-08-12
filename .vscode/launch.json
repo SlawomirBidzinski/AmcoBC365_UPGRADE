@@ -10,7 +10,7 @@
             "port": 7249,
             "serverInstance": "BC270_UPGRADE",
             "authentication": "Windows",
-            "startupObjectId": 50035,
+            //"startupObjectId": 50035,
             "startupObjectType": "Page",
             "breakOnError": "All",
             "launchBrowser": true,

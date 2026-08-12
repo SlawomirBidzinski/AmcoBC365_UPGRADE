@@ -224,7 +224,7 @@ table 50054 "AMC Whse. Int. Transfer Line"
         LotNoInformation: Record "Lot No. Information";
         BinContent: Record "Bin Content";
         WarehouseIntTransferHeader: Record "AMC Whse. Int. Transfer Header";
-        BinContentList: Page "Item Bin Contents";
+        BinContentList: Page "Bin Contents";
         LotList: Page "Lot No. Information List";
         DimMgt: Codeunit DimensionManagement;
         Text_001: Label 'Przed dodaniem linii należy zwolnić dokument';

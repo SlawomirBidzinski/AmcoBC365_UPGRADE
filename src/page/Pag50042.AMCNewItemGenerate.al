@@ -3,6 +3,7 @@ page 50042 "AMC New Item Generate"
     ApplicationArea = All;
     Caption = 'New Item Generate';
     PageType = Card;
+    UsageCategory = Administration;
 
     layout
     {

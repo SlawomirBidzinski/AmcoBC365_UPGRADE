@@ -498,7 +498,7 @@ page 50061 "AMC Item Salesperson List"
                 Caption = 'Item Bin Contents';
                 Image = BinContent;
 
-                RunObject = Page "Item Bin Contents";
+                RunObject = Page "Bin Contents";
                 RunPageLink = "Item No." = field("No.");
             }
             action(AMCItemAvailabilityByBatch)

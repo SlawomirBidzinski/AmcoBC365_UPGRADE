@@ -81,13 +81,6 @@ pageextension 50042 "AMC Order Proc. Role Center" extends "Order Processor Role 
         }
         addafter(SalesOrders)
         {
-            action(AMCSalesOrdersRW)
-            {
-                ApplicationArea = Basic, Suite;
-                Caption = 'Sales Orders RW';
-                Image = "Order";
-                RunObject = Page "AMC Sales Order RW List";
-            }
             action(AMCInternalTransfer)
             {
                 ApplicationArea = All;
@@ -105,13 +98,6 @@ pageextension 50042 "AMC Order Proc. Role Center" extends "Order Processor Role 
         }
         addafter("Sales &Order")
         {
-            action("AMC Sales Orders RW")
-            {
-                ApplicationArea = Basic, Suite;
-                Caption = 'Sales Orders RW';
-                RunObject = Page "AMC Sales Order RW List";
-                ToolTip = 'Record your agreements with customers to sell certain products on certain delivery and payment terms. Sales orders, unlike sales invoices, allow you to ship partially, deliver directly from your vendor to your customer, initiate warehouse handling, and print various customer-facing documents. Sales invoicing is integrated in the sales order process.';
-            }
             action(AMCDicountInv1)
             {
                 ApplicationArea = All;
