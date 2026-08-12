@@ -379,11 +379,10 @@ tableextension 50030 "AMC Production BOM Header" extends "Production BOM Header"
             TableRelation = "Production BOM Header"."No." where ("AMC BOM Type"=const(Production));
             DataClassification = CustomerContent;
         }
-        field(50458; "AMC Optimalisation Code"; Code[20])
+        field(50458; "AMC Optimisation Code"; Code[20])
         {
-            Caption = 'Optimalisation Code';
-            //FIXME Tabela 5219 a wygląda na niestandard
-            //TableRelation = "Optimalisation Header";
+            Caption = 'Optimisation Code';
+            TableRelation = "AMC Optimisation Header";
             DataClassification = CustomerContent;
         }
     }
