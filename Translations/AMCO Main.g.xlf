@@ -14873,6 +14873,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC RW Status - EnumValue Zaakceptowana - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Enum 2968973066 - EnumValue 18652612 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source></source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC RW Transaction Type - EnumValue  - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Enum 2968973066 - EnumValue 3696205865 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Kontr. Jakości</source>
           <note from="Developer" annotates="general" priority="2"></note>

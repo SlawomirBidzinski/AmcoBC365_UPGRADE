@@ -427,16 +427,6 @@ tableextension 50035 "AMC Sales Header" extends "Sales Header"
             Caption = 'Kwota Zamówienia';
             Editable = false;
         }
-        //FIXME
-        /*   
-           field(50200; "AMC Bank Transfer Template"; Code[20])
-           {
-               Caption = 'Bank Transfer Template';
-               Description = 'ITEBA6/00';
-               TableRelation = "Bank Transfer Template";
-               DataClassification = CustomerContent;
-           }
-         */
         field(50201; "AMC Customer Bank Account Code"; Code[20])
         {
             Caption = 'Customer Bank Account Code';
