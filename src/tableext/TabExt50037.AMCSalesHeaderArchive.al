@@ -1,4 +1,4 @@
-tableextension 50035 "AMC Sales Header" extends "Sales Header"
+tableextension 50037 "AMC Sales Header Archive" extends "Sales Header Archive"
 {
     fields
     {
@@ -17,17 +17,6 @@ tableextension 50035 "AMC Sales Header" extends "Sales Header"
             Caption = 'Kurs Średni';
             DataClassification = CustomerContent;
             DecimalPlaces = 4 : 4;
-            trigger OnValidate()
-            begin
-
-                IF "AMC Exchange Rate" <> xRec."AMC Exchange Rate" THEN
-                    "AMC Currancy Exchange Date" := 0D;
-
-                IF "AMC Exchange Rate" <> 0 THEN
-                    "Currency Factor" := 1 / "AMC Exchange Rate"
-                ELSE
-                    "Currency Factor" := 1;
-            end;
         }
         field(50007; "AMC Invoice per Pieces"; Boolean)
         {
@@ -38,44 +27,6 @@ tableextension 50035 "AMC Sales Header" extends "Sales Header"
         {
             Caption = 'Data Kursu Wymiany';
             DataClassification = CustomerContent;
-            trigger OnValidate()
-            var
-                Text_002: Label 'Zmieniono Datę Kursu Waluty %1, czy zakualizować kurs?';
-            begin
-
-                IF "AMC Currancy Exchange Date" <> xRec."AMC Currancy Exchange Date" THEN
-                    IF CONFIRM(Text_002, FALSE, "Currency Code") THEN begin
-                        UpdateCurrencyFactor;
-                        IF "Currency Factor" <> 0 Then begin
-                            "AMC Exchange Rate" := ROUND(1 / "Currency Factor", 0.0001);
-                        end else begin
-                            "AMC Exchange Rate" := 0;
-                        end;
-                    end ELSE
-                        ERROR('Zaniechano zmiany daty kursu');
-            end;
-
-            trigger OnLookup()
-            var
-                CurrExchRate: Record "Currency Exchange Rate";
-                CurrExchRates: Page "Currency Exchange Rates";
-
-            begin
-                CLEAR(CurrExchRates);
-                IF "Currency Code" <> '' THEN BEGIN
-                    CurrExchRate.RESET;
-                    CurrExchRate.SETRANGE("Currency Code", "Currency Code");
-                    IF CurrExchRate.FINDLAST THEN BEGIN
-                        CurrExchRates.SETTABLEVIEW(CurrExchRate);
-                        CurrExchRates.SETRECORD(CurrExchRate);
-                        CurrExchRates.LOOKUPMODE(TRUE);
-                        IF CurrExchRates.RUNMODAL = ACTION::LookupOK THEN BEGIN
-                            CurrExchRates.GETRECORD(CurrExchRate);
-                            VALIDATE("AMC Currancy Exchange Date", CurrExchRate."Starting Date");
-                        END;
-                    END;
-                END;
-            end;
         }
         field(50011; "AMC Remarks from Shipment"; Text[170])
         {
@@ -271,114 +222,11 @@ tableextension 50035 "AMC Sales Header" extends "Sales Header"
         {
             Caption = 'Kurs Waluty Cennika';
             DataClassification = CustomerContent;
-
-            trigger OnValidate()
-            var
-                SalesLine: Record "Sales Line";
-            begin
-                SalesLine.RESET;
-                SalesLine.SETRANGE("Document Type", "Document Type");
-                SalesLine.SETRANGE("Document No.", "No.");
-                SalesLine.SETRANGE(Type, SalesLine.Type::Item);
-                IF SalesLine.FINDFIRST THEN
-                    REPEAT
-
-                        SalesLine."AMC Price Currency" := "AMC Price Currency";
-                        SalesLine."AMC Price Exchage Rate" := "AMC Price Exch. Rate";
-
-                        IF "AMC Price Currency" <> "Currency Code" THEN BEGIN
-                            IF SalesLine."AMC Currency Unit Price" <> 0 THEN BEGIN
-                                SalesLine.VALIDATE("Unit Price", ROUND(SalesLine."AMC Currency Unit Price" * SalesLine."AMC Price Exchage Rate", 0.01));
-                            END;
-                        END ELSE BEGIN
-                            SalesLine.VALIDATE("Unit Price", SalesLine."AMC Currency Unit Price");
-                        END;
-                        SalesLine.MODIFY;
-                    UNTIL SalesLine.NEXT = 0;
-            end;
         }
         field(50122; "AMC Price Exch. Date"; Date)
         {
             Caption = 'Data Kursu Waluty Cennika';
             DataClassification = CustomerContent;
-
-            trigger OnValidate()
-
-            var
-
-                CurrExchRate: Record "Currency Exchange Rate";
-                CatalogCurrDate: Date;
-                FactExchangeDate: Date;
-                CatalogFactor: Decimal;
-                ExhangeRate: Decimal;
-
-            begin
-
-                IF "AMC Price Currency" <> '' THEN BEGIN
-                    IF "AMC Price Exch. Date" <> 0D THEN
-                        CatalogCurrDate := "AMC Price Exch. Date"
-                    ELSE
-                        CatalogCurrDate := WORKDATE;
-
-                    CatalogFactor := CurrExchRate.ExchangeRateSale(CatalogCurrDate, "AMC Price Currency", FactExchangeDate, ExhangeRate);
-                    "AMC Price Exch. Rate" := ROUND(1 / CatalogFactor, 0.0001);
-                    "AMC Price Exch. Date" := FactExchangeDate;
-                END ELSE BEGIN
-                    "AMC Price Exch. Rate" := 0;
-                    "AMC Price Exch. Date" := 0D;
-                    "AMC Price Currency" := '';
-                END;
-
-                SalesLine.RESET;
-                SalesLine.SETRANGE("Document Type", "Document Type");
-                SalesLine.SETRANGE("Document No.", "No.");
-                IF SalesLine.FINDFIRST THEN
-                    REPEAT
-                        SalesLine."AMC Price Currency" := "AMC Price Currency";
-                        IF CatalogFactor <> 0 THEN
-                            SalesLine."AMC Price Exchage Rate" := ROUND(1 / CatalogFactor, 0.0001)
-                        ELSE
-                            SalesLine."AMC Price Exchage Rate" := 0;
-
-                        IF (SalesLine."AMC Currency Unit Price" <> 0) THEN BEGIN
-                            IF ("AMC Price Currency" <> "Currency Code") THEN
-                                SalesLine.VALIDATE("Unit Price", ROUND(SalesLine."AMC Currency Unit Price" * SalesLine."AMC Price Exchage Rate", 0.01))
-                            ELSE
-                                SalesLine.VALIDATE("Unit Price", SalesLine."AMC Currency Unit Price");
-                        END;
-
-                        SalesLine.MODIFY;
-                    UNTIL SalesLine.NEXT = 0;
-            end;
-
-
-            trigger OnLookup()
-            var
-
-                CurrExchRate: Record "Currency Exchange Rate";
-                CurrExchRates: Page "Currency Exchange Rates";
-
-            begin
-
-                CLEAR(CurrExchRates);
-                IF "AMC Price Currency" <> '' THEN BEGIN
-                    CurrExchRate.RESET;
-                    CurrExchRate.SETRANGE("Currency Code", "AMC Price Currency");
-                    IF CurrExchRate.FINDLAST THEN BEGIN
-                        CurrExchRates.SETTABLEVIEW(CurrExchRate);
-                        CurrExchRates.SETRECORD(CurrExchRate);
-                        CurrExchRates.LOOKUPMODE(TRUE);
-                        IF CurrExchRates.RUNMODAL = ACTION::LookupOK THEN BEGIN
-                            CurrExchRates.GETRECORD(CurrExchRate);
-                            VALIDATE("AMC Price Exch. Date", CurrExchRate."Starting Date");
-                        END;
-                    END;
-                END;
-            end;
-
-
-
-
         }
         field(50123; "AMC Authorise for Limit"; Boolean)
         {
@@ -454,74 +302,5 @@ tableextension 50035 "AMC Sales Header" extends "Sales Header"
             Caption = 'Last Archive';
             DataClassification = CustomerContent;
         }
-        modify("ITI Nos. Template Code")
-        {
-            trigger OnAfterValidate()
-            var
-                SalesDocNosTemplate: Record "ITI Sales Doc. Nos. Template";
-            begin
-                if SalesDocNosTemplate.Get("ITI Nos. Template Code") then begin
-                    Rec.Validate("AMC RW Transaction", SalesDocNosTemplate."AMC RW Transaction");
-                    Rec.Validate("AMC RW Transaction Type", SalesDocNosTemplate."AMC RW Transaction Type");
-                end;
-            end;
-        }
     }
-    trigger OnInsert()
-    var
-
-    begin
-        rec."AMC Create by IdUser" := UserId;
-        rec."AMC Creation Date" := WORKDATE;
-    end;
-
-    procedure AMCCalculateCustomerLimit(var ActualCustomerLimit: Decimal; var CustomerBalanceAfterSale: Decimal)
-    var
-        CustomerRec: Record Customer;
-        SetOffLimit: Boolean;
-        ActualCustomerBalance: Decimal;
-        PLNCurrencyCode: Text;
-    begin
-        ActualCustomerLimit := 0;
-        ActualCustomerBalance := 0;
-        CustomerBalanceAfterSale := 0;
-        PLNCurrencyCode := 'PLN';
-
-        IF Rec."Bill-to Customer No." <> '' THEN
-            IF CustomerRec.GET(Rec."Bill-to Customer No.") THEN BEGIN
-                CustomerRec.CALCFIELDS("Balance (LCY)");
-                ActualCustomerBalance := CustomerRec."Balance (LCY)";
-                ActualCustomerLimit := CustomerRec."Credit Limit (LCY)";
-
-                IF (Rec."Currency Code" = '') OR (Rec."Currency Code" = 'PLN') THEN
-                    CustomerBalanceAfterSale := ActualCustomerBalance + AMCCalculateOrderGrossValue()
-                ELSE
-                    CustomerBalanceAfterSale := ActualCustomerBalance + ROUND(AMCCalculateOrderGrossValue() * Rec."AMC Exchange Rate", 0.01);
-            END;
-    end;
-
-    procedure AMCCalculateOrderGrossValue(): Decimal
-    var
-        SalesLineRec: Record "Sales Line";
-        OrderGrossAmount: Decimal;
-    begin
-        CASE Rec.Status OF
-            Rec.Status::Open:
-                exit(0);
-
-            Rec.Status::Released:
-                BEGIN
-                    OrderGrossAmount := 0;
-                    SalesLineRec.RESET();
-                    SalesLineRec.SETRANGE("Document Type", Rec."Document Type");
-                    SalesLineRec.SETRANGE("Document No.", Rec."No.");
-                    IF SalesLineRec.FindSet() THEN
-                        REPEAT
-                            OrderGrossAmount := OrderGrossAmount + SalesLineRec."Amount Including VAT";
-                        UNTIL SalesLineRec.NEXT() = 0;
-                    exit(OrderGrossAmount);
-                END;
-        END;
-        exit(0);
-    end;
 }

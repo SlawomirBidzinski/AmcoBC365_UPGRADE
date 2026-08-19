@@ -103,7 +103,7 @@ tableextension 50052 "AMC Purchase Line" extends "Purchase Line"
 
             trigger OnValidate()
             var
-                Uom: Record 204;
+                Uom: Record "Unit of Measure";
             begin
                 if (xRec."AMC Pack Unit of Measure" <> "AMC Pack Unit of Measure") and
                   ("AMC Pack Unit of Measure" <> '') then begin

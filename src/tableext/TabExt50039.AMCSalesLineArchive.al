@@ -1,4 +1,4 @@
-tableextension 50036 "AMC Sales Line" extends "Sales Line"
+tableextension 50039 "AMC Sales Line Archive" extends "Sales Line Archive"
 {
     fields
     {
@@ -38,20 +38,6 @@ tableextension 50036 "AMC Sales Line" extends "Sales Line"
             Caption = 'Jednostka miary opakowania';
             TableRelation = "Unit of Measure";
             DataClassification = CustomerContent;
-
-            trigger OnValidate()
-            var
-                Uom: Record "Unit of Measure";
-            begin
-                if (xRec."AMC Pack Unit of Measure" <> "AMC Pack Unit of Measure") and
-                  ("AMC Pack Unit of Measure" <> '') then begin
-                    Uom.GET("AMC Pack Unit of Measure");
-                    VALIDATE("AMC Pack Quantity", Uom."AMC Decimal Quantity");
-                end;
-
-                if "AMC Pack Unit of Measure" = '' then
-                    VALIDATE("AMC Pack Quantity", 0);
-            end;
         }
         field(50009; "AMC Pack Quantity"; Decimal)
         {
@@ -367,7 +353,7 @@ tableextension 50036 "AMC Sales Line" extends "Sales Line"
         field(50201; "AMC Customer Code"; Code[20])
         {
             FieldClass = FlowField;
-            CalcFormula = Lookup("Sales Header"."Sell-to Customer No." WHERE("Document Type" = FIELD("Document Type"),
+            CalcFormula = Lookup("Sales Header Archive"."Sell-to Customer No." WHERE("Document Type" = FIELD("Document Type"),
                                                                               "No." = FIELD("Document No.")));
             Editable = false;
             Caption = 'Customer Code';
@@ -375,28 +361,28 @@ tableextension 50036 "AMC Sales Line" extends "Sales Line"
         field(50202; "AMC Customer Name"; Text[100])
         {
             FieldClass = FlowField;
-            CalcFormula = Lookup("Sales Header"."Sell-to Customer Name" WHERE("Document Type" = FIELD("Document Type"),
+            CalcFormula = Lookup("Sales Header Archive"."Sell-to Customer Name" WHERE("Document Type" = FIELD("Document Type"),
                                                                                "No." = FIELD("Document No.")));
             Caption = 'Customer Name';
         }
         field(50203; "AMC Created By"; Code[50])
         {
             FieldClass = FlowField;
-            CalcFormula = Lookup("Sales Header"."AMC Create by IdUser" WHERE("Document Type" = FIELD("Document Type"),
+            CalcFormula = Lookup("Sales Header Archive"."AMC Create by IdUser" WHERE("Document Type" = FIELD("Document Type"),
                                                                           "No." = FIELD("Document No.")));
             Caption = 'Created By';
         }
         field(50204; "AMC Document Date"; Date)
         {
             FieldClass = FlowField;
-            CalcFormula = Lookup("Sales Header"."Document Date" WHERE("Document Type" = FIELD("Document Type"),
+            CalcFormula = Lookup("Sales Header Archive"."Document Date" WHERE("Document Type" = FIELD("Document Type"),
                                                                        "No." = FIELD("Document No.")));
             Caption = 'Document Date';
         }
         field(50205; "AMC Delivery Date"; Date)
         {
             FieldClass = FlowField;
-            CalcFormula = Lookup("Sales Header"."AMC Delivery Date" WHERE("Document Type" = FIELD("Document Type"),
+            CalcFormula = Lookup("Sales Header Archive"."AMC Delivery Date" WHERE("Document Type" = FIELD("Document Type"),
                                                                        "No." = FIELD("Document No.")));
             Caption = 'Delivery Date';
             Editable = false;
@@ -420,17 +406,6 @@ tableextension 50036 "AMC Sales Line" extends "Sales Line"
             if (Type = const(Item)) Item
             where(Blocked = const(false), "Sales Blocked" = const(false), "AMC Sales Item" = const(true),
             "AMC Out Off Item List" = const(false));
-
-            trigger OnAfterValidate()
-            var
-                Item: Record Item;
-            begin
-                if (Rec.Type <> Rec.Type::Item) or (not Item.Get("No.")) then
-                    exit;
-
-                Item.Get("No.");
-                Validate("AMC Pack Unit of Measure", Item."AMC Pack Unit of Measure");
-            end;
         }
         modify(Quantity)
         {

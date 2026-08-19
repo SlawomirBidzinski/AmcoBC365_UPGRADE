@@ -53,12 +53,6 @@ tableextension 50084 "AMC Lot No. Information" extends "Lot No. Information"
             DataClassification = CustomerContent;
             Description = 'AL.28Jan12';
             TableRelation = "Unit of Measure";
-
-            trigger OnValidate()
-            var
-                Uom: Record 204;
-            begin
-            end;
         }
         field(50005; "AMC Pack Quantity"; Decimal)
         {

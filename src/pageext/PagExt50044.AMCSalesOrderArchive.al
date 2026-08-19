@@ -1,4 +1,4 @@
-pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
+pageextension 50044 "AMC Sales Order Archive" extends "Sales Order Archive"
 {
     layout
     {
@@ -51,45 +51,6 @@ pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
             {
                 ApplicationArea = All;
                 Editable = False;
-                trigger OnDrillDown()
-                var
-                    PostWhseShipmHeadTemp: Record "Posted Whse. Shipment Header" temporary;
-                    PostedWhseShipLine: Record "Posted Whse. Shipment Line";
-                    PostedWhseShipmList: Page "Posted Whse. Shipment List";
-                    ShipmentQty: Decimal;
-
-                begin
-
-                    CLEAR(PostWhseShipmHeadTemp);
-
-                    PostedWhseShipLine.RESET;
-                    PostedWhseShipLine.SETRANGE("Source Type", 37);
-                    PostedWhseShipLine.SETRANGE("Source Subtype", 1);
-                    PostedWhseShipLine.SETRANGE("Source No.", rec."No.");
-                    IF PostedWhseShipLine.FINDFIRST THEN
-                        REPEAT
-                            PostWhseShipmHeadTemp.RESET;
-                            PostWhseShipmHeadTemp.SETRANGE("No.", PostedWhseShipLine."No.");
-                            IF NOT PostWhseShipmHeadTemp.FINDFIRST THEN BEGIN
-                                PostedWhseShipHeader.GET(PostedWhseShipLine."No.");
-                                PostWhseShipmHeadTemp.INIT;
-                                PostWhseShipmHeadTemp.TRANSFERFIELDS(PostedWhseShipHeader);
-                                PostWhseShipmHeadTemp.INSERT;
-                            END;
-                        UNTIL PostedWhseShipLine.NEXT = 0;
-
-                    PostWhseShipmHeadTemp.RESET;
-                    ShipmentQty := PostWhseShipmHeadTemp.COUNT;
-
-                    IF ShipmentQty > 1 THEN BEGIN
-                        Page.RUN(Page::"Posted Whse. Shipment List", PostWhseShipmHeadTemp);
-                    END ELSE BEGIN
-                        IF rec."AMC Posted Shipment No" <> '' THEN BEGIN
-                            IF PostedWhseShipHeader.GET(rec."AMC Posted Shipment No") THEN
-                                Page.RUN(Page::"Posted Whse. Shipment", PostedWhseShipHeader);
-                        END;
-                    END;
-                end;
             }
             group("AMC EDI")
             {
@@ -141,17 +102,6 @@ pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
                 field("AMC Currency Code"; Rec."Currency Code")
                 {
                     ApplicationArea = All;
-                    trigger OnValidate()
-                    var
-
-                    begin
-
-                        IF rec."Currency Code" <> '' then
-                            rec.Validate("AMC Currancy Exchange Date", rec."Posting Date")
-                        else
-                            rec.Validate("AMC Currancy Exchange Date", 0D);
-                    end;
-
                 }
 
                 field("AMC Currancy Exchange Date"; Rec."AMC Currancy Exchange Date")
@@ -163,9 +113,7 @@ pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
                 {
                     ApplicationArea = All;
                 }
-
             }
-
         }
 
         addafter(General)
@@ -202,9 +150,6 @@ pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
                     ApplicationArea = All;
                 }
             }
-        }
-        addafter("Invoice Details")
-        {
             group(AMCLowPriceControl)
             {
                 Caption = 'Low Price Controlling';
@@ -238,21 +183,6 @@ pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
                 Caption = 'Payment Controlling';
                 group("AMC Kontrola Płatności")
                 {
-                    field(AMCActualCustomerLimit; ActualCustomerLimit)
-                    {
-                        ApplicationArea = All;
-                        Caption = 'Aktualny limit PLN';
-                    }
-                    field(AMCActualCustomerBalance; ActualCustomerBalance)
-                    {
-                        ApplicationArea = All;
-                        Caption = 'Aktualne saldo PLN';
-                    }
-                    field(AMCCustomerBalanceAfterSale; CustomerBalanceAfterSale)
-                    {
-                        ApplicationArea = All;
-                        Caption = 'Saldo po Trans. PLN';
-                    }
                     field(AMCAmountIncludingVAT; Rec."Amount Including VAT")
                     {
                         ApplicationArea = All;
@@ -290,10 +220,6 @@ pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
         modify("Sell-to Customer No.")
         {
             Importance = Standard;
-        }
-        modify("Opportunity No.")
-        {
-            Visible = false;
         }
         modify("Shipment Date")
         {
@@ -335,19 +261,11 @@ pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
         {
             Importance = Standard;
         }
-        modify("ITI VAT Settlement Date")
-        {
-            Importance = Standard;
-        }
         modify("VAT Reporting Date")
         {
             Importance = Standard;
         }
         modify("Sell-to Country/Region Code")
-        {
-            Importance = Standard;
-        }
-        modify("VAT Registration No.")
         {
             Importance = Standard;
         }
@@ -360,122 +278,4 @@ pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
             Visible = false;
         }
     }
-
-    actions
-    {
-        addafter("Create &Warehouse Shipment")
-        {
-            action(AMCWhseShpt)
-            {
-                ApplicationArea = All;
-                Image = NewShipment;
-                Caption = 'Wydanie Magazynowe';
-
-                trigger OnAction()
-                var
-                    WhseShipHeader: Record "Warehouse Shipment Header";
-                    GetSourceDocOutbound: Codeunit "Get Source Doc. Outbound";
-                begin
-                    IF Rec."AMC Shipment No" <> '' THEN BEGIN
-                        IF WhseShipHeader.GET(Rec."AMC Shipment No") THEN
-                            Page.RUN(Page::"Warehouse Shipment", WhseShipHeader);
-                    END ELSE BEGIN
-                        GetSourceDocOutbound.CreateFromSalesOrder(Rec);
-                        IF NOT Rec.FIND('=><') THEN
-                            Rec.INIT();
-                    END;
-                end;
-            }
-            action(AMCPostedWhseDoc)
-            {
-                ApplicationArea = All;
-                Caption = 'Posted Whse. Shipment';
-                Image = PostedReceipt;
-                RunObject = page "Posted Whse. Shipment Lines";
-                RunPageLink = "Source Document" = const("Sales Order"), "Source No." = field("No.");
-            }
-        }
-    }
-
-    trigger OnAfterGetCurrRecord()
-    begin
-        CalculateCustomerLimit();
-        CalculateOrderValue();
-    end;
-
-    local procedure CalculateCustomerLimit()
-    var
-        CustomerRec: Record Customer;
-        SetOffLimit: Boolean;
-    begin
-        ActualCustomerLimit := 0;
-        ActualCustomerBalance := 0;
-        CustomerBalanceAfterSale := 0;
-        PLNCurrencyCode := 'PLN';
-
-        IF Rec."Bill-to Customer No." <> '' THEN
-            IF CustomerRec.GET(Rec."Bill-to Customer No.") THEN BEGIN
-                CustomerRec.CALCFIELDS("Balance (LCY)");
-                ActualCustomerBalance := CustomerRec."Balance (LCY)";
-                ActualCustomerLimit := CustomerRec."Credit Limit (LCY)";
-                SetOffLimit := CustomerRec."AMC Set Off Customer Limit";
-                IF (Rec."Currency Code" = '') OR (Rec."Currency Code" = 'PLN') THEN
-                    CustomerBalanceAfterSale := ActualCustomerBalance + OrderGrossAmount
-                ELSE
-                    CustomerBalanceAfterSale := ActualCustomerBalance + ROUND(OrderGrossAmount * Rec."AMC Exchange Rate", 0.01);
-            END;
-
-        IF SetOffLimit = FALSE THEN
-            IF (CustomerBalanceAfterSale <> 0) THEN
-                IF CustomerBalanceAfterSale > ActualCustomerLimit THEN
-                    LimitWarr := FALSE
-                ELSE
-                    LimitWarr := TRUE
-            ELSE
-                LimitWarr := TRUE;
-    end;
-
-    local procedure CalculateOrderValue()
-    var
-        SalesLineRec: Record "Sales Line";
-    begin
-        IF Rec."Currency Code" <> '' THEN
-            CurrencyCode := Rec."Currency Code"
-        ELSE
-            CurrencyCode := 'PLN';
-
-        CASE Rec.Status OF
-            Rec.Status::Open:
-                BEGIN
-                    OrderNetAmount := 0;
-                    OrderGrossAmount := 0;
-                END;
-
-            Rec.Status::Released:
-                BEGIN
-                    OrderNetAmount := 0;
-                    OrderGrossAmount := 0;
-                    SalesLineRec.RESET();
-                    SalesLineRec.SETRANGE("Document Type", Rec."Document Type");
-                    SalesLineRec.SETRANGE("Document No.", Rec."No.");
-                    IF SalesLineRec.FindSet() THEN
-                        REPEAT
-                            OrderNetAmount := OrderNetAmount + SalesLineRec.Amount;
-                            OrderGrossAmount := OrderGrossAmount + SalesLineRec."Amount Including VAT";
-                        UNTIL SalesLineRec.NEXT() = 0;
-                END;
-        END;
-    end;
-
-    var
-        PostedWhseShipHeader: Record "Posted Whse. Shipment Header";
-        ChangeExchangeRate: Page "Change Exchange Rate";
-        ActualCustomerLimit: Decimal;
-        ActualCustomerBalance: Decimal;
-        CustomerBalanceAfterSale: Decimal;
-        OrderGrossAmount: Decimal;
-        OrderNetAmount: Decimal;
-        CurrencyCode: Code[20];
-        PLNCurrencyCode: Code[20];
-        LimitWarr: Boolean;
 }

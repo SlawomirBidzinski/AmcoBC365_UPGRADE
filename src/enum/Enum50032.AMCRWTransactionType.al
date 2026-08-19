@@ -2,9 +2,9 @@ enum 50032 "AMC RW Transaction Type"
 {
     Extensible = false;
 
-    value(0; "")
+    value(0; " ")
     {
-        Caption = '';
+        Caption = ' ';
     }
     value(1; "Rozliczenie Prób")
     {

@@ -1,4 +1,4 @@
-pageextension 50029 "AMC Sales Order Subform" extends "Sales Order Subform"
+pageextension 50046 "AMC Sales Order Archive Subfor" extends "Sales Order Archive Subform"
 {
     layout
     {
@@ -97,10 +97,6 @@ pageextension 50029 "AMC Sales Order Subform" extends "Sales Order Subform"
             Visible = false;
         }
         modify("Tax Group Code")
-        {
-            Visible = false;
-        }
-        modify("Qty. to Assemble to Order")
         {
             Visible = false;
         }

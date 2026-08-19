@@ -58,12 +58,6 @@ tableextension 50061 "AMC Purchase Line Archive" extends "Purchase Line Archive"
             Caption = 'Jednostka miary opakowania';
             TableRelation = "Unit of Measure";
             DataClassification = CustomerContent;
-
-            trigger OnValidate()
-            var
-                Uom: Record "Unit of Measure";
-            begin
-            end;
         }
         field(50009; "AMC Pack Quantity"; Decimal)
         {

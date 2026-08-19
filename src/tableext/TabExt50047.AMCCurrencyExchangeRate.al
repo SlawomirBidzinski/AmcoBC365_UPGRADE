@@ -1,4 +1,4 @@
-tableextension 50037 "AMC Currency Exchange Rate" extends "Currency Exchange Rate"
+tableextension 50047 "AMC Currency Exchange Rate" extends "Currency Exchange Rate"
 {
     fields
     {
