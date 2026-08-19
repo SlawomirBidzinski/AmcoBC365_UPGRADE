@@ -8003,6 +8003,36 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Invoice - Control AMCDelivery - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3674570733 - Control 1096376160 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2079885696">
+          <source>Waluta cennika - grupa</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Order Archive - Control AMCPriceCurr - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3674570733 - Control 3048640131 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2079885696">
+          <source>Low Price Controlling</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Order Archive - Control AMCLowPriceControl - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3674570733 - Control 2312297004 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2079885696">
+          <source>Profit Control.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Order Archive - Control AMCProfitItemContr - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3674570733 - Control 2454647400 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2079885696">
+          <source>Notes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Order Archive - Control AMCNotes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3674570733 - Control 735378838 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2079885696">
+          <source>Payment Controlling</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Order Archive - Control AMCPaymentControl - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3674570733 - Control 3672384450 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2079885696">
+          <source>Payment Control.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Order Archive - Control AMCPayAutorContr - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 99853858 - Action 1438536865 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
           <source>Posted Whse. Shipment</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -12768,6 +12798,271 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header - Field AMC Territory Code - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 3823650075 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>AmcoWeb</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC AmcoWeb Order - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 565557555 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Kwota Autoryzacji Limitu</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Authorise Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 390992811 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Data Autoryzacji</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Authorise Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 190742765 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Autoryzacja Limitu</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Authorise for Limit - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 2259790875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Użytkownik Autoryzyjący</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Authorise UserID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 1881295482 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Utworzone Automatycznie</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Automatic Create - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 4187601829 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Kontrola Ceny Sprzedaży</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Check For Low Price - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 4010164994 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Nazwa Szukana Kontaktu</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Contact Search Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 3804118616 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Utworzone przez</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Create by IdUser - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 1573810870 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Data Utworzenia</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Creation Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 3005292445 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Data Kursu Wymiany</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Currancy Exchange Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 135025851 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Customer Bank Account Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Customer Bank Account Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 2121987790 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Nazwa Szukana Nabywcy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Customer Serach Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 3907194010 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Faktura Celna</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Customs Invoice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 1055736856 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Warunki dostawy [godz.]</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Delivery Conditions [hrs] - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 968912553 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Delivery Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Delivery Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 641745091 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Zbiorcza Faktura Prowizji</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Discount Corr. Invoice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 1800992855 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Rabat Linia Faktury</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Discount Line Invoice - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 1628796755 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Discount Period From</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Discount Period From - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 3497133336 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Discount Period To</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Discount Period To - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 3607825946 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Dostawa Bezpośrednia</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Drop Shipment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 3175348669 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>EDI Customer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC EDI Customer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 1866210698 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Il. zaimport. zam. EDI</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC EDI Imported Orders - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 3332415935 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Status zamówienia EDI</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC EDI Order Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 2436206810 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Kurs Średni</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Exchange Rate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 1452688889 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Nabywca Frutarom</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Frutarom Customer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 3839992190 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Autoryzacja Niskiej Ceny Sprzedży</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC ID Authorise for Low Price - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 4034287180 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Faktury w Szt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Invoice per Pieces - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 685111978 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Typ Faktury</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Invoice Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 315551076 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Razem Waga Zapasów</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Item Weight Total - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 528364273 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Last Archive</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Last Archive - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 2987765464 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Uwagi</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Notes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 878891966 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Zamówienie Anulowanie</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Order Cancelled - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 3807737349 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Kwota Zamówienia</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Order Line Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 654629474 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Miejsce Załadunku/Rozładunku</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Place of Transport - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 327973169 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Nr Zaksięg. Wydania</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Posted Shipment No - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 1337315998 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Faktura Zaliczkowa</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Prepayment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 3284774485 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Prepayment Order No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Prepayment Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 1062187583 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Waluta Cennika</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Price Currency - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 3215438362 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Data Kursu Waluty Cennika</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Price Exch. Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 2021290860 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Kurs Waluty Cennika</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Price Exch. Rate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 1647851923 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Drukuj Rabat Oferty</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Print Quote Discount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 1150070955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Status Oferty</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Query Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 989066302 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Data ważności oferty</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Quote Exp. Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 2483139731 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Inne warunki oferty</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Quote other conditions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 296668004 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Uwagi do Wydania</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Remarks from Shipment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 2853972864 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Faktura Odrwotne Obciążenie</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Reverse Charge Inv - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 2909901356 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>RW na CRP</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC RW for CRP - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 609064591 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>RW Całkowicie Rozliczone</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC RW Fully Invoiced - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 3704699930 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Rozliczenie RW</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC RW Transaction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 2968973066 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Typ Rozliczenia RW</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC RW Transaction Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 1567091618 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Nr Wydania Magaz.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Shipment No - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 242619182 - Field 1969859310 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1948788855">
+          <source>Kod Regionu</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header Archive - Field AMC Territory Code - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 1866123563 - Field 3823650075 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
           <source>AmcoWeb</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -13332,6 +13627,336 @@
           <source>Źródło Cennika</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line - Field AMC Unit Price Source - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 2301363899 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Akt. Pozost. Kwota Fakt.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Actual Remaining Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 3972286394 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Cena</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Cena - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 2563987340 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Kod Zapasu Konsolidacji</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Consolidate Item Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 2619328419 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Kwota netto korekty</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Corr. Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 3979129257 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Kod Zapasu korekty</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Corr. Item No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 2487368856 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Nr Linii korekty</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Corr. Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 1359591117 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Typ Linii korekty</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Corr. Line Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 3988452307 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Ilość korygowana</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Corr. Qty - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 2085447410 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Cena Jedn. korekty</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Corr. Unit Price - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 1601246317 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Cena Jedn. z rabatem korekty</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Corr. UnitPriceincl.Disc. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 1592607852 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Nr Korygowanej Faktury</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Corrected Invoice No - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 3115702912 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Created By</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Created By - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 325427221 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Cena Jedn. Waluty</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Currency Unit Price - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 3372220106 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Customer Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Customer Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 3005962448 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Customer Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Customer Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 1461316374 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Nazwa Kontrahenta</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Customer Search Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 968912553 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Delivery Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Delivery Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 2452077000 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Document Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Document Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 2902704583 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Dozowanie</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Dozowanie - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 486143268 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Uwagi Linii EDI</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC EDI Line Remarks - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 3905009962 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Nr Linii Zamówienia EDI</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC EDI Order Line No - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 3485677056 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Cena Jednostkowa EDI</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC EDI Unit Price - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 186866383 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Ilość Zapasu na Mag.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Estim. Qty on Inv. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 1673721957 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Funkcjonalna</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Funkcjonalna - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 648017594 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Init Quantity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Init Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 4271949806 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Kwota linii faktury</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Invoice Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 3957086761 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Rabat Faktury (%)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Invoice Discount (%) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 4259276538 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Data Płatności Faktury</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Invoice Due Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 2660291323 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Nr Linii Faktury</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Invoice Line No - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 702795936 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Data Rozliczenia Faktury</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Invoice Payment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 3451348349 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Data Ważności Próbki</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Item Exp Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 940003741 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Nr Zapasu</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Item No - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 427445509 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Ilość Zapasu Zam Zakupu</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Item Qty Purchase Order - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 245103756 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Ilość Zapasu Zam. Sprzedaży</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Item Qty Sales Order - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 3364410221 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Ilość Zapasu Magazyn</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Item Qty Warehouse - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 2721878718 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Konkurencja</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Konkurencja - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 4191393194 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Nr Wydania Sprzedaży</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Last Ship No - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 2888208438 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Uwagi do linii</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Line Notes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 292421937 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Minimum logistyczne\[kg na dostaw.]</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Logistic min. [kgorder] - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 1544984762 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Partia do Wygenerowania</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Lot No to Create - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 1060872245 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Podstawowa Jedn. Miary</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Main Unit of Measure - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 4020805264 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>MOQ</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC MOQ - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 3406280018 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Wielokrotność zamówienia\[zam. na mies]</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Multiple order [ordmonth] - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 2856067029 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Pomiń Rabat Faktury</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC No Use Correction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 384760792 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Opis Oceny</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Opis Oceny - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 878891966 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Zamówienie Anulowanie</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Order Cancelled - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 2161524959 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Ilość w opakowaniu</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Pack Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 603886235 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Jednostka miary opakowania</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Pack Unit of Measure - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 527440232 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Nr Faktury Przedpłaconej</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Prepayment Invoice No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 1062187583 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Waluta Cennika</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Price Currency - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 2088195175 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Kurs Waluty Cennika</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Price Exchage Rate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 51055517 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Ilość Wygenerowana</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Qty Created - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 887236929 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Ilość Jedn Podst</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Qty in Base Unit - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 912757152 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Ilość do Wygenerowania</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Qty to Create - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 1961538704 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Uwagi Oferty</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Quote Remarks - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 3970381802 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Plan Il. do Wydania (Jedn Opak)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Rqst Qty to Ship - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 4252053422 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Plan Il. do Wydania (Pods. Jedn)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Rqst Qty to Ship(Base) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 2881350298 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Status Próbki</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC RW Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 1173911236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Wybór Zapasu</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Set Item - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 3069240917 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Nr Wydania Magazynowego</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Shipment Doc Nr - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 761373781 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Ilość na Wydaniu</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Shipment Qty - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 210737941 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Smak</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Smak - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 2576604680 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Razem Ilość do Wydania</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Total Rqst Qty to Ship - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 3971133826 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Cena Jedn. Podst.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Unit Price (Base Unit) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 1068344994 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Data Początkowa Cennika</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Unit Price Date From - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3468822021 - Field 2842341003 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2903552224">
+          <source>Źródło Cennika</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line Archive - Field AMC Unit Price Source - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3323249832 - Field 3088694755 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1187003046">
           <source>ILN Code</source>
