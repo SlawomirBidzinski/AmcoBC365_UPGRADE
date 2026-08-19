@@ -1,4 +1,4 @@
-codeunit 50052 "AMC Warehouse Posting"
+codeunit 50022 "AMC Warehouse Posting"
 {
     procedure PostInternalTransfer(WhseInterTransfLine: Record "AMC Whse. Int. Transfer Line"; PostedDocNo: Code[20])
     begin

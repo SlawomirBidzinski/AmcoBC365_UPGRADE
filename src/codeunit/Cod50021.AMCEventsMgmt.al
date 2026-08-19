@@ -3,7 +3,6 @@ codeunit 50021 "AMC Events Mgmt."
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales Line - Price", 'OnAfterSetPrice', '', false, false)]
     local procedure OnAfterSetPrice(var SalesLine: Record "Sales Line"; PriceListLine: Record "Price List Line"; AmountType: Enum "Price Amount Type"; var SalesHeader: Record "Sales Header")
     begin
-
         IF PriceListLine."Unit Price" <> 0 THEN BEGIN
             CASE PriceListLine."Source Type" OF
                 PriceListLine."Source Type"::Customer:
