@@ -8,11 +8,14 @@ pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
             {
                 ApplicationArea = All;
             }
-            field("AMC RW Transaction Type"; Rec."AMC RW Transaction Type")
+        }
+        addafter("No.")
+        {
+            field("AMC RW Transaction"; Rec."AMC RW Transaction")
             {
                 ApplicationArea = All;
             }
-            field("AMC RW Transaction"; Rec."AMC RW Transaction")
+            field("AMC RW Transaction Type"; Rec."AMC RW Transaction Type")
             {
                 ApplicationArea = All;
             }
