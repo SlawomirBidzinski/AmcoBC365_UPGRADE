@@ -5900,11 +5900,13 @@
         </trans-unit>
         <trans-unit id="Page 1708360615 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>General</source>
+          <target>Ogóne</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC New Item Generate - Control General - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1708360615 - Control 2872493332 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Category Code</source>
+          <target>Kod Kategorii Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC New Item Generate - Control ItemCategoryCode - Property Caption</note>
         </trans-unit>
@@ -5915,16 +5917,19 @@
         </trans-unit>
         <trans-unit id="Page 1708360615 - Control 366063247 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Group Name</source>
+          <target>Nazwa Grupy Zapasów</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC New Item Generate - Control ItemGroupName - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1708360615 - Control 682243515 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Material Group</source>
+          <target>Kod Grupy Zapasów</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC New Item Generate - Control ItemMaterialGroup - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1708360615 - Control 4240421978 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Material Subgroup</source>
+          <target>Kod Podgrupy Zapasów</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC New Item Generate - Control ItemMatSubGroup - Property Caption</note>
         </trans-unit>
@@ -5935,56 +5940,67 @@
         </trans-unit>
         <trans-unit id="Page 1708360615 - Control 3401817675 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Subgroup Name</source>
+          <target>Nazwa Podgrupy Zapasów</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC New Item Generate - Control ItemSubGroupName - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1708360615 - Control 3257256204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Template Code</source>
+          <target>Kod Szablonu Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC New Item Generate - Control ItemTemplateCode - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1708360615 - Control 2682699455 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Type</source>
+          <target>Typ Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC New Item Generate - Control ItemType - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1708360615 - Control 2600659720 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>New Item Code</source>
+          <target>Nowy Kod Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC New Item Generate - Control NewItemCode - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1708360615 - Control 2518483442 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>New Item Name</source>
+          <target>Nowa Nazwa Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC New Item Generate - Control NewItemName - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1708360615 - Control 1666331572 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>New Item Search Name</source>
+          <target>Nowa Nazwa Szukana Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC New Item Generate - Control NewItemSearchName - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1708360615 - Control 1154654502 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Postfix Code</source>
+          <target>Przedrostek Kodu Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC New Item Generate - Control PostFixCode - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1708360615 - Control 1195691079 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Prefix Code</source>
+          <target>Przedrostek Kodu Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC New Item Generate - Control PreFixCode - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1708360615 - Control 3331040732 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Qty. Per UoM</source>
+          <target>Ilość na Jedn. Miary</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC New Item Generate - Control QtyPerItemPurCOM - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1708360615 - Control 4159539824 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Serial Code No.</source>
+          <target>Kod Serii Numeracji</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC New Item Generate - Control SerialCodeNo - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1708360615 - Control 2818294490 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Set Item Code</source>
+          <target>Przypisany Kod</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC New Item Generate - Control SetNewItemCode - Property Caption</note>
         </trans-unit>
