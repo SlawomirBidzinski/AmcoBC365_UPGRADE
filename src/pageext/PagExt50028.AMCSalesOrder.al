@@ -2,15 +2,12 @@ pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
 {
     layout
     {
-        addbefore("No.")
+        addfirst(General)
         {
             field("ITI Nos. Template Code"; Rec."ITI Nos. Template Code")
             {
                 ApplicationArea = All;
             }
-        }
-        addafter("No.")
-        {
             field("AMC RW Transaction"; Rec."AMC RW Transaction")
             {
                 ApplicationArea = All;
