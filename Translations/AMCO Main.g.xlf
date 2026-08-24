@@ -7203,6 +7203,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Customer List - Control AMC Vendor per NIP Qty - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 1549928602 - Action 2893581338 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Generate New Item</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Item Card - Action AMCNewItem - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1549928602 - Action 3512808544 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
           <source>Brand List</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -7227,11 +7232,6 @@
           <source>Item Bin Contents</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Item Card - Action AMCItemBinContents - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 1549928602 - Action 2893581338 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
-          <source>Generate New Item</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Item Card - Action AMCNewItem - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1549928602 - Action 1507142797 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
           <source>Open BoM</source>
