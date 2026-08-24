@@ -609,7 +609,8 @@ pageextension 50021 "AMC Item Card" extends "Item Card"
 
     actions
     {
-        addfirst(Functions)
+
+        addafter(CopyItem)
         {
             action(AMCNewItem)
             {
@@ -619,6 +620,10 @@ pageextension 50021 "AMC Item Card" extends "Item Card"
 
                 RunObject = Page "AMC New Item Generate";
             }
+        }
+
+        addfirst(Functions)
+        {
             action(AMCItemBinContents)
             {
                 ApplicationArea = All;

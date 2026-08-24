@@ -128,7 +128,8 @@ pageextension 50023 "AMC Item List" extends "Item List"
 
     actions
     {
-        addbefore(History)
+        addafter(CopyItem)
+        //addbefore(History)
         {
             action(AMCNewItem)
             {
