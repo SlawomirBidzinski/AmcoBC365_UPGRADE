@@ -8,6 +8,14 @@ pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
             {
                 ApplicationArea = All;
             }
+            field("AMC RW Transaction Type"; Rec."AMC RW Transaction Type")
+            {
+                ApplicationArea = All;
+            }
+            field("AMC RW Transaction"; Rec."AMC RW Transaction")
+            {
+                ApplicationArea = All;
+            }
         }
         modify("Sell-to Contact")
         {
@@ -27,14 +35,6 @@ pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
             }
 
             field("AMC RW Fully Invoiced"; Rec."AMC RW Fully Invoiced")
-            {
-                ApplicationArea = All;
-            }
-            field("AMC RW Transaction"; Rec."AMC RW Transaction")
-            {
-                ApplicationArea = All;
-            }
-            field("AMC RW Transaction Type"; Rec."AMC RW Transaction Type")
             {
                 ApplicationArea = All;
             }
