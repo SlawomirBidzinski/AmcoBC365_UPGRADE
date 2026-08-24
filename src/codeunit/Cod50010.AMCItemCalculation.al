@@ -1,4 +1,4 @@
-codeunit 50020 "AMC Item Calculation"
+codeunit 50010 "AMC Item Calculation"
 {
 
     procedure GenerateSerialActiveCard(Set_ItemSalesDate: Date; DefaultInstanceCode: Code[20]; VAR CountCalculation: Integer)
@@ -114,7 +114,7 @@ codeunit 50020 "AMC Item Calculation"
                     ItemCalculationLoc."Calculation No" := '';
                     ItemCalculationLoc."Calculation Date" := CalculationDate;
 
-                    ItemCalculationLoc."No. Series" :=PurchasesSetup."AMC Item Calculation Nos.";
+                    ItemCalculationLoc."No. Series" := PurchasesSetup."AMC Item Calculation Nos.";
 
                     ItemCalculationLoc."Item Budget Instance" := DefaultInstanceCode;
                     ItemCalculationLoc."Source Type" := ItemCalculationLoc."Source Type"::Item;
@@ -180,7 +180,7 @@ codeunit 50020 "AMC Item Calculation"
                     ItemCalculationLoc."Calculation No" := '';
                     ItemCalculationLoc."Calculation Date" := CalculationDate;
 
-                    ItemCalculationLoc."No. Series" :=PurchasesSetup."AMC Item Calculation Nos.";
+                    ItemCalculationLoc."No. Series" := PurchasesSetup."AMC Item Calculation Nos.";
 
                     ItemCalculationLoc."Item Budget Instance" := DefaultInstanceCode;
                     ItemCalculationLoc."Source Type" := ItemCalculationLoc."Source Type"::Item;
@@ -240,7 +240,7 @@ codeunit 50020 "AMC Item Calculation"
                     ItemCalculationLoc."Calculation No" := '';
                     ItemCalculationLoc."Calculation Date" := CalculationDate;
 
-                    ItemCalculationLoc."No. Series" :=PurchasesSetup."AMC Item Calculation Nos.";
+                    ItemCalculationLoc."No. Series" := PurchasesSetup."AMC Item Calculation Nos.";
 
                     ItemCalculationLoc."Item Budget Instance" := DefaultInstanceCode;
                     ItemCalculationLoc."Source Type" := ItemCalculationLoc."Source Type"::Item;
@@ -300,7 +300,7 @@ codeunit 50020 "AMC Item Calculation"
                 ItemCalculationLoc."Calculation No" := '';
                 ItemCalculationLoc."Calculation Date" := CalculationDate;
 
-                ItemCalculationLoc."No. Series" :=PurchasesSetup."AMC Item Calculation Nos.";
+                ItemCalculationLoc."No. Series" := PurchasesSetup."AMC Item Calculation Nos.";
 
                 ItemCalculationLoc."Item Budget Instance" := DefaultInstanceCode;
                 ItemCalculationLoc."Source Type" := ItemCalculationLoc."Source Type"::Item;
@@ -363,7 +363,7 @@ codeunit 50020 "AMC Item Calculation"
                 ItemCalculationLoc."Calculation No" := '';
                 ItemCalculationLoc."Calculation Date" := CalculationDate;
 
-                ItemCalculationLoc."No. Series" :=PurchasesSetup."AMC Item Calculation Nos.";
+                ItemCalculationLoc."No. Series" := PurchasesSetup."AMC Item Calculation Nos.";
 
                 ItemCalculationLoc."Item Budget Instance" := DefaultInstanceCode;
                 ItemCalculationLoc."Source Type" := ItemCalculationLoc."Source Type"::BOM;
@@ -445,7 +445,7 @@ codeunit 50020 "AMC Item Calculation"
                 ItemCalculationLoc."Calculation No" := '';
                 ItemCalculationLoc."Calculation Date" := CalculationDate;
 
-                ItemCalculationLoc."No. Series" :=PurchasesSetup."AMC Item Calculation Nos.";
+                ItemCalculationLoc."No. Series" := PurchasesSetup."AMC Item Calculation Nos.";
 
                 ItemCalculationLoc."Item Budget Instance" := DefaultInstanceCode;
 
