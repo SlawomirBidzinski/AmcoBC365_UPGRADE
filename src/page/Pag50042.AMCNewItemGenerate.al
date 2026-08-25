@@ -34,7 +34,6 @@ page 50042 "AMC New Item Generate"
                 {
                     ApplicationArea = All;
                     Caption = 'Item Material Group';
-                    TableRelation = "AMC Material Group"."Material Group";
 
                     trigger OnValidate()
                     begin
@@ -44,20 +43,7 @@ page 50042 "AMC New Item Generate"
                             PreFixCode := '';
                             ItemDefCOM := '';
                         END ELSE BEGIN
-                            CASE ItemType OF
-                                ItemType::Material:
-                                    MatGroup.SETRANGE("Item Type", MatGroup."Item Type"::Material);
-
-                                ItemType::Packing:
-                                    MatGroup.SETRANGE("Item Type", MatGroup."Item Type"::Packing);
-
-                                ItemType::Goods:
-                                    MatGroup.SETRANGE("Item Type", MatGroup."Item Type"::Goods);
-
-                                ItemType::Wares:
-                                    MatGroup.SETRANGE("Item Type", MatGroup."Item Type"::Wares);
-                            END;
-
+                            MatGroup.SETRANGE("Item Type", ItemType);
                             MatGroup.SETRANGE("Group Code", ItemMatGroup);
                             IF MatGroup.FINDFIRST() THEN BEGIN
                                 ItemGroupName := MatGroup."Group Name";
@@ -75,19 +61,7 @@ page 50042 "AMC New Item Generate"
 
                         CLEAR(MatGroupList);
                         MatGroup.RESET();
-                        CASE ItemType OF
-                            ItemType::Material:
-                                MatGroup.SETRANGE("Item Type", MatGroup."Item Type"::Material);
-
-                            ItemType::Packing:
-                                MatGroup.SETRANGE("Item Type", MatGroup."Item Type"::Packing);
-
-                            ItemType::Goods:
-                                MatGroup.SETRANGE("Item Type", MatGroup."Item Type"::Goods);
-
-                            ItemType::Wares:
-                                MatGroup.SETRANGE("Item Type", MatGroup."Item Type"::Wares);
-                        END;
+                        MatGroup.SETRANGE("Item Type", ItemType);
                         IF MatGroup.FINDFIRST() THEN BEGIN
                             MatGroupList.SETTABLEVIEW(MatGroup);
                             MatGroupList.SETRECORD(MatGroup);
@@ -97,7 +71,6 @@ page 50042 "AMC New Item Generate"
                                 ItemMatGroup := MatGroup."Group Code";
                                 ItemGroupName := MatGroup."Group Name";
                                 SerialCodeNo := MatGroup."New Item Serial No";
-
                             END;
                         END;
                     end;
@@ -512,7 +485,7 @@ page 50042 "AMC New Item Generate"
         MatSubGroup: Record "AMC Material SubGroups";
         ItemTempl: Record "Item Templ.";
         ItemType: Enum "AMC Item Material Type";
-        ItemMatGroup: Code[20];
+        ItemMatGroup: Code[10];
         ItemMatSubGroup: Code[10];
         SetNewItemCode: Code[20];
         PreFixCode: Code[20];

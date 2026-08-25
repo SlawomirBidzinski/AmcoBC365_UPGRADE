@@ -15323,26 +15323,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Material Group - EnumValue Podział Mięsa - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1783164683 - EnumValue 597820164 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Goods</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Material Item Type - EnumValue Goods - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Enum 1783164683 - EnumValue 3965678037 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Material</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Material Item Type - EnumValue Material - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Enum 1783164683 - EnumValue 2907923339 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Packing</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Material Item Type - EnumValue Packing - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Enum 1783164683 - EnumValue 4109245982 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Wares</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Material Item Type - EnumValue Wares - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Enum 1667916261 - EnumValue 3478138521 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Atest</source>
           <note from="Developer" annotates="general" priority="2"></note>

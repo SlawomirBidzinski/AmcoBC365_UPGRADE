@@ -7,7 +7,7 @@ table 50040 "AMC Material SubGroups"
 
     fields
     {
-        field(1; "Item Type"; Enum "AMC Material Item Type")
+        field(1; "Item Type"; Enum "AMC Item Material Type")
         {
             Caption = 'Typ Zapasu';
         }

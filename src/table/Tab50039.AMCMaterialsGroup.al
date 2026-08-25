@@ -9,7 +9,7 @@ table 50039 "AMC Materials Group"
 
     fields
     {
-        field(1; "Item Type"; Enum "AMC Material Item Type")
+        field(1; "Item Type"; Enum "AMC Item Material Type")
         {
             Caption = 'Typ Zapasu';
         }
