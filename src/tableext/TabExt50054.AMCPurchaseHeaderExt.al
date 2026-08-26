@@ -187,7 +187,16 @@ tableextension 50054 "AMC Purchase HeaderExt" extends "Purchase Header"
             Caption = 'Dostawa Bezpośrednia';
             DataClassification = CustomerContent;
         }
-
+        modify("ITI Nos. Template Code")
+        {
+            trigger OnAfterValidate()
+            var
+                PurchDocNosTemplate: Record "ITI Purch. Doc. Nos. Template";
+            begin
+                if PurchDocNosTemplate.Get("ITI Nos. Template Code") then
+                    Rec.Validate("AMC PW Transaction", PurchDocNosTemplate."AMC PW Transaction");
+            end;
+        }
     }
 
     procedure AMCAssistEditPW(OldPurchHeader: Record "Purchase Header"): Boolean
