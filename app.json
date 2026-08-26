@@ -28,7 +28,7 @@
 
   "platform": "27.0.0.0",
   "application": "27.0.0.0",
-  "runtime": "17.0",
+  "runtime": "16.1",
 
   "idRanges": [
     {
