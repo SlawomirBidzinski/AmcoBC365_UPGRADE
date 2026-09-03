@@ -381,6 +381,22 @@ pageextension 50025 "AMC Sales & Receivables Setup" extends "Sales & Receivables
                     ApplicationArea = All;
                 }
             }
+            group(AMCNiceLabel)
+            {
+                Caption = 'Nice Label';
+                field("AMC NiceLabel API Url"; Rec."AMC NiceLabel API Url")
+                {
+                    ApplicationArea = All;
+                }
+                field("AMC NiceLabel Printer Name"; Rec."AMC NiceLabel Printer Name")
+                {
+                    ApplicationArea = All;
+                }
+                field("AMC NiceLabel Label Path"; Rec."AMC NiceLabel Label Path")
+                {
+                    ApplicationArea = All;
+                }
+            }
         }
     }
 }

@@ -480,6 +480,20 @@ tableextension 50033 "AMC Sales & Receivables Setup" extends "Sales & Receivable
             Caption = 'Włączenie Kontr. Przetermin.';
             DataClassification = CustomerContent;
         }
+        field(50317; "AMC NiceLabel API Url"; Text[300])
+        {
+            Caption = 'API Url';
+            DataClassification = CustomerContent;
+        }
+        field(50318; "AMC NiceLabel Printer Name"; Text[100])
+        {
+            Caption = 'Printer Name';
+            DataClassification = CustomerContent;
+        }
+        field(50319; "AMC NiceLabel Label Path"; Text[100])
+        {
+            Caption = 'Label Path';
+            DataClassification = CustomerContent;
+        }
     }
-
 }

@@ -2823,6 +2823,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit AMC Item Calculation - NamedType Text_201a</note>
         </trans-unit>
+        <trans-unit id="Codeunit 2810215439 - Method 2759010774 - NamedType 3875444176" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Failed to print label. Response: %1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AMC NiceLabel Mgmt. - Method PrintItemLabel - NamedType ResponseErrLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2810215439 - Method 2759010774 - NamedType 1471531019" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Could not connect to the NiceLabel integration service.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AMC NiceLabel Mgmt. - Method PrintItemLabel - NamedType ConnectionErrLbl</note>
+        </trans-unit>
         <trans-unit id="Page 938075200 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Colours</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -8753,6 +8763,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales &amp; Receivables Setup - Control AMCEDI - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 947627379 - Control 3622812716 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4145206282">
+          <source>Nice Label</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales &amp; Receivables Setup - Control AMCNiceLabel - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 947627379 - Control 130901075 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4145206282">
           <source>R&amp;&amp;D</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -13397,6 +13412,16 @@
           <source>Manufacturer Dimension Code</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales &amp; Receivables Setup - Field AMC Manufacturer DimensionCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 947627379 - Field 946105797 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
+          <source>AMC NiceLabel API Url</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales &amp; Receivables Setup - Field AMC NiceLabel API Url - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 947627379 - Field 3495933995 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
+          <source>NiceLabel Printer Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales &amp; Receivables Setup - Field AMC NiceLabel Printer Name - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 947627379 - Field 234869310 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
           <source>Payment Method Code</source>
