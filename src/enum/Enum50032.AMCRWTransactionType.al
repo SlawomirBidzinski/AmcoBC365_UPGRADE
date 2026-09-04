@@ -27,4 +27,7 @@ enum 50032 "AMC RW Transaction Type"
         Caption = 'Uszk. w Transp.';
     }
     value(6; "Utylizacja")
+    {
+        Caption = 'Utylizacja';
+    }
 }
