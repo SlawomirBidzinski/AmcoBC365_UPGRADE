@@ -67,14 +67,14 @@ tableextension 50025 "AMC Item" extends Item
         }
         field(50008; "AMC Item Label Code"; Code[20])
         {
-            Caption = 'Item Label Code'; //TODO 'Kod etyk. zapasu';
+            Caption = 'Item Label Code';
             Description = 'AL.13Dec12';
             TableRelation = "AMC Label";
             DataClassification = CustomerContent;
         }
         field(50009; "AMC Lot Label Code"; Code[20])
         {
-            Caption = 'Lot Label Code'; //TODO 'Kod etyk. partii';
+            Caption = 'Lot Label Code'; 
             Description = 'AL.13Dec12';
             TableRelation = "AMC Label";
             DataClassification = CustomerContent;

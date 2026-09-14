@@ -13414,12 +13414,17 @@
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales &amp; Receivables Setup - Field AMC Manufacturer DimensionCode - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 947627379 - Field 946105797 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
-          <source>AMC NiceLabel API Url</source>
+          <source>API Url</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales &amp; Receivables Setup - Field AMC NiceLabel API Url - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 947627379 - Field 3846150373 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
+          <source>Label Path</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales &amp; Receivables Setup - Field AMC NiceLabel Label Path - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 947627379 - Field 3495933995 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
-          <source>NiceLabel Printer Name</source>
+          <source>Printer Name</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales &amp; Receivables Setup - Field AMC NiceLabel Printer Name - Property Caption</note>
         </trans-unit>
@@ -17417,6 +17422,11 @@
           <source>Uszk. w Transp.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC RW Transaction Type - EnumValue Uszk. w Transp. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2968973066 - EnumValue 258253898 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Utylizacja</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC RW Transaction Type - EnumValue Utylizacja - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 2322108833 - EnumValue 3372849187 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Purchase Return</source>

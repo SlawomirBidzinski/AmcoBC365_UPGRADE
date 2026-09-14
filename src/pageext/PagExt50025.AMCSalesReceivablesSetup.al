@@ -392,10 +392,6 @@ pageextension 50025 "AMC Sales & Receivables Setup" extends "Sales & Receivables
                 {
                     ApplicationArea = All;
                 }
-                field("AMC NiceLabel Label Path"; Rec."AMC NiceLabel Label Path")
-                {
-                    ApplicationArea = All;
-                }
             }
         }
     }

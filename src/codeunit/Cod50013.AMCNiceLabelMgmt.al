@@ -3,6 +3,8 @@ codeunit 50013 "AMC NiceLabel Mgmt."
     procedure PrintItemLabel(ItemNo: Code[20]; ItemDescription: Text[100]; PrinterName: Text[100]; Quantity: Integer)
     var
         SalesSetup: Record "Sales & Receivables Setup";
+        Item: Record Item;
+        Label: Record "AMC Label";
         Client: HttpClient;
         Content: HttpContent;
         HttpHeaders: HttpHeaders;
@@ -17,12 +19,16 @@ codeunit 50013 "AMC NiceLabel Mgmt."
         SalesSetup.Get();
         SalesSetup.Testfield("AMC NiceLabel API Url");
         SalesSetup.TestField("AMC NiceLabel Printer Name");
-        SalesSetup.TestField("AMC NiceLabel Label Path");
+
+        Item.Get(ItemNo);
+        Item.TestField("AMC Item Label Code");
+        Label.Get(Item."AMC Item Label Code");
+        Label.TestField("Label File Path");
 
         ApiUrl := SalesSetup."AMC NiceLabel API Url";
 
         JsonObject.Add('printerName', SalesSetup."AMC NiceLabel Printer Name");
-        JsonObject.Add('labelPath', SalesSetup."AMC NiceLabel Label Path");
+        JsonObject.Add('labelPath', Label."Label File Path");
         JsonObject.Add('copies', Quantity);
 
         JsonObject.Add('ItemNumber', ItemNo);

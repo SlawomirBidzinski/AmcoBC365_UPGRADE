@@ -490,10 +490,5 @@ tableextension 50033 "AMC Sales & Receivables Setup" extends "Sales & Receivable
             Caption = 'Printer Name';
             DataClassification = CustomerContent;
         }
-        field(50319; "AMC NiceLabel Label Path"; Text[100])
-        {
-            Caption = 'Label Path';
-            DataClassification = CustomerContent;
-        }
     }
 }
