@@ -18490,43 +18490,43 @@
         </trans-unit>
         <trans-unit id="Enum 221573419 - EnumValue 597820164 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Goods</source>
-          <target>Goods</target>
+          <target>Towary</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Item Material Type - EnumValue Goods - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 221573419 - EnumValue 3965678037 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Material</source>
-          <target>Material</target>
+          <target>Surowiec</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Item Material Type - EnumValue Material - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 221573419 - EnumValue 2907923339 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Packing</source>
-          <target>Packing</target>
+          <target>Opakowanie/target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Item Material Type - EnumValue Packing - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 221573419 - EnumValue 1501817612 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Semiwares</source>
-          <target>Semiwares</target>
+          <target>Półprodukt</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Item Material Type - EnumValue Semiwares - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 221573419 - EnumValue 614829015 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Tempory Item</source>
-          <target>Tempory Item</target>
+          <target>Tymczasowa R&D</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Item Material Type - EnumValue Tempory Item - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 221573419 - EnumValue 1834673360 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Testwares</source>
-          <target>Testwares</target>
+          <target>Próby</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Item Material Type - EnumValue TestWares - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 221573419 - EnumValue 4109245982 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Wares</source>
-          <target>Wares</target>
+          <target>Wyrób</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Item Material Type - EnumValue Wares - Property Caption</note>
         </trans-unit>
