@@ -74,7 +74,7 @@ tableextension 50025 "AMC Item" extends Item
         }
         field(50009; "AMC Lot Label Code"; Code[20])
         {
-            Caption = 'Lot Label Code'; 
+            Caption = 'Lot Label Code';
             Description = 'AL.13Dec12';
             TableRelation = "AMC Label";
             DataClassification = CustomerContent;
@@ -262,7 +262,7 @@ tableextension 50025 "AMC Item" extends Item
         }
         field(50030; "AMC Item Eng Translation"; Text[100])
         {
-            CalcFormula = lookup("Item Translation"."AMC English Long Description" where("Item No." = field("No."),
+            CalcFormula = lookup("Item Translation"."Description" where("Item No." = field("No."),
                                                                                       "Language Code" = const('ENU')));
             Caption = 'Tłumaczenie Ang.';
             Editable = false;
