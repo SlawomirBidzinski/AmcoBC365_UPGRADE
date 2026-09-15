@@ -3,13 +3,13 @@ table 50030 "AMC Item Hierarchy"
     Caption = 'Item hierarchy';
     DrillDownPageId = "AMC Hierarchies";
     LookupPageId = "AMC Hierarchies";
-    DataClassification = CustomerContent;    
+    DataClassification = CustomerContent;
 
     fields
     {
         field(1; "Hierachy key"; Code[50])
         {
-            Caption = 'User Name';
+            Caption = 'Hierarchy Key';
             DataClassification = CustomerContent;
         }
         field(2; "Description - Level 5"; Text[60])

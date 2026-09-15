@@ -17,6 +17,16 @@ page 50031 "AMC Hierarchies"
                     ApplicationArea = All;
                     ToolTip = ' ';
                 }
+                field(Name; Rec.Name)
+                {
+                    ApplicationArea = All;
+                    ToolTip = ' ';
+                }
+                field("Hierarcy Notes"; Rec."Hierarcy Notes")
+                {
+                    ApplicationArea = All;
+                    ToolTip = ' ';
+                }
                 field("Description - Level 1"; Rec."Description - Level 1")
                 {
                     ApplicationArea = All;
@@ -26,26 +36,25 @@ page 50031 "AMC Hierarchies"
                 {
                     ApplicationArea = All;
                     ToolTip = ' ';
+                    Visible = false;
                 }
                 field("Description - Level 3"; Rec."Description - Level 3")
                 {
                     ApplicationArea = All;
                     ToolTip = ' ';
+                    Visible = false;
                 }
                 field("Description - Level 4"; Rec."Description - Level 4")
                 {
                     ApplicationArea = All;
                     ToolTip = ' ';
+                    Visible = false;
                 }
                 field("Description - Level 5"; Rec."Description - Level 5")
                 {
                     ApplicationArea = All;
                     ToolTip = ' ';
-                }
-                field("Hierarcy Notes"; Rec."Hierarcy Notes")
-                {
-                    ApplicationArea = All;
-                    ToolTip = ' ';
+                    Visible = false;
                 }
             }
         }
