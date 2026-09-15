@@ -436,8 +436,8 @@ tableextension 50036 "AMC Sales Line" extends "Sales Line"
         {
             trigger OnAfterValidate()
             begin
-                IF (Rec."AMC Init Quantity" = 0) AND (Rec."AMC Qty in Base Unit" <> 0) THEN
-                    Rec."AMC Init Quantity" := Rec."AMC Qty in Base Unit";
+                IF (Rec."AMC Init Quantity" = 0) THEN
+                    Rec."AMC Init Quantity" := Rec."Quantity";
             end;
         }
     }

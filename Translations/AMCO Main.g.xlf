@@ -7873,6 +7873,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Customer List - Control AMC Vendor per NIP Qty - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="PageExtension 1317779982 - Control 2136413396 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1180040559">
+          <source>Amco</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Inventory Setup - Control Amco - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1549928602 - Action 3512808544 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
           <source>Brand List</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -9732,6 +9737,221 @@
           <source>Shortcut Dimension 2 Code</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Gen. Bus. Post. Group - Field AMC Shortcut Dim. 2 Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 3154650496 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Alkohol (etanol) wsp kJ/g</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Alkohol (etanol) wsp kJ/g - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 140248172 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Alkohol(etanol) wsp kcal/g</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Alkohol(etanol) wsp kcal/g - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 195095688 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>alkohole wielow. wsp kJ/g</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC alkohole wielow. wsp kJ/g - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 4027778940 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>alkoholewielow. wsp kcal/g</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC alkoholewielow. wsp kcal/g - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 2466768703 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Kod Zapasu Palety</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC AMC Pallete Item Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 3083348147 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>AMC Salatrimy wsp kJ/g</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC AMC Salatrimy wsp kJ/g - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 913981301 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Białko wsp. kcal/g</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Białko wsp. kcal/g - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 2935020905 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Białko wsp. kJ/g</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Białko wsp. kJ/g - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 2584486638 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Błonnik wsp.kcal/g</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Błonnik wsp.kcal/g - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 4206729474 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Błonnik wsp.kJ/g</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Błonnik wsp.kJ/g - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 49717041 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Domyślny Status KJ zapasu</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Default Item QC Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 2680729520 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Default Location Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Default Location Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 1043393179 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Item Label Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Item Label Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 960526130 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Item Label Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Item Label Code Add. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 3024954917 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Kwasy organiczne wsp kJ/g</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Kwasy organiczne wsp kJ/g - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 519403489 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Kwasyorganiczne wsp kcal/g</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Kwasyorganiczne wsp kcal/g - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 2360875163 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Seria num. Zapasów RiD</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Opakowanie BigBag - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 4114432556 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Opakowanie Folia Metaliz.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Opakowanie Folia Metaliz. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 3125754156 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Opakowanie Folia Saszetek</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Opakowanie Folia Saszetek - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 369660096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Opakowanie Karton</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Opakowanie Karton - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 1307144603 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Opakowanie Marynaty 10kg</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Opakowanie Marynaty 10kg - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 3015929511 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Opakowanie Marynaty 5kg</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Opakowanie Marynaty 5kg - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 1507799789 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Opakowanie Przyprawy 2kg</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Opakowanie Przyprawy 2kg - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 4141000583 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Opakowanie Tacka</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Opakowanie Tacka - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 195597140 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Opakowanie Trumna</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Opakowanie Trumna - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 4045860100 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Opakowanie Worek 10kg</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Opakowanie Worek 10kg - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 3460916981 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Opakowanie Worek 20kg</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Opakowanie Worek 20kg - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 3446520380 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Opakowanie Worek Foliowy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Opakowanie Worek Foliowy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 148997632 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Kod ektykiety palety</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Pallet Label Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 1872915381 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Kod ektykiety palety Dodatk.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Pallet Label Code Add. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 1389065350 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Qty days of check Exp Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Qty days of check Exp Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 2547444619 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Seria num. Zapasów RiD</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC RiD Item Nos. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 2829124558 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Salatrimy wsp kcal/g</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Salatrimy wsp kcal/g - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 1408528685 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Serial Number Label Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Serial No. Label Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 4272402288 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Serial Number Label Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Serial No. Label Code Add. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 2910577095 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Terminal - Zakończ kolor</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Term. Finished Colour - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 3168364445 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Terminal - Nowy kolor</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Term. New Colour - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 952437209 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Terminal - Za dużo kolor</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Term. Overload Colour - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 1472797362 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Terminal - W trakice kolor</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Term. Started Colour - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 2419459980 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Tłuszcz wsp. kcal/g</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Tłuszcz wsp. kcal/g - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 3296663360 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Tłuszcz wsp. kJ/g</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Tłuszcz wsp. kJ/g - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 2760248821 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Węglowodany wsp. kcal/g</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Węglowodany wsp. kcal/g - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1317779982 - Field 134530025 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
+          <source>Węglowodany wsp. kJ/g</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Węglowodany wsp. kJ/g - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Method 1222757407 - NamedType 1254543731" size-unit="char" translate="yes" xml:space="preserve" al-object-target="TableExtension 418729054">
           <source>Bar Code %1 exists in intem %2</source>
@@ -13417,11 +13637,6 @@
           <source>API Url</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales &amp; Receivables Setup - Field AMC NiceLabel API Url - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 947627379 - Field 3846150373 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
-          <source>Label Path</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales &amp; Receivables Setup - Field AMC NiceLabel Label Path - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 947627379 - Field 3495933995 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
           <source>Printer Name</source>
