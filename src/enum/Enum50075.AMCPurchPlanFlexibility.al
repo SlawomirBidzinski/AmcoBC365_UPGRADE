@@ -1,4 +1,4 @@
-enum 50011 "AMC Purch. Plan. Flexibility"
+enum 50075 "AMC Purch. Plan. Flexibility"
 {
     Extensible = true;
     

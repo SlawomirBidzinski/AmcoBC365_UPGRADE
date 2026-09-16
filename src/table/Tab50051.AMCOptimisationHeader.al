@@ -67,11 +67,9 @@ table 50051 "AMC Optimisation Header"
         {
             Caption = 'Data Zarejestr. Zgłoszenia';
         }
-        field(22; "Registry Status"; Option)
+        field(22; "Registry Status"; Enum "AMC Registry Status")
         {
             Caption = 'Status Zgłoszenia';
-            OptionCaption = ' ,New,Calculation Request,In Process,Realised in R&D,Closed,Finished,Canceled';
-            OptionMembers = " ",New,"Calculation Request","In Process",Realised,"Finished in R&D",Closed,Canceled;
         }
         field(23; "Cancel Date"; DateTime)
         {

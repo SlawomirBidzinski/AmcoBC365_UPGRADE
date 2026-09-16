@@ -18,4 +18,8 @@ enum 50056 "AMC Document Status"
     {
         Caption = 'Canceled';
     }
+    value(4; Closed)
+    {
+        Caption = 'Closed';
+    }
 }

@@ -597,7 +597,7 @@ page 50056 "AMC Item Calculation List"
                                             ItemBOM.RESET();
                                             ItemBOM.SETRANGE("No.", ItemCalculationLineLoc."Component Code");
                                             IF ItemBOM.FINDFIRST() THEN BEGIN
-                                                ItemCalculationLineLoc."Component Type" := ItemBOM."AMC Item Type".AsInteger();
+                                                ItemCalculationLineLoc."Component Type" := ItemBOM."AMC Item Type";
                                                 IF (ItemBOM."AMC Item Type" IN [ItemBOM."AMC Item Type"::Surowce,
                                                                             ItemBOM."AMC Item Type"::Towary]) AND
                                                    (ItemCalculationLineLoc."Component Code Of Measure" = 'KG') THEN
@@ -694,7 +694,7 @@ page 50056 "AMC Item Calculation List"
                                     ItemBOMComp.RESET();
                                     ItemBOMComp.SETRANGE("No.", ItemCalculationBOMLineNewLoc."Component Code");
                                     IF ItemBOMComp.FINDFIRST() THEN BEGIN
-                                        ItemCalculationBOMLineNewLoc."Component Type" := ItemBOMComp."AMC Item Type".AsInteger();
+                                        ItemCalculationBOMLineNewLoc."Component Type" := ItemBOMComp."AMC Item Type";
 
                                         IF (ItemBOMComp."AMC Item Type" IN [ItemBOMComp."AMC Item Type"::Surowce,
                                                                     ItemBOMComp."AMC Item Type"::Towary]) AND

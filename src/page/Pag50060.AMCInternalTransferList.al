@@ -86,7 +86,7 @@ page 50060 "AMC Internal Transfer List"
                 trigger OnAction()
                 Begin
                     CASE rec."Document Status" OF
-                        rec."Document Status"::Release, rec."Document Status"::Posted:
+                        rec."Document Status"::Release, rec."Document Status"::Finished:
                             rec."Document Status" := rec."Document Status"::Open
                     END;
                 End;

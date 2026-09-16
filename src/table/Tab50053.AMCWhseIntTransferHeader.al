@@ -45,11 +45,9 @@ table 50053 "AMC Whse. Int. Transfer Header"
                 ValidateShortcutDimCode(2, "Shortcut Dimension 2 Code");
             end;
         }
-        field(7; "Document Status"; Option)
+        field(7; "Document Status"; Enum "AMC Document Status")
         {
             Caption = 'Status Dokumentu';
-            OptionCaption = 'Open,Release,Posted,Closed';
-            OptionMembers = Open,Release,Posted,Closed;
 
             trigger OnValidate()
             begin
@@ -66,7 +64,7 @@ table 50053 "AMC Whse. Int. Transfer Header"
                         ERROR(Text005);
                 END;
 
-                IF (xRec."Document Status" = "Document Status"::Posted) AND
+                IF (xRec."Document Status" = "Document Status"::Finished) AND
                    (Rec."Document Status" = "Document Status"::Open) OR
                    (Rec."Document Status" = "Document Status"::Release) THEN BEGIN
 
@@ -102,11 +100,9 @@ table 50053 "AMC Whse. Int. Transfer Header"
         {
             Caption = 'Posted';
         }
-        field(90; "Document Type"; Option)
+        field(90; "Document Type"; Enum "Sales Document Type")
         {
             Caption = 'Document Type';
-            OptionCaption = 'Quote,Order,Invoice,Credit Memo,Blanket Order,Return Order';
-            OptionMembers = Quote,"Order",Invoice,"Credit Memo","Blanket Order","Return Order";
         }
         field(100; "Creating Date"; Date)
         {
@@ -160,7 +156,7 @@ table 50053 "AMC Whse. Int. Transfer Header"
 
     trigger OnDelete()
     begin
-        IF "Document Status" IN ["Document Status"::Release, "Document Status"::Posted, "Document Status"::Closed] THEN
+        IF "Document Status" IN ["Document Status"::Release, "Document Status"::Finished, "Document Status"::Closed] THEN
             ERROR(Text001);
     end;
 
@@ -198,7 +194,7 @@ table 50053 "AMC Whse. Int. Transfer Header"
         NavigateForm: Page Navigate;
     begin
         IF ("Posted Document No." <> '') AND
-         ("Document Status" = "Document Status"::Posted) OR
+         ("Document Status" = "Document Status"::Finished) OR
          ("Document Status" = "Document Status"::Closed) THEN BEGIN
             NavigateForm.SetDoc("Posting Date", "Posted Document No.");
             NavigateForm.RUN();
@@ -345,7 +341,7 @@ table 50053 "AMC Whse. Int. Transfer Header"
                 WhseIntTransferLine.MODIFY();
             UNTIL WhseIntTransferLine.NEXT() = 0;
             Rec.Posted := TRUE;
-            Rec."Document Status" := Rec."Document Status"::Posted;
+            Rec."Document Status" := Rec."Document Status"::Finished;
             Rec.MODIFY();
         END ELSE
             ERROR(Text003);

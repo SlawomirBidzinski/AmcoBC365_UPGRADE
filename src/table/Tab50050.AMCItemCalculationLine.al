@@ -103,11 +103,9 @@ table 50050 "AMC Item Calculation Line"
             Caption = 'Ilość Komp. Aromatu IFF';
             DecimalPlaces = 5 : 5;
         }
-        field(207; "Component Type"; Option)
+        field(207; "Component Type"; Enum "AMC Item Type")
         {
             Caption = 'Typ Zapasu';
-            OptionCaption = ' ,Surowce,Wyroby,Towary,Półprodukt,Próba,Opakowania,Tymcz. R&D';
-            OptionMembers = " ",Surowce,Wyroby,Towary,"Półprodukt","Próba",Opakowania,"Tymcz. R&D";
         }
         field(250; "Unit Cost"; Decimal)
         {
