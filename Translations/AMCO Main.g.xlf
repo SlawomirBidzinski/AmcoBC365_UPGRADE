@@ -2263,20 +2263,10 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Terminal Entry - Field Document Type - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 1927204369 - Field 2363328873 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Przyjęcie zakupu,Wydanie sprzedaży,Zlecenie przesunięcia,Dziennik inwentaryzacji,Pobranie mag.,Przesunięcie mag.,Dziennik inw. mag.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Terminal Entry - Field Document Type - Property OptionCaption</note>
-        </trans-unit>
         <trans-unit id="Table 1927204369 - Field 4150761678 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Typ kodu EAN</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Terminal Entry - Field EAN Type - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1927204369 - Field 4150761678 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Kod zapasu,Kod serii,Kod partii</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Terminal Entry - Field EAN Type - Property OptionCaption</note>
         </trans-unit>
         <trans-unit id="Table 1927204369 - Field 2002070988 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Identyfikator wariantu</source>
@@ -2362,11 +2352,6 @@
           <source>Tryb skanowania</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Terminal Entry - Field Scan Mode - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1927204369 - Field 1801240912 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source> ,EAN,Seria,Partia,EAN+Seria,EAN+Partia</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Terminal Entry - Field Scan Mode - Property OptionCaption</note>
         </trans-unit>
         <trans-unit id="Table 1927204369 - Field 47037625 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Nr seryjny</source>
@@ -17188,6 +17173,21 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Document Status - EnumValue Release - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Enum 2854635287 - EnumValue 765483476 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC EAN Type - EnumValue Item Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2854635287 - EnumValue 2394640774 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lot code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC EAN Type - EnumValue Lot code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2854635287 - EnumValue 3062875407 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Serial Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC EAN Type - EnumValue Serial Code - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Enum 3332415935 - EnumValue 2913119229 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Approved</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -17648,6 +17648,36 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC RW Transaction Type - EnumValue Utylizacja - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Enum 498156095 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Scan Code - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 498156095 - EnumValue 2350996030 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EAN</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Scan Code - EnumValue EAN - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 498156095 - EnumValue 451711954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EAN+Lot</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Scan Code - EnumValue EAN+Lot - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 498156095 - EnumValue 1325670771 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EAN+Serial</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Scan Code - EnumValue EAN+Serial - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 498156095 - EnumValue 4230226825 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lot</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Scan Code - EnumValue Lot - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 498156095 - EnumValue 231049268 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Serial</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Scan Code - EnumValue Serial - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Enum 2322108833 - EnumValue 3372849187 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Purchase Return</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -17707,6 +17737,41 @@
           <source>Zwolniony</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Technology Card - EnumValue Zwolniony - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1540179763 - EnumValue 2389930324 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Phys. Inventory Jnl.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Terminal Entry Doc. Type - EnumValue Phys. Inventory Jnl. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1540179763 - EnumValue 1935146801 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Receipt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Terminal Entry Doc. Type - EnumValue Purchase Receipt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1540179763 - EnumValue 2746818404 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Shipment</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Terminal Entry Doc. Type - EnumValue Sales Shipment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1540179763 - EnumValue 66664215 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transfer Order</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Terminal Entry Doc. Type - EnumValue Transfer Order - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1540179763 - EnumValue 1699042512 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Whse. Movement</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Terminal Entry Doc. Type - EnumValue Whse. Movement - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1540179763 - EnumValue 552445515 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Whse. Phys. Inventory</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Terminal Entry Doc. Type - EnumValue Whse. Phys. Inventory - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1540179763 - EnumValue 2539915386 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Whse. Pick</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Terminal Entry Doc. Type - EnumValue Whse. Pick - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 3013005284 - EnumValue 1192325290 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Credit Memo Invoice</source>

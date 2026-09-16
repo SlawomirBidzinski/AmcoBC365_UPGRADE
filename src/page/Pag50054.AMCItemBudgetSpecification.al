@@ -239,9 +239,9 @@ page 50054 "AMC Item Budget Specification"
 
         CASE SetItemTypeFilter OF
             SetItemTypeFilter::Surowce:
-                Rec.SETRANGE("Item Type", "Item Type"::Inventory);
+                Rec.SETRANGE("Item Type", "AMC Item Type"::Surowce);
             SetItemTypeFilter::Opakowania:
-                Rec.SETRANGE("Item Type", "Item Type"::"Non-Inventory");
+                Rec.SETRANGE("Item Type", "AMC Item Type"::Wyroby);
             SetItemTypeFilter::" ":
                 Rec.SETRANGE("Item Type");
         END;

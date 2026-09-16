@@ -63,7 +63,7 @@ tableextension 50063 "AMC Purchases & Payables Setup" extends "Purchases & Payab
             DataClassification = CustomerContent;
             TableRelation = "AMC Item Budget Instance";
         }
-        field(50015; "AMC Item Type for KJ"; Enum "AMC ItemTypeForKJ")
+        field(50015; "AMC Item Type for KJ"; Enum "AMC Item Type")
         {
             Caption = 'Item Type for KJ';
             DataClassification = CustomerContent;

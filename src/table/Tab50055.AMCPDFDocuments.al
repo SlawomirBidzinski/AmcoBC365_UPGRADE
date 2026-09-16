@@ -20,16 +20,14 @@ table 50055 "AMC PDF Document"
             TableRelation = if ("Document Type"=const(Order)) "Sales Header"."No." where ("Document Type"=const(Order))
                             else if ("Document Type"=const("Posted Invoice")) "Sales Invoice Header"."No.";
         }
-        field(4; "PDF Document Type"; Option)
+        field(4; "PDF Document Type"; Enum "AMC PDF Doc. Type")
         {
             Caption = 'Typ Dokumentu PDF';
-            OptionCaption = 'Proforma Invoice,Sales Invoice,Correction Invoice,Warehause Shipment,Atest,Query';
-            OptionMembers = "Faktura Proforma","Sales Invoice","Correction Invoice","Warehause Shipment",Atest,"Query";
         }
         field(5; "PDF Document No"; Code[20])
         {
             Caption = 'Nr Dokumentu PDF';
-            TableRelation = if ("PDF Document Type"=const("Faktura Proforma")) "Sales Header"."No." where ("Document Type"=const(Order))
+            TableRelation = if ("PDF Document Type"=const("Proforma Invoice")) "Sales Header"."No." where ("Document Type"=const(Order))
                             else if ("PDF Document Type"=const("Sales Invoice")) "Sales Invoice Header"."No."
                             else if ("PDF Document Type"=const("Correction Invoice")) "Sales Cr.Memo Header"."No."
                             else if ("PDF Document Type"=const("Warehause Shipment")) "Posted Whse. Shipment Header"."No."

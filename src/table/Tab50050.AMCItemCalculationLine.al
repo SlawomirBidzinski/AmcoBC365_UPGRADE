@@ -17,11 +17,9 @@ table 50050 "AMC Item Calculation Line"
         {
             Caption = 'Instancja Budżetu Zapasu';
         }
-        field(11; "Source Type"; Option)
+        field(11; "Source Type"; Enum "AMC Calculation Type")
         {
             Caption = 'Calculate Type';
-            OptionCaption = ' ,Item,BOM';
-            OptionMembers = " ",Item,BOM;
         }
         field(12; "Source Code"; Code[20])
         {

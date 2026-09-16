@@ -16,11 +16,9 @@ table 50049 "AMC Item Calculation"
             Caption = 'Item Budget Instance';
             TableRelation = "AMC Item Budget Instance";
         }
-        field(3; "Source Type"; Option)
+        field(3; "Source Type"; Enum "AMC Calculation Type")
         {
             Caption = 'Calculate Type';
-            OptionCaption = ' ,Item,BOM';
-            OptionMembers = " ",Item,BOM;
         }
         field(4; "Source Code"; Code[20])
         {

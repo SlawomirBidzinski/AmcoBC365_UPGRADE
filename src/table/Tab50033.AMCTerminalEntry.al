@@ -13,11 +13,9 @@ table 50033 "AMC Terminal Entry"
         {
             Caption = 'Identyfikator użytkownika';
         }
-        field(3; "Document Type"; Option)
+        field(3; "Document Type"; Enum "AMC Terminal Entry Doc. Type")
         {
             Caption = 'Typ dokumentu';
-            OptionCaption = 'Przyjęcie zakupu,Wydanie sprzedaży,Zlecenie przesunięcia,Dziennik inwentaryzacji,Pobranie mag.,Przesunięcie mag.,Dziennik inw. mag.';
-            OptionMembers = "Purchase Receipt","Sales Shipment","Transfer Order","Phys. Inventory Jnl.","Whse. Pick","Whse. Movement","Whse. Phys. Inventory";
         }
         field(4; "Document No."; Code[20])
         {
@@ -35,11 +33,9 @@ table 50033 "AMC Terminal Entry"
         {
             Caption = 'Nr zapisu';
         }
-        field(8; "EAN Type"; Option)
+        field(8; "EAN Type"; Enum "AMC EAN Type")
         {
             Caption = 'Typ kodu EAN';
-            OptionCaption = 'Kod zapasu,Kod serii,Kod partii';
-            OptionMembers = "Item Code","Serial Code","Lot code";
         }
         field(9; "Bar Code"; Code[100])
         {
@@ -142,11 +138,9 @@ table 50033 "AMC Terminal Entry"
         {
             Caption = 'Nr partii';
         }
-        field(27; "Scan Mode"; Option)
+        field(27; "Scan Mode"; Enum "AMC Scan Code")
         {
             Caption = 'Tryb skanowania';
-            OptionCaption = ' ,EAN,Seria,Partia,EAN+Seria,EAN+Partia';
-            OptionMembers = " ",EAN,Serial,Lot,"EAN+Serial","EAN+Lot";
         }
         field(28; "Source Document Updated"; Boolean)
         {

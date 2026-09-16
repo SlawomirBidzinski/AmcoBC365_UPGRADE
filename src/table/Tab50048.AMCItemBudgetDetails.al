@@ -43,11 +43,9 @@ table 50048 "AMC Item Budget Details"
             Caption = 'Nazwa Dostawcy';
             Editable = false;
         }
-        field(8; "Item Type"; Option)
+        field(8; "Item Type"; Enum "AMC Item Type")
         {
             Caption = 'Typ Zapasu';
-            OptionCaption = ' ,Surowce,Wyroby,Towary,Półprodukt,Próba,Opakowania,Tymcz. R&D';
-            OptionMembers = " ",Surowce,Wyroby,Towary,"Półprodukt","Próba",Opakowania,"Tymcz. R&D";
         }
         field(50; "Last Direct Cost"; Decimal)
         {
