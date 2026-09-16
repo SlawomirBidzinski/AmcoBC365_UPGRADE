@@ -4,7 +4,7 @@ pageextension 50050 "AMC Warehouse Receipt Ext" extends "Warehouse Receipt"
     {
         addafter("No.")
         {
-            field("AMC  Receipt Type"; Rec."AMC  Receipt Type")
+            field("AMC  Receipt Type"; Rec."AMC Receipt Type")
             {
                 ApplicationArea = All;
             }

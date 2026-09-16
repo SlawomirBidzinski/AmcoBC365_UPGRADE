@@ -16648,11 +16648,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Entry - Field AMC Gen. Bus. Posting Group - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 2815402059 - Field 3364566085 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1003430490">
-          <source>Receipt Type</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Receipt Header - Field AMC  Receipt Type - Property Caption</note>
-        </trans-unit>
         <trans-unit id="TableExtension 2815402059 - Field 3804118616 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1003430490">
           <source>Create by Id User</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -16692,6 +16687,11 @@
           <source>Receipt Date</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Receipt Header - Field AMC Receipt Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2815402059 - Field 409800533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1003430490">
+          <source>Receipt Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Receipt Header - Field AMC Receipt Type - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2815402059 - Field 1044350303 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1003430490">
           <source>Vendor Address</source>
