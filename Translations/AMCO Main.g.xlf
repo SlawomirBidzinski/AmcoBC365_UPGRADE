@@ -758,11 +758,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Item Calculation - Field Calculation Status - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 1417561973 - Field 1822914983 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source>New,Ordered,In Process,Finished,Canceled</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Item Calculation - Field Calculation Status - Property OptionCaption</note>
-        </trans-unit>
         <trans-unit id="Table 1417561973 - Field 772194043 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Calculation Type</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -827,11 +822,6 @@
           <source>Źródło Utworzenia</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Item Calculation - Field Init Source - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1417561973 - Field 1852072985 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Standard,Optimalisation,Group Comp Update</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Item Calculation - Field Init Source - Property OptionCaption</note>
         </trans-unit>
         <trans-unit id="Table 1417561973 - Field 3644110770 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Użytkownik zapytania</source>
@@ -1053,11 +1043,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Item Calculation Line - Field Component Type - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 2618532199 - Field 3528479657 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source> ,Surowce,Wyroby,Towary,Półprodukt,Próba,Opakowania,Tymcz. R&amp;D</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Item Calculation Line - Field Component Type - Property OptionCaption</note>
-        </trans-unit>
         <trans-unit id="Table 2618532199 - Field 499330728 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Kurs wymiany</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1127,11 +1112,6 @@
           <source>Typ Przyjęcia</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Item Calculation Line - Field Type of Income - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2618532199 - Field 3267100862 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source> ,Purchase,Corr-InPlus</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Item Calculation Line - Field Type of Income - Property OptionCaption</note>
         </trans-unit>
         <trans-unit id="Table 2618532199 - Field 381961415 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Kosz Jedn. zap. PLN</source>
@@ -1588,11 +1568,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Optimisation Header - Field Registry Status - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 1762189516 - Field 395401987 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source> ,New,Calculation Request,In Process,Realised in R&amp;D,Closed,Finished,Canceled</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Optimisation Header - Field Registry Status - Property OptionCaption</note>
-        </trans-unit>
         <trans-unit id="Table 1762189516 - Field 1705672217 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Żródłowy Kod BOMu RiD</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1643,11 +1618,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Optimisation Line - Field Calculaction Status - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 3757121011 - Field 2567353242 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source>New,Ordered,In Process,Finished,Canceled</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Optimisation Line - Field Calculaction Status - Property OptionCaption</note>
-        </trans-unit>
         <trans-unit id="Table 3757121011 - Field 3048957833 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Zatwierdzenie Wyceny</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1688,21 +1658,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Optimisation Line - Field Item Budget Instance - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 3757121011 - Field 4111256943 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Opis Optymalizacji</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Optimisation Line - Field Optimalizacion Description - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 3757121011 - Field 454435690 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Tym Optymalizacji</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Optimisation Line - Field Optimalizacion Typ - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 3757121011 - Field 454435690 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source> ,Zmiana Komponentów,Nowy Produkt,BOM Pierwotny</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Optimisation Line - Field Optimalizacion Typ - Property OptionCaption</note>
-        </trans-unit>
         <trans-unit id="Table 3757121011 - Field 170242407 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Code</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -1712,6 +1667,16 @@
           <source>Optimisation Line</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Optimisation Line - Field Optimisation Line - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3757121011 - Field 1396595057 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Opis Optymalizacji</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Optimisation Line - Field Optimization Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3757121011 - Field 1536336491 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Typ Optymalizacji</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Optimisation Line - Field Optimization Type - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3757121011 - Field 542228734 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>BOM R&amp;&amp;D do Aktualizacji Prod</source>
@@ -1847,11 +1812,6 @@
           <source>Typ Dokumentu</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC PDF Document - Field Document Type - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 3100073494 - Field 2363328873 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Order,Posted Invoice,Credit Memo,Quote</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC PDF Document - Field Document Type - Property OptionCaption</note>
         </trans-unit>
         <trans-unit id="Table 3100073494 - Field 4158449029 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Duplicate Date</source>
@@ -2528,20 +2488,10 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Whse. Int. Transfer Header - Field Document Status - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 2316971571 - Field 3536168541 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Open,Release,Posted,Closed</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Whse. Int. Transfer Header - Field Document Status - Property OptionCaption</note>
-        </trans-unit>
         <trans-unit id="Table 2316971571 - Field 2363328873 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Document Type</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Whse. Int. Transfer Header - Field Document Type - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 2316971571 - Field 2363328873 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Quote,Order,Invoice,Credit Memo,Blanket Order,Return Order</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Whse. Int. Transfer Header - Field Document Type - Property OptionCaption</note>
         </trans-unit>
         <trans-unit id="Table 2316971571 - Field 47424544 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Typ Transakcji</source>
@@ -12393,11 +12343,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purchase Header Archive - Field AMC Purchase Order Status - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 2834931075 - Field 3264226746 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 146271610">
-          <source>Wstępne,Wysłane,Potwierdzone,Zrealizowane,Zakończone,Anulowane</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purchase Header Archive - Field AMC Purchase Order Status - Property OptionCaption</note>
-        </trans-unit>
         <trans-unit id="TableExtension 2834931075 - Field 1364846479 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 146271610">
           <source>Forecast Planning Week</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -12877,11 +12822,6 @@
           <source>Planning Flexibility</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purchases &amp; Payables Setup - Field AMC Purch Planning Flexibility - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 1031244361 - Field 1764880645 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3921990236">
-          <source>Unlimited,None</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purchases &amp; Payables Setup - Field AMC Purch Planning Flexibility - Property OptionCaption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1031244361 - Field 111283266 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3921990236">
           <source>Purchase Order Email</source>
@@ -16708,11 +16648,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse SetupExt - Field AMC Numbering Type - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 3281038064 - Field 3607118464 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3213244558">
-          <source>Standard,Per Trans. Type</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse SetupExt - Field AMC Numbering Type - Property OptionCaption</note>
-        </trans-unit>
         <trans-unit id="TableExtension 3281038064 - Field 3082860319 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3213244558">
           <source>Seria num. zaks. przesun. wewn.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -16887,6 +16822,31 @@
           <source>R&amp;D</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC BOM Type - EnumValue RiD - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1170368590 - EnumValue 3844911025 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Canceled</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Calculation Status - EnumValue Canceled - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1170368590 - EnumValue 293070022 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Finished</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Calculation Status - EnumValue Finished - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1170368590 - EnumValue 2849448176 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>In Process</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Calculation Status - EnumValue In Process - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1170368590 - EnumValue 4137051400 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Calculation Status - EnumValue New - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1170368590 - EnumValue 2156584825 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ordered</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Calculation Status - EnumValue Ordered - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 3201853770 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source> </source>
@@ -17128,6 +17088,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Document Status - EnumValue Canceled - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Enum 4262805248 - EnumValue 1778072510 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Closed</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Document Status - EnumValue Closed - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Enum 4262805248 - EnumValue 293070022 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Finished</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -17227,6 +17192,36 @@
           <source>S-Sales</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC HFM Dim Type - EnumValue S-Sales - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2128348672 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Income Type - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2128348672 - EnumValue 1582509784 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Corr-InPlus</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Income Type - EnumValue Corr-InPlus - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2128348672 - EnumValue 395510365 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Income Type - EnumValue Purchase - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 463242015 - EnumValue 2227052737 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Group Comp Update</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Init Item Source - EnumValue Group Comp Update - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 463242015 - EnumValue 598997335 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Optimalisation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Init Item Source - EnumValue Optimalisation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 463242015 - EnumValue 2672704373 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Standard</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Init Item Source - EnumValue Standard - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 685111978 - EnumValue 1204493994 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Handlowa</source>
@@ -17393,6 +17388,36 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Material Group - EnumValue Podział Mięsa - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Enum 3607118464 - EnumValue 3149574101 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Per Trans. Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Numbering Type - EnumValue Per Trans. Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3607118464 - EnumValue 2672704373 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Standard</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Numbering Type - EnumValue Standard - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2172183825 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Optimisation Type - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2172183825 - EnumValue 1525618887 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BOM Pierwotny</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Optimisation Type - EnumValue BOM Pierwotny - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2172183825 - EnumValue 2797804072 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nowy Produkt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Optimisation Type - EnumValue Nowy Produkt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2172183825 - EnumValue 3575477397 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zmiana Komponentów</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Optimisation Type - EnumValue Zmiana Komponentów - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Enum 1667916261 - EnumValue 3478138521 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Atest</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -17498,6 +17523,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Production Entry Type - EnumValue Producent - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Enum 2081760799 - EnumValue 3371220206 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>None</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Purch. Plan. Flexibility - EnumValue None - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2081760799 - EnumValue 3687958657 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unlimited</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Purch. Plan. Flexibility - EnumValue Unlimited - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Enum 3264226746 - EnumValue 217529040 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Anulowane</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -17532,6 +17567,46 @@
           <source>Printed</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Query Status - EnumValue Printed - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3724311386 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Registry Status - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3724311386 - EnumValue 311112628 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Calculation Request</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Registry Status - EnumValue Calculation Request - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3724311386 - EnumValue 3844911025 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Canceled</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Registry Status - EnumValue Canceled - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3724311386 - EnumValue 1778072510 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Closed</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Registry Status - EnumValue Closed - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3724311386 - EnumValue 293070022 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Finished</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Registry Status - EnumValue Finished - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3724311386 - EnumValue 2849448176 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>In Process</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Registry Status - EnumValue In Process - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3724311386 - EnumValue 4137051400 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Registry Status - EnumValue New - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3724311386 - EnumValue 146993522 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Realised in R&amp;D</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Registry Status - EnumValue Realised in R&amp;D - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 2881350298 - EnumValue 3652254945 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Niezaakceptowana</source>

@@ -18514,7 +18514,7 @@
         </trans-unit>
         <trans-unit id="Enum 221573419 - EnumValue 614829015 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Tempory Item</source>
-          <target>Tymczasowa R&D</target>
+          <target>Tymczasowa R&amp;D</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Item Material Type - EnumValue Tempory Item - Property Caption</note>
         </trans-unit>
