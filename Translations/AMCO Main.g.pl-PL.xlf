@@ -1421,19 +1421,19 @@
         </trans-unit>
         <trans-unit id="Table 4273381153 - Field 3740247633 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Country Name</source>
-          <target>Country Name</target>
+          <target>Nazwa Kraju</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Item Country of Origin - Field Country Name - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4273381153 - Field 205286012 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Country of Origin Code</source>
-          <target>Country of Origin Code</target>
+          <target>Kraj Pochodzenia</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Item Country of Origin - Field Country of Origin Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4273381153 - Field 765483476 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Code</source>
-          <target>Item Code</target>
+          <target>Kod Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Item Country of Origin - Field Item Code - Property Caption</note>
         </trans-unit>
@@ -1469,13 +1469,13 @@
         </trans-unit>
         <trans-unit id="Table 1194590846 - Field 568743302 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item No.</source>
-          <target>Item No.</target>
+          <target>Kod Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Item Dimension - Field Item No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4203414247 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item hierarchy</source>
-          <target>Item hierarchy</target>
+          <target>Kod Hierarchii</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Item Hierarchy - Property Caption</note>
         </trans-unit>
@@ -1505,25 +1505,25 @@
         </trans-unit>
         <trans-unit id="Table 4203414247 - Field 208528804 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item No.</source>
-          <target>Item No.</target>
+          <target>Kod Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Item Hierarchy - Field Description - Level 5 - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4203414247 - Field 665901870 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>User Name</source>
-          <target>User Name</target>
+          <target>Kod Hierarchii</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Item Hierarchy - Field Hierachy key - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4203414247 - Field 3901500928 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Hierarchy Notes</source>
-          <target>Hierarchy Notes</target>
+          <target>Uwagi</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Item Hierarchy - Field Hierarcy Notes - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4203414247 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Name</source>
-          <target>Name</target>
+          <target>Nazwa</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Item Hierarchy - Field Name - Property Caption</note>
         </trans-unit>
