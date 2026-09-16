@@ -44,13 +44,11 @@ tableextension 50083 "AMC Warehouse SetupExt" extends "Warehouse Setup"
             Description = 'SBi20Mar2014';
             TableRelation = "No. Series";
         }
-        field(50007; "AMC Numbering Type"; Option)
+        field(50007; "AMC Numbering Type"; Enum "AMC Numbering Type")
         {
             Caption = 'Typ Numeracji';
             DataClassification = CustomerContent;
             Description = 'SBi20Mar2014';
-            OptionCaption = 'Standard,Per Trans. Type';
-            OptionMembers = Standard,"Per Trans. Type";
         }
         field(50008; "AMC Internal Transf. No.Series"; Code[10])
         {

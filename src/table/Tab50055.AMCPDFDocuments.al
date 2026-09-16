@@ -8,11 +8,9 @@ table 50055 "AMC PDF Document"
         {
             Caption = 'Nr Zapisu';
         }
-        field(2; "Document Type"; Option)
+        field(2; "Document Type"; Enum "AMC PDF Document Type")
         {
             Caption = 'Typ Dokumentu';
-            OptionCaption = 'Order,Posted Invoice,Credit Memo,Quote';
-            OptionMembers = "Order","Posted Invoice","Credit Memo",Quote;
         }
         field(3; "Document No"; Code[20])
         {

@@ -8,13 +8,11 @@ tableextension 50063 "AMC Purchases & Payables Setup" extends "Purchases & Payab
             DataClassification = CustomerContent;
             TableRelation = Location WHERE("Use As In-Transit" = CONST(false));
         }
-        field(50003; "AMC Purch Planning Flexibility"; Option)
+        field(50003; "AMC Purch Planning Flexibility"; Enum "AMC Purch. Plan. Flexibility")
         {
             Caption = 'Planning Flexibility';
             DataClassification = CustomerContent;
             Description = 'AL.29Mar13';
-            OptionCaption = 'Unlimited,None';
-            OptionMembers = Unlimited,"None";
         }
         field(50004; "AMC PW Receipt Invoiced No."; Code[10])
         {

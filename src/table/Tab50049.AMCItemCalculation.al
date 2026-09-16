@@ -215,11 +215,9 @@ table 50049 "AMC Item Calculation"
             Caption = 'Zawiera Opakowania';
             FieldClass = FlowField;
         }
-        field(311; "Init Source"; Option)
+        field(311; "Init Source"; Enum "AMC Init Item Source")
         {
             Caption = 'Źródło Utworzenia';
-            OptionCaption = 'Standard,Optimalisation,Group Comp Update';
-            OptionMembers = Standard,Optimalisation,"Group Comp Update";
         }
         field(312; "Optimalisation Code"; Code[20])
         {

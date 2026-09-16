@@ -144,11 +144,9 @@ table 50050 "AMC Item Calculation Line"
             Caption = 'Razem Dodtk. Koszt Budżet. PLN';
             DecimalPlaces = 5 : 5;
         }
-        field(260; "Type of Income"; Option)
+        field(260; "Type of Income"; Enum "AMC Income Type")
         {
             Caption = 'Typ Przyjęcia';
-            OptionCaption = ' ,Purchase,Corr-InPlus';
-            OptionMembers = " ",Purchase,"Corr-InPlus";
         }
         field(261; "Vendor Code"; Code[10])
         {

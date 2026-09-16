@@ -44,11 +44,9 @@ tableextension 50053 "AMC Purchase Header Archive" extends "Purchase Header Arch
             Caption = 'Miejsce Załadunku/Rozładunku';
             DataClassification = CustomerContent;
         }
-        field(50031; "AMC Purchase Order Status"; Option)
+        field(50031; "AMC Purchase Order Status"; Enum "AMC Purchase Order Status")
         {
             Caption = 'Status Zamówienia';
-            OptionCaption = 'Wstępne,Wysłane,Potwierdzone,Zrealizowane,Zakończone,Anulowane';
-            OptionMembers = "Wstępne","Wysłane",Potwierdzone,Zrealizowane,"Zakończone",Anulowane;
             DataClassification = CustomerContent;
         }
         field(50033; "AMC Purchase Planning Year"; Integer)

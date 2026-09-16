@@ -30,13 +30,11 @@ table 50052 "AMC Optimisation Line"
         {
             Caption = 'Nazwa BOMU RiD';
         }
-        field(15; "Optimalizacion Typ"; Option)
+        field(15; "Optimization Type"; Enum "AMC Optimisation Type")
         {
-            Caption = 'Tym Optymalizacji';
-            OptionCaption = ' ,Zmiana Komponentów,Nowy Produkt,BOM Pierwotny';
-            OptionMembers = " ","Zmiana Komponentów","Nowy Produkt","BOM Pierwotny";
+            Caption = 'Typ Optymalizacji';
         }
-        field(16; "Optimalizacion Description"; Text[200])
+        field(16; "Optimization Description"; Text[200])
         {
             Caption = 'Opis Optymalizacji';
         }
