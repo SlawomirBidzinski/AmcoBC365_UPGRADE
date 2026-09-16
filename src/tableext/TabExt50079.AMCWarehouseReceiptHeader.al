@@ -93,7 +93,7 @@ tableextension 50079 "AMC Warehouse Receipt Header" extends "Warehouse Receipt H
             DataClassification = CustomerContent;
             Caption = 'Creation Date';
         }
-        field(50024; "AMC  Receipt Type"; Enum "AMC Receipt Type")
+        field(50024; "AMC Receipt Type"; Enum "AMC Receipt Type")
         {
             DataClassification = CustomerContent;
             Caption = 'Receipt Type';
