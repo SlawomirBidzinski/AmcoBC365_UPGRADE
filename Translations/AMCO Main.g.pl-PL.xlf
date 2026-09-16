@@ -5160,25 +5160,25 @@
         </trans-unit>
         <trans-unit id="Page 216442526 - Control 844470919 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Set Currency Filter</source>
-          <target>Set Currency Filter</target>
+          <target>Filtr Waluty</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Budget Specification - Control SetCurrencyFilter - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 216442526 - Control 1539766873 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Set Item Type Filter</source>
-          <target>Set Item Type Filter</target>
+          <target>Filtr Typu Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Budget Specification - Control SetItemTypeFilter - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3517618969 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Calculation Card</source>
-          <target>Item Calculation Card</target>
+          <target>Kartoteka Wyceny Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Calculation Card - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3517618969 - Control 318613646 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Details</source>
-          <target>Details</target>
+          <target>Szczegóły</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Calculation Card - Control Details - Property Caption</note>
         </trans-unit>
@@ -6450,7 +6450,7 @@
         </trans-unit>
         <trans-unit id="Page 1131417818 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Material Group</source>
-          <target>Item Material Group</target>
+          <target>Kod Grupy Zapasów</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Material Group - Property Caption</note>
         </trans-unit>
@@ -6480,13 +6480,13 @@
         </trans-unit>
         <trans-unit id="Page 1131417818 - Action 1474828695 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Subgroups</source>
-          <target>Item Subgroups</target>
+          <target>Podgrupa Zapasów</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Material Group - Action ItemSubgroups - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3911699011 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Material Subgroups</source>
-          <target>Item Material Subgroups</target>
+          <target>Kod Podgrupy Zapasów</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Material Subgroups - Property Caption</note>
         </trans-unit>
@@ -8148,19 +8148,19 @@
         </trans-unit>
         <trans-unit id="Report 2060010470 - Control 3480458524 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Code Filter</source>
-          <target>Item Code Filter</target>
+          <target>Filtr Kodu Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report AMC Update Item Cost List - Control ItemCodeFilter - Property Caption</note>
         </trans-unit>
         <trans-unit id="Report 2060010470 - Control 294860311 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Type Filter</source>
-          <target>Item Type Filter</target>
+          <target>Filtr Typu Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report AMC Update Item Cost List - Control ItemTypeFilter - Property Caption</note>
         </trans-unit>
         <trans-unit id="Report 2060010470 - Control 1804003004 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Set Date From</source>
-          <target>Set Date From</target>
+          <target>Data Od</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report AMC Update Item Cost List - Control SetDateFrom - Property Caption</note>
         </trans-unit>
@@ -11446,7 +11446,7 @@
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 280418458 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Item Frutarom</source>
-          <target>Item Frutarom</target>
+          <target>Zapas Frutarom</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Item Frutarom - Property Caption</note>
         </trans-unit>
@@ -11458,13 +11458,13 @@
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 1778198635 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Item KJ Weight [kg]</source>
-          <target>Item KJ Weight [kg]</target>
+          <target>Waga Zapasu KJ [kg]</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Item KJ Weight [kg] - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 1043393179 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Item Label Code</source>
-          <target>Item Label Code</target>
+          <target>Kod Etykiety Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Item Label Code - Property Caption</note>
         </trans-unit>
@@ -11500,13 +11500,13 @@
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 1131417818 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Item Material Group</source>
-          <target>Item Material Group</target>
+          <target>Kod Grupy Zapasów</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Item Material Group - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 3465473017 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Item Material SupGrup</source>
-          <target>Item Material SupGrup</target>
+          <target>Kod Podgrupy Zapasów</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Item Material SupGrup - Property Caption</note>
         </trans-unit>
@@ -11536,55 +11536,55 @@
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 2784100462 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Item Type</source>
-          <target>Item Type</target>
+          <target>Typ Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Item Type - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 2348851059 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Items on KJ</source>
-          <target>Items on KJ</target>
+          <target>Zapasy - KJ</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Items on KJ - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 2047499100 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Items on M.GL</source>
-          <target>Items on M.GL</target>
+          <target>Zapasy - M.GL</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Items on M.GL - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 629302045 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Zapasy M.N.WART</source>
-          <target>Zapasy M.N.WART</target>
+          <target>Zapasy - M.N.WART</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Items on M.N.WART - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 1878524687 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Items on M.PROBY</source>
-          <target>Items on M.PROBY</target>
+          <target>Zapasy - M.PROBY</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Items on M.PROBY - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 1611571353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Items on M.REKLAM</source>
-          <target>Items on M.REKLAM</target>
+          <target>Zapasy - M.REKLAM</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Items on M.REKLAM - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 3448751609 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Items on M.SUR</source>
-          <target>Items on M.SUR</target>
+          <target>Zapasy - M.SUR</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Items on M.SUR - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 1668320948 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Zapasy M.SUR (MS)</source>
-          <target>Zapasy M.SUR (MS)</target>
+          <target>Zapasy - M.SUR (MS)</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Items on M.SUR (MS) - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 3863863462 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Items on M.UT</source>
-          <target>Items on M.UT</target>
+          <target>Zapasy - M.UT</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Items on M.UT - Property Caption</note>
         </trans-unit>
@@ -11710,7 +11710,7 @@
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 603886235 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Pack Unit of Measure</source>
-          <target>Pack Unit of Measure</target>
+          <target>Jedn. Miary Opakowania</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Pack Unit of Measure - Property Caption</note>
         </trans-unit>
@@ -11722,7 +11722,7 @@
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 2036808290 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Packing Type</source>
-          <target>Packing Type</target>
+          <target>Typ Opakowania</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Packing Type - Property Caption</note>
         </trans-unit>
@@ -11860,25 +11860,25 @@
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 3916821051 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Purchase Item</source>
-          <target>Purchase Item</target>
+          <target>Zakupy Zapasów</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Purchase Item - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 2044773587 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Purchases (LCY)</source>
-          <target>Purchases (LCY)</target>
+          <target>Zakupy (PLN)</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Purchases All (LCY) - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 1389065350 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Qty days of check Exp Date</source>
-          <target>Qty days of check Exp Date</target>
+          <target>Ilość dni Kontr. Daty Ważności</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Qty days of check Exp Date - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 232364054 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Qty per Unit</source>
-          <target>Qty per Unit</target>
+          <target>Ilość na Jednostkę</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Qty per Unit - Property Caption</note>
         </trans-unit>
@@ -12178,7 +12178,7 @@
         </trans-unit>
         <trans-unit id="TableExtension 309468398 - Field 603886235 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
           <source>Jednostka miary opakowania</source>
-          <target>Jednostka miary opakowania</target>
+          <target>Jedn. Miary Opakowania</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Journal Line Ext. - Field AMC Pack Unit of Measure - Property Caption</note>
         </trans-unit>
@@ -12262,19 +12262,19 @@
         </trans-unit>
         <trans-unit id="TableExtension 1139453565 - Field 2161524959 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
           <source>Pack Quantity</source>
-          <target>Pack Quantity</target>
+          <target>Ilość Opakowań</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Ledger Entry - Field AMC Pack Quantity - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1139453565 - Field 603886235 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
           <source>Pack Unit of Measure</source>
-          <target>Pack Unit of Measure</target>
+          <target>Jedn. Miary Opakowania</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Ledger Entry - Field AMC Pack Unit of Measure - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1139453565 - Field 2621587244 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
           <source>Production Date</source>
-          <target>Production Date</target>
+          <target>Data Produkcji</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Ledger Entry - Field AMC Production Date - Property Caption</note>
         </trans-unit>
