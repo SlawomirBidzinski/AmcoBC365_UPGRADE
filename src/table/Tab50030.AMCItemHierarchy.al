@@ -57,4 +57,9 @@ table 50030 "AMC Item Hierarchy"
             Clustered = true;
         }
     }
+
+    fieldgroups
+    {
+        fieldgroup(DropDown; "Hierachy key", Name, "Description - Level 1") { }
+    }
 }

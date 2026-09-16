@@ -1259,7 +1259,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Item Hierarchy - Field Description - Level 5 - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4203414247 - Field 665901870 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>User Name</source>
+          <source>Hierarchy Key</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Item Hierarchy - Field Hierachy key - Property Caption</note>
         </trans-unit>
@@ -3922,6 +3922,11 @@
           <source> </source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Hierarchies - Control Hierarcy Notes - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4201730842 - Control 2961552353 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Hierarchies - Control Name - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1600761404 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Internal Transf Subf.</source>
