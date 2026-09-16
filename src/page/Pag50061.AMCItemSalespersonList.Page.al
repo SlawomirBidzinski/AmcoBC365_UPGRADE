@@ -97,12 +97,12 @@ page 50061 "AMC Item Salesperson List"
                     ToolTip = ' ';
                     Editable = false;
                 }
-                field("AMC Long Item Description"; Rec."AMC Long Item Description")
-                {
-                    ApplicationArea = All;
-                    ToolTip = ' ';
-                    Editable = false;
-                }
+                //field("AMC Long Item Description"; Rec."AMC Long Item Description")
+                //{
+                //    ApplicationArea = All;
+                //    ToolTip = ' ';
+                //    Editable = false;
+                //}
                 field(Blocked; Rec.Blocked)
                 {
                     ApplicationArea = All;

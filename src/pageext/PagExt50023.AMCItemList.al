@@ -4,10 +4,10 @@ pageextension 50023 "AMC Item List" extends "Item List"
     {
         addafter(Description)
         {
-            field("AMC Long Item Description"; Rec."AMC Long Item Description")
-            {
-                ApplicationArea = All;
-            }
+            //field("AMC Long Item Description"; Rec."AMC Long Item Description")
+            //{
+            //    ApplicationArea = All;
+            //}
             field("AMC Item Type"; Rec."AMC Item Type")
             {
                 ApplicationArea = All;
@@ -17,7 +17,7 @@ pageextension 50023 "AMC Item List" extends "Item List"
                 ApplicationArea = All;
             }
         }
-        moveafter("AMC Long Item Description"; "Production BOM No.")
+        moveafter("AMC Item Type"; "Production BOM No.")
         addafter("Production BOM No.")
         {
             field("AMC RiD BOM Code"; Rec."AMC RiD BOM Code")

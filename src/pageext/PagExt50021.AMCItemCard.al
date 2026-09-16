@@ -4,11 +4,11 @@ pageextension 50021 "AMC Item Card" extends "Item Card"
     {
         addafter(Description)
         {
-            field("AMC Long Item Description"; Rec."AMC Long Item Description")
-            {
-                ApplicationArea = All;
-                ToolTip = ' ';
-            }
+            //field("AMC Long Item Description"; Rec."AMC Long Item Description")
+            //{
+            //    ApplicationArea = All;
+            //    ToolTip = ' ';
+            //}
             field("AMC Item Eng Translation"; Rec."AMC Item Eng Translation")
             {
                 ApplicationArea = All;
