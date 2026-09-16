@@ -32,11 +32,9 @@ table 50049 "AMC Item Calculation"
         {
             Caption = 'Code Description';
         }
-        field(6; "Calculation Type"; Option)
+        field(6; "Calculation Type"; Enum "AMC Item Budget Instance Type")
         {
             Caption = 'Calculation Type';
-            OptionCaption = ' ,based on costs,based on price list';
-            OptionMembers = " ","wg kosztów","wg cennika";
         }
         field(7; "Calculation Date"; Date)
         {
@@ -63,11 +61,9 @@ table 50049 "AMC Item Calculation"
             Caption = 'Użytkownik zapytania';
             TableRelation = User;
         }
-        field(53; "Calculation Status"; Option)
+        field(53; "Calculation Status"; Enum "AMC Calculation Status")
         {
             Caption = 'Status wyceny';
-            OptionCaption = 'New,Ordered,In Process,Finished,Canceled';
-            OptionMembers = New,Ordered,"In Process",Finished,Canceled;
         }
         field(54; "Calculation UserID"; Code[20])
         {

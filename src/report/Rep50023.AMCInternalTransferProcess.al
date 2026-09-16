@@ -28,7 +28,7 @@ report 50023 "AMC Internal Transfer Process"
             {
                 DataItemTableView = SORTING("Item No.");
                 DataItemLink = "Document No." = FIELD("Document No."),
-                               "Transaction Type" = FIELD("Transaction Type");
+                               "Internal Transfer" = FIELD("Internal Transfer");
 
                 column(ConsNo; LineNo) { }
                 column(ItemNo; "Item No.") { }
@@ -70,17 +70,15 @@ report 50023 "AMC Internal Transfer Process"
 
             trigger OnAfterGetRecord()
             begin
-                CASE "Transaction Type" OF
-                    "Transaction Type"::"Internal Transfer":
-                        RaportType := STRSUBSTNO('%1', Text001);
-                END;
+                if "Internal Transfer" then
+                    RaportType := STRSUBSTNO('%1', Text001);
 
                 FormatAddr.Company(CompanyAddr, CompanyInfo);
                 CompanyCodeCityStreet := CompanyInfo."Post Code" + ' ' + CompanyInfo.City + ', ' + CompanyAddr[2];
                 LineNo := 0;
 
 
-                DocumentName := STRSUBSTNO(Text005, "Transaction Type");
+                DocumentName := STRSUBSTNO(Text005, "Internal Transfer");
 
                 IF "Posted Document No." <> '' THEN
                     PostedDocNo := STRSUBSTNO(Text004, "Posted Document No.")

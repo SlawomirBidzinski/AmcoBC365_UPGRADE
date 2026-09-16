@@ -24,7 +24,7 @@ page 50058 "AMC Internal Transfer Card"
                             CurrPage.UPDATE(false);
                     end;
                 }
-                field("Transaction Type"; Rec."Transaction Type")
+                field("Internal Transfer"; Rec."Internal Transfer")
                 {
                     Editable = Rec."Document Status" = Rec."Document Status"::Open;
                     ToolTip = 'Specifies the value of the Typ Transakcji field.', Comment = '%';
@@ -116,7 +116,7 @@ page 50058 "AMC Internal Transfer Card"
             part(Lines; "AMC Internal Transf Subf.")
             {
                 ApplicationArea = All;
-                SubPageLink = "Document No." = FIELD("Document No."), "Transaction Type" = field("Transaction Type");
+                SubPageLink = "Document No." = FIELD("Document No."), "Internal Transfer" = field("Internal Transfer");
             }
         }
     }
@@ -195,7 +195,7 @@ page 50058 "AMC Internal Transfer Card"
 
     trigger OnNewRecord(BelowxRec: Boolean)
     begin
-        Rec."Transaction Type" := Rec."Transaction Type"::"Internal Transfer";
+        Rec."Internal Transfer" := True;
     end;
 
     var

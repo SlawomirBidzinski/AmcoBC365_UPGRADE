@@ -11,11 +11,9 @@ table 50053 "AMC Whse. Int. Transfer Header"
         {
             Caption = 'Nr Dokumentu';
         }
-        field(2; "Transaction Type"; Option)
+        field(2; "Internal Transfer"; Boolean)
         {
             Caption = 'Typ Transakcji';
-            OptionCaption = ' ,Internal Transfer';
-            OptionMembers = " ","Internal Transfer";
         }
         field(3; "Document Date"; Date)
         {
@@ -58,7 +56,7 @@ table 50053 "AMC Whse. Int. Transfer Header"
                 IF "Document Status" = "Document Status"::Release THEN BEGIN
                     TESTFIELD("Document Date");
                     TESTFIELD("Posting Date");
-                    TESTFIELD("Transaction Type");
+                    TESTFIELD("Internal Transfer");
                 END;
 
                 IF (Rec."Document Status" = "Document Status"::Open) THEN BEGIN
@@ -323,11 +321,9 @@ table 50053 "AMC Whse. Int. Transfer Header"
 
         IF Rec."Posted Document No." = '' THEN BEGIN
             IF Rec."Post No. Series" = '' THEN
-                CASE Rec."Transaction Type" OF
-                    Rec."Transaction Type"::"Internal Transfer":
-                        Rec."Post No. Series" := WhseSetup."AMC PostedInt.Transf.No.Series";
-                END;
-            Rec.MODIFY();
+                if Rec."Internal Transfer" then
+                    Rec."Post No. Series" := WhseSetup."AMC PostedInt.Transf.No.Series";
+            MODIFY();
         END;
 
         IF Rec."Posted Document No." = '' THEN

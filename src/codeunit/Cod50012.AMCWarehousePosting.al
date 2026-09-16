@@ -211,7 +211,7 @@ codeunit 50012 "AMC Warehouse Posting"
 
             WhseIntTransferHead.RESET();
             WhseIntTransferHead.SETRANGE("Document No.", WhseInterTransfLine."Document No.");
-            WhseIntTransferHead.SETRANGE("Transaction Type", WhseInterTransfLine."Transaction Type");
+            WhseIntTransferHead.SETRANGE("Internal Transfer", WhseInterTransfLine."Internal Transfer");
             IF WhseIntTransferHead.FINDFIRST() THEN BEGIN
                 WhseEntry."User ID" := WhseIntTransferHead."Login ID";
                 WhseEntry."Reference No." := WhseIntTransferHead."Posted Document No."
@@ -274,7 +274,7 @@ codeunit 50012 "AMC Warehouse Posting"
 
             WhseIntTransferHead.RESET();
             WhseIntTransferHead.SETRANGE("Document No.", WhseInterTransfLine."Document No.");
-            WhseIntTransferHead.SETRANGE("Transaction Type", WhseInterTransfLine."Transaction Type");
+            WhseIntTransferHead.SETRANGE("Internal Transfer", WhseInterTransfLine."Internal Transfer");
             IF WhseIntTransferHead.FINDFIRST() THEN BEGIN
                 WhseEntry."User ID" := WhseIntTransferHead."Login ID";
                 WhseEntry."Reference No." := WhseIntTransferHead."Posted Document No."

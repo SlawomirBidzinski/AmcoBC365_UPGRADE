@@ -34,11 +34,9 @@ table 50050 "AMC Item Calculation Line"
             Caption = 'Ilość źródła';
             DecimalPlaces = 5 : 5;
         }
-        field(14; "Calculation Type"; Option)
+        field(14; "Calculation Type"; Enum "AMC Item Budget Instance Type")
         {
             Caption = 'Calculation Type';
-            OptionCaption = ' ,based on costs,based on price list';
-            OptionMembers = " ","wg kosztów","wg. cennika";
         }
         field(15; "Sub BOM"; Boolean)
         {

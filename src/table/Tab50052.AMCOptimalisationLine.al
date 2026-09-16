@@ -14,11 +14,9 @@ table 50052 "AMC Optimisation Line"
         {
             Caption = 'Optimisation Line';
         }
-        field(3; "BOM Type"; Option)
+        field(3; "BOM Type"; Enum "AMC BOM Type")
         {
             Caption = 'Typ BOMu';
-            OptionCaption = ' ,Production,RiD';
-            OptionMembers = " ",Production,RiD;
         }
         field(13; "BOM RiD Code"; Code[20])
         {
@@ -60,15 +58,12 @@ table 50052 "AMC Optimisation Line"
             Editable = false;
             FieldClass = FlowField;
         }
-        field(23; "Calculaction Status"; Option)
+        field(23; "Calculaction Status"; Enum "AMC Calculation Status")
         {
-            CalcFormula = Lookup("AMC Item Calculation"."Calculation Status"
-            WHERE("Calculation No" = FIELD("Calculation No")));
+            CalcFormula = Lookup("AMC Item Calculation"."Calculation Status" WHERE("Calculation No" = FIELD("Calculation No")));
             Caption = 'Status Wyceny';
             Editable = false;
             FieldClass = FlowField;
-            OptionCaption = 'New,Ordered,In Process,Finished,Canceled';
-            OptionMembers = New,Ordered,"In Process",Finished,Canceled;
         }
         field(25; "Calculation UserID"; Code[20])
         {

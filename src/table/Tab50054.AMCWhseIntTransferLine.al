@@ -9,11 +9,9 @@ table 50054 "AMC Whse. Int. Transfer Line"
         {
             Caption = 'Nr Dokumentu';
         }
-        field(2; "Transaction Type"; Option)
+        field(2; "Internal Transfer"; Boolean)
         {
-            Caption = 'Typ Transakcji';
-            OptionCaption = ' ,Internal Transfer';
-            OptionMembers = " ","Internal Transfer";
+            Caption = 'Transfer Wewn.';
         }
         field(3; "Document Date"; Date)
         {
@@ -42,7 +40,7 @@ table 50054 "AMC Whse. Int. Transfer Line"
 
                 WarehouseIntTransferHeader.RESET;
                 WarehouseIntTransferHeader.SETRANGE("Document No.", "Document No.");
-                WarehouseIntTransferHeader.SETRANGE("Transaction Type", "Transaction Type");
+                WarehouseIntTransferHeader.SETRANGE("Internal Transfer", "Internal Transfer");
                 IF WarehouseIntTransferHeader.FINDSET THEN
                     IF WarehouseIntTransferHeader."Document Status" = WarehouseIntTransferHeader."Document Status"::Open THEN
                         ERROR(Text_001);
@@ -199,7 +197,7 @@ table 50054 "AMC Whse. Int. Transfer Line"
 
     keys
     {
-        key(Key1; "Document No.", "Transaction Type", "Line No.")
+        key(Key1; "Document No.", "Internal Transfer", "Line No.")
         {
             Clustered = true;
         }

@@ -18,7 +18,7 @@ page 50059 "AMC Internal Transf Subf."
                     Visible = FALSE;
                     ToolTip = 'Specifies the value of the Nr Dokumentu field.', Comment = '%';
                 }
-                field("Transaction Type"; Rec."Transaction Type")
+                field("Transaction Type"; Rec."Internal Transfer")
                 {
                     Visible = FALSE;
                     ToolTip = 'Specifies the value of the Typ Transakcji field.', Comment = '%';

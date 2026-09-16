@@ -811,13 +811,13 @@ page 50056 "AMC Item Calculation List"
                                                                          ItemCalculationBOMLineLoc.Quantity;
 
                         CASE Rec."Calculation Type" OF
-                            Rec."Calculation Type"::"wg kosztów":
+                            Rec."Calculation Type"::"based on costs":
                                 BEGIN
                                     ItemCalculationBOMLineLoc.VALIDATE("Calculation Unit Cost", ItemCalculationBOMLineLoc."Last Unit Cost");
                                     ItemCalculationBOMLineLoc."Manulal Insert Cost" := FALSE;
                                 END;
 
-                            Rec."Calculation Type"::"wg cennika":
+                            Rec."Calculation Type"::"based on price list":
                                 BEGIN
                                     ItemCalculationBOMLineLoc.VALIDATE("Calculation Unit Cost", ItemCalculationBOMLineLoc."Budget Unit Cost LCY");
                                     ItemCalculationBOMLineLoc.VALIDATE("Additional Cost", ItemCalculationBOMLineLoc."Budget Unit Addit. LCY");

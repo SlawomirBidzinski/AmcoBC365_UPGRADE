@@ -52,7 +52,7 @@ codeunit 50010 "AMC Item Calculation"
                         ItemCalculationLoc."Item Budget Instance" := DefaultInstanceCode;
                         ItemCalculationLoc."Source Type" := ItemCalculationLoc."Source Type"::Item;
                         ItemCalculationLoc.VALIDATE("Source Code", ItemRec."No.");
-                        ItemCalculationLoc."Calculation Type" := ItemCalculationLoc."Calculation Type"::"wg cennika";
+                        ItemCalculationLoc."Calculation Type" := ItemCalculationLoc."Calculation Type"::"based on price list";
                         ItemCalculationLoc."Calculation Date" := CalculationDate;
                         ItemCalculationLoc."Init Date Time" := CURRENTDATETIME;
                         ItemCalculationLoc."Init UserID" := USERID;
@@ -119,7 +119,7 @@ codeunit 50010 "AMC Item Calculation"
                     ItemCalculationLoc."Item Budget Instance" := DefaultInstanceCode;
                     ItemCalculationLoc."Source Type" := ItemCalculationLoc."Source Type"::Item;
                     ItemCalculationLoc.VALIDATE("Source Code", ItemRec."No.");
-                    ItemCalculationLoc."Calculation Type" := ItemCalculationLoc."Calculation Type"::"wg cennika";
+                    ItemCalculationLoc."Calculation Type" := ItemCalculationLoc."Calculation Type"::"based on price list";
                     ItemCalculationLoc."Calculation Date" := CalculationDate;
                     ItemCalculationLoc."Init Date Time" := CURRENTDATETIME;
                     ItemCalculationLoc."Init UserID" := USERID;
@@ -185,7 +185,7 @@ codeunit 50010 "AMC Item Calculation"
                     ItemCalculationLoc."Item Budget Instance" := DefaultInstanceCode;
                     ItemCalculationLoc."Source Type" := ItemCalculationLoc."Source Type"::Item;
                     ItemCalculationLoc.VALIDATE("Source Code", ItemRec."No.");
-                    ItemCalculationLoc."Calculation Type" := ItemCalculationLoc."Calculation Type"::"wg cennika";
+                    ItemCalculationLoc."Calculation Type" := ItemCalculationLoc."Calculation Type"::"based on price list";
                     ItemCalculationLoc."Calculation Date" := CalculationDate;
                     ItemCalculationLoc."Init Date Time" := CURRENTDATETIME;
                     ItemCalculationLoc."Init UserID" := USERID;
@@ -245,7 +245,7 @@ codeunit 50010 "AMC Item Calculation"
                     ItemCalculationLoc."Item Budget Instance" := DefaultInstanceCode;
                     ItemCalculationLoc."Source Type" := ItemCalculationLoc."Source Type"::Item;
                     ItemCalculationLoc.VALIDATE("Source Code", ItemRec."No.");
-                    ItemCalculationLoc."Calculation Type" := ItemCalculationLoc."Calculation Type"::"wg cennika";
+                    ItemCalculationLoc."Calculation Type" := ItemCalculationLoc."Calculation Type"::"based on price list";
                     ItemCalculationLoc."Calculation Date" := CalculationDate;
                     ItemCalculationLoc."Init Date Time" := CURRENTDATETIME;
                     ItemCalculationLoc."Init UserID" := USERID;
@@ -305,7 +305,7 @@ codeunit 50010 "AMC Item Calculation"
                 ItemCalculationLoc."Item Budget Instance" := DefaultInstanceCode;
                 ItemCalculationLoc."Source Type" := ItemCalculationLoc."Source Type"::Item;
                 ItemCalculationLoc.VALIDATE("Source Code", ItemRec."No.");
-                ItemCalculationLoc."Calculation Type" := ItemCalculationLoc."Calculation Type"::"wg cennika";
+                ItemCalculationLoc."Calculation Type" := ItemCalculationLoc."Calculation Type"::"based on price list";
                 ItemCalculationLoc."Calculation Date" := CalculationDate;
                 ItemCalculationLoc."Init Date Time" := CURRENTDATETIME;
                 ItemCalculationLoc."Init UserID" := USERID;
@@ -368,7 +368,7 @@ codeunit 50010 "AMC Item Calculation"
                 ItemCalculationLoc."Item Budget Instance" := DefaultInstanceCode;
                 ItemCalculationLoc."Source Type" := ItemCalculationLoc."Source Type"::BOM;
                 ItemCalculationLoc.VALIDATE("Source Code", ProductionBOMHeader."No.");
-                ItemCalculationLoc."Calculation Type" := ItemCalculationLoc."Calculation Type"::"wg cennika";
+                ItemCalculationLoc."Calculation Type" := ItemCalculationLoc."Calculation Type"::"based on price list";
                 ItemCalculationLoc."Calculation Date" := CalculationDate;
                 ItemCalculationLoc."Init Date Time" := CURRENTDATETIME;
                 ItemCalculationLoc."Init UserID" := USERID;
@@ -463,7 +463,7 @@ codeunit 50010 "AMC Item Calculation"
                         END;
                 END;
 
-                ItemCalculationLoc."Calculation Type" := ItemCalculationLoc."Calculation Type"::"wg cennika";
+                ItemCalculationLoc."Calculation Type" := ItemCalculationLoc."Calculation Type"::"based on price list";
                 ItemCalculationLoc."Calculation Date" := CalculationDate;
                 ItemCalculationLoc."Init Date Time" := CURRENTDATETIME;
                 ItemCalculationLoc."Init UserID" := USERID;
