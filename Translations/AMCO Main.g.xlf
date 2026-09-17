@@ -5643,11 +5643,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Salesperson List - Control AMC Items on M.UT - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 3186503623 - Control 1966913842 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source> </source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Salesperson List - Control AMC Long Item Description - Property ToolTip</note>
-        </trans-unit>
         <trans-unit id="Page 3186503623 - Control 2913236740 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source> </source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -7837,11 +7832,6 @@
           <source> </source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Item Card - Control AMC Item Type - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 1549928602 - Control 1966913842 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
-          <source> </source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Item Card - Control AMC Long Item Description - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="PageExtension 1549928602 - Control 3317582177 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
           <source> </source>

@@ -19,24 +19,46 @@ codeunit 50011 "AMC Events Mgmt."
     [EventSubscriber(ObjectType::Report, Report::"Get Source Documents", 'OnBeforeWhseShptHeaderInsert', '', false, false)]
     local procedure OnBeforeWhseShptHeaderInsert(var WarehouseShipmentHeader: Record "Warehouse Shipment Header"; var WarehouseRequest: Record "Warehouse Request"; SalesLine: Record "Sales Line"; TransferLine: Record "Transfer Line"; SalesHeader: Record "Sales Header")
     begin
-        WarehouseShipmentHeader."AMC RW Transaction" := SalesHeader."AMC RW Transaction";
-        //WarehouseShipmentHeader."AMC Shipment Type" := 
-        WarehouseShipmentHeader.Validate("AMC Customer Code", SalesHeader."Sell-to Customer No.");
+        case WarehouseRequest."Source Document" of
+            WarehouseRequest."Source Document"::"Sales Order":
+                begin
+                    WarehouseShipmentHeader."AMC RW Transaction" := SalesHeader."AMC RW Transaction";
+                    WarehouseShipmentHeader."AMC Shipment Type" := WarehouseShipmentHeader."AMC Shipment Type"::Sales;
+                    WarehouseShipmentHeader.Validate("AMC Customer Code", SalesHeader."Sell-to Customer No.");
+                end;
+            WarehouseRequest."Source Document"::"Sales Return Order":
+                begin
+                    WarehouseShipmentHeader."AMC RW Transaction" := SalesHeader."AMC RW Transaction";
+                    WarehouseShipmentHeader."AMC Shipment Type" := WarehouseShipmentHeader."AMC Shipment Type"::"Purchase Return";
+                    WarehouseShipmentHeader.Validate("AMC Customer Code", SalesHeader."Sell-to Customer No.");
+                end;
+            WarehouseRequest."Source Document"::"Inbound Transfer", WarehouseRequest."Source Document"::"Outbound Transfer":
+                WarehouseShipmentHeader."AMC Shipment Type" := WarehouseShipmentHeader."AMC Shipment Type"::Transfer;
+        end;
     end;
 
     [EventSubscriber(ObjectType::Report, Report::"Get Source Documents", 'OnBeforeWhseReceiptHeaderInsert', '', false, false)]
     local procedure OnBeforeWhseReceiptHeaderInsert(var WarehouseReceiptHeader: Record "Warehouse Receipt Header"; var WarehouseRequest: Record "Warehouse Request")
     var
         PurchHdr: Record "Purchase Header";
+        SalesHdr: Record "Sales Header";
     begin
-        if WarehouseRequest."Source Document" <> WarehouseRequest."Source Document"::"Purchase Order" then
-            exit;
-
-        if not PurchHdr.Get(PurchHdr."Document Type"::Order, WarehouseRequest."Source No.") then
-            exit;
-
-        WarehouseReceiptHeader."AMC PW Transaction" := PurchHdr."AMC PW Transaction";
-        //WarehouseReceiptHeader."AMC Receipt Type" := 
-        WarehouseReceiptHeader.Validate("AMC Vendor Code", PurchHdr."Buy-from Vendor No.");
+        case WarehouseRequest."Source Document" of
+            WarehouseRequest."Source Document"::"Purchase Order":
+                begin
+                    PurchHdr.Get(PurchHdr."Document Type"::Order, WarehouseRequest."Source No.");
+                    WarehouseReceiptHeader."AMC PW Transaction" := PurchHdr."AMC PW Transaction";
+                    WarehouseReceiptHeader."AMC Receipt Type" := WarehouseReceiptHeader."AMC Receipt Type"::Purchase;
+                    WarehouseReceiptHeader.Validate("AMC Vendor Code", PurchHdr."Buy-from Vendor No.");
+                end;
+            WarehouseRequest."Source Document"::"Sales Return Order":
+                begin
+                    SalesHdr.Get(SalesHdr."Document Type"::"Return Order", WarehouseRequest."Source No.");
+                    WarehouseReceiptHeader."AMC PW Transaction" := SalesHdr."AMC RW Transaction";
+                    WarehouseReceiptHeader."AMC Receipt Type" := WarehouseReceiptHeader."AMC Receipt Type"::"Sale Return";
+                end;
+            WarehouseRequest."Source Document"::"Inbound Transfer", WarehouseRequest."Source Document"::"Outbound Transfer":
+                WarehouseReceiptHeader."AMC Receipt Type" := WarehouseReceiptHeader."AMC Receipt Type"::Transfer;
+        end;
     end;
 }
