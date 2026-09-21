@@ -7298,6 +7298,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report AMC Whse. - Posted Shipment - RequestPage RequestOptionsPage - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Report 3490754164 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update Item Data</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Update Item Date - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 3698981225 - NamedType 732759939" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 3698981225">
           <source>Nabywca %1 nie jest ustawiony do\wysyłania informacji o RODO.</source>
           <note from="Developer" annotates="general" priority="2"></note>
