@@ -94,7 +94,7 @@ pageextension 50023 "AMC Item List" extends "Item List"
 
         modify("Item Tracking Code")
         {
-            Visible = false;
+            Visible = true;
             ApplicationArea = All;
         }
 
