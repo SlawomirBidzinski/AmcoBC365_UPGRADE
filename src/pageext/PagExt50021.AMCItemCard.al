@@ -8,7 +8,7 @@ pageextension 50021 "AMC Item Card" extends "Item Card"
             //{
             //    ApplicationArea = All;
             //    ToolTip = ' ';
-            //}
+            //}            
             field("AMC Item Eng Translation"; Rec."AMC Item Eng Translation")
             {
                 ApplicationArea = All;
@@ -160,6 +160,14 @@ pageextension 50021 "AMC Item Card" extends "Item Card"
             }
         }
         modify("Service Item Group")
+        {
+            Visible = false;
+        }
+        modify("VAT Prod. Posting Group")
+        {
+            Visible = false;
+        }
+        modify("Tax Group Code")
         {
             Visible = false;
         }
