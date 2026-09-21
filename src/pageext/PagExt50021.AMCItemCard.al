@@ -166,7 +166,9 @@ pageextension 50021 "AMC Item Card" extends "Item Card"
         modify("VAT Prod. Posting Group")
         {
             Visible = true;
+            Importance = Promoted;
             ApplicationArea = All;
+
         }
         modify("Tax Group Code")
         {
