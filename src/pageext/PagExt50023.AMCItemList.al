@@ -42,14 +42,12 @@ pageextension 50023 "AMC Item List" extends "Item List"
                 ApplicationArea = All;
             }
             field(AMCCountryOriginList; CountryOriginList)
-
             {
                 Caption = 'Kraj Pochodzenia';
                 ApplicationArea = All;
                 ToolTip = ' ';
                 Editable = False;
             }
-
             field("AMC Item Hierarchy"; Rec."AMC Item Hierarchy")
             {
                 ApplicationArea = All;
@@ -91,6 +89,15 @@ pageextension 50023 "AMC Item List" extends "Item List"
             }
 
         }
+
+        moveafter("AMC Packing Type"; "Item Tracking Code")
+
+        modify("Item Tracking Code")
+        {
+            Visible = false;
+            ApplicationArea = All;
+        }
+
         modify("Cost is Adjusted")
         {
             Visible = false;
