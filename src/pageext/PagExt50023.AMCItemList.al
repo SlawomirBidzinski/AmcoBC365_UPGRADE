@@ -90,13 +90,30 @@ pageextension 50023 "AMC Item List" extends "Item List"
 
         }
 
-        moveafter("AMC Packing Type"; "Item Tracking Code")
+        modify("Inventory Posting Group")
+        {
+            Visible = true;
+            ApplicationArea = All;
+        }
+        modify("VAT Prod. Posting Group")
+        {
+            Visible = true;
+            ApplicationArea = All;
+        }
+        modify("Gen. Prod. Posting Group")
+            Visible = true;
+            ApplicationArea = All;
+        }
 
         modify("Item Tracking Code")
         {
             Visible = true;
             ApplicationArea = All;
         }
+        moveafter("AMC Packing Type"; "Inventory Posting Group")
+        moveafter("Inventory Posting Group"; "VAT Prod. Posting Group")
+        moveafter("VAT Prod. Posting Group"; "Gen. Prod. Posting Group")
+        moveafter("Gen. Prod. Posting Group"; "Item Tracking Code")
 
         modify("Cost is Adjusted")
         {
