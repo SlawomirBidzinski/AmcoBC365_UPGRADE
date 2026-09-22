@@ -111,10 +111,20 @@ pageextension 50023 "AMC Item List" extends "Item List"
             Visible = true;
             ApplicationArea = All;
         }
+
         moveafter("AMC Packing Type"; "Inventory Posting Group")
         moveafter("Inventory Posting Group"; "VAT Prod. Posting Group")
         moveafter("VAT Prod. Posting Group"; "Gen. Prod. Posting Group")
         moveafter("Gen. Prod. Posting Group"; "Item Tracking Code")
+
+        addafter("Item Tracking Code")
+        {
+            field("Warehouse Class Code"; Rec."Warehouse Class Code")
+            {
+                Visible = true;
+                ApplicationArea = All;
+            }
+        }
 
         modify("Cost is Adjusted")
         {
