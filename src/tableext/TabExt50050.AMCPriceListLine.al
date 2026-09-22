@@ -47,5 +47,10 @@ tableextension 50050 "AMC Price List Line" extends "Price List Line"
             Caption = 'Last Change Date Time';
             DataClassification = CustomerContent;
         }
+        field(500012; "AMC Priority"; Integer)
+        {
+            Caption = 'Priority';
+            DataClassification = CustomerContent;
+        }
     }
 }
