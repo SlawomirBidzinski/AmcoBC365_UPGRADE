@@ -9,10 +9,12 @@ pageextension 50026 "AMC Price List Lines" extends "Price List Lines"
         modify(StartingDate)
         {
             StyleExpr = ActualItem;
+            Visible = true;
         }
         modify(EndingDate)
         {
             StyleExpr = ActualItem;
+            Visible = true;
         }
         modify("Unit Price")
         {
@@ -34,6 +36,7 @@ pageextension 50026 "AMC Price List Lines" extends "Price List Lines"
             {
                 ApplicationArea = All;
                 Caption = 'Item Blocked';
+                Editable = false;
             }
         }
         addlast(Control1)
@@ -68,14 +71,8 @@ pageextension 50026 "AMC Price List Lines" extends "Price List Lines"
         ELSE
             ActualPrice := FALSE;
 
-        ShowItemBlocked := TRUE;
-        IF Item.GET(Rec."Source No.") THEN BEGIN
-            IF Item.Blocked = TRUE THEN
-                ShowItemBlocked := FALSE;
-
-            IF Item."AMC Out Off Item List" = TRUE THEN
-                ShowItemBlocked := FALSE;
-        END;
+        IF Item.GET(Rec."Source No.") THEN
+            ShowItemBlocked := Item.Blocked;
 
         IF (((Rec."Starting Date" = 0D) OR (WorkDate() >= Rec."Starting Date")) AND
            ((Rec."Ending Date" = 0D) OR (WorkDate() <= Rec."Ending Date"))) THEN
@@ -84,10 +81,10 @@ pageextension 50026 "AMC Price List Lines" extends "Price List Lines"
             ActualItem := 'Unfavorable';
     end;
 
-    procedure SetDateFilters(PriceListHeader:Record "Price List Header")
+    procedure SetDateFilters(PriceListHeader: Record "Price List Header")
     begin
-            Rec.SETFILTER("Starting Date", PriceListHeader.GetFilter("Starting Date"));
-            Rec.SETFILTER("Ending Date", PriceListHeader.GetFilter("Ending Date"));
+        Rec.SETFILTER("Starting Date", PriceListHeader.GetFilter("Starting Date"));
+        Rec.SETFILTER("Ending Date", PriceListHeader.GetFilter("Ending Date"));
     end;
 
     var

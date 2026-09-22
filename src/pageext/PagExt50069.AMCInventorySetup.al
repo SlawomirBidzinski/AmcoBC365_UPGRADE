@@ -1,4 +1,4 @@
-pageextension 50011 "AMC Inventory Setup" extends "Inventory Setup"
+pageextension 50069 "AMC Inventory Setup" extends "Inventory Setup"
 {
     layout
     {

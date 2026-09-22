@@ -101,6 +101,7 @@ pageextension 50023 "AMC Item List" extends "Item List"
             ApplicationArea = All;
         }
         modify("Gen. Prod. Posting Group")
+        {
             Visible = true;
             ApplicationArea = All;
         }

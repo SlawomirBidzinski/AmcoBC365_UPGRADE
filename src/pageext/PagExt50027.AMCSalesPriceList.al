@@ -16,6 +16,14 @@ pageextension 50027 "AMC Sales Price List" extends "Sales Price List"
                 end;
             }
         }
+        modify(StartingDate)
+        {
+            Visible = false;
+        }
+        modify(EndingDate)
+        {
+            Visible = false;
+        }
     }
 
     local procedure SetDateFilters()
