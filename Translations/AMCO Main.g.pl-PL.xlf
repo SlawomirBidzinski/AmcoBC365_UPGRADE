@@ -11704,7 +11704,7 @@
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 2161524959 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Pack Quantity</source>
-          <target>Pack Quantity</target>
+          <target>Ilość Opakowania</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Pack Quantity - Property Caption</note>
         </trans-unit>

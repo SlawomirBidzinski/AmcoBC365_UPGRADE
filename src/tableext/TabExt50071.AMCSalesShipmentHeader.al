@@ -22,7 +22,7 @@ tableextension 50071 "AMC Sales Shipment Header" extends "Sales Shipment Header"
             Caption = 'Data Kursu Wymiany';
             DataClassification = CustomerContent;
         }
-        field(50020; "AMC Create by IdUser"; Code[20])
+        field(50020; "AMC Create by IdUser"; Code[50])
         {
             Caption = 'Utworzone przez';
             Editable = false;

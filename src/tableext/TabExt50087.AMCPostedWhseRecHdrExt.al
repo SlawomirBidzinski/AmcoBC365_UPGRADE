@@ -74,7 +74,7 @@ tableextension 50087 "AMC Posted Whse. Rec. Hdr. Ext" extends "Posted Whse. Rece
             DataClassification = CustomerContent;
             Caption = 'Receipt Date';
         }
-        field(50020; "AMC Create by IdUser"; Code[20])
+        field(50020; "AMC Create by IdUser"; Code[50])
         {
             DataClassification = CustomerContent;
             Caption = 'Create by Id User';

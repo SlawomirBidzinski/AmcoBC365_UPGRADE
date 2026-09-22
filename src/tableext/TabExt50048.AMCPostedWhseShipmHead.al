@@ -87,7 +87,7 @@ tableextension 50048 "AMC Posted Whse Shipm. Head." extends "Posted Whse. Shipme
             Editable = false;
             DataClassification = CustomerContent;
         }
-        field(50020; "AMC Create by IdUser"; Code[20])
+        field(50020; "AMC Create by IdUser"; Code[50])
         {
             Caption = 'Utworzone przez';
             Editable = false;

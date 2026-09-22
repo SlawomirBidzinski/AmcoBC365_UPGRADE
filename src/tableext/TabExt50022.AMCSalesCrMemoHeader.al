@@ -27,7 +27,7 @@ tableextension 50022 "AMC Sales Cr.Memo Header" extends "Sales Cr.Memo Header"
             Caption = 'Data Kursu Wymiany';
             DataClassification = CustomerContent;
         }
-        field(50020; "AMC Create by IdUser"; Code[20])
+        field(50020; "AMC Create by IdUser"; Code[50])
         {
             Caption = 'Utworzone przez';
             DataClassification = CustomerContent;

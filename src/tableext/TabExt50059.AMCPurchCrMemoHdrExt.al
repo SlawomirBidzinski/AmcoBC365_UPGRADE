@@ -22,7 +22,7 @@ tableextension 50059 "AMC Purch. Cr. Memo Hdr.Ext" extends "Purch. Cr. Memo Hdr.
             Caption = 'Vendor Service Date';
             DataClassification = CustomerContent;
         }
-        field(50020; "AMC Create by IdUser"; Code[20])
+        field(50020; "AMC Create by IdUser"; Code[50])
         {
             Caption = 'Utworzone przez';
             Editable = false;
@@ -51,11 +51,11 @@ tableextension 50059 "AMC Purch. Cr. Memo Hdr.Ext" extends "Purch. Cr. Memo Hdr.
         }
         field(50101; "AMC Vendor Serach Name"; Code[100])
         {
-            CalcFormula = lookup(Vendor."Search Name" where("Search Name"=field("Buy-from Vendor No.")));
+            CalcFormula = lookup(Vendor."Search Name" where("Search Name" = field("Buy-from Vendor No.")));
             Caption = 'Nazwa Szukana Nabywcy';
             Editable = false;
             FieldClass = FlowField;
         }
     }
-    
+
 }

@@ -23,7 +23,7 @@ tableextension 50057 "AMC Purch. Inv. HeaderExt" extends "Purch. Inv. Header"
             Caption = 'Vendor Service Date';
             DataClassification = CustomerContent;
         }
-        field(50020; "AMC Create by IdUser"; Code[20])
+        field(50020; "AMC Create by IdUser"; Code[50])
         {
             Caption = 'Utworzone przez';
             DataClassification = CustomerContent;

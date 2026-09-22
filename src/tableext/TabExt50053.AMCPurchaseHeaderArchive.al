@@ -22,7 +22,7 @@ tableextension 50053 "AMC Purchase Header Archive" extends "Purchase Header Arch
             Caption = 'Vendor Service Date';
             DataClassification = CustomerContent;
         }
-        field(50020; "AMC Create by IdUser"; Code[20])
+        field(50020; "AMC Create by IdUser"; Code[50])
         {
             Caption = 'Utworzone przez';
             Editable = false;
@@ -132,16 +132,16 @@ tableextension 50053 "AMC Purchase Header Archive" extends "Purchase Header Arch
             Caption = 'Dostawa Bezpośrednia';
             DataClassification = CustomerContent;
         }
-//FIXME 
-/*       
-        field(50201; "AMC Bank Transfer Template"; Code[20])
-        {
-            Caption = 'Bank Transfer Template';
-            Description = 'ITEBA6/00';
-            TableRelation = "Bank Transfer Template";
-            DataClassification = CustomerContent;
-        }
-*/        
+        //FIXME 
+        /*       
+                field(50201; "AMC Bank Transfer Template"; Code[20])
+                {
+                    Caption = 'Bank Transfer Template';
+                    Description = 'ITEBA6/00';
+                    TableRelation = "Bank Transfer Template";
+                    DataClassification = CustomerContent;
+                }
+        */
         field(50202; "AMC Vendor Bank Account Code"; Code[20])
         {
             Caption = 'Vendor Bank Account Code';
