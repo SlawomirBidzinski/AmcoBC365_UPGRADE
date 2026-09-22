@@ -15,8 +15,18 @@ report 50051 "Update Item Date"
                 Item.Reset();
                 if Item.FindSet() then
                     repeat
-                        If item."Item Tracking Code" = '' then begin
-                            item."Item Tracking Code" := 'NR_PARTII';
+                        If item."AMC Item Type" = item."AMC Item Type"::Wyroby then begin
+                            item."Warehouse Class Code" := 'MW';
+                            item.Modify();
+                        end;
+
+                        If item."AMC Item Type" = item."AMC Item Type"::Towary then begin
+                            item."Warehouse Class Code" := 'MW';
+                            item.Modify();
+                        end;
+
+                        If item."AMC Item Type" = item."AMC Item Type"::Surowce then begin
+                            item."Warehouse Class Code" := 'MS';
                             item.Modify();
                         end;
                     until Item.Next() = 0;
