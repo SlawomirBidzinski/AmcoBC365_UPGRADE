@@ -15,20 +15,30 @@ report 50051 "Update Item Date"
                 Item.Reset();
                 if Item.FindSet() then
                     repeat
-                        If item."AMC Item Type" = item."AMC Item Type"::Wyroby then begin
+                        If item."Gen. Prod. Posting Group" = 'Z.WYROBY' then begin
+                            item."AMC Item Type" := item."AMC Item Type"::Wyroby;
                             item."Warehouse Class Code" := 'MW';
                             item.Modify();
                         end;
 
-                        If item."AMC Item Type" = item."AMC Item Type"::Towary then begin
-                            item."Warehouse Class Code" := 'MW';
-                            item.Modify();
-                        end;
-
-                        If item."AMC Item Type" = item."AMC Item Type"::Surowce then begin
+                        If item."Gen. Prod. Posting Group" = 'Z.SUROW' then begin
+                            item."AMC Item Type" := item."AMC Item Type"::Surowce;
                             item."Warehouse Class Code" := 'MS';
                             item.Modify();
                         end;
+
+                        If item."Gen. Prod. Posting Group" = 'TOW.WIB' then begin
+                            item."AMC Item Type" := item."AMC Item Type"::Towary;
+                            item."Warehouse Class Code" := 'MW';
+                            item.Modify();
+                        end;
+
+                        If item."Gen. Prod. Posting Group" = 'TOW.FRUT' then begin
+                            item."AMC Item Type" := item."AMC Item Type"::Towary;
+                            item."Warehouse Class Code" := 'MW';
+                            item.Modify();
+                        end;
+
                     until Item.Next() = 0;
             end;
         }
