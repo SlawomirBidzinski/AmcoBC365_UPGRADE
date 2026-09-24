@@ -61,4 +61,30 @@ codeunit 50011 "AMC Events Mgmt."
                 WarehouseReceiptHeader."AMC Receipt Type" := WarehouseReceiptHeader."AMC Receipt Type"::Transfer;
         end;
     end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Price Calculation - V16", 'OnBeforePickBestLine', '', false, false)]
+    local procedure OnBeforePickBestLine(AmountType: Enum "Price Amount Type"; PriceListLine: Record "Price List Line"; var BestPriceListLine: Record "Price List Line"; var FoundBestLine: Boolean; var IsHandled: Boolean)
+    begin
+        if (BestPriceListLine."Source Type" = BestPriceListLine."Source Type"::All) and
+           (PriceListLine."Source Type" in [PriceListLine."Source Type"::"All Customers",
+                                            PriceListLine."Source Type"::"Customer Price Group",
+                                            PriceListLine."Source Type"::Customer]) then begin
+            BestPriceListLine := PriceListLine;
+            FoundBestLine := true;
+            IsHandled := true;
+        end
+        else if (BestPriceListLine."Source Type" = BestPriceListLine."Source Type"::"All Customers") and
+           (PriceListLine."Source Type" in [PriceListLine."Source Type"::"Customer Price Group",
+                                            PriceListLine."Source Type"::Customer]) then begin
+            BestPriceListLine := PriceListLine;
+            FoundBestLine := true;
+            IsHandled := true;
+        end
+        else if (BestPriceListLine."Source Type" = BestPriceListLine."Source Type"::"Customer Price Group") and
+           (PriceListLine."Source Type" = PriceListLine."Source Type"::Customer) then begin
+            BestPriceListLine := PriceListLine;
+            FoundBestLine := true;
+            IsHandled := true;
+        end;
+    end;
 }

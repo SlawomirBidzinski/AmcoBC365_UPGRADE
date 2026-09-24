@@ -22,10 +22,6 @@ pageextension 50026 "AMC Price List Lines" extends "Price List Lines"
         }
         addafter(SourceNo)
         {
-            field("AMC Priority";Rec."AMC Priority")
-            {
-                ApplicationArea = All;
-            }
             field("AMC Item Description"; Rec."AMC Item Description")
             {
                 ApplicationArea = All;

@@ -428,7 +428,6 @@ tableextension 50036 "AMC Sales Line" extends "Sales Line"
                 if (Rec.Type <> Rec.Type::Item) or (not Item.Get("No.")) then
                     exit;
 
-                Item.Get("No.");
                 Validate("AMC Pack Unit of Measure", Item."AMC Pack Unit of Measure");
             end;
         }
