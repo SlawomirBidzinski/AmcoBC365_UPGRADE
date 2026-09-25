@@ -11163,6 +11163,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Posted Whse. Rec. Hdr. Ext - Field AMC Vendor post code - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2273534458 - Field 4257423079 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2964960979">
+          <source>Conversion Currency Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Price List Line - Field AMC Conversion Currency Code - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2273534458 - Field 1125977748 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2964960979">
           <source>Cennik Walutowy</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -11188,20 +11193,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Price List Line - Field AMC Item Long Description - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 2273534458 - Field 2718112775 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2964960979">
-          <source>Priority</source>
+        <trans-unit id="TableExtension 2273534458 - Field 1559696718 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2964960979">
+          <source>Last Change Date Time</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Price List Line - Field AMC Priority - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Price List Line - Field AMC Last Change Date Time - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2273534458 - Field 323211261 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2964960979">
           <source>UserID</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Price List Line - Field AMC User ID - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 2273534458 - Field 2707547934 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2964960979">
-          <source>Last Change Date Time</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Price List Line - Field AMCLast Change Date Time - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3849784469 - Field 3609553454 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3335635432">
           <source>Alkoh. wielowod.\Recept.</source>

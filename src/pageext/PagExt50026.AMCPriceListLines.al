@@ -39,6 +39,13 @@ pageextension 50026 "AMC Price List Lines" extends "Price List Lines"
                 Editable = false;
             }
         }
+        addafter(CurrencyCode)
+        {
+            field("AMC Conversion Currency Code"; Rec."AMC Conversion Currency Code")
+            {
+                ApplicationArea = All;
+            }
+        }
         addlast(Control1)
         {
             field("AMC Currency Base Price"; Rec."AMC Currency Base Price")
@@ -57,7 +64,7 @@ pageextension 50026 "AMC Price List Lines" extends "Price List Lines"
             {
                 ApplicationArea = All;
             }
-            field("AMCLast Change Date Time"; Rec."AMCLast Change Date Time")
+            field("AMC Last Change Date Time"; Rec."AMC Last Change Date Time")
             {
                 ApplicationArea = All;
             }

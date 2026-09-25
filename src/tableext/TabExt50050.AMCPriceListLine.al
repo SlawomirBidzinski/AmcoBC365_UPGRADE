@@ -42,10 +42,16 @@ tableextension 50050 "AMC Price List Line" extends "Price List Line"
             ValidateTableRelation = false;
             DataClassification = CustomerContent;
         }
-        field(50011; "AMCLast Change Date Time"; DateTime)
+        field(50011; "AMC Last Change Date Time"; DateTime)
         {
             Caption = 'Last Change Date Time';
             DataClassification = CustomerContent;
+        }
+        field(50012; "AMC Conversion Currency Code"; Code[20])
+        {
+            Caption = 'Conversion Currency Code';
+            DataClassification = CustomerContent;
+            TableRelation = Currency;
         }
     }
 }

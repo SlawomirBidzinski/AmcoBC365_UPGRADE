@@ -14,6 +14,12 @@ codeunit 50011 "AMC Events Mgmt."
             END;
         END;
         SalesLine."AMC Unit Price Date From" := PriceListLine."Starting Date";
+
+        if (PriceListLine."AMC Currency Base Price") and (SalesHeader."AMC Price Currency" = PriceListLine."AMC Conversion Currency Code") then begin
+            SalesHeader.TestField("AMC Price Exch. Rate");
+
+            SalesLine."Unit Price" *= SalesHeader."AMC Price Exch. Rate";
+        end;
     end;
 
     [EventSubscriber(ObjectType::Report, Report::"Get Source Documents", 'OnBeforeWhseShptHeaderInsert', '', false, false)]
