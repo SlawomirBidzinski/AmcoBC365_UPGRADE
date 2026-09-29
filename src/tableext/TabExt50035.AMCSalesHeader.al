@@ -40,9 +40,8 @@ tableextension 50035 "AMC Sales Header" extends "Sales Header"
             DataClassification = CustomerContent;
             trigger OnValidate()
             var
-                Text_002: Label 'Zmieniono Datę Kursu Waluty %1, czy zakualizować kurs?';
+                Text_002: Label 'Zmieniono Datę Kursu Waluty %1, czy zaktualizować kurs?';
             begin
-
                 IF "AMC Currancy Exchange Date" <> xRec."AMC Currancy Exchange Date" THEN
                     IF CONFIRM(Text_002, FALSE, "Currency Code") THEN begin
                         UpdateCurrencyFactor;
@@ -206,7 +205,7 @@ tableextension 50035 "AMC Sales Header" extends "Sales Header"
             Editable = false;
 
         }
-        field(50101; "AMC Customer Serach Name"; Code[100])
+        field(50101; "AMC Customer Search Name"; Code[100])
         {
             FieldClass = FlowField;
             CalcFormula = Lookup(Customer."Search Name" WHERE("No." = FIELD("Sell-to Customer No.")));

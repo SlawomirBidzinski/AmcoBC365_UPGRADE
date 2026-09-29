@@ -23,7 +23,7 @@ page 50154 "AMC Discount Correction Inv."
                 {
                     ToolTip = 'Specifies the name of the customer that you’re selling to. By default, the same customer is suggested as the ship-to customer. If needed, you can specify a different ship-to customer on the document.';
                 }
-                field("AMC Customer Serach Name"; Rec."AMC Customer Serach Name")
+                field("AMC Customer Search Name"; Rec."AMC Customer Search Name")
                 {
                     ToolTip = 'Specifies the value of the Nazwa Szukana Nabywcy field.';
                 }

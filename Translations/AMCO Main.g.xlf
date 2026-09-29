@@ -8963,16 +8963,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Company Information - Field AMC ILN - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 219105707 - Field 2994304153 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3305661226">
-          <source>Purch. Exch. Rate</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Currency Exchange Rate - Field AMC Purch. Exch. Rate - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 219105707 - Field 1032687471 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3305661226">
-          <source>Sales Exch. Rate</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Currency Exchange Rate - Field AMC Sales Exch. Rate - Property Caption</note>
-        </trans-unit>
         <trans-unit id="TableExtension 3597095371 - Field 1752958472 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2733917450">
           <source>Nr Transakcji Przelewu</source>
           <note from="Developer" annotates="general" priority="2"></note>

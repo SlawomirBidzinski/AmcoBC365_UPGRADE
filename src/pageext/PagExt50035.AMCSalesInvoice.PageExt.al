@@ -4,7 +4,7 @@ pageextension 50035 "AMC Sales Invoice" extends "Sales Invoice"
     {
         addlast(General)
         {
-            field("AMC Customer Serach Name"; Rec."AMC Customer Serach Name")
+            field("AMC Customer Search Name"; Rec."AMC Customer Search Name")
             {
                 ApplicationArea = All;
             }
