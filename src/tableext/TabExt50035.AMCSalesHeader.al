@@ -303,17 +303,13 @@ tableextension 50035 "AMC Sales Header" extends "Sales Header"
             DataClassification = CustomerContent;
 
             trigger OnValidate()
-
             var
-
                 CurrExchRate: Record "Currency Exchange Rate";
                 CatalogCurrDate: Date;
                 FactExchangeDate: Date;
                 CatalogFactor: Decimal;
                 ExhangeRate: Decimal;
-
             begin
-
                 IF "AMC Price Currency" <> '' THEN BEGIN
                     IF "AMC Price Exch. Date" <> 0D THEN
                         CatalogCurrDate := "AMC Price Exch. Date"
@@ -351,15 +347,11 @@ tableextension 50035 "AMC Sales Header" extends "Sales Header"
                     UNTIL SalesLine.NEXT = 0;
             end;
 
-
             trigger OnLookup()
             var
-
                 CurrExchRate: Record "Currency Exchange Rate";
                 CurrExchRates: Page "Currency Exchange Rates";
-
             begin
-
                 CLEAR(CurrExchRates);
                 IF "AMC Price Currency" <> '' THEN BEGIN
                     CurrExchRate.RESET;
@@ -375,10 +367,6 @@ tableextension 50035 "AMC Sales Header" extends "Sales Header"
                     END;
                 END;
             end;
-
-
-
-
         }
         field(50123; "AMC Authorise for Limit"; Boolean)
         {
