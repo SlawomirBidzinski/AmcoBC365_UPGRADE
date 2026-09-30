@@ -4,16 +4,16 @@ pageextension 50030 "AMC Sales Order List" extends "Sales Order List"
     {
         addafter("No.")
         {
-            field("AMC RW Transaction";Rec."AMC RW Transaction")
+            field("AMC RW Transaction"; Rec."AMC RW Transaction")
             {
                 ApplicationArea = All;
             }
-            field("AMC RW Transaction Type";Rec."AMC RW Transaction Type")
+            field("AMC RW Transaction Type"; Rec."AMC RW Transaction Type")
             {
                 ApplicationArea = All;
             }
         }
-        moveafter("Amount Including VAT"; "Currency Code")
+        moveafter("No."; "Currency Code")
         modify("Currency Code")
         {
             Visible = True;

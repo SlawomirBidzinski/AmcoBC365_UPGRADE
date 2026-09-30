@@ -1,4 +1,4 @@
-pageextension 50071 "AMC Posted Sales Shipment Ext." extends "Posted Sales Shipment"
+pageextension 50055 "AMC Posted Sales Shipment Ext." extends "Posted Sales Shipment"
 {
     layout
     {

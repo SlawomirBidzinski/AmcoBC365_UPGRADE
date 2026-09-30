@@ -3,7 +3,7 @@ codeunit 50011 "AMC Events Mgmt."
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales Line - Price", 'OnAfterSetPrice', '', false, false)]
     local procedure OnAfterSetPrice(var SalesLine: Record "Sales Line"; PriceListLine: Record "Price List Line"; AmountType: Enum "Price Amount Type"; var SalesHeader: Record "Sales Header")
     begin
-        IF PriceListLine."Unit Price" <> 0 THEN BEGIN
+        IF PriceListLine."Unit Price" <> 0 THEN
             CASE PriceListLine."Source Type" OF
                 PriceListLine."Source Type"::Customer:
                     SalesLine."AMC Unit Price Source" := SalesLine."AMC Unit Price Source"::"Customer Price";
@@ -12,8 +12,10 @@ codeunit 50011 "AMC Events Mgmt."
                 PriceListLine."Source Type"::"Customer Price Group":
                     SalesLine."AMC Unit Price Source" := SalesLine."AMC Unit Price Source"::"Group Price";
             END;
-        END;
+        
         SalesLine."AMC Unit Price Date From" := PriceListLine."Starting Date";
+        SalesLine."AMC Price Currency" := PriceListLine."AMC Conversion Currency Code";
+        SalesLine."AMC Currency Unit Price" := PriceListLine."Unit Price";
 
         if (PriceListLine."AMC Currency Base Price") and (SalesHeader."AMC Price Currency" = PriceListLine."AMC Conversion Currency Code") then begin
             SalesHeader.TestField("AMC Price Exch. Rate");
@@ -91,6 +93,45 @@ codeunit 50011 "AMC Events Mgmt."
             BestPriceListLine := PriceListLine;
             FoundBestLine := true;
             IsHandled := true;
+        end;
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales Warehouse Mgt.", 'OnBeforeCreateShptLineFromSalesLine', '', false, false)]
+    local procedure OnBeforeCreateShptLineFromSalesLine(var WarehouseShipmentLine: Record "Warehouse Shipment Line"; WarehouseShipmentHeader: Record "Warehouse Shipment Header"; SalesLine: Record "Sales Line"; SalesHeader: Record "Sales Header")
+    var
+        Item: Record Item;
+        Zone: Record Zone;
+        Bin: Record Bin;
+        BinType: Record "Bin Type";
+    begin
+        if not Item.Get(SalesLine."No.") then
+            exit;
+
+        if Item."Warehouse Class Code" = '' then begin
+            if WarehouseShipmentLine."Bin Code" = '' then
+                WarehouseShipmentLine.Validate("Bin Code", SalesLine."Bin Code");
+
+            if WarehouseShipmentLine."Bin Code" = '' then
+                WarehouseShipmentLine.Validate("Bin Code", WarehouseShipmentHeader."Bin Code");
+        end else begin
+            Zone.Reset();
+            Zone.SetRange("Location Code", WarehouseShipmentLine."Location Code");
+            Zone.SetRange("Warehouse Class Code", Item."Warehouse Class Code");
+            Zone.FindFirst();
+            WarehouseShipmentLine.Validate("Zone Code", Zone.Code);
+
+            Bin.Reset();
+            Bin.SetRange("Location Code", WarehouseShipmentLine."Location Code");
+            Bin.SetRange("Zone Code", Zone.Code);
+            Bin.SetRange("Warehouse Class Code", Item."Warehouse Class Code");
+            if Bin.FindSet() then
+                repeat
+                    BinType.Get(Bin."Bin Type Code");
+                    If BinType.Ship then begin
+                        WarehouseShipmentLine.Validate("Bin Code", Bin.Code);
+                        exit;
+                    end;
+                until Bin.Next() = 0;
         end;
     end;
 }

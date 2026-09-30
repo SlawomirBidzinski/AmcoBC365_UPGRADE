@@ -3313,10 +3313,10 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Discount Correction Inv. - Control AMC Creation Date - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 3643150725 - Control 2121987790 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 3643150725 - Control 1461316374 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Nazwa Szukana Nabywcy field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Discount Correction Inv. - Control AMC Customer Serach Name - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Discount Correction Inv. - Control AMC Customer Search Name - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 3643150725 - Control 1628796755 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Discount Period From field.</source>
@@ -14089,7 +14089,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header - Field AMC Currancy Exchange Date - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1529191820 - Field 3005292445 - Method 2126772001 - NamedType 3356564684" size-unit="char" translate="yes" xml:space="preserve" al-object-target="TableExtension 1529191820">
-          <source>Zmieniono Datę Kursu Waluty %1, czy zakualizować kurs?</source>
+          <source>Zmieniono Datę Kursu Waluty %1, czy zaktualizować kurs?</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header - Field AMC Currancy Exchange Date - Method OnValidate - NamedType Text_002</note>
         </trans-unit>
@@ -14098,10 +14098,10 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header - Field AMC Customer Bank Account Code - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 1529191820 - Field 2121987790 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+        <trans-unit id="TableExtension 1529191820 - Field 1461316374 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
           <source>Nazwa Szukana Nabywcy</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header - Field AMC Customer Serach Name - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header - Field AMC Customer Search Name - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1529191820 - Field 3907194010 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
           <source>Faktura Celna</source>

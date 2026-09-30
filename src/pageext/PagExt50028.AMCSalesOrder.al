@@ -18,6 +18,7 @@ pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
             field("AMC RW Transaction"; Rec."AMC RW Transaction")
             {
                 ApplicationArea = All;
+                Visible = false;
             }
         }
         modify("Sell-to Contact")
