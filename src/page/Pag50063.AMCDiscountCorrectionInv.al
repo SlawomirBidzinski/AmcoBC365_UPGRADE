@@ -277,7 +277,7 @@ page 50154 "AMC Discount Correction Inv."
             {
                 Caption = 'Foreign Trade';
 
-                field("AMC Currancy Exchange Date"; Rec."AMC Currancy Exchange Date")
+                field("AMC Currency Exchange Date"; Rec."AMC Currency Exchange Date")
                 {
                     ToolTip = 'Specifies the value of the Data Kursu Wymiany field.';
                 }

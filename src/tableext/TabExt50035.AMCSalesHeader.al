@@ -21,7 +21,7 @@ tableextension 50035 "AMC Sales Header" extends "Sales Header"
             begin
 
                 IF "AMC Exchange Rate" <> xRec."AMC Exchange Rate" THEN
-                    "AMC Currancy Exchange Date" := 0D;
+                    "AMC Currency Exchange Date" := 0D;
 
                 IF "AMC Exchange Rate" <> 0 THEN
                     "Currency Factor" := 1 / "AMC Exchange Rate"
@@ -34,7 +34,7 @@ tableextension 50035 "AMC Sales Header" extends "Sales Header"
             Caption = 'Faktury w Szt';
             DataClassification = CustomerContent;
         }
-        field(50010; "AMC Currancy Exchange Date"; Date)
+        field(50010; "AMC Currency Exchange Date"; Date)
         {
             Caption = 'Data Kursu Wymiany';
             DataClassification = CustomerContent;
@@ -42,9 +42,9 @@ tableextension 50035 "AMC Sales Header" extends "Sales Header"
             var
                 Text_002: Label 'Zmieniono Datę Kursu Waluty %1, czy zaktualizować kurs?';
             begin
-                IF "AMC Currancy Exchange Date" <> xRec."AMC Currancy Exchange Date" THEN
+                IF "AMC Currency Exchange Date" <> xRec."AMC Currency Exchange Date" THEN
                     IF CONFIRM(Text_002, FALSE, "Currency Code") THEN begin
-                        UpdateCurrencyFactor;
+                        UpdateCurrFactor();
                         IF "Currency Factor" <> 0 Then begin
                             "AMC Exchange Rate" := ROUND(1 / "Currency Factor", 0.0001);
                         end else begin
@@ -70,7 +70,7 @@ tableextension 50035 "AMC Sales Header" extends "Sales Header"
                         CurrExchRates.LOOKUPMODE(TRUE);
                         IF CurrExchRates.RUNMODAL = ACTION::LookupOK THEN BEGIN
                             CurrExchRates.GETRECORD(CurrExchRate);
-                            VALIDATE("AMC Currancy Exchange Date", CurrExchRate."Starting Date");
+                            VALIDATE("AMC Currency Exchange Date", CurrExchRate."Starting Date");
                         END;
                     END;
                 END;
@@ -510,5 +510,30 @@ tableextension 50035 "AMC Sales Header" extends "Sales Header"
                 END;
         END;
         exit(0);
+    end;
+
+    procedure UpdateCurrFactor()
+    var
+        CurrExchRate: Record "Currency Exchange Rate";
+        UpdateCurrencyExchangeRates: Codeunit "Update Currency Exchange Rates";
+        CurrencyDate: Date;
+    begin
+        if "Currency Code" <> '' then begin
+            if Rec."AMC Currency Exchange Date" <> 0D then
+                CurrencyDate := Rec."AMC Currency Exchange Date"
+            else
+                CurrencyDate := WorkDate();
+
+            if UpdateCurrencyExchangeRates.ExchangeRatesForCurrencyExist(CurrencyDate, "Currency Code") then begin
+                "Currency Factor" := CurrExchRate.ExchangeRate(CurrencyDate, "Currency Code");
+                if ("Currency Code" <> xRec."Currency Code") and (xRec."No." <> '') then
+                    RecreateSalesLines(FieldCaption("Currency Code"));
+            end else
+                UpdateCurrencyExchangeRates.ShowMissingExchangeRatesNotification("Currency Code");
+        end else begin
+            "Currency Factor" := 0;
+            if "Currency Code" <> xRec."Currency Code" then
+                RecreateSalesLines(FieldCaption("Currency Code"));
+        end;
     end;
 }

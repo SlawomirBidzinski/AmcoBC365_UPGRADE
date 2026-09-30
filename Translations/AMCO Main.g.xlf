@@ -3278,10 +3278,10 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Discount Correction Inv. - Control ForeignTrade - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 3643150725 - Control 3005292445 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 3643150725 - Control 1413253209 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Data Kursu Wymiany field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Discount Correction Inv. - Control AMC Currancy Exchange Date - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Discount Correction Inv. - Control AMC Currency Exchange Date - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 3643150725 - Control 1062187583 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Waluta Cennika field.</source>
@@ -8673,6 +8673,21 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Invoice - Control AMCDelivery - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3674570733 - Control 2855444473 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2079885696">
+          <source>EDI</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Order Archive - Control AMC EDI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3674570733 - Control 426515963 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2079885696">
+          <source>Szczegóły Zlecenia</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Order Archive - Control AMC Szczegóły Zlecenia - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3674570733 - Control 1011140535 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2079885696">
+          <source>Waluta Zamówienia</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Order Archive - Control AMC Waluta Zamówienia - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 3674570733 - Control 1096376160 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2079885696">
           <source>Waluta cennika - grupa</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -8712,6 +8727,21 @@
           <source>Wydanie Magazynowe</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Order Subpage - Action AMCWhseShpt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 99853858 - Control 2855444473 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
+          <source>EDI</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Order Subpage - Control AMC EDI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 99853858 - Control 426515963 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
+          <source>Szczegóły Zlecenia</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Order Subpage - Control AMC Szczegóły Zlecenia - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 99853858 - Control 1011140535 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
+          <source>Waluta Zamówienia</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Order Subpage - Control AMC Waluta Zamówienia - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 99853858 - Control 1096376160 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
           <source>Waluta cennika - grupa</source>
@@ -8947,6 +8977,11 @@
           <source>Emergency Contact</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMCVendorCardExt - Control AMCEmergencyContact - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 998343270 - Field 1261037551 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 400793991">
+          <source>Ship</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Bin - Field AMC Ship - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2329641408 - Field 1511859378 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3469146285">
           <source>BDO</source>
@@ -14083,15 +14118,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header - Field AMC Creation Date - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 1529191820 - Field 3005292445 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
+        <trans-unit id="TableExtension 1529191820 - Field 1413253209 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
           <source>Data Kursu Wymiany</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header - Field AMC Currancy Exchange Date - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header - Field AMC Currency Exchange Date - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 1529191820 - Field 3005292445 - Method 2126772001 - NamedType 3356564684" size-unit="char" translate="yes" xml:space="preserve" al-object-target="TableExtension 1529191820">
+        <trans-unit id="TableExtension 1529191820 - Field 1413253209 - Method 2126772001 - NamedType 3356564684" size-unit="char" translate="yes" xml:space="preserve" al-object-target="TableExtension 1529191820">
           <source>Zmieniono Datę Kursu Waluty %1, czy zaktualizować kurs?</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header - Field AMC Currancy Exchange Date - Method OnValidate - NamedType Text_002</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Header - Field AMC Currency Exchange Date - Method OnValidate - NamedType Text_002</note>
         </trans-unit>
         <trans-unit id="TableExtension 1529191820 - Field 135025851 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1192395785">
           <source>Customer Bank Account Code</source>

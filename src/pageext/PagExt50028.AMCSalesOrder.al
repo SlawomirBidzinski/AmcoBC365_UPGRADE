@@ -128,6 +128,7 @@ pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
             }
             group("AMC EDI")
             {
+                Caption = 'EDI';
                 field("AMC EDI Customer"; Rec."AMC EDI Customer")
                 {
                     ApplicationArea = All;
@@ -141,6 +142,7 @@ pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
 
             group("AMC Szczegóły Zlecenia")
             {
+                Caption = 'Szczegóły Zlecenia';
                 field("AMC Create by IdUser"; Rec."AMC Create by IdUser")
                 {
                     ApplicationArea = All;
@@ -173,6 +175,7 @@ pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
 
             group("AMC Waluta Zamówienia")
             {
+                Caption = 'Waluta Zamówienia';
                 field("AMC Currency Code"; Rec."Currency Code")
                 {
                     ApplicationArea = All;
@@ -182,14 +185,14 @@ pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
                     begin
 
                         IF rec."Currency Code" <> '' then
-                            rec.Validate("AMC Currancy Exchange Date", rec."Posting Date")
+                            rec.Validate("AMC Currency Exchange Date", rec."Posting Date")
                         else
-                            rec.Validate("AMC Currancy Exchange Date", 0D);
+                            rec.Validate("AMC Currency Exchange Date", 0D);
                     end;
 
                 }
 
-                field("AMC Currancy Exchange Date"; Rec."AMC Currancy Exchange Date")
+                field("AMC Currency Exchange Date"; Rec."AMC Currency Exchange Date")
                 {
                     ApplicationArea = All;
                 }

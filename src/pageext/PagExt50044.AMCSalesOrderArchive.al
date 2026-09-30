@@ -54,6 +54,7 @@ pageextension 50044 "AMC Sales Order Archive" extends "Sales Order Archive"
             }
             group("AMC EDI")
             {
+                Caption = 'EDI';
                 field("AMC EDI Customer"; Rec."AMC EDI Customer")
                 {
                     ApplicationArea = All;
@@ -67,6 +68,7 @@ pageextension 50044 "AMC Sales Order Archive" extends "Sales Order Archive"
 
             group("AMC Szczegóły Zlecenia")
             {
+                Caption = 'Szczegóły Zlecenia';
                 field("AMC Create by IdUser"; Rec."AMC Create by IdUser")
                 {
                     ApplicationArea = All;
@@ -99,6 +101,7 @@ pageextension 50044 "AMC Sales Order Archive" extends "Sales Order Archive"
 
             group("AMC Waluta Zamówienia")
             {
+                Caption = 'Waluta Zamówienia';
                 field("AMC Currency Code"; Rec."Currency Code")
                 {
                     ApplicationArea = All;
