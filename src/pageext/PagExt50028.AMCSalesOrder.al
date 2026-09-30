@@ -7,6 +7,37 @@ pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
             field("ITI Nos. Template Code"; Rec."ITI Nos. Template Code")
             {
                 ApplicationArea = All;
+
+                trigger OnLookup(var Text: Text): Boolean
+                var
+                    SalesDocNosTemplate: Record "ITI Sales Doc. Nos. Template";
+                    SalesDocNosTmpList: Page "ITI Sales Doc. Nos. Tmp. List";
+                begin
+                    SalesDocNosTemplate.Reset();
+                    SalesDocNosTemplate.SetRange("Document Type", SalesDocNosTemplate."Document Type"::Order);
+
+                    Clear(SalesDocNosTmpList);
+                    SalesDocNosTmpList.LookupMode := true;
+                    SalesDocNosTmpList.SetRecord(SalesDocNosTemplate);
+                    SalesDocNosTmpList.SetTableView(SalesDocNosTemplate);
+                    if SalesDocNosTmpList.RunModal() = Action::LookupOK then begin
+                        SalesDocNosTmpList.GetRecord(SalesDocNosTemplate);
+                        Rec.Validate("ITI Nos. Template Code", SalesDocNosTemplate.Code);
+                    end;
+                end;
+
+                trigger OnValidate()
+                var
+                    SalesDocNosTemplate: Record "ITI Sales Doc. Nos. Template";
+                begin
+                    if Rec."ITI Nos. Template Code" = '' then
+                        exit;
+
+                    SalesDocNosTemplate.Reset();
+                    SalesDocNosTemplate.SetRange("Document Type", SalesDocNosTemplate."Document Type"::Order);
+                    SalesDocNosTemplate.SetRange(Code, Rec."ITI Nos. Template Code");
+                    SalesDocNosTemplate.FindFirst();
+                end;
             }
             field("AMC RW Transaction Type"; Rec."AMC RW Transaction Type")
             {
