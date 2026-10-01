@@ -2,6 +2,23 @@ pageextension 50035 "AMC Sales Invoice" extends "Sales Invoice"
 {
     layout
     {
+        addfirst(General)
+        {
+            field("ITI Nos. Template Code"; Rec."ITI Nos. Template Code")
+            {
+                ApplicationArea = All;
+
+                trigger OnLookup(var Text: Text): Boolean
+                begin
+                    Rec.LookupITINosTemplateCode(Enum::"Sales Document Type"::Invoice);
+                end;
+
+                trigger OnValidate()
+                begin
+                    Rec.ValidateITINosTemplateCode(Enum::"Sales Document Type"::Invoice);
+                end;
+            }
+        }
         addlast(General)
         {
             field("AMC Customer Search Name"; Rec."AMC Customer Search Name")

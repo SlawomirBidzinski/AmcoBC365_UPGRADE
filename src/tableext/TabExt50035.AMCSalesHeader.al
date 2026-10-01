@@ -536,4 +536,35 @@ tableextension 50035 "AMC Sales Header" extends "Sales Header"
                 RecreateSalesLines(FieldCaption("Currency Code"));
         end;
     end;
+
+    procedure ValidateITINosTemplateCode(DocType: Enum "Sales Document Type")
+    var
+        SalesDocNosTemplate: Record "ITI Sales Doc. Nos. Template";
+    begin
+        if Rec."ITI Nos. Template Code" = '' then
+            exit;
+
+        SalesDocNosTemplate.Reset();
+        SalesDocNosTemplate.SetRange("Document Type", DocType);
+        SalesDocNosTemplate.SetRange(Code, Rec."ITI Nos. Template Code");
+        SalesDocNosTemplate.FindFirst();
+    end;
+
+    procedure LookupITINosTemplateCode(DocType: Enum "Sales Document Type")
+    var
+        SalesDocNosTemplate: Record "ITI Sales Doc. Nos. Template";
+        SalesDocNosTmpList: Page "ITI Sales Doc. Nos. Tmp. List";
+    begin
+        SalesDocNosTemplate.Reset();
+        SalesDocNosTemplate.SetRange("Document Type", DocType);
+
+        Clear(SalesDocNosTmpList);
+        SalesDocNosTmpList.LookupMode := true;
+        SalesDocNosTmpList.SetRecord(SalesDocNosTemplate);
+        SalesDocNosTmpList.SetTableView(SalesDocNosTemplate);
+        if SalesDocNosTmpList.RunModal() = Action::LookupOK then begin
+            SalesDocNosTmpList.GetRecord(SalesDocNosTemplate);
+            Rec.Validate("ITI Nos. Template Code", SalesDocNosTemplate.Code);
+        end;
+    end;
 }
