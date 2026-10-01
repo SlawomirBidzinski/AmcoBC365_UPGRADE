@@ -29,7 +29,7 @@ tableextension 50054 "AMC Purchase HeaderExt" extends "Purchase Header"
             begin
                 if "AMC Currency Exchange Date" <> xRec."AMC Currency Exchange Date" then
                     if CONFIRM(Text_002, false, "Currency Code") then
-                        UpdateCurrencyFactor
+                        UpdateCurrFactor()
                     else
                         ERROR('Zaniechano zmiany daty kursu');
             end;
@@ -265,6 +265,31 @@ tableextension 50054 "AMC Purchase HeaderExt" extends "Purchase Header"
     trigger OnAfterInsert()
     begin
         AMCInitInsertPW();
+    end;
+
+    procedure UpdateCurrFactor()
+    var
+        CurrExchRate: Record "Currency Exchange Rate";
+        UpdateCurrencyExchangeRates: Codeunit "Update Currency Exchange Rates";
+        CurrencyDate: Date;
+    begin
+        if "Currency Code" <> '' then begin
+            if Rec."AMC Currency Exchange Date" <> 0D then
+                CurrencyDate := Rec."AMC Currency Exchange Date"
+            else
+                CurrencyDate := WorkDate();
+
+            if UpdateCurrencyExchangeRates.ExchangeRatesForCurrencyExist(CurrencyDate, "Currency Code") then begin
+                "Currency Factor" := CurrExchRate.ExchangeRate(CurrencyDate, "Currency Code");
+                if ("Currency Code" <> xRec."Currency Code") and (xRec."No." <> '') then
+                    RecreatePurchLines(FieldCaption("Currency Code"));
+            end else
+                UpdateCurrencyExchangeRates.ShowMissingExchangeRatesNotification("Currency Code");
+        end else begin
+            "Currency Factor" := 0;
+            if "Currency Code" <> xRec."Currency Code" then
+                RecreatePurchLines(FieldCaption("Currency Code"));
+        end;
     end;
 
     var

@@ -11903,6 +11903,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Production Order - Field AMC Update End Time - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 1031299427 - Field 2922942275 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2271228953">
+          <source>Contract Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purch. Cr. Memo Hdr.Ext - Field AMC Contract Date - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 1031299427 - Field 3804118616 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2271228953">
           <source>Utworzone przez</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -12022,6 +12027,11 @@
           <source>Agreement Date</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purch. Inv. HeaderExt - Field AMC Agreement Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3639840624 - Field 2922942275 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1592379974">
+          <source>Contract Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purch. Inv. HeaderExt - Field AMC Contract Date - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3639840624 - Field 3804118616 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1592379974">
           <source>Utworzone przez</source>
@@ -12152,6 +12162,11 @@
           <source>Data Potwierdzenia</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purch. Rcpt. HeaderExt - Field AMC Approved Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2276779780 - Field 2922942275 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1052755578">
+          <source>Contract Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purch. Rcpt. HeaderExt - Field AMC Contract Date - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2276779780 - Field 3804118616 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1052755578">
           <source>Utworzone przez</source>
@@ -12298,6 +12313,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purchase Header Archive - Field AMC Approved Date - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2834931075 - Field 2922942275 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 146271610">
+          <source>Contract Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purchase Header Archive - Field AMC Contract Date - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2834931075 - Field 3804118616 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 146271610">
           <source>Utworzone przez</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -12433,6 +12453,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purchase HeaderExt - Field AMC Closed Status Sent - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2554461558 - Field 2922942275 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2072992664">
+          <source>Contract Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purchase HeaderExt - Field AMC Contract Date - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2554461558 - Field 3804118616 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2072992664">
           <source>Utworzone przez</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -12443,10 +12468,10 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purchase HeaderExt - Field AMC Creation Date - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 2554461558 - Field 3005292445 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2072992664">
+        <trans-unit id="TableExtension 2554461558 - Field 1413253209 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2072992664">
           <source>Data Kursu Wymiany</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purchase HeaderExt - Field AMC Currancy Exchange Date - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purchase HeaderExt - Field AMC Currency Exchange Date - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2554461558 - Field 3607825946 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2072992664">
           <source>Dostawa Bezpośrednia</source>
@@ -12538,10 +12563,10 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purchase HeaderExt - Field AMC Vendor Invoice Date - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 2554461558 - Field 2232593302 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2072992664">
+        <trans-unit id="TableExtension 2554461558 - Field 3821650910 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2072992664">
           <source>Nazwa Szukana Nabywcy</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purchase HeaderExt - Field AMC Vendor Serach Name - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purchase HeaderExt - Field AMC Vendor Search Name - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2554461558 - Field 3263338086 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2072992664">
           <source>Vendor Service Date</source>
