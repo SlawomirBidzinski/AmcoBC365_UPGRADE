@@ -35,7 +35,7 @@ tableextension 50050 "AMC Price List Line" extends "Price List Line"
             Caption = 'Ilość Nabywców';
             Editable = false;
         }
-        field(50010; "AMC User ID"; Code[20])
+        field(50010; "AMC User ID"; Code[50])
         {
             Caption = 'UserID';
             TableRelation = User;
@@ -54,4 +54,10 @@ tableextension 50050 "AMC Price List Line" extends "Price List Line"
             TableRelation = Currency;
         }
     }
+
+    trigger OnAfterModify()
+    begin
+        "AMC User ID" := UserId;
+        "AMC Last Change Date Time" := CurrentDateTime();
+    end;
 }

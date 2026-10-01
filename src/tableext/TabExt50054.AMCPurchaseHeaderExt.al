@@ -2,7 +2,7 @@ tableextension 50054 "AMC Purchase HeaderExt" extends "Purchase Header"
 {
     fields
     {
-        field(50004; "AMC Currancy Exchange Date"; Date)
+        field(50004; "AMC Currency Exchange Date"; Date)
         {
             Caption = 'Data Kursu Wymiany';
             DataClassification = CustomerContent;
@@ -19,7 +19,7 @@ tableextension 50054 "AMC Purchase HeaderExt" extends "Purchase Header"
                         CurrExchRates.LOOKUPMODE(true);
                         if CurrExchRates.RUNMODAL() = ACTION::LookupOK then begin
                             CurrExchRates.GETRECORD(CurrExchRate);
-                            VALIDATE("AMC Currancy Exchange Date", CurrExchRate."Starting Date");
+                            VALIDATE("AMC Currency Exchange Date", CurrExchRate."Starting Date");
                         end;
                     end;
                 end;
@@ -27,7 +27,7 @@ tableextension 50054 "AMC Purchase HeaderExt" extends "Purchase Header"
 
             trigger OnValidate()
             begin
-                if "AMC Currancy Exchange Date" <> xRec."AMC Currancy Exchange Date" then
+                if "AMC Currency Exchange Date" <> xRec."AMC Currency Exchange Date" then
                     if CONFIRM(Text_002, false, "Currency Code") then
                         UpdateCurrencyFactor
                     else
@@ -42,7 +42,7 @@ tableextension 50054 "AMC Purchase HeaderExt" extends "Purchase Header"
             trigger OnValidate()
             begin
                 if "AMC Exchange Rate" <> xRec."AMC Exchange Rate" then
-                    "AMC Currancy Exchange Date" := 0D;
+                    "AMC Currency Exchange Date" := 0D;
 
                 if "AMC Exchange Rate" <> 0 then
                     "Currency Factor" := 1 / "AMC Exchange Rate"
@@ -148,7 +148,7 @@ tableextension 50054 "AMC Purchase HeaderExt" extends "Purchase Header"
             Caption = 'Invoice creator';
             DataClassification = CustomerContent;
         }
-        field(50101; "AMC Vendor Serach Name"; Code[100])
+        field(50101; "AMC Vendor Search Name"; Code[100])
         {
             CalcFormula = lookup(Vendor."Search Name" where("Search Name" = field("Buy-from Vendor No.")));
             Caption = 'Nazwa Szukana Nabywcy';
@@ -185,6 +185,11 @@ tableextension 50054 "AMC Purchase HeaderExt" extends "Purchase Header"
         field(50109; "AMC Drop Shipment"; Boolean)
         {
             Caption = 'Dostawa Bezpośrednia';
+            DataClassification = CustomerContent;
+        }
+        field(50203; "AMC Contract Date"; Date)
+        {
+            Caption = 'Contract Date';
             DataClassification = CustomerContent;
         }
         modify("ITI Nos. Template Code")

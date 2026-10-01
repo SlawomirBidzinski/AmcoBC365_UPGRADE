@@ -10,6 +10,10 @@ pageextension 50032 "AMC Purchase Order List Ext" extends "Purchase Order List"
             {
                 ApplicationArea = All;
             }
+            field("AMC Contract Date"; Rec."AMC Contract Date")
+            {
+                ApplicationArea = All;
+            }
         }
     }
 

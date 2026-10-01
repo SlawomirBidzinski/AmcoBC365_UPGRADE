@@ -149,5 +149,10 @@ tableextension 50053 "AMC Purchase Header Archive" extends "Purchase Header Arch
             TableRelation = "Vendor Bank Account".Code WHERE("Vendor No." = FIELD("Pay-to Vendor No."));
             DataClassification = CustomerContent;
         }
+        field(50203; "AMC Contract Date"; Date)
+        {
+            Caption = 'Contract Date';
+            DataClassification = CustomerContent;
+        }
     }
 }

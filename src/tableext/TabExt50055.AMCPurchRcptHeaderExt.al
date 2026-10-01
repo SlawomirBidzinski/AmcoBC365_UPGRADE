@@ -87,6 +87,11 @@ tableextension 50055 "AMC Purch. Rcpt. HeaderExt" extends "Purch. Rcpt. Header"
             Caption = 'Dostawa Bezpośrednia';
             DataClassification = CustomerContent;
         }
+        field(50203; "AMC Contract Date"; Date)
+        {
+            Caption = 'Contract Date';
+            DataClassification = CustomerContent;
+        }
     }
 
 }

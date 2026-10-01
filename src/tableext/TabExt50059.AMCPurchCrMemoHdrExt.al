@@ -56,6 +56,11 @@ tableextension 50059 "AMC Purch. Cr. Memo Hdr.Ext" extends "Purch. Cr. Memo Hdr.
             Editable = false;
             FieldClass = FlowField;
         }
+        field(50203; "AMC Contract Date"; Date)
+        {
+            Caption = 'Contract Date';
+            DataClassification = CustomerContent;
+        }
     }
 
 }

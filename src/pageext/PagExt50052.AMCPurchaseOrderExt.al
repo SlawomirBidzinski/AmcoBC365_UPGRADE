@@ -12,6 +12,10 @@ pageextension 50052 "AMC Purchase Order Ext" extends "Purchase Order"
             {
                 ApplicationArea = All;
             }
+            field("AMC Contract Date"; Rec."AMC Contract Date")
+            {
+                ApplicationArea = All;
+            }
         }
         addafter(Control3)
         {
@@ -47,7 +51,7 @@ pageextension 50052 "AMC Purchase Order Ext" extends "Purchase Order"
             {
                 ApplicationArea = All;
             }
-            field("AMC Currancy Exchange Date"; Rec."AMC Currancy Exchange Date")
+            field("AMC Currency Exchange Date"; Rec."AMC Currency Exchange Date")
             {
                 ApplicationArea = All;
             }
