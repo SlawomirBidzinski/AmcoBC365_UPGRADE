@@ -2,6 +2,8 @@ codeunit 50014 "AMC Sales Price Events Mgmt."
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales Line - Price", 'OnAfterSetPrice', '', false, false)]
     local procedure OnAfterSetPrice(var SalesLine: Record "Sales Line"; PriceListLine: Record "Price List Line"; AmountType: Enum "Price Amount Type"; var SalesHeader: Record "Sales Header")
+    var
+        Currency: Record Currency;
     begin
         IF PriceListLine."Unit Price" <> 0 THEN
             CASE PriceListLine."Source Type" OF
@@ -18,9 +20,13 @@ codeunit 50014 "AMC Sales Price Events Mgmt."
         SalesLine."AMC Currency Unit Price" := PriceListLine."Unit Price";
 
         if (PriceListLine."AMC Currency Base Price") and (SalesHeader."AMC Price Currency" = PriceListLine."AMC Conversion Currency Code") then begin
+            if not Currency.Get(SalesHeader."AMC Price Currency") then begin
+                Currency.Init();
+                Currency.InitRoundingPrecision();
+            end;
             SalesHeader.TestField("AMC Price Exch. Rate");
 
-            SalesLine."Unit Price" *= SalesHeader."AMC Price Exch. Rate";
+            SalesLine."Unit Price" := Round(SalesLine."Unit Price" * SalesHeader."AMC Price Exch. Rate", Currency."Amount Rounding Precision");
         end;
     end;
 

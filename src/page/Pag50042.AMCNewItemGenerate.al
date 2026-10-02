@@ -451,6 +451,10 @@ page 50042 "AMC New Item Generate"
                             ItemRec.VALIDATE("Costing Method", ItemTempl."Costing Method");
                             Itemrec.VALIDATE("Item Tracking Code", ItemTempl."Item Tracking Code");
                             Itemrec.Validate("Replenishment System", ItemTempl."Replenishment System");
+                            ItemRec.Validate("Warehouse Class Code", ItemTempl."Warehouse Class Code");
+                            ItemRec.Validate("Reordering Policy", ItemTempl."Reordering Policy");
+                            ItemRec.Validate("Reorder Point", ItemTempl."Reorder Point");
+                            ItemRec.Validate("Reorder Quantity", ItemTempl."Reorder Quantity");
                         END;
 
                     CASE ItemType of

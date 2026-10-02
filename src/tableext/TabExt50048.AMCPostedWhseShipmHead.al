@@ -109,7 +109,7 @@ tableextension 50048 "AMC Posted Whse Shipm. Head." extends "Posted Whse. Shipme
             Caption = 'Typ Wydania';
             DataClassification = CustomerContent;
         }
-        field(50100; "AMC Search Name"; Code[100])
+        field(50025; "AMC Customer Search Name"; Code[100])
         {
             FieldClass = FlowField;
             CalcFormula = Lookup(Customer."Search Name" WHERE("No." = FIELD("AMC Customer Code")));

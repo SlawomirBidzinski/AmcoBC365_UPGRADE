@@ -66,4 +66,28 @@ codeunit 50011 "AMC Whse. Events Mgmt."
                 WarehouseShipmentLine."Bin Code" := Bin.Code;
         end;
     end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Whse.-Post Shipment", 'OnAfterCreatePostedShptHeader', '', false, false)]
+    local procedure OnAfterCreatePostedShptHeader(var PostedWhseShptHeader: Record "Posted Whse. Shipment Header"; var WarehouseShipmentHeader: Record "Warehouse Shipment Header");
+    begin
+        PostedWhseShptHeader."AMC Customer Code" := WarehouseShipmentHeader."AMC Customer Code";
+        PostedWhseShptHeader."AMC Customer Name" := WarehouseShipmentHeader."AMC Customer Name";
+        PostedWhseShptHeader."AMC Customer Address" := WarehouseShipmentHeader."AMC Customer Address";
+        PostedWhseShptHeader."AMC Customer post code" := WarehouseShipmentHeader."AMC Customer post code";
+        PostedWhseShptHeader."AMC AMC Ship-to Code" := WarehouseShipmentHeader."AMC Ship-to Code";
+        PostedWhseShptHeader."AMC Ship-to Adress" := WarehouseShipmentHeader."AMC Ship-to Adress";
+        PostedWhseShptHeader."AMC Ship-to City" := WarehouseShipmentHeader."AMC Ship-to City";
+        PostedWhseShptHeader."AMC Ship-to Post Code" := WarehouseShipmentHeader."AMC Ship-to Post Code";
+        PostedWhseShptHeader."AMC Ship-to Name" := WarehouseShipmentHeader."AMC Ship-to Name";
+        PostedWhseShptHeader."AMC Ship-to Contact" := WarehouseShipmentHeader."AMC Ship-to Contact";
+        PostedWhseShptHeader."AMC Ship-to Phone" := WarehouseShipmentHeader."AMC Ship-to Phone";
+        PostedWhseShptHeader."AMC Remarks" := WarehouseShipmentHeader."AMC Remarks";
+        PostedWhseShptHeader."AMC Pallet Quantity" := WarehouseShipmentHeader."AMC Pallet Quantity";
+        PostedWhseShptHeader."AMC Pallet Item Code" := WarehouseShipmentHeader."AMC Pallet Item Code";
+        PostedWhseShptHeader."AMC Your Ref. No." := WarehouseShipmentHeader."AMC Your Reference";
+        PostedWhseShptHeader."AMC Create by IdUser" := WarehouseShipmentHeader."AMC Create by IdUser";
+        PostedWhseShptHeader."AMC Creation Date" := WarehouseShipmentHeader."AMC Creation Date";
+        PostedWhseShptHeader."AMC RW Transaction" := WarehouseShipmentHeader."AMC RW Transaction";
+        PostedWhseShptHeader."AMC Shipment Type" := WarehouseShipmentHeader."AMC Shipment Type";
+    end;
 }

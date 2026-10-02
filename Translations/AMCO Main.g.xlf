@@ -11048,6 +11048,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Posted Whse Shipm. Head. - Field AMC Customer post code - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 3263791572 - Field 1461316374 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2260220107">
+          <source>Search Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Posted Whse Shipm. Head. - Field AMC Customer Search Name - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3263791572 - Field 968912553 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2260220107">
           <source>Delivery Date</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -11072,11 +11077,6 @@
           <source>Rozliczenie RW</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Posted Whse Shipm. Head. - Field AMC RW Transaction - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 3263791572 - Field 1664785490 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2260220107">
-          <source>Search Name</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Posted Whse Shipm. Head. - Field AMC Search Name - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3263791572 - Field 1190021139 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2260220107">
           <source>Adres Dostawy</source>
