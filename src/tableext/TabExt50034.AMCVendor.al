@@ -62,5 +62,15 @@ tableextension 50034 "AMC Vendor" extends Vendor
             Caption = 'Email powiadomienia RODO';
             DataClassification = CustomerContent;
         }
+        field(50025; "AMC Certified Supplier"; Boolean)
+        {
+            Caption = 'Certified Supplier';
+            DataClassification = CustomerContent;
+        }
+        field(50026; "AMC Items Supplier"; Boolean)
+        {
+            Caption = 'Items Supplier';
+            DataClassification = CustomerContent;
+        }
     }
 }

@@ -2,6 +2,17 @@ pageextension 50024 AMCVendorCardExt extends "Vendor Card"
 {
     layout
     {
+        addlast(General)
+        {
+            field("AMC Certified Supplier"; Rec."AMC Certified Supplier")
+            {
+                ApplicationArea = All;
+            }
+            field("AMC Items Supplier"; Rec."AMC Items Supplier")
+            {
+                ApplicationArea = All;
+            }
+        }
         addlast("Address & Contact")
         {
             group(AMCEmergencyContact)

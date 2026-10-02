@@ -16253,6 +16253,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Vendor - Field AMC Alarm Phone No. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2546960317 - Field 3761980880 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1936001480">
+          <source>Certified Supplier</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Vendor - Field AMC Certified Supplier - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2546960317 - Field 2495956809 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1936001480">
           <source>Data Exportu</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -16262,6 +16267,11 @@
           <source>Godz. Exportu</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Vendor - Field AMC Export Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2546960317 - Field 387134199 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1936001480">
+          <source>Items Supplier</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Vendor - Field AMC Items Supplier - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2546960317 - Field 721779483 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1936001480">
           <source>Old Vendor Code</source>
