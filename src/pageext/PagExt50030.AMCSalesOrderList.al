@@ -12,15 +12,26 @@ pageextension 50030 "AMC Sales Order List" extends "Sales Order List"
             {
                 ApplicationArea = All;
             }
+        }
+        modify("Bill-to Customer No.")
+        {
+            Visible = true;
+        }
+        moveafter("Sell-to Customer No."; "Bill-to Customer No.")
+
+        modify("Currency Code")
+        {
+            Visible = True;
+        }
+        moveafter("Location Code"; "Currency Code")
+        addafter("Currency Code")
+        {
             field("AMC Price Currency"; Rec."AMC Price Currency")
             {
                 ApplicationArea = All;
             }
         }
-        moveafter("No."; "Currency Code")
-        modify("Currency Code")
-        {
-            Visible = True;
-        }
+
+
     }
 }
