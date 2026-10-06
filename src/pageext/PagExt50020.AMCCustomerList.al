@@ -24,10 +24,6 @@ pageextension 50020 "AMC Customer List" extends "Customer List"
             {
                 ApplicationArea = All;
             }
-            field("VAT Registration No."; Rec."VAT Registration No.")
-            {
-                ApplicationArea = All;
-            }
             field("Payment Method Code"; Rec."Payment Method Code")
             {
                 ApplicationArea = All;
