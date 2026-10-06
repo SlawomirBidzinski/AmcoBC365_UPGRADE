@@ -18,7 +18,26 @@ pageextension 50020 "AMC Customer List" extends "Customer List"
             {
                 ApplicationArea = All;
             }
+            field("VAT Registration No."; Rec."VAT Registration No.")
+            {
+                ApplicationArea = All;
+            }
+            field("ITI Internal ID"; Rec."ITI Internal ID")
+            {
+                ApplicationArea = All;
+            }
+            field("Payment Method Code"; Rec."Payment Method Code")
+            {
+                ApplicationArea = All;
+            }
         }
+        modify("Payment Terms Code")
+        {
+            Visible = true;
+        }
+
+        moveafter("Payment Method Code"; "Payment Terms Code")
+
         addlast(Control1)
         {
             field("AMC Customer Type"; Rec."AMC Customer Type")
