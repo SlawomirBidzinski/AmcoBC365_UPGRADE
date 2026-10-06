@@ -18,12 +18,21 @@ pageextension 50023 "AMC Item List" extends "Item List"
             }
         }
         moveafter("AMC Item Type"; "Production BOM No.")
+
+        modify("Item Category Code")
+        {
+            Visible = true;
+        }
+
+        moveafter("AMC Item Type"; "Item Category Code")
+
         addafter("Production BOM No.")
         {
             field("AMC RiD BOM Code"; Rec."AMC RiD BOM Code")
             {
                 Caption = 'Kod BOMu RiD';
                 ApplicationArea = All;
+                Visible = false;
             }
         }
         addafter(InventoryField)

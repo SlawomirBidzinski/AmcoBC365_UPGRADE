@@ -3,6 +3,7 @@ pageextension 50020 "AMC Customer List" extends "Customer List"
     layout
     {
         moveafter(Name; "Search Name")
+
         modify("Search Name")
         {
             Visible = True;
@@ -12,6 +13,7 @@ pageextension 50020 "AMC Customer List" extends "Customer List"
         {
             Visible = False;
         }
+
         addafter("Search Name")
         {
             field("Bill-to Customer No."; Rec."Bill-to Customer No.")
@@ -26,21 +28,26 @@ pageextension 50020 "AMC Customer List" extends "Customer List"
             {
                 ApplicationArea = All;
             }
-            field("ITI Internal ID"; Rec."ITI Internal ID")
-            {
-                ApplicationArea = All;
-            }
             field("Payment Method Code"; Rec."Payment Method Code")
             {
                 ApplicationArea = All;
             }
         }
+
         modify("Payment Terms Code")
         {
             Visible = true;
         }
 
         moveafter("Payment Method Code"; "Payment Terms Code")
+
+        addafter("Payment Terms Code")
+        {
+            field("Shipment Method Code"; Rec."Shipment Method Code")
+            {
+                ApplicationArea = All;
+            }
+        }
 
         addlast(Control1)
         {
