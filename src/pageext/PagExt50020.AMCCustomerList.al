@@ -2,8 +2,19 @@ pageextension 50020 "AMC Customer List" extends "Customer List"
 {
     layout
     {
-        moveafter(Name; "Name 2")
+        modify("Responsibility Center")
+        {
+            Visible = False;
+        }
 
+        addafter("No.")
+        {
+            field("Bill-to Customer No."; Rec."Bill-to Customer No.")
+            {
+                ApplicationArea = All;
+            }
+        }
+        moveafter(Name; "Name 2")
 
         modify("Search Name")
         {
@@ -11,26 +22,6 @@ pageextension 50020 "AMC Customer List" extends "Customer List"
         }
 
         moveafter("Name 2"; "Search Name")
-
-        modify("Responsibility Center")
-        {
-            Visible = False;
-        }
-
-        addafter("Search Name")
-        {
-            field("Bill-to Customer No."; Rec."Bill-to Customer No.")
-            {
-                ApplicationArea = All;
-            }
-        }
-        addafter("Currency Code")
-        {
-            field("ITI VATRegNoOrigCountryCode"; Rec."ITI VATRegNoOrigCountryCode")
-            {
-                ApplicationArea = All;
-            }
-        }
 
         modify("Payment Terms Code")
         {
@@ -41,7 +32,18 @@ pageextension 50020 "AMC Customer List" extends "Customer List"
         {
             Visible = true;
         }
-        addbefore("Gen. Bus. Posting Group")
+
+        addbefore("Customer Posting Group")
+        {
+            field("ITI VATRegNoOrigCountryCode"; Rec."ITI VATRegNoOrigCountryCode")
+            {
+                ApplicationArea = All;
+            }
+        }
+
+        movebefore("Location Code"; "Currency Code")
+
+        addafter("Location Code")
         {
             field("Payment Method Code"; Rec."Payment Method Code")
             {
@@ -52,6 +54,7 @@ pageextension 50020 "AMC Customer List" extends "Customer List"
                 ApplicationArea = All;
             }
         }
+        moveafter("Payment Method Code"; "Payment Terms Code")
 
         addlast(Control1)
         {
