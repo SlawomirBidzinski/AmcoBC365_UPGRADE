@@ -18,6 +18,10 @@ pageextension 50020 "AMC Customer List" extends "Customer List"
             {
                 ApplicationArea = All;
             }
+            field("ITI VATRegNoOrigCountryCode"; Rec."ITI VATRegNoOrigCountryCode")
+            {
+                ApplicationArea = All;
+            }
             field("VAT Registration No."; Rec."VAT Registration No.")
             {
                 ApplicationArea = All;
