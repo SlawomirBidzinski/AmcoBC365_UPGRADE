@@ -22,7 +22,7 @@ pageextension 50016 "AMC Vendor List" extends "Vendor List"
             ApplicationArea = All;
             Visible = true;
         }
-        addafter("Name 2")
+        addafter("No.")
         {
             field("AMC Certified Supplier"; Rec."AMC Certified Supplier")
             {
@@ -41,12 +41,12 @@ pageextension 50016 "AMC Vendor List" extends "Vendor List"
 
         addafter("Search Name")
         {
-            field("ITI VAT Registration No."; Rec."ITI VAT Registration No.")
+            field("VAT Registration No."; Rec."VAT Registration No.")
             {
                 ApplicationArea = All;
             }
         }
-        moveafter("ITI VAT Registration No."; "Location Code")
+        moveafter("VAT Registration No."; "Location Code")
         modify("Gen. Bus. Posting Group")
         {
             Visible = true;
