@@ -4,6 +4,10 @@ pageextension 50030 "AMC Sales Order List" extends "Sales Order List"
     {
         addafter("No.")
         {
+            field("AMC Invoice Type"; Rec."AMC Invoice Type")
+            {
+                ApplicationArea = All;
+            }
             field("AMC RW Transaction"; Rec."AMC RW Transaction")
             {
                 ApplicationArea = All;
@@ -31,7 +35,20 @@ pageextension 50030 "AMC Sales Order List" extends "Sales Order List"
                 ApplicationArea = All;
             }
         }
-
-
+        modify("Assigned User ID")
+        {
+            Visible = false;
+        }
+        addlast(Control1)
+        {
+            field("AMC Create by IdUser"; Rec."AMC Create by IdUser")
+            {
+                ApplicationArea = All;
+            }
+            field("AMC Creation Date"; Rec."AMC Creation Date")
+            {
+                ApplicationArea = All;
+            }
+        }
     }
 }
