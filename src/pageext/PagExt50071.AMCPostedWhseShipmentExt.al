@@ -35,7 +35,7 @@ pageextension 50071 "AMC Posted Whse. Shipment Ext" extends "Posted Whse. Shipme
         }
         addafter("Shipment Date")
         {
-            field("AMC Create by IdUser"; Rec."AMC Create by IdUser")
+            field("AMC Create by User ID"; Rec."AMC Create by User ID")
             {
                 ApplicationArea = All;
             }
@@ -43,7 +43,7 @@ pageextension 50071 "AMC Posted Whse. Shipment Ext" extends "Posted Whse. Shipme
             {
                 ApplicationArea = All;
             }
-            field("AMC Ship-to Code"; Rec."AMC AMC Ship-to Code")
+            field("AMC Ship-to Code"; Rec."AMC Ship-to Code")
             {
                 ApplicationArea = All;
             }

@@ -29,7 +29,7 @@ tableextension 50048 "AMC Posted Whse Shipm. Head." extends "Posted Whse. Shipme
             Caption = 'Miasto Nabywcy';
             DataClassification = CustomerContent;
         }
-        field(50006; "AMC AMC Ship-to Code"; Code[20])
+        field(50006; "AMC Ship-to Code"; Code[20])
         {
             Caption = 'Kod Adresu Dostawy';
             DataClassification = CustomerContent;
@@ -81,13 +81,13 @@ tableextension 50048 "AMC Posted Whse Shipm. Head." extends "Posted Whse. Shipme
             TableRelation = Item;
             DataClassification = CustomerContent;
         }
-        field(50016; "AMC Your Ref. No."; Text[30])
+        field(50016; "AMC Your Reference"; Text[30])
         {
             Caption = 'Nr zewn. klienta';
             Editable = false;
             DataClassification = CustomerContent;
         }
-        field(50020; "AMC Create by IdUser"; Code[50])
+        field(50020; "AMC Create by User ID"; Code[50])
         {
             Caption = 'Utworzone przez';
             Editable = false;

@@ -8,6 +8,10 @@ pageextension 50012 "AMC Bins" extends Bins
             {
                 ApplicationArea = All;
             }
+            field("AMC Receive"; Rec."AMC Receive")
+            {
+                ApplicationArea = All;
+            }
         }
     }
 }

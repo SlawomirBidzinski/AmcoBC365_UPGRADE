@@ -67,27 +67,67 @@ codeunit 50011 "AMC Whse. Events Mgmt."
         end;
     end;
 
-    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Whse.-Post Shipment", 'OnAfterCreatePostedShptHeader', '', false, false)]
-    local procedure OnAfterCreatePostedShptHeader(var PostedWhseShptHeader: Record "Posted Whse. Shipment Header"; var WarehouseShipmentHeader: Record "Warehouse Shipment Header");
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purchases Warehouse Mgt.", 'OnPurchLine2ReceiptLineOnAfterUpdateReceiptLine', '', false, false)]
+    local procedure OnPurchLine2ReceiptLineOnAfterUpdateReceiptLine(var WarehouseReceiptLine: Record "Warehouse Receipt Line"; var WhseReceiptHeader: Record "Warehouse Receipt Header"; PurchaseLine: Record "Purchase Line")
+    var
+        Item: Record Item;
+        Zone: Record Zone;
+        Bin: Record Bin;
+        BinType: Record "Bin Type";
     begin
-        PostedWhseShptHeader."AMC Customer Code" := WarehouseShipmentHeader."AMC Customer Code";
-        PostedWhseShptHeader."AMC Customer Name" := WarehouseShipmentHeader."AMC Customer Name";
-        PostedWhseShptHeader."AMC Customer Address" := WarehouseShipmentHeader."AMC Customer Address";
-        PostedWhseShptHeader."AMC Customer post code" := WarehouseShipmentHeader."AMC Customer post code";
-        PostedWhseShptHeader."AMC AMC Ship-to Code" := WarehouseShipmentHeader."AMC Ship-to Code";
-        PostedWhseShptHeader."AMC Ship-to Adress" := WarehouseShipmentHeader."AMC Ship-to Adress";
-        PostedWhseShptHeader."AMC Ship-to City" := WarehouseShipmentHeader."AMC Ship-to City";
-        PostedWhseShptHeader."AMC Ship-to Post Code" := WarehouseShipmentHeader."AMC Ship-to Post Code";
-        PostedWhseShptHeader."AMC Ship-to Name" := WarehouseShipmentHeader."AMC Ship-to Name";
-        PostedWhseShptHeader."AMC Ship-to Contact" := WarehouseShipmentHeader."AMC Ship-to Contact";
-        PostedWhseShptHeader."AMC Ship-to Phone" := WarehouseShipmentHeader."AMC Ship-to Phone";
-        PostedWhseShptHeader."AMC Remarks" := WarehouseShipmentHeader."AMC Remarks";
-        PostedWhseShptHeader."AMC Pallet Quantity" := WarehouseShipmentHeader."AMC Pallet Quantity";
-        PostedWhseShptHeader."AMC Pallet Item Code" := WarehouseShipmentHeader."AMC Pallet Item Code";
-        PostedWhseShptHeader."AMC Your Ref. No." := WarehouseShipmentHeader."AMC Your Reference";
-        PostedWhseShptHeader."AMC Create by IdUser" := WarehouseShipmentHeader."AMC Create by IdUser";
-        PostedWhseShptHeader."AMC Creation Date" := WarehouseShipmentHeader."AMC Creation Date";
-        PostedWhseShptHeader."AMC RW Transaction" := WarehouseShipmentHeader."AMC RW Transaction";
-        PostedWhseShptHeader."AMC Shipment Type" := WarehouseShipmentHeader."AMC Shipment Type";
+        if not Item.Get(PurchaseLine."No.") then
+            exit;
+
+        if Item."Warehouse Class Code" <> '' then begin
+            Bin.Reset();
+            Bin.SetRange("Location Code", WarehouseReceiptLine."Location Code");
+            Bin.SetRange("AMC Receive", true);
+            Bin.SetRange("Warehouse Class Code", Item."Warehouse Class Code");
+            if Bin.FindFirst() then
+                WarehouseReceiptLine."Bin Code" := Bin.Code;
+        end;
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Whse.-Post Shipment", 'OnBeforePostedWhseShptHeaderInsert', '', false, false)]
+    local procedure OnBeforePostedWhseShptHeaderInsert(var PostedWhseShipmentHeader: Record "Posted Whse. Shipment Header"; WarehouseShipmentHeader: Record "Warehouse Shipment Header")
+    begin
+        PostedWhseShipmentHeader."AMC Customer Code" := WarehouseShipmentHeader."AMC Customer Code";
+        PostedWhseShipmentHeader."AMC Customer Name" := WarehouseShipmentHeader."AMC Customer Name";
+        PostedWhseShipmentHeader."AMC Customer Address" := WarehouseShipmentHeader."AMC Customer Address";
+        PostedWhseShipmentHeader."AMC Customer post code" := WarehouseShipmentHeader."AMC Customer post code";
+        PostedWhseShipmentHeader."AMC Ship-to Code" := WarehouseShipmentHeader."AMC Ship-to Code";
+        PostedWhseShipmentHeader."AMC Ship-to Adress" := WarehouseShipmentHeader."AMC Ship-to Adress";
+        PostedWhseShipmentHeader."AMC Ship-to City" := WarehouseShipmentHeader."AMC Ship-to City";
+        PostedWhseShipmentHeader."AMC Ship-to Post Code" := WarehouseShipmentHeader."AMC Ship-to Post Code";
+        PostedWhseShipmentHeader."AMC Ship-to Name" := WarehouseShipmentHeader."AMC Ship-to Name";
+        PostedWhseShipmentHeader."AMC Ship-to Contact" := WarehouseShipmentHeader."AMC Ship-to Contact";
+        PostedWhseShipmentHeader."AMC Ship-to Phone" := WarehouseShipmentHeader."AMC Ship-to Phone";
+        PostedWhseShipmentHeader."AMC Remarks" := WarehouseShipmentHeader."AMC Remarks";
+        PostedWhseShipmentHeader."AMC Pallet Quantity" := WarehouseShipmentHeader."AMC Pallet Quantity";
+        PostedWhseShipmentHeader."AMC Pallet Item Code" := WarehouseShipmentHeader."AMC Pallet Item Code";
+        PostedWhseShipmentHeader."AMC Your Reference" := WarehouseShipmentHeader."AMC Your Reference";
+        PostedWhseShipmentHeader."AMC Create by User ID" := WarehouseShipmentHeader."AMC Create by User ID";
+        PostedWhseShipmentHeader."AMC Creation Date" := WarehouseShipmentHeader."AMC Creation Date";
+        PostedWhseShipmentHeader."AMC RW Transaction" := WarehouseShipmentHeader."AMC RW Transaction";
+        PostedWhseShipmentHeader."AMC Shipment Type" := WarehouseShipmentHeader."AMC Shipment Type";
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Whse.-Post Receipt", 'OnBeforePostedWhseRcptHeaderInsert', '', false, false)]
+    local procedure OnBeforePostedWhseRcptHeaderInsert(var PostedWhseReceiptHeader: Record "Posted Whse. Receipt Header"; WarehouseReceiptHeader: Record "Warehouse Receipt Header")
+    begin
+        PostedWhseReceiptHeader."AMC FirmType" := WarehouseReceiptHeader."AMC FirmType";
+        PostedWhseReceiptHeader."AMC Vendor Code" := WarehouseReceiptHeader."AMC Vendor Code";
+        PostedWhseReceiptHeader."AMC Vendor Name" := WarehouseReceiptHeader."AMC Vendor Name";
+        PostedWhseReceiptHeader."AMC Vendor Address" := WarehouseReceiptHeader."AMC Vendor Address";
+        PostedWhseReceiptHeader."AMC Vendor post code" := WarehouseReceiptHeader."AMC Vendor post code";
+        PostedWhseReceiptHeader."AMC Vendor City" := WarehouseReceiptHeader."AMC Vendor City";
+        PostedWhseReceiptHeader."AMC Receipt Date" := WarehouseReceiptHeader."AMC Receipt Date";
+        PostedWhseReceiptHeader."AMC Create by IdUser" := WarehouseReceiptHeader."AMC Create by IdUser";
+        PostedWhseReceiptHeader."AMC Creation Date" := WarehouseReceiptHeader."AMC Creation Date";
+        PostedWhseReceiptHeader."AMC Receipt Type" := WarehouseReceiptHeader."AMC Receipt Type";
+        PostedWhseReceiptHeader."AMC Notes" := WarehouseReceiptHeader."AMC Notes";
+        PostedWhseReceiptHeader."AMC Document ID" := WarehouseReceiptHeader."AMC Document ID";
+        PostedWhseReceiptHeader."AMC Customer Search Name" := WarehouseReceiptHeader."AMC Customer Search Name";
+        PostedWhseReceiptHeader."AMC PW Transaction" := WarehouseReceiptHeader."AMC PW Transaction";
     end;
 }

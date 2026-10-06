@@ -35,7 +35,7 @@ pageextension 50039 "AMC Warehouse Shipment" extends "Warehouse Shipment"
         }
         addafter("Shipment Date")
         {
-            field("AMC Create by IdUser"; Rec."AMC Create by IdUser")
+            field("AMC Create by User ID"; Rec."AMC Create by User ID")
             {
                 ApplicationArea = All;
             }

@@ -84,7 +84,7 @@ tableextension 50087 "AMC Posted Whse. Rec. Hdr. Ext" extends "Posted Whse. Rece
             DataClassification = CustomerContent;
             Caption = 'Creation Date';
         }
-        field(50024; "AMC  Receipt Type"; Enum "AMC Receipt Type")
+        field(50024; "AMC Receipt Type"; Enum "AMC Receipt Type")
         {
             DataClassification = CustomerContent;
             Caption = 'Receipt Type';

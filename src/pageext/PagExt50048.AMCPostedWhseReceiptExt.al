@@ -5,7 +5,7 @@ pageextension 50048 "AMC Posted Whse. Receipt Ext" extends "Posted Whse. Receipt
 
         addafter("No.")
         {
-            field("AMC  Receipt Type"; Rec."AMC  Receipt Type")
+            field("AMC Receipt Type"; Rec."AMC Receipt Type")
             {
                 ApplicationArea = All;
             }
