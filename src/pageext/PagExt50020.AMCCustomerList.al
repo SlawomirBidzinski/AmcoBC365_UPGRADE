@@ -3,12 +3,14 @@ pageextension 50020 "AMC Customer List" extends "Customer List"
     layout
     {
         moveafter(Name; "Name 2")
-        moveafter("Name 2"; "Search Name")
+
 
         modify("Search Name")
         {
             Visible = True;
         }
+
+        moveafter("Name 2"; "Search Name")
 
         modify("Responsibility Center")
         {
@@ -35,6 +37,10 @@ pageextension 50020 "AMC Customer List" extends "Customer List"
             Visible = true;
         }
 
+        modify("Customer Posting Group")
+        {
+            Visible = true;
+        }
         addbefore("Gen. Bus. Posting Group")
         {
             field("Payment Method Code"; Rec."Payment Method Code")
