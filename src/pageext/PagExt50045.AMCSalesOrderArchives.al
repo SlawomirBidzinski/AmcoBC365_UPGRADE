@@ -12,6 +12,10 @@ pageextension 50045 "AMC Sales Order Archives" extends "Sales Order Archives"
             {
                 ApplicationArea = All;
             }
+            field("AMC Last Archive"; Rec."AMC Last Archive")
+            {
+                ApplicationArea = All;
+            }
         }
         modify("Currency Code")
         {

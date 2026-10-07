@@ -1,4 +1,4 @@
-codeunit 50014 "AMC Sales Price Events Mgmt."
+codeunit 50014 "AMC Sales Events Mgmt."
 {
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales Line - Price", 'OnAfterSetPrice', '', false, false)]
     local procedure OnAfterSetPrice(var SalesLine: Record "Sales Line"; PriceListLine: Record "Price List Line"; AmountType: Enum "Price Amount Type"; var SalesHeader: Record "Sales Header")
@@ -54,5 +54,11 @@ codeunit 50014 "AMC Sales Price Events Mgmt."
             FoundBestLine := true;
             IsHandled := true;
         end;
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::ArchiveManagement, 'OnBeforeSalesHeaderArchiveInsert', '', false, false)]
+    local procedure OnBeforeSalesHeaderArchiveInsert(var SalesHeaderArchive: Record "Sales Header Archive"; SalesHeader: Record "Sales Header")
+    begin
+        SalesHeaderArchive.Validate("AMC Last Archive", true);
     end;
 }

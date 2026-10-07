@@ -301,6 +301,18 @@ tableextension 50037 "AMC Sales Header Archive" extends "Sales Header Archive"
         {
             Caption = 'Last Archive';
             DataClassification = CustomerContent;
+
+            trigger OnValidate()
+            var
+                SalesHdrArchive: Record "Sales Header Archive";
+            begin
+                SalesHdrArchive.Reset();
+                SalesHdrArchive.SetRange("AMC Last Archive", true);
+                SalesHdrArchive.SetRange("Document Type", Rec."Document Type");
+                SalesHdrArchive.SetRange("No.", Rec."No.");
+                SalesHdrArchive.SetFilter("Version No.", '<>%1', Rec."Version No.");
+                SalesHdrArchive.ModifyAll("AMC Last Archive", false);
+            end;
         }
     }
 }
