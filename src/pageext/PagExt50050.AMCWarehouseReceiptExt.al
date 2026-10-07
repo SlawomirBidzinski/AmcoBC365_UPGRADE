@@ -40,7 +40,7 @@ pageextension 50050 "AMC Warehouse Receipt Ext" extends "Warehouse Receipt"
         addlast(General)
         {
 
-            field("AMC Create by IdUser"; Rec."AMC Create by IdUser")
+            field("AMC Create by User ID"; Rec."AMC Create by User ID")
             {
                 ApplicationArea = All;
             }

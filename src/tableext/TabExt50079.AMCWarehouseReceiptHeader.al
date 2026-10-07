@@ -83,7 +83,7 @@ tableextension 50079 "AMC Warehouse Receipt Header" extends "Warehouse Receipt H
             DataClassification = CustomerContent;
             Caption = 'Receipt Date';
         }
-        field(50020; "AMC Create by IdUser"; Code[50])
+        field(50020; "AMC Create by User ID"; Code[50])
         {
             DataClassification = CustomerContent;
             Caption = 'Create by Id User';

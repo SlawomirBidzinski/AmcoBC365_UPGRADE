@@ -10848,10 +10848,10 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Posted Whse Shipm. Head. - Field AMC Your Reference - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 1001768582 - Field 3804118616 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2338847983">
+        <trans-unit id="TableExtension 1001768582 - Field 1475039240 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2338847983">
           <source>Create by Id User</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Posted Whse. Rec. Hdr. Ext - Field AMC Create by IdUser - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Posted Whse. Rec. Hdr. Ext - Field AMC Create by User ID - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1001768582 - Field 1573810870 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2338847983">
           <source>Creation Date</source>
@@ -16318,10 +16318,10 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Entry - Field AMC Gen. Bus. Posting Group - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 2815402059 - Field 3804118616 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1003430490">
+        <trans-unit id="TableExtension 2815402059 - Field 1475039240 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1003430490">
           <source>Create by Id User</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Receipt Header - Field AMC Create by IdUser - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Receipt Header - Field AMC Create by User ID - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2815402059 - Field 1573810870 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1003430490">
           <source>Creation Date</source>

@@ -42,7 +42,7 @@ pageextension 50048 "AMC Posted Whse. Receipt Ext" extends "Posted Whse. Receipt
         addlast(General)
         {
 
-            field("AMC Create by IdUser"; Rec."AMC Create by IdUser")
+            field("AMC Create by User ID"; Rec."AMC Create by User ID")
             {
                 ApplicationArea = All;
             }

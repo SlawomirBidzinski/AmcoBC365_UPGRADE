@@ -28,8 +28,13 @@ tableextension 50054 "AMC Purchase HeaderExt" extends "Purchase Header"
             trigger OnValidate()
             begin
                 if "AMC Currency Exchange Date" <> xRec."AMC Currency Exchange Date" then
-                    if CONFIRM(Text_002, false, "Currency Code") then
-                        UpdateCurrFactor()
+                    if CONFIRM(Text_002, false, "Currency Code") then begin
+                        UpdateCurrFactor();
+                        IF "Currency Factor" <> 0 then
+                            "AMC Exchange Rate" := ROUND(1 / "Currency Factor", 0.0001)
+                        else
+                            "AMC Exchange Rate" := 0;
+                    end
                     else
                         ERROR('Zaniechano zmiany daty kursu');
             end;
