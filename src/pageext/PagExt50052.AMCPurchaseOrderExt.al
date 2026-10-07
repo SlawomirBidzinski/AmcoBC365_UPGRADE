@@ -7,6 +7,15 @@ pageextension 50052 "AMC Purchase Order Ext" extends "Purchase Order"
             field("ITI Nos. Template Code"; Rec."ITI Nos. Template Code")
             {
                 ApplicationArea = All;
+                trigger OnLookup(var Text: Text): Boolean
+                begin
+                    Rec.LookupITINosTemplateCode(Enum::"Purchase Document Type"::Order);
+                end;
+
+                trigger OnValidate()
+                begin
+                    Rec.ValidateITINosTemplateCode(Enum::"Purchase Document Type"::Order);
+                end;
             }
             field("AMC PW Transaction"; Rec."AMC PW Transaction")
             {

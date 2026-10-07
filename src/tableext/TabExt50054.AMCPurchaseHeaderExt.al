@@ -292,6 +292,37 @@ tableextension 50054 "AMC Purchase HeaderExt" extends "Purchase Header"
         end;
     end;
 
+    procedure ValidateITINosTemplateCode(DocType: Enum "Sales Document Type")
+    var
+        PurchDocNosTemplate: Record "ITI Purch. Doc. Nos. Template";
+    begin
+        if Rec."ITI Nos. Template Code" = '' then
+            exit;
+
+        PurchDocNosTemplate.Reset();
+        PurchDocNosTemplate.SetRange("Document Type", DocType);
+        PurchDocNosTemplate.SetRange(Code, Rec."ITI Nos. Template Code");
+        PurchDocNosTemplate.FindFirst();
+    end;
+
+    procedure LookupITINosTemplateCode(DocType: Enum "Purchase Document Type")
+    var
+        PurchDocNosTemplate: Record "ITI Purch. Doc. Nos. Template";
+        PurchDocNosTmpList: Page "ITI Purch. Doc. Nos. Tmp. List";
+    begin
+        PurchDocNosTemplate.Reset();
+        PurchDocNosTemplate.SetRange("Document Type", DocType);
+
+        Clear(PurchDocNosTmpList);
+        PurchDocNosTmpList.LookupMode := true;
+        PurchDocNosTmpList.SetRecord(PurchDocNosTemplate);
+        PurchDocNosTmpList.SetTableView(PurchDocNosTemplate);
+        if PurchDocNosTmpList.RunModal() = Action::LookupOK then begin
+            PurchDocNosTmpList.GetRecord(PurchDocNosTemplate);
+            Rec.Validate("ITI Nos. Template Code", PurchDocNosTemplate.Code);
+        end;
+    end;
+
     var
         CurrExchRate: Record "Currency Exchange Rate";
         CurrExchRates: Page "Currency Exchange Rates";
