@@ -209,6 +209,14 @@ tableextension 50054 "AMC Purchase HeaderExt" extends "Purchase Header"
             end;
         }
     }
+    trigger OnInsert()
+    var
+
+    begin
+        rec."AMC Create by IdUser" := UserId;
+        rec."AMC Creation Date" := WORKDATE;
+    end;
+
 
     procedure AMCAssistEditPW(OldPurchHeader: Record "Purchase Header"): Boolean
     var

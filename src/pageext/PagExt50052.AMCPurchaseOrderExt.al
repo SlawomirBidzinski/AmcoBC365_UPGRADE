@@ -40,18 +40,27 @@ pageextension 50052 "AMC Purchase Order Ext" extends "Purchase Order"
         }
         addafter(Status)
         {
+            field("AMC Pay-to Vendor No."; Rec."Pay-to Vendor No.")
+            {
+                ApplicationArea = All;
+            }
             field("AMC VAT Registration No."; Rec."VAT Registration No.")
             {
                 ApplicationArea = All;
             }
-            field("AMC Sell-to Customer No."; Rec."Sell-to Customer No.")
-            {
-                ApplicationArea = All;
-            }
-
             group("AMC Szczegóły Zlecenia")
             {
                 Caption = 'Szczegóły Zlecenia';
+
+                field("AMC Create by IdUser"; Rec."AMC Create by IdUser")
+                {
+                    ApplicationArea = All;
+                }
+
+                field("AMC Creation Date"; Rec."AMC Creation Date")
+                {
+                    ApplicationArea = All;
+                }
                 field("AMC Purchase Order Status"; Rec."AMC Purchase Order Status")
                 {
                     ApplicationArea = All;
@@ -101,11 +110,6 @@ pageextension 50052 "AMC Purchase Order Ext" extends "Purchase Order"
                     ApplicationArea = All;
                 }
             }
-        }
-        modify("Currency Code")
-        {
-            Importance = Standard;
-            Visible = false;
         }
         modify("Buy-from Vendor Name")
         {

@@ -8358,6 +8358,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Purchase Order Ext - Control AMCItemFactbox - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 3209014845 - Control 426515963 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 387971303">
+          <source>Szczegóły Zlecenia</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Purchase Order Ext - Control AMC Szczegóły Zlecenia - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3209014845 - Control 1011140535 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 387971303">
+          <source>Waluta Zamówienia</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Purchase Order Ext - Control AMC Waluta Zamówienia - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 3209014845 - Control 2454647400 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 387971303">
           <source>Notes</source>
           <note from="Developer" annotates="general" priority="2"></note>

@@ -105,6 +105,15 @@ pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
                     END;
                 end;
             }
+
+            field("AMC Bill-to Customer No."; Rec."Bill-to Customer No.")
+            {
+                ApplicationArea = All;
+            }
+            field("AMC VAT Registration No."; Rec."VAT Registration No.")
+            {
+                ApplicationArea = All;
+            }
             group("AMC EDI")
             {
                 Caption = 'EDI';
