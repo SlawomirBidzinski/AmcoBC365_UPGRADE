@@ -15,8 +15,18 @@ pageextension 50032 "AMC Purchase Order List Ext" extends "Purchase Order List"
                 ApplicationArea = All;
             }
         }
+        addlast(Control1)
+        {
+            field("AMC Create by IdUser"; Rec."AMC Create by IdUser")
+            {
+                ApplicationArea = All;
+            }
+            field("AMC Creation Date"; Rec."AMC Creation Date")
+            {
+                ApplicationArea = All;
+            }
+        }
     }
-
 
     trigger OnOpenPage()
     begin
