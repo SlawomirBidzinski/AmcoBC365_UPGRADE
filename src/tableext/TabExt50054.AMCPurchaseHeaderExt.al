@@ -43,6 +43,7 @@ tableextension 50054 "AMC Purchase HeaderExt" extends "Purchase Header"
         {
             Caption = 'Kurs Średni';
             DataClassification = CustomerContent;
+            DecimalPlaces = 4 : 4;
 
             trigger OnValidate()
             begin
