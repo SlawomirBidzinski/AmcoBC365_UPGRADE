@@ -70,13 +70,13 @@ tableextension 50054 "AMC Purchase HeaderExt" extends "Purchase Header"
         {
             Caption = 'Utworzone przez';
             DataClassification = CustomerContent;
-            Editable = true;
+            Editable = false;
         }
         field(50021; "AMC Creation Date"; Date)
         {
             Caption = 'Data Utworzenia';
             DataClassification = CustomerContent;
-            Editable = true;
+            Editable = false;
         }
         field(50022; "AMC Purchase Notes"; Text[50])
         {
