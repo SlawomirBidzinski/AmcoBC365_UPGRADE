@@ -19,12 +19,31 @@ pageextension 50015 "AMC Purchase Return Order" extends "Purchase Return Order"
                 end;
             }
         }
-        addafter("No.")
+        addafter(Status)
         {
-            field("AMC Contract Date"; Rec."AMC Contract Date")
+            field("AMC Pay-to Vendor No."; Rec."Pay-to Vendor No.")
             {
                 ApplicationArea = All;
             }
+            field("AMC VAT Registration No."; Rec."VAT Registration No.")
+            {
+                ApplicationArea = All;
+            }
+        }
+        modify("Posting Date")
+        {
+            Visible = true;
+            Importance = Standard;
+
+        }
+        modify("ITI VAT Settlement Date")
+        {
+            Visible = true;
+            Importance = Standard;
+        }
+        modify("Campaign No.")
+        {
+            Visible = false;
         }
     }
 }

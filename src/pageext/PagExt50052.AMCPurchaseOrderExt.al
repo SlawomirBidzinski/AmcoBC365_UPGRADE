@@ -37,10 +37,13 @@ pageextension 50052 "AMC Purchase Order Ext" extends "Purchase Order"
         modify("Posting Date")
         {
             Visible = true;
+            Importance = Standard;
+
         }
         modify("ITI VAT Settlement Date")
         {
             Visible = true;
+            Importance = Standard;
         }
 
         addafter(Status)
