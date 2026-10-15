@@ -8383,6 +8383,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Purchase Order List Ext - Property AdditionalSearchTerms</note>
         </trans-unit>
+        <trans-unit id="PageExtension 2191748540 - Control 426515963 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1555938241">
+          <source>Szczegóły Zlecenia</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Purchase Return Order - Control AMC Szczegóły Zlecenia - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2191748540 - Control 1011140535 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1555938241">
+          <source>Waluta Zamówienia</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Purchase Return Order - Control AMC Waluta Zamówienia - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 947627379 - Control 3851846705 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4145206282">
           <source>AMCO</source>
           <note from="Developer" annotates="general" priority="2"></note>

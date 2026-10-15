@@ -14,6 +14,10 @@ page 50032 "AMC Production List"
         {
             repeater(General)
             {
+                field("Entry Type"; Rec."Entry Type")
+                {
+                    ToolTip = 'Specifies the value of the Producent field.', Comment = '%';
+                }
                 field(Producent; Rec.Producent)
                 {
                     ToolTip = 'Specifies the value of the Producent field.', Comment = '%';
