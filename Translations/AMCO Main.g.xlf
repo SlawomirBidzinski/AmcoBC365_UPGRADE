@@ -6238,6 +6238,11 @@
           <note from="Developer" annotates="general" priority="2">%</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Production List - Control Currency Code - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 2744407186 - Control 149522872 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Producent field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Production List - Control Entry Type - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 2744407186 - Control 317909307 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Nazwa Producenta field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>

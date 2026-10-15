@@ -2,7 +2,7 @@ page 50032 "AMC Production List"
 {
     ApplicationArea = All;
     Caption = 'Production List';
-    PageType = ListPart;
+    PageType = List;
     SourceTable = "AMC Item Production";
     DelayedInsert = true;
     SourceTableView = where("Entry Type" = const(Producent));
