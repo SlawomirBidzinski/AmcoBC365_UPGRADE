@@ -10,7 +10,18 @@ pageextension 50032 "AMC Purchase Order List Ext" extends "Purchase Order List"
             {
                 ApplicationArea = All;
             }
-            field("AMC Contract Date"; Rec."AMC Contract Date")
+        }
+
+        moveafter("Document Date"; "Requested Receipt Date")
+        modify("Requested Receipt Date")
+        {
+            Visible = true;
+        }
+
+        addafter("Requested Receipt Date")
+        {
+
+            field("Promised Receipt Date"; Rec."Promised Receipt Date")
             {
                 ApplicationArea = All;
             }

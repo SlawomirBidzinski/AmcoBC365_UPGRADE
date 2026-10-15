@@ -21,10 +21,6 @@ pageextension 50052 "AMC Purchase Order Ext" extends "Purchase Order"
             {
                 ApplicationArea = All;
             }
-            field("AMC Contract Date"; Rec."AMC Contract Date")
-            {
-                ApplicationArea = All;
-            }
         }
         addafter(Control3)
         {
@@ -38,6 +34,9 @@ pageextension 50052 "AMC Purchase Order Ext" extends "Purchase Order"
                               "Line No." = field("Line No.");
             }
         }
+        moveafter(Status; "Requested Receipt Date")
+        moveafter("Requested Receipt Date"; "Promised Receipt Date")
+
         addafter(Status)
         {
             field("AMC Pay-to Vendor No."; Rec."Pay-to Vendor No.")
