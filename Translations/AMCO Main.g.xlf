@@ -8533,6 +8533,21 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Price List - Control AMCSerActivePrice - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 1480481941 - Control 2855444473 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1598289728">
+          <source>EDI</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Return Order - Control AMC EDI - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1480481941 - Control 426515963 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1598289728">
+          <source>Szczegóły Zlecenia</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Return Order - Control AMC Szczegóły Zlecenia - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1480481941 - Control 1011140535 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1598289728">
+          <source>Waluta Zamówienia</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Return Order - Control AMC Waluta Zamówienia - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 280334371 - Control 1173335139 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 337631938">
           <source> </source>
           <note from="Developer" annotates="general" priority="2"></note>
