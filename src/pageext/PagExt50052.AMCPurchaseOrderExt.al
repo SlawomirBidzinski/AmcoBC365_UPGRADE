@@ -34,8 +34,14 @@ pageextension 50052 "AMC Purchase Order Ext" extends "Purchase Order"
                               "Line No." = field("Line No.");
             }
         }
-        moveafter(Status; "Requested Receipt Date")
-        moveafter("Requested Receipt Date"; "Promised Receipt Date")
+        modify("Posting Date")
+        {
+            Visible = true;
+        }
+        modify("ITI VAT Settlement Date")
+        {
+            Visible = true;
+        }
 
         addafter(Status)
         {
@@ -99,6 +105,10 @@ pageextension 50052 "AMC Purchase Order Ext" extends "Purchase Order"
                 }
             }
         }
+
+        moveafter("AMC VAT Registration No."; "Requested Receipt Date")
+        moveafter("Requested Receipt Date"; "Promised Receipt Date")
+
         addafter(General)
         {
             group(AMCNotes)
