@@ -18,10 +18,22 @@ pageextension 50032 "AMC Purchase Order List Ext" extends "Purchase Order List"
             Visible = true;
         }
 
+        modify("Assigned User ID")
+        {
+            Visible = false;
+        }
+
         addafter("Requested Receipt Date")
         {
 
             field("Promised Receipt Date"; Rec."Promised Receipt Date")
+            {
+                ApplicationArea = All;
+            }
+        }
+        addbefore(Status)
+        {
+            field("AMC Purchase Order Status"; Rec."AMC Purchase Order Status")
             {
                 ApplicationArea = All;
             }

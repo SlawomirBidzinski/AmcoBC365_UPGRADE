@@ -35,6 +35,14 @@ pageextension 50072 "AMC Blanket Purchase Order" extends "Blanket Purchase Order
         {
             Visible = false;
         }
+        modify("Campaign No.")
+        {
+            Visible = false;
+        }
+        modify("Responsibility Center")
+        {
+            Visible = false;
+        }
         addafter(General)
         {
             group(AMCNotes)
