@@ -56,12 +56,12 @@ pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
         addlast(General)
         {
 
-            field("AMC Shipment No"; Rec."AMC Shipment No")
+            field("AMC Shipment No."; Rec."AMC Shipment No.")
             {
                 ApplicationArea = All;
                 Editable = False;
             }
-            field("AMC Posted Shipment No"; Rec."AMC Posted Shipment No")
+            field("AMC Posted Shipment No."; Rec."AMC Posted Shipment No.")
             {
                 ApplicationArea = All;
                 Editable = False;
@@ -98,8 +98,8 @@ pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
                     IF ShipmentQty > 1 THEN BEGIN
                         Page.RUN(Page::"Posted Whse. Shipment List", PostWhseShipmHeadTemp);
                     END ELSE BEGIN
-                        IF rec."AMC Posted Shipment No" <> '' THEN BEGIN
-                            IF PostedWhseShipHeader.GET(rec."AMC Posted Shipment No") THEN
+                        IF rec."AMC Posted Shipment No." <> '' THEN BEGIN
+                            IF PostedWhseShipHeader.GET(rec."AMC Posted Shipment No.") THEN
                                 Page.RUN(Page::"Posted Whse. Shipment", PostedWhseShipHeader);
                         END;
                     END;
@@ -402,8 +402,8 @@ pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
                     WhseShipHeader: Record "Warehouse Shipment Header";
                     GetSourceDocOutbound: Codeunit "Get Source Doc. Outbound";
                 begin
-                    IF Rec."AMC Shipment No" <> '' THEN BEGIN
-                        IF WhseShipHeader.GET(Rec."AMC Shipment No") THEN
+                    IF Rec."AMC Shipment No." <> '' THEN BEGIN
+                        IF WhseShipHeader.GET(Rec."AMC Shipment No.") THEN
                             Page.RUN(Page::"Warehouse Shipment", WhseShipHeader);
                     END ELSE BEGIN
                         GetSourceDocOutbound.CreateFromSalesOrder(Rec);

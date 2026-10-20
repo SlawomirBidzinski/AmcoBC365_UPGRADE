@@ -176,7 +176,8 @@ tableextension 50054 "AMC Purchase HeaderExt" extends "Purchase Header"
         }
         field(50104; "AMC Posted Receipt No."; Code[20])
         {
-            CalcFormula = lookup("Posted Whse. Receipt Line"."No." where("Source No." = field("No.")));
+            CalcFormula = lookup("Posted Whse. Receipt Line"."No." where("Source Document" = const("Purchase Order"),
+                                                                     "Source No." = field("No.")));
             Caption = 'Posted Receipt No.';
             Editable = false;
             FieldClass = FlowField;

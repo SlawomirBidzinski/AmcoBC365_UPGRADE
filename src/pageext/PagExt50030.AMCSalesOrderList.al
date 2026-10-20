@@ -17,6 +17,17 @@ pageextension 50030 "AMC Sales Order List" extends "Sales Order List"
                 ApplicationArea = All;
             }
         }
+        addafter(Status)
+        {
+            field("AMC Shipment No."; Rec."AMC Shipment No.")
+            {
+                ApplicationArea = All;
+            }
+            field("AMC Posted Shipment No."; Rec."AMC Posted Shipment No.")
+            {
+                ApplicationArea = All;
+            }
+        }
         modify("Bill-to Customer No.")
         {
             Visible = true;
