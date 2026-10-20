@@ -5433,6 +5433,36 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Control1 - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 629302045 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control AMC Items on M.N.WART - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 1878524687 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control AMC Items on M.PROBY - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 1611571353 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control AMC Items on M.REKLAM - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 3448751609 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control AMC Items on M.SUR - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 1668320948 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control AMC Items on M.SUR (MS) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 3863863462 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control AMC Items on M.UT - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 4140873756 - Control 4278814975 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Kod BOMu RiD</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -5452,6 +5482,11 @@
           <source>Grupa Zapasów</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control AMCItemGrName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 2057722061 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Check Sum</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control AMCItemQtyDiff - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 4140873756 - Control 3339697864 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Podgrupa Zapasów</source>
@@ -9697,56 +9732,6 @@
           <source> </source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Item Card - Control AMC Production Lot - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 4140873756 - Action 2893581338 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4178721393">
-          <source>Generate New Item</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Item List - Action AMCNewItem - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 4140873756 - Action 3588559024 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4178721393">
-          <source>Item Availability By Batch</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Item List - Action AMCItemAvailabilityByBatch - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 4140873756 - Action 1337265703 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4178721393">
-          <source>Item Bin Contents</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Item List - Action AMCItemBinContents - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 4140873756 - Action 3118418772 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4178721393">
-          <source>New Material/Packaging</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Item List - Action AMCNewMaterial - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 4140873756 - Control 4037346717 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4178721393">
-          <source>Details</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Item List - Control AMCItemDetailsFctb - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 4140873756 - Control 4278814975 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4178721393">
-          <source>Kod BOMu RiD</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Item List - Control AMC RiD BOM Code - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 4140873756 - Control 1330151667 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4178721393">
-          <source> </source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Item List - Control AMCCountryOriginList - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 4140873756 - Control 1330151667 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4178721393">
-          <source>Kraj Pochodzenia</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Item List - Control AMCCountryOriginList - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 4140873756 - Control 1611877836 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4178721393">
-          <source>Grupa Zapasów</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Item List - Control AMCItemGrName - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="PageExtension 4140873756 - Control 3339697864 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4178721393">
-          <source>Podgrupa Zapasów</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Item List - Control AMCItemSubGrName - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1123802410 - Action 3884290074 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2747922353">
           <source>Item Calculation</source>

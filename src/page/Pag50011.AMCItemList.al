@@ -59,6 +59,81 @@ page 50011 "AMC Item List"
                     HideValue = IsNonInventoriable;
                     ToolTip = 'Specifies how many units, such as pieces, boxes, or cans, of the item are in inventory.';
                 }
+                field("AMC Items on M.GL"; Rec."AMC Items on M.GL")
+                {
+                    ApplicationArea = All;
+                }
+                field("AMC Items on M.SUR"; Rec."AMC Items on M.SUR")
+                {
+                    ApplicationArea = All;
+                    ToolTip = ' ';
+                }
+                field("AMC Items on M.SUR (MS)"; Rec."AMC Items on M.SUR (MS)")
+                {
+                    ApplicationArea = All;
+                    ToolTip = ' ';
+                }
+                field("AMC Items on M.PROBY"; Rec."AMC Items on M.PROBY")
+                {
+                    ApplicationArea = All;
+                    ToolTip = ' ';
+                }
+                field("AMC Items on M.REKLAM"; Rec."AMC Items on M.REKLAM")
+                {
+                    ApplicationArea = All;
+                    ToolTip = ' ';
+                }
+                field("AMC Items on M.N.WART"; Rec."AMC Items on M.N.WART")
+                {
+                    ApplicationArea = All;
+                    ToolTip = ' ';
+                }
+                field("AMC Items on M.UT"; Rec."AMC Items on M.UT")
+                {
+                    ApplicationArea = All;
+                    ToolTip = ' ';
+                }
+                field("AMC Items on KJ"; Rec."AMC Items on KJ")
+                {
+                    ApplicationArea = All;
+                }
+                field("AMC Item Qty Item Stock"; Rec."AMC Item Qty Item Stock")
+                {
+                    ApplicationArea = All;
+                }
+                field("AMC Item Qty Warehouse Stock"; Rec."AMC Item Qty Warehouse Stock")
+                {
+                    ApplicationArea = All;
+                }
+                field(AMCItemQtyDiff; Rec."AMC Item Qty Warehouse Stock" - Rec."AMC Item Qty Item Stock")
+                {
+                    Caption = 'Check Sum';
+                    ApplicationArea = All;
+                }
+                field("AMC Item Consumption"; Rec."AMC Item Consumption")
+                {
+                    ApplicationArea = All;
+                }
+                field("AMC Item Consump. Value"; Rec."AMC Item Consump. Value")
+                {
+                    ApplicationArea = All;
+                }
+                field("AMC Production Qty"; Rec."AMC Production Qty")
+                {
+                    ApplicationArea = All;
+                }
+                field("AMC Production Value"; Rec."AMC Production Value")
+                {
+                    ApplicationArea = All;
+                }
+                field("AMC Sales Qty"; Rec."AMC Sales Qty")
+                {
+                    ApplicationArea = All;
+                }
+                field("AMC Stock Qty"; Rec."AMC Stock Qty")
+                {
+                    ApplicationArea = All;
+                }
                 field("Base Unit of Measure"; Rec."Base Unit of Measure")
                 {
                     ApplicationArea = Invoicing, Basic, Suite;
