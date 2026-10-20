@@ -5418,6 +5418,1606 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Led. Profit Con. Sub. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 4140873756 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Method 1741503254 - NamedType 3786256904" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Some items are not shown. If you did not find what you are looking for, please narrow down the filter to show fewer items.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Method NotAllItemsShownNotification - NamedType NarrowDownFilterMsg</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 1976356074 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Control1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 4278814975 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Kod BOMu RiD</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control AMC RiD BOM Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 1330151667 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control AMCCountryOriginList - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 1330151667 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Kraj Pochodzenia</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control AMCCountryOriginList - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 1611877836 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Grupa Zapasów</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control AMCItemGrName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 3339697864 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Podgrupa Zapasów</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control AMCItemSubGrName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 3967890522 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if the item is an assembly BOM.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Assembly BOM - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 1980194946 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies which default order flow is used to supply this assembly item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Assembly Policy - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 411531942 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the base unit used to measure the item, such as piece, box, or pallet. The base unit of measure also serves as the conversion basis for alternate units of measure.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Base Unit of Measure - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 3543129988 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies that transactions with the item cannot be posted, for example, because the item is in quarantine.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Blocked - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 3371302303 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether the item's unit cost has been adjusted, either automatically or manually.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Cost is Adjusted - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 2165769856 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies how the item's cost flow is recorded and whether an actual or budgeted value is capitalized and used in the cost calculation.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Costing Method - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 3774928044 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies that the item is coupled to a product in Dynamics 365 Sales.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Coupled to Dataverse - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 1100970880 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies that the item was created from a catalog item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Created From Nonstock Item - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 2546429171 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the default template that governs how to defer revenues and expenses to the periods when they occurred.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Default Deferral Template Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 2546429171 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Default Deferral Template</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Default Deferral Template Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a default text to describe the item on related documents such as orders or invoices. You can translate the descriptions so that they show up in the language of the customer or vendor.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 47657272 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies information in addition to the description.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Description 2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 2338193685 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies how consumption of the item (component) is calculated and handled in production processes. Manual: Enter and post consumption in the consumption journal manually. Forward: Automatically posts consumption according to the production order component lines when the first operation starts. Backward: Automatically calculates and posts consumption according to the production order component lines when the production order is finished. Pick + Forward / Pick + Backward: Variations with warehousing.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Flushing Method - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 2139693550 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the item's product type to link transactions made for this item with the appropriate general ledger account according to the general posting setup.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Gen. Prod. Posting Group - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 1405402048 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies Global Trade Item Number for tracking.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control GTIN - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 3299657368 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the percentage of the item's last purchase cost that includes indirect costs, such as freight that is associated with the purchase of the item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Indirect Cost % - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 2037375551 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies links between business transactions made for the item and an inventory account in the general ledger, to group amounts for that item type.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Inventory Posting Group - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 2320765980 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies how many units, such as pieces, boxes, or cans, of the item are in inventory.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control InventoryField - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 3154493835 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies an item group code that can be used as a criterion to grant a discount when the item is sold to a certain customer.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Item Disc. Group - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 65514489 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies how items are tracked in the supply chain.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Item Tracking Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 2393253273 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies when the item card was last modified.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Last Date Modified - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 2885544704 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the most recent direct unit cost that was paid for the item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Last Direct Cost - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 1009775796 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a date formula for the amount of time it takes to replenish the item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Lead Time Calculation - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 3831175908 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if additional orders for any related components are calculated.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Manufacturing Policy - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a number to identify the item. You can use ranges of item numbers to logically group products or to imply information about them. Or use simple numbers and item categories to group items.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 2115629424 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the item's indirect cost as an absolute amount.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Overhead Rate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 1854609335 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the relationship between the Unit Cost, Unit Price, and Profit Percentage fields associated with this item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Price/Profit Calculation - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 309263357 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the profit margin that you want to sell the item at. You can enter a profit percentage manually or have it entered according to the Price/Profit Calculation field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Profit % - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 1660815199 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the unit of measure code used when you purchase the item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Purch. Unit of Measure - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 3500504311 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the type of supply order created by the planning system when the item needs to be replenished.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Replenishment System - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 1556375121 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the unit of measure code used when you sell the item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Sales Unit of Measure - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 1180181476 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a search description that you use to find the item in lists.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Search Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 3430848021 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies where to find the item in the warehouse. This is informational only.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Shelf No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 2838254244 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the unit cost that is used as an estimation to be adjusted with variances later. It is typically used in assembly and production where costs can vary.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Standard Cost - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 525765919 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies that a stockkeeping unit exists for this item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Stockkeeping Unit Exists - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 2454573350 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies that a substitute exists for this item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Substitutes Exist - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 3701472611 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a code for the item's tariff number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Tariff No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 1878130204 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if the item card represents a physical inventory unit (Inventory), a labor time unit (Service), or a physical unit that is not tracked in inventory (Non-Inventory).</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 381961415 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the cost per unit of the item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Unit Cost - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 2937233469 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the price for one unit of the item, in LCY.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Unit Price - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 236064653 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the VAT product posting group. Links business transactions made for the item, resource, or G/L account with the general ledger, to account for VAT amounts resulting from trade with that record.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control VAT Prod. Posting Group - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 2903269170 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number that the vendor uses for this item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Vendor Item No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 1527594213 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the vendor code of who supplies this item by default.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Vendor No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 4037346717 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Details</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control AMCItemDetailsFctb - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Control 2967437008 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Documents</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Control Attached Documents List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 650997501 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Action126 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1934293742 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set up the different units that the item can be traded in, such as piece, box, or hour.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action &amp;Units of Measure - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1934293742 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Units of Measure</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action &amp;Units of Measure - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2602785559 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View a list of the records that are waiting to be approved. For example, you can see who requested the record to be approved, when it was sent, and when it is due to be approved.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action ApprovalEntries - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2602785559 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Approvals</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action ApprovalEntries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2033009233 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View or edit the item's attributes, such as color, size, or other characteristics that help to describe the item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Attributes - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2033009233 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Attributes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Attributes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2173385693 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimensions</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Dimensions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1269018909 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View or edit dimensions for a group of records. You can assign dimension codes to transactions to distribute costs and analyze historical information.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action DimensionsMultiple - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1269018909 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimensions-&amp;Multiple</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action DimensionsMultiple - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 391316011 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View or edit the single set of dimensions that are set up for the selected record.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action DimensionsSingle - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 391316011 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimensions-Single</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action DimensionsSingle - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1173575993 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select or set up additional text for the description of the item. Extended text can be inserted under the Description field on document lines for the item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action E&amp;xtended Texts - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1173575993 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>E&amp;xtended Texts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action E&amp;xtended Texts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3076206668 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View a unique identifier for each item that you want warehouse employees to keep track of within the warehouse when using handheld devices. The item identifier can include the item number, the variant code and the unit of measure.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Identifiers - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3076206668 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Identifiers</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Identifiers - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2125690365 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set up a customer's or vendor's own identification of the selected item. References to the customer's item number means that the item number is automatically shown on sales documents instead of the number that you use.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Refe&amp;rences - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2125690365 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item References</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Refe&amp;rences - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1127181102 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View or edit substitute items that are set up to be traded instead of the item in case it is not available.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Substituti&amp;ons - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1127181102 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Substituti&amp;ons</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Substituti&amp;ons - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2653012956 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set up translated item descriptions for the selected item. Translated item descriptions are automatically inserted on documents according to the language code.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Translations - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2653012956 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Translations</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Translations - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 560452558 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View how the inventory level of an item will develop over time according to the variant that you select.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Va&amp;riants - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 560452558 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Va&amp;riants</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Va&amp;riants - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2038220399 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dynamics 365 Sales</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action ActionGroupCRM - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3570890871 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create, change, or delete a coupling between the Business Central record and a Dynamics 365 Sales record.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Coupling - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3570890871 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Coupling</source>
+          <note from="Developer" annotates="general" priority="2">Coupling is a noun</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Coupling - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 867350916 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Delete the coupling to a Dynamics 365 Sales product.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action DeleteCRMCoupling - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 867350916 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Delete Coupling</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action DeleteCRMCoupling - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1463213340 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create or modify the coupling to a Dynamics 365 Sales product.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action ManageCRMCoupling - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1463213340 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set Up Coupling</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action ManageCRMCoupling - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2976546385 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Couple items to products in Dynamics 365 Sales based on criteria.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action MatchBasedCoupling - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2976546385 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Match-Based Coupling</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action MatchBasedCoupling - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 4129650936 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open the coupled Dynamics 365 Sales product.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action CRMGoToProduct - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 4129650936 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Product</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action CRMGoToProduct - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1491665972 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send updated data to Dynamics 365 Sales.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action CRMSynchronizeNow - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1491665972 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Synchronize</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action CRMSynchronizeNow - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 858950785 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View integration synchronization jobs for the item table.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action ShowLog - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 858950785 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Synchronization Log</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action ShowLog - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3576799342 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Assembly/Production</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Assembly/Production - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2573847538 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Assemb&amp;ly</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Assembly - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1031842751 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View or edit the bill of material that specifies which items and resources are required to assemble the assembly item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action &lt;Action32&gt; - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1031842751 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Assembly BOM</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action &lt;Action32&gt; - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3540372295 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Calculate the unit cost of the item by rolling up the unit cost of each component and resource in the item's assembly BOM. The unit cost of a parent item must equal the total of the unit costs of its components, subassemblies, and any resources.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Calc. Stan&amp;dard Cost - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3540372295 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Calc. Assembly Std. Cost</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Calc. Stan&amp;dard Cost - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1621026876 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Calculate the unit price based on the unit cost and the profit percentage.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Calc. Unit Price - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1621026876 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Calc. Unit Price</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Calc. Unit Price - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3114594945 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View a list of assembly BOMs in which the item is used.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Where-Used - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3114594945 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Where-Used</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Where-Used - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3000180178 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View or add comments for the record.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Co&amp;mments - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3000180178 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Co&amp;mments</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Co&amp;mments - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3599785199 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View how the costs of underlying items in the BOM roll up to the parent item. The information is organized according to the BOM structure to reflect at which levels the individual costs apply. Each item level can be collapsed or expanded to obtain an overview or detailed view.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Cost Shares - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3599785199 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cost Shares</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Cost Shares - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 84074407 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Statistics</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Statistics - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 387093787 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View statistical information, such as the value of posted entries, for the record.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Action16 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 387093787 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Statistics</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Action16 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 162786187 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View statistics for item ledger entries.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Entry Statistics - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 162786187 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry Statistics</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Entry Statistics - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3764889183 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View a detailed account of item turnover by periods after you have set the relevant filters for location and variant.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action T&amp;urnover - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3764889183 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>T&amp;urnover</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action T&amp;urnover - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2369427383 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View which child items are used in an item's assembly BOM or production BOM. Each item level can be collapsed or expanded to obtain an overview or detailed view.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Structure - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2369427383 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Structure</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Structure - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2336152139 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Availability</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Availability - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1327594867 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Item Availability by</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action &amp;Item Availability by - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1893945779 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View how the actual and the projected available balance of an item will develop over time according to supply and demand events.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action &lt;Action5&gt; - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1893945779 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Event</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action &lt;Action5&gt; - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2882465090 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View availability figures for items on bills of materials that show how many units of a parent item you can make based on the availability of child items.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action BOM Level - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2882465090 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BOM Level</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action BOM Level - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3891454143 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View the actual and projected quantity of the item per location.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Location - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3891454143 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Location</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Location - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 4230226825 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View the current and projected quantity of the item for each lot.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Lot - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 4230226825 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lot</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Lot - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 912261439 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show the projected quantity of the item over time according to time periods, such as day, week, or month.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Period - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 912261439 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Period</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Period - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1920046521 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View the item's availability by a unit of measure.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Unit of Measure - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1920046521 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit of Measure</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Unit of Measure - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 112710097 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View the current and projected quantity of the item for each variant.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Variant - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 112710097 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Variant</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Variant - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 465220434 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Show a list of items grouped by location.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Items b&amp;y Location - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 465220434 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Items b&amp;y Location</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Items b&amp;y Location - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1823430260 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Purchases</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Purchases - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 13300884 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View or edit the percentages of the purchase price that can be paid as a prepayment.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Action125 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 13300884 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Prepa&amp;yment Percentages</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Action125 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2610663038 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View a list of ongoing purchase orders for the item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Action40 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2610663038 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Orders</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Action40 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2360366221 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View the list of items that you do not carry in inventory. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Ca&amp;talog Items - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2360366221 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ca&amp;talog Items</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Ca&amp;talog Items - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2185526028 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View or set up purchase discounts for the item. An item discount is automatically granted on invoice lines when the specified criteria are met, such as vendor, quantity, or ending date.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Line Discounts - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2185526028 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Discounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Line Discounts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1167061642 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View or set up purchase prices for the item. An item price is automatically granted on invoice lines when the specified criteria are met, such as vendor, quantity, or ending date.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Prices - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1167061642 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Prices</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Prices - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2778639561 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open the list of ongoing purchase return orders for the item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Return Orders - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2778639561 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Return Orders</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Return Orders - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1911892283 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View the list of vendors who can supply the item, and at which lead time.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Ven&amp;dors - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1911892283 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ven&amp;dors</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Ven&amp;dors - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1406942772 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>S&amp;ales</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Sales - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 4091057062 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View a list of ongoing sales orders for the item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Action37 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 4091057062 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Orders</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Action37 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1361257300 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View or edit the percentages of the sales price that can be paid as a prepayment.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Prepa&amp;yment Percentages - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1361257300 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Prepa&amp;yment Percentages</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Prepa&amp;yment Percentages - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 4153998688 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View ongoing sales return orders for the item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Returns Orders - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 4153998688 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Returns Orders</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Returns Orders - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1484878399 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Warehouse</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Warehouse - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 4285823019 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View the quantities of the item in each bin where it exists. You can see all the important parameters relating to bin content, and you can modify certain bin content parameters in this window.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action &amp;Bin Contents - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 4285823019 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Bin Contents</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action &amp;Bin Contents - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3524452708 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open the item's SKUs to view or edit instances of the item at different locations or with different variants. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Stockkeepin&amp;g Units - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3524452708 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Stockkeepin&amp;g Units</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Stockkeepin&amp;g Units - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 54835715 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Adjusts the Last Direct Cost, Standard Cost, Unit Price, Profit %, or Indirect Cost % fields on selected item or stockkeeping unit cards and for selected filters. For example, you can change the last direct cost by 5% on all items from a specific vendor.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Adjust Item Cost/Price - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 54835715 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Adjust Item Cost/Price</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Adjust Item Cost/Price - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2893581338 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Generate New Item</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action AMCNewItem - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3569786096 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Apply a template to update one or more entities with your standard settings for a certain type of entity.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action ApplyTemplate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3569786096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Apply Template</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action ApplyTemplate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 917224530 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Remove the filter for specific item attributes.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action ClearAttributes - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 917224530 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Clear Attributes Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action ClearAttributes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1403054376 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Find items that match specific attributes. To make sure you include recent changes made by other users, clear the filter and then reset it.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action FilterByAttributes - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1403054376 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filter by Attributes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action FilterByAttributes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1929393835 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>F&amp;unctions</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Functions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1106185521 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create an instance of the item at each location that is set up.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action &amp;Create Stockkeeping Unit - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1106185521 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Create Stockkeeping Unit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action &amp;Create Stockkeeping Unit - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2798591169 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Increase or decrease the item's inventory quantity manually by entering a new quantity. Adjusting the inventory quantity manually may be relevant after a physical count or if you do not record purchased quantities.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action AdjustInventory - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2798591169 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Adjust Inventory</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action AdjustInventory - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3588559024 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Availability By Batch</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action AMCItemAvailabilityByBatch - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1337265703 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Bin Contents</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action AMCItemBinContents - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3118418772 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New Material/Packaging</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action AMCNewMaterial - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2396359224 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prepare for a physical inventory by calculating which items or SKUs need to be counted in the current period.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action C&amp;alculate Counting Period - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2396359224 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>C&amp;alculate Counting Period</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action C&amp;alculate Counting Period - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2394472684 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create a copy of the current item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action CopyItem - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2394472684 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Copy Item</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action CopyItem - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 4201773078 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>History</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action History - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 956727360 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>E&amp;ntries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action E&amp;ntries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3827382521 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View how many units of the item you had in stock at the last physical count.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action &amp;Phys. Inventory Ledger Entries - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3827382521 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Phys. Inventory Ledger Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action &amp;Phys. Inventory Ledger Entries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3647306376 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View all reservations that are made for the item, either manually or automatically.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action &amp;Reservation Entries - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3647306376 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Reservation Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action &amp;Reservation Entries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2270291913 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View the history of posted amounts that affect the value of the item. Value entries are created for every transaction with the item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action &amp;Value Entries - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2270291913 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Value Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action &amp;Value Entries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2170564227 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View the history of quantities that are registered for the item in warehouse activities. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action &amp;Warehouse Entries - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2170564227 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Warehouse Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action &amp;Warehouse Entries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 162725634 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View serial, lot or package numbers that are assigned to items.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item &amp;Tracking Entries - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 162725634 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item &amp;Tracking Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item &amp;Tracking Entries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1111476699 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View the history of transactions that have been posted for the selected record.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Ledger E&amp;ntries - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1111476699 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ledger E&amp;ntries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Ledger E&amp;ntries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3940806096 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open a list of journals where you can adjust the physical quantity of items on inventory.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Journal - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3940806096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Journal</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Journal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1109308239 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Change information on item ledger entries, such as dimensions, location codes, bin codes, and serial, lot or package numbers.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Reclassification Journal - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1109308239 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Reclassification Journal</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Reclassification Journal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 4087909443 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Trace where a serial, lot or package number assigned to the item was used, for example, to find which lot a defective component came from or to find all the customers that have received items containing the defective component.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Tracing - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 4087909443 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Tracing</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Tracing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2030323360 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Periodic Activities</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action PeriodicActivities - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3094448912 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Adjust inventory values in value entries so that you use the correct adjusted cost for updating the general ledger and so that sales and profit statistics are up to date.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Adjust Cost - Item Entries - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3094448912 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Adjust Cost - Item Entries</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Adjust Cost - Item Entries - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1170152954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Select how you want to maintain an up-to-date record of your inventory at different locations.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Physical Inventory Journal - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1170152954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Physical Inventory Journal</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Physical Inventory Journal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3146400146 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Post the quantity and value changes to the inventory in the item ledger entries and the value entries when you post inventory transactions, such as sales shipments or purchase receipts.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Post Inventory Cost to G/L - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3146400146 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Post Inventory Cost to G/L</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Post Inventory Cost to G/L - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3970959119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View or edit the inventory value of items, which you can change, such as after doing a physical inventory.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Revaluation Journal - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3970959119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Revaluation Journal</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Revaluation Journal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 303512405 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Prices &amp; Discounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action PricesandDiscounts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3730920496 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set up sales prices for the item. An item price is automatically granted on invoice lines when the specified criteria are met, such as customer, quantity, or ending date.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action SalesPriceLists - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3730920496 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Prices</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action SalesPriceLists - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3601445214 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set up sales discounts for the item. An item discount is automatically granted on invoice lines when the specified criteria are met, such as customer, quantity, or ending date.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action SalesPriceListsDiscounts - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3601445214 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales Discounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action SalesPriceListsDiscounts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2580744913 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Prices &amp; Discounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action PurchPricesandDiscounts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3230232676 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set up purchase prices for the item. An item price is automatically granted on invoice lines when the specified criteria are met, such as vendor, quantity, or ending date.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action PurchPriceLists - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3230232676 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Prices</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action PurchPriceLists - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2492170410 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set up purchase discounts for the item. An item discount is automatically granted on invoice lines when the specified criteria are met, such as vendor, quantity, or ending date.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action PurchPriceListsDiscounts - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2492170410 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Discounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action PurchPriceListsDiscounts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1254538353 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View the purchase prices and line discounts that you grant for this item when certain criteria are met, such as vendor, quantity, or ending date.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action PurchPricesDiscountsOverview - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1254538353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Prices &amp; Discounts Overview</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action PurchPricesDiscountsOverview - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1418113351 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set up purchase discounts for the item. An item discount is automatically granted on invoice lines when the specified criteria are met, such as vendor, quantity, or ending date.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Set Special Discounts - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1418113351 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Discounts</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Set Special Discounts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 915071119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set up purchase prices for the item. An item price is automatically granted on invoice lines when the specified criteria are met, such as vendor, quantity, or ending date.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Set Special Prices - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 915071119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Prices</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Set Special Prices - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1733675610 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Request Approval</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action RequestApproval - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 858296388 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cancel the approval request.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action CancelApprovalRequest - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 858296388 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Cancel Approval Re&amp;quest</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action CancelApprovalRequest - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 383335270 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Request approval to change the record.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action SendApprovalRequest - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 383335270 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Send A&amp;pproval Request</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action SendApprovalRequest - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2896033718 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Calculate a supply plan to fulfill item demand with purchases or transfers.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Requisition Worksheet - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2896033718 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Requisition Worksheet</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Requisition Worksheet - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3812023357 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Workflow</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Workflow - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1510548940 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Set up an approval workflow for creating or changing items, by going through a few pages that will guide you.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action CreateApprovalWorkflow - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1510548940 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create Approval Workflow</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action CreateApprovalWorkflow - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3855927551 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View or edit existing approval workflows for creating or changing items.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action ManageApprovalWorkflow - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3855927551 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Manage Approval Workflow</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action ManageApprovalWorkflow - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3306084698 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Attributes</source>
+          <note from="Developer" annotates="general" priority="2">Generated from the PromotedActionCategories property index 9.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Category_Category10 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1587086413 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item</source>
+          <note from="Developer" annotates="general" priority="2">Generated from the PromotedActionCategories property index 3.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Category_Category4 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1269952864 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Dimensions</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Category_Dimensions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3329157796 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Availability by</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Category_Item Availability by - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2224783030 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>History</source>
+          <note from="Developer" annotates="general" priority="2">Generated from the PromotedActionCategories property index 4.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Category_Category5 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 311693179 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prices &amp; Discounts</source>
+          <note from="Developer" annotates="general" priority="2">Generated from the PromotedActionCategories property index 5.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Category_Category6 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 949389796 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Request Approval</source>
+          <note from="Developer" annotates="general" priority="2">Generated from the PromotedActionCategories property index 6.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Category_Category7 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2524661601 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Periodic Activities</source>
+          <note from="Developer" annotates="general" priority="2">Generated from the PromotedActionCategories property index 7.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Category_Category8 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3162358218 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory</source>
+          <note from="Developer" annotates="general" priority="2">Generated from the PromotedActionCategories property index 8.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Category_Category9 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3383493608 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Process</source>
+          <note from="Developer" annotates="general" priority="2">Generated from the PromotedActionCategories property index 1.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Category_Process - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2234406979 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Report</source>
+          <note from="Developer" annotates="general" priority="2">Generated from the PromotedActionCategories property index 2.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Category_Report - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3154140447 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Synchronize</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Category_Synchronize - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1231476694 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Coupling</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Category_Coupling - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2105307182 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1396317368 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Costing</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Action130 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1874917531 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View information about selected items, unit of measure, standard cost, and costing method, as well as additional information about item entries: unit amount, direct unit cost, unit cost variance (the difference between the unit amount and unit cost), invoiced quantity, and total variance amount (quantity * unit cost variance). The report can be used primarily if you have chosen the Standard costing method on the item card.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory - Cost Variance - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1874917531 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory - Cost Variance</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory - Cost Variance - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 696019919 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View an overview of the current inventory value of selected items and specifies the cost of these items as of the date specified in the Valuation Date field. The report includes all costs, both those posted as invoiced and those posted as expected. For each of the items that you specify when setting up the report, the printed report shows quantity on stock, the cost per unit and the total amount. For each of these columns, the report specifies the cost as the various value entry types.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Invt. Valuation - Cost Spec. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 696019919 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Invt. Valuation - Cost Spec.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Invt. Valuation - Cost Spec. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 951999018 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View a list of item sales for each catalog item during a selected time period. It can be used to review a company's sale of catalog items.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Catalog Item Sales - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 951999018 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Catalog Item Sales</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Catalog Item Sales - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2776136183 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Finance Reports</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Finance Reports - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1818270507 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View, print, or save a list of the values of the on-hand quantity of each inventory item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory Valuation - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1818270507 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory Valuation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory Valuation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3163183628 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View, print, or save an overview of the current age composition of selected items in your inventory.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Age Composition - Value - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3163183628 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Age Composition - Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Age Composition - Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 513339096 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View, print, or save the status of partially filled or unfilled orders so you can determine what effect filling these orders may have on your inventory.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Status - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 4251833623 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View a list of the quantity of each item in customer, purchase, and transfer orders and the quantity available in inventory. The list is divided into columns that cover six periods with starting and ending dates as well as the periods before and after those periods. The list is useful when you are planning your inventory purchases.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory - Availability Plan - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 4251833623 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory - Availability Plan</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory - Availability Plan - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 359861775 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View various information about the item, such as name, unit of measure, posting group, shelf number, vendor's item number, lead time calculation, minimum inventory, and alternate item number. You can also see if the item is blocked.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory - List - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 359861775 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory - List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory - List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 4077995341 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View, print, or save a summary of historical inventory transactions with selected items, for example, to decide when to purchase the items. The report specifies quantity on sales order, quantity on purchase order, back orders from vendors, minimum inventory, and whether there are reorders.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory Availability - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 4077995341 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory Availability</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory Availability - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 149526480 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Analyze (group, summarize, pivot) your Item Ledger Entries with related Location master data.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory by Location - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 149526480 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Analyze Inventory by Location</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory by Location - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 4158090559 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View, print, or save a list of your items and their price and cost information. The report specifies direct unit cost, last direct cost, unit price, profit percentage, and profit.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory Cost and Price List - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 4158090559 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory Cost and Price List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory Cost and Price List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3116509948 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory Details</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory Details - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2478537982 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View transaction details with entries for the selected items for a selected period. The report shows the inventory at the beginning of the period, all of the increase and decrease entries during the period with a running update of the inventory, and the inventory at the close of the period. The report can be used at the close of an accounting period, for example, or for an audit.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory - Transaction Detail - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2478537982 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory - Transaction Detail</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory - Transaction Detail - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 287534636 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View, print, or save an overview of the current age composition of selected items in your inventory.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Age Composition - Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 287534636 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Age Composition - Quantity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Age Composition - Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 714056616 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View a specification of the direct costs that your company has assigned and posted as item charges. The report shows the various value entries that have been posted as item charges. It includes all costs, both those posted as invoiced and those posted as expected.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Charges - Specification - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 714056616 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Charges - Specification</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Charges - Specification - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 4293722860 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View an overview of the quantities of selected items in your inventory whose expiration dates fall within a certain period. The list shows the number of units of the selected item that will expire in a given time period. For each of the items that you specify when setting up the report, the printed document shows the number of units that will expire during each of three periods of equal length and the total inventory quantity of the selected item.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Expiration - Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 4293722860 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Expiration - Quantity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Expiration - Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2018611878 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View, print, or save a list of your items and their prices, for example, to send to customers. You can create the list for specific customers, campaigns, currencies, or other criteria.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Price List - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2018611878 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Price List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Price List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1999961504 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Register</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Register - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2784129654 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View one or more selected item registers showing quantity. The report can be used to document a register's contents for internal or external audits.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Register - Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2784129654 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Register - Quantity</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Register - Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 4096990406 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View one or more selected item registers showing value. The report can be used to document the contents of a register for internal or external audits.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Register - Value - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 4096990406 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Register - Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Register - Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 4151726579 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View substitute items that are set up to be sold instead of the items in the filter. A detailed overview also includes description, unit cost, quantity on hand, base unit of measure, information about interchangeability and additional conditions.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Substitutions - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 4151726579 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Substitutions</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Substitutions - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1880227855 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View a list of the vendors for the selected items. For each combination of item and vendor, it shows direct unit cost, lead time calculation and the vendor's item number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item/Vendor Catalog - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1880227855 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item/Vendor Catalog</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item/Vendor Catalog - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3253409176 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View a list of the lines that you have calculated in the Phys. Inventory Journal window. You can use this report during the physical inventory count to mark down actual quantities on hand in the warehouse and compare them to what is recorded in the program.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Phys. Inventory List - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3253409176 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Phys. Inventory List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Phys. Inventory List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1176349481 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View, print, or save a list of your items and their prices, for example, to send to customers. You can create the list for specific customers, campaigns, currencies, or other criteria.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Price List - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1176349481 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Price List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Price List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2176459415 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory Statistics</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Reports - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2893605781 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View, print, or save a list of customers that have purchased selected items within a selected period, for example, to analyze customers' purchasing patterns. The report specifies quantity, amount, discount, profit percentage, and profit.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory - Customer Sales - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2893605781 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory - Customer Sales</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory - Customer Sales - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1389888702 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View, print, or save a summary of selected items' sales per customer, for example, to analyze the profit on individual items or trends in revenues and profit. The report specifies direct unit cost, unit price, sales quantity, sales in LCY, profit percentage, and profit.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory - Sales Statistics - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1389888702 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory - Sales Statistics</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory - Sales Statistics - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2683832369 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View information about the items with the highest or lowest sales within a selected period. You can also choose that items that are not on hand or have not been sold are not included in the report. The items are sorted by order size within the selected period. The list gives a quick overview of the items that have sold either best or worst, or the items that have the most or fewest units on inventory.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory - Top 10 List - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 2683832369 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory - Top 10 List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory - Top 10 List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3435539207 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Orders</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Orders - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3983795751 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View a list of items with negative inventory that is sorted by vendor. You can use this report to help decide which items have to be reordered. The report shows how many items are inbound on purchase orders or transfer orders and how many items are in inventory. Based on this information and any defined reorder quantity for the item, a suggested value is inserted in the Qty. to Order field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory - Reorders - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3983795751 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory - Reorders</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory - Reorders - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 315029323 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Shows a list of order lines with shipment dates that are exceeded. The report also shows if there are other items for the customer on back order.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory - Sales Back Orders - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 315029323 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory - Sales Back Orders</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory - Sales Back Orders - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1822841853 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View a list of the vendors that your company has purchased items from within a selected period. It shows invoiced quantity, amount and discount. The report can be used to analyze a company's item purchases.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory - Vendor Purchases - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1822841853 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory - Vendor Purchases</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory - Vendor Purchases - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3275403514 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View a list of the orders that have not yet been shipped or received and the items in the orders. It shows the order number, customer's name, shipment date, order quantity, quantity on back order, outstanding quantity and unit price, as well as possible discount percentage and amount. The quantity on back order and outstanding quantity and amount are totaled for each item. The report can be used to find out whether there are currently shipment problems or any can be expected.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory Order Details - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3275403514 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory Order Details</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory Order Details - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1198997472 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>View a list of items on order from vendors. It also shows the expected receipt date and the quantity and amount on back orders. The report can be used, for example, to see when items should be received and whether a reminder of a back order should be issued.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory Purchase Orders - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 1198997472 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory Purchase Orders</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory Purchase Orders - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3288048129 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Print Label</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action PrintLabel - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4140873756 - Action 3288048129 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Print Label</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action PrintLabel - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 1131417818 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Material Group</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -8178,10 +9778,10 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Order Proc. Role Center - Action AMCNewItem - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1123802410 - Action 3535208886 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2747922353">
+        <trans-unit id="PageExtension 1123802410 - Action 397158027 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2747922353">
           <source>Item Production Plannig</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Order Proc. Role Center - Action AMCItemForecat - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Order Proc. Role Center - Action AMCItemForecast - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1123802410 - Action 4231700592 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2747922353">
           <source>Item Forecast</source>
@@ -8217,6 +9817,11 @@
           <source>Discount Correction Inv.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Order Proc. Role Center - Action AMCDicountInv1 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1123802410 - Action 1336913026 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2747922353">
+          <source>AMC Items</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Order Proc. Role Center - Action DetailedItems - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1123802410 - Action 270075437 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2747922353">
           <source>Posted Whse. Receiptss</source>

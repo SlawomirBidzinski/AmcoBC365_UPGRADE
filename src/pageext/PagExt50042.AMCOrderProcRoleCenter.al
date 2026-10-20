@@ -46,7 +46,7 @@ pageextension 50042 "AMC Order Proc. Role Center" extends "Order Processor Role 
         addlast(Action76)
 
         {
-            group(AMCItemForecat)
+            group(AMCItemForecast)
             {
                 Caption = 'Item Production Plannig';
 
@@ -104,6 +104,16 @@ pageextension 50042 "AMC Order Proc. Role Center" extends "Order Processor Role 
                 Caption = 'Discount Correction Inv.';
                 Image = "Order";
                 RunObject = Page "AMC Discount Corr. Inv. List";
+            }
+        }
+        addafter(Items)
+        {
+            action(DetailedItems)
+            {
+                ApplicationArea = Basic, Suite;
+                Caption = 'AMC Items';
+                Image = Item;
+                RunObject = Page "AMC Item List";
             }
         }
         addlast("Posted Documents")

@@ -59,6 +59,95 @@ page 50011 "AMC Item List"
                     HideValue = IsNonInventoriable;
                     ToolTip = 'Specifies how many units, such as pieces, boxes, or cans, of the item are in inventory.';
                 }
+                field("Base Unit of Measure"; Rec."Base Unit of Measure")
+                {
+                    ApplicationArea = Invoicing, Basic, Suite;
+                    ToolTip = 'Specifies the base unit used to measure the item, such as piece, box, or pallet. The base unit of measure also serves as the conversion basis for alternate units of measure.';
+                }
+                field("AMC Pack Unit of Measure"; Rec."AMC Pack Unit of Measure")
+                {
+                    ApplicationArea = All;
+                }
+                field("AMC Pack Quantity"; Rec."AMC Pack Quantity")
+                {
+                    ApplicationArea = All;
+                    Visible = false;
+                }
+                field("AMC Packing Type"; Rec."AMC Packing Type")
+                {
+                    ApplicationArea = All;
+                }
+                field("Inventory Posting Group"; Rec."Inventory Posting Group")
+                {
+                    ApplicationArea = Basic, Suite;
+                    ToolTip = 'Specifies links between business transactions made for the item and an inventory account in the general ledger, to group amounts for that item type.';
+                }
+                field("Gen. Prod. Posting Group"; Rec."Gen. Prod. Posting Group")
+                {
+                    ApplicationArea = Suite;
+                    ToolTip = 'Specifies the item''s product type to link transactions made for this item with the appropriate general ledger account according to the general posting setup.';
+                }
+                field("VAT Prod. Posting Group"; Rec."VAT Prod. Posting Group")
+                {
+                    ApplicationArea = Basic, Suite;
+                    ToolTip = 'Specifies the VAT product posting group. Links business transactions made for the item, resource, or G/L account with the general ledger, to account for VAT amounts resulting from trade with that record.';
+                }
+                field("Item Tracking Code"; Rec."Item Tracking Code")
+                {
+                    ApplicationArea = ItemTracking;
+                    ToolTip = 'Specifies how items are tracked in the supply chain.';
+                }
+                field("Warehouse Class Code"; Rec."Warehouse Class Code")
+                {
+                    Visible = true;
+                    ApplicationArea = All;
+                }
+                field(AMCCountryOriginList; CountryOriginList)
+                {
+                    Caption = 'Kraj Pochodzenia';
+                    ApplicationArea = All;
+                    ToolTip = ' ';
+                    Editable = False;
+                }
+                field("AMC Item Hierarchy"; Rec."AMC Item Hierarchy")
+                {
+                    ApplicationArea = All;
+                }
+                field("AMC Producent"; Rec."AMC Producent")
+                {
+                    ApplicationArea = All;
+                }
+                field("AMC Nazwa producenta"; Rec."AMC Nazwa Producenta")
+                {
+                    ApplicationArea = All;
+                }
+                field("AMC Fabryka"; Rec."AMC Fabryka")
+                {
+                    ApplicationArea = All;
+                }
+                field("AMC Nazwa Fabryki"; Rec."AMC Nazwa Fabryki")
+                {
+                    ApplicationArea = All;
+                }
+                field("AMC Item Material Group"; Rec."AMC Item Material Group")
+                {
+                    ApplicationArea = All;
+                }
+                field(AMCItemGrName; ItemGrName)
+                {
+                    Caption = 'Grupa Zapasów';
+                    ApplicationArea = All;
+                }
+
+                field("AMC Item Material SupGrup"; Rec."AMC Item Material SupGrup")
+                {
+                    ApplicationArea = All;
+                }
+                field(AMCItemSubGrName; ItemSubGrName)
+                {
+                    Caption = 'Podgrupa Zapasów';
+                    ApplicationArea = All;
+                }
                 field("Created From Nonstock Item"; Rec."Created From Nonstock Item")
                 {
                     ApplicationArea = Basic, Suite;
@@ -82,11 +171,6 @@ page 50011 "AMC Item List"
                     ApplicationArea = Assembly;
                     ToolTip = 'Specifies if the item is an assembly BOM.';
                 }
-                field("Base Unit of Measure"; Rec."Base Unit of Measure")
-                {
-                    ApplicationArea = Invoicing, Basic, Suite;
-                    ToolTip = 'Specifies the base unit used to measure the item, such as piece, box, or pallet. The base unit of measure also serves as the conversion basis for alternate units of measure.';
-                }
                 field("Shelf No."; Rec."Shelf No.")
                 {
                     ApplicationArea = Basic, Suite;
@@ -99,11 +183,6 @@ page 50011 "AMC Item List"
                     ToolTip = 'Specifies how the item''s cost flow is recorded and whether an actual or budgeted value is capitalized and used in the cost calculation.';
                     Visible = false;
                 }
-                field("Cost is Adjusted"; Rec."Cost is Adjusted")
-                {
-                    ApplicationArea = Basic, Suite;
-                    ToolTip = 'Specifies whether the item''s unit cost has been adjusted, either automatically or manually.';
-                }
                 field("Standard Cost"; Rec."Standard Cost")
                 {
                     ApplicationArea = Basic, Suite;
@@ -112,6 +191,7 @@ page 50011 "AMC Item List"
                 }
                 field("Unit Cost"; Rec."Unit Cost")
                 {
+                    Visible = false;
                     ApplicationArea = Basic, Suite;
                     ToolTip = 'Specifies the cost per unit of the item.';
                 }
@@ -137,23 +217,6 @@ page 50011 "AMC Item List"
                 {
                     ApplicationArea = Invoicing, Basic, Suite;
                     ToolTip = 'Specifies the price for one unit of the item, in LCY.';
-                }
-                field("Inventory Posting Group"; Rec."Inventory Posting Group")
-                {
-                    ApplicationArea = Basic, Suite;
-                    ToolTip = 'Specifies links between business transactions made for the item and an inventory account in the general ledger, to group amounts for that item type.';
-                    Visible = false;
-                }
-                field("Gen. Prod. Posting Group"; Rec."Gen. Prod. Posting Group")
-                {
-                    ApplicationArea = Suite;
-                    ToolTip = 'Specifies the item''s product type to link transactions made for this item with the appropriate general ledger account according to the general posting setup.';
-                    Visible = false;
-                }
-                field("VAT Prod. Posting Group"; Rec."VAT Prod. Posting Group")
-                {
-                    ApplicationArea = Basic, Suite;
-                    ToolTip = 'Specifies the VAT product posting group. Links business transactions made for the item, resource, or G/L account with the general ledger, to account for VAT amounts resulting from trade with that record.';
                     Visible = false;
                 }
                 field("Item Disc. Group"; Rec."Item Disc. Group")
@@ -197,7 +260,7 @@ page 50011 "AMC Item List"
                     ToolTip = 'Specifies the percentage of the item''s last purchase cost that includes indirect costs, such as freight that is associated with the purchase of the item.';
                     Visible = false;
                 }
-                
+
                 field(Blocked; Rec.Blocked)
                 {
                     ApplicationArea = Basic, Suite;
@@ -252,12 +315,6 @@ page 50011 "AMC Item List"
                     ToolTip = 'Specifies which default order flow is used to supply this assembly item.';
                     Visible = false;
                 }
-                field("Item Tracking Code"; Rec."Item Tracking Code")
-                {
-                    ApplicationArea = ItemTracking;
-                    ToolTip = 'Specifies how items are tracked in the supply chain.';
-                    Visible = false;
-                }
                 field("Default Deferral Template Code"; Rec."Default Deferral Template Code")
                 {
                     ApplicationArea = Suite;
@@ -277,10 +334,22 @@ page 50011 "AMC Item List"
                     ToolTip = 'Specifies Global Trade Item Number for tracking.';
                     Visible = false;
                 }
+                field("Cost is Adjusted"; Rec."Cost is Adjusted")
+                {
+                    ApplicationArea = Basic, Suite;
+                    ToolTip = 'Specifies whether the item''s unit cost has been adjusted, either automatically or manually.';
+                    Visible = false;
+                }
             }
         }
         area(factboxes)
         {
+            part(AMCItemDetailsFctb; "AMC Item Details Factbox")
+            {
+                ApplicationArea = All;
+                Caption = 'Details';
+                SubPageLink = "No." = field("No.");
+            }
             part(PowerBIEmbeddedReportPart; "Power BI Embedded Report Part")
             {
                 ApplicationArea = Basic, Suite;
@@ -370,6 +439,14 @@ page 50011 "AMC Item List"
     {
         area(processing)
         {
+            action(AMCNewItem)
+            {
+                ApplicationArea = All;
+                Caption = 'Generate New Item';
+                Image = Item;
+
+                RunObject = Page "AMC New Item Generate";
+            }
             group(History)
             {
                 Caption = 'History';
@@ -700,6 +777,32 @@ page 50011 "AMC Item List"
             {
                 Caption = 'F&unctions';
                 Image = "Action";
+                action(AMCItemBinContents)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Item Bin Contents';
+                    Image = BinContent;
+
+                    RunObject = Page "Bin Contents";
+                    RunPageLink = "Item No." = field("No.");
+                }
+                action(AMCItemAvailabilityByBatch)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Item Availability By Batch';
+                    Image = AvailableToPromise;
+
+                    RunObject = Page "Lot No. Information List";
+                    RunPageLink = "Item No." = field("No.");
+                }
+                action(AMCNewMaterial)
+                {
+                    ApplicationArea = All;
+                    Caption = 'New Material/Packaging';
+                    Image = NewBranch;
+
+                    RunObject = page "AMC New Item Generate";
+                }
                 action("&Create Stockkeeping Unit")
                 {
                     AccessByPermission = TableData "Stockkeeping Unit" = R;
@@ -2067,6 +2170,31 @@ page 50011 "AMC Item List"
     trigger OnAfterGetRecord()
     begin
         EnableControls();
+
+        ItemGrName := '';
+        ItemSubGrName := '';
+
+        MaterialsGroup.SETRANGE("Group Code", Rec."AMC Item Material Group");
+        IF MaterialsGroup.FINDFIRST THEN
+            ItemGrName := MaterialsGroup."Group Name";
+
+        MaterialsSubGroup.SETRANGE("Material Group", Rec."AMC Item Material Group");
+        MaterialsSubGroup.SETRANGE("Material SubGroup", Rec."AMC Item Material SupGrup");
+
+        IF MaterialsSubGroup.FINDFIRST THEN
+            ItemSubGrName := MaterialsSubGroup."SubGroup Description";
+
+        CountryOriginList := '';
+        ItemCountryOrigin.RESET;
+        ItemCountryOrigin.SETRANGE("Item Code", rec."No.");
+        IF ItemCountryOrigin.FINDFIRST THEN
+            REPEAT
+                IF CountryOriginList = '' THEN BEGIN
+                    CountryOriginList := STRSUBSTNO('%1', ItemCountryOrigin."Country of Origin Code");
+                END ELSE BEGIN
+                    CountryOriginList := STRSUBSTNO('%1, %2', CountryOriginList, ItemCountryOrigin."Country of Origin Code");
+                END;
+            UNTIL ItemCountryOrigin.NEXT = 0;
     end;
 
     trigger OnFindRecord(Which: Text): Boolean
@@ -2119,6 +2247,9 @@ page 50011 "AMC Item List"
         IsOnPhone := ClientTypeManagement.GetCurrentClientType() = CLIENTTYPE::Phone;
         if ShowNotification then
             NotAllItemsShownNotification();
+
+        Rec.SETRANGE(Blocked, FALSE);
+        Rec.CalcFields("AMC Nazwa Producenta", "AMC Nazwa Fabryki");
     end;
 
     var
@@ -2130,8 +2261,6 @@ page 50011 "AMC Item List"
         PriceCalculationMgt: Codeunit "Price Calculation Mgt.";
         IsInventoryAdjmtAllowed: Boolean;
         ShowNotification: Boolean;
-
-    protected var
         TempFilterItemAttributesBuffer: Record "Filter Item Attributes Buffer" temporary;
         TempItemFilteredFromAttributes: Record Item temporary;
         IsFoundationEnabled: Boolean;
@@ -2152,6 +2281,12 @@ page 50011 "AMC Item List"
         RunOnPickItem: Boolean;
         IsNonInventoriable: Boolean;
         IsInventoriable: Boolean;
+        MaterialsGroup: Record "AMC Materials Group";
+        MaterialsSubGroup: Record "AMC Material SubGroups";
+        ItemCountryOrigin: Record "AMC Item Country of Origin";
+        ItemGrName: Text[200];
+        ItemSubGrName: Text[200];
+        CountryOriginList: Text[200];
 
     procedure SelectActiveItems(): Text
     var
