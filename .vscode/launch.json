@@ -20,5 +20,24 @@
             "schemaUpdateMode": "ForceSync",
             "usePublicURLFromServer": true
         },
+        {
+            "name": "UPG_DEV",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "OnPrem",
+            "server": "http://localhost:8080/BC270_UPG_DEV/",
+            "port": 7349,
+            "serverInstance": "BC270_UPG_DEV",
+            "authentication": "Windows",
+            //"startupObjectId": 31,
+            "startupObjectType": "Page",
+            "breakOnError": "All",
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "tenant": "default",
+            "schemaUpdateMode": "ForceSync",
+            "usePublicURLFromServer": true
+        },
     ]
 }
