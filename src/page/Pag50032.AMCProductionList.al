@@ -5,7 +5,7 @@ page 50032 "AMC Production List"
     PageType = List;
     SourceTable = "AMC Item Production";
     DelayedInsert = true;
-    SourceTableView = where("Entry Type" = const(Producent));
+    UsageCategory = Administration;
 
 
     layout
@@ -25,6 +25,10 @@ page 50032 "AMC Production List"
                 field("Nazwa Producenta"; Rec."Nazwa Producenta")
                 {
                     ToolTip = 'Specifies the value of the Nazwa Producenta field.', Comment = '%';
+                }
+                field(Fabryka; Rec.Fabryka)
+                {
+                    ApplicationArea = All;
                 }
                 field("Currency Code"; Rec."Currency Code")
                 {

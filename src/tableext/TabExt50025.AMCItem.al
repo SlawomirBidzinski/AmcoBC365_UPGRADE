@@ -356,13 +356,13 @@ tableextension 50025 "AMC Item" extends Item
         }
         field(50047; "AMC Producent"; Code[20])
         {
-            Caption = 'Fabryka';
+            Caption = 'Producent';
             TableRelation = "AMC Item Production".Producent where("Entry Type" = const(Producent));
             DataClassification = CustomerContent;
         }
         field(50048; "AMC Fabryka"; Code[20])
         {
-            Caption = 'Brand';
+            Caption = 'Fabryka';
             TableRelation = "AMC Item Production".Fabryka where("Entry Type" = const(Fabryka));
             DataClassification = CustomerContent;
         }
@@ -388,7 +388,7 @@ tableextension 50025 "AMC Item" extends Item
         {
             CalcFormula = lookup("AMC Item Production"."Nazwa Fabryki" where(Fabryka = field("AMC Fabryka"),
                                                                           "Entry Type" = const(Fabryka)));
-            Caption = 'Nazwa Brand';
+            Caption = 'Nazwa Fabryki';
             Editable = false;
             FieldClass = FlowField;
         }

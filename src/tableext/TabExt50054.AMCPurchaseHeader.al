@@ -174,11 +174,11 @@ tableextension 50054 "AMC Purchase HeaderExt" extends "Purchase Header"
             Editable = false;
             FieldClass = FlowField;
         }
-        field(50104; "AMC Posted Receipt No."; Code[20])
+        field(50104; "AMC Posted Whse. Receipt No."; Code[20])
         {
             CalcFormula = lookup("Posted Whse. Receipt Line"."No." where("Source Document" = const("Purchase Order"),
                                                                      "Source No." = field("No.")));
-            Caption = 'Posted Receipt No.';
+            Caption = 'Posted Whse. Receipt No.';
             Editable = false;
             FieldClass = FlowField;
         }
@@ -193,6 +193,12 @@ tableextension 50054 "AMC Purchase HeaderExt" extends "Purchase Header"
         {
             Caption = 'Dostawa Bezpośrednia';
             DataClassification = CustomerContent;
+        }
+        field(50110; "AMC Posted Receipt No."; Code[20])
+        {
+            FieldClass = FlowField;
+            CalcFormula = Lookup("Purch. Rcpt. Header"."No." WHERE("Order No." = FIELD("No.")));
+            Caption = 'Nr Zaksięg. Wydania';
         }
         field(50203; "AMC Contract Date"; Date)
         {

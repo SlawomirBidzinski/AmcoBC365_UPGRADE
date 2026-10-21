@@ -17,6 +17,10 @@ pageextension 50032 "AMC Purchase Order List Ext" extends "Purchase Order List"
             {
                 ApplicationArea = All;
             }
+            field("AMC Posted Whse. Receipt No."; Rec."AMC Posted Whse. Receipt No.")
+            {
+                ApplicationArea = All;
+            }
             field("AMC Posted Receipt No."; Rec."AMC Posted Receipt No.")
             {
                 ApplicationArea = All;

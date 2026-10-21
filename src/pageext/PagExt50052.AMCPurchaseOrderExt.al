@@ -22,6 +22,21 @@ pageextension 50052 "AMC Purchase Order Ext" extends "Purchase Order"
                 ApplicationArea = All;
             }
         }
+        addlast(General)
+        {
+            field("AMC Receipt No."; Rec."AMC Receipt No.")
+            {
+                ApplicationArea = All;
+            }
+            field("AMC Posted Whse. Receipt No."; Rec."AMC Posted Whse. Receipt No.")
+            {
+                ApplicationArea = All;
+            }
+            field("AMC Posted Receipt No."; Rec."AMC Posted Receipt No.")
+            {
+                ApplicationArea = All;
+            }
+        }
         addafter(Control3)
         {
             part(AMCItemFactbox; "AMC Item Statistics FactBox")

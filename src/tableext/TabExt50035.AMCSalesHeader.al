@@ -78,7 +78,7 @@ tableextension 50035 "AMC Sales Header" extends "Sales Header"
         }
         field(50011; "AMC Remarks from Shipment"; Text[170])
         {
-            CalcFormula = Lookup("Posted Whse. Shipment Header"."AMC Remarks" WHERE("No." = FIELD("AMC Posted Shipment No.")));
+            CalcFormula = Lookup("Posted Whse. Shipment Header"."AMC Remarks" WHERE("No." = FIELD("AMC Posted Whse. Shipment No.")));
             Caption = 'Uwagi do Wydania';
             Editable = false;
             FieldClass = FlowField;
@@ -220,12 +220,12 @@ tableextension 50035 "AMC Sales Header" extends "Sales Header"
             Caption = 'Nr Wydania Magaz.';
             Editable = false;
         }
-        field(50103; "AMC Posted Shipment No."; Code[20])
+        field(50103; "AMC Posted Whse. Shipment No."; Code[20])
         {
             FieldClass = FlowField;
             CalcFormula = Lookup("Posted Whse. Shipment Line"."No." WHERE("Source Document" = CONST("Sales Order"),
                                                                       "Source No." = FIELD("No.")));
-            Caption = 'Nr Zaksięg. Wydania';
+            Caption = 'Nr Zaksięg. Wydania Magazynowego';
         }
         field(50104; "AMC Check For Low Price"; Boolean)
         {
@@ -260,6 +260,12 @@ tableextension 50035 "AMC Sales Header" extends "Sales Header"
         {
             Caption = 'Dostawa Bezpośrednia';
             DataClassification = CustomerContent;
+        }
+        field(50111; "AMC Posted Shipment No."; Code[20])
+        {
+            FieldClass = FlowField;
+            CalcFormula = Lookup("Sales Shipment Header"."No." WHERE("Order No." = FIELD("No.")));
+            Caption = 'Nr Zaksięg. Wydania';
         }
         field(50120; "AMC Price Currency"; Code[10])
         {

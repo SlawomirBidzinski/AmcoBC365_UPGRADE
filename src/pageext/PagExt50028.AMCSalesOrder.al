@@ -61,7 +61,7 @@ pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
                 ApplicationArea = All;
                 Editable = False;
             }
-            field("AMC Posted Shipment No."; Rec."AMC Posted Shipment No.")
+            field("AMC Posted Whse. Shipment No."; Rec."AMC Posted Whse. Shipment No.")
             {
                 ApplicationArea = All;
                 Editable = False;
@@ -98,14 +98,17 @@ pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
                     IF ShipmentQty > 1 THEN BEGIN
                         Page.RUN(Page::"Posted Whse. Shipment List", PostWhseShipmHeadTemp);
                     END ELSE BEGIN
-                        IF rec."AMC Posted Shipment No." <> '' THEN BEGIN
-                            IF PostedWhseShipHeader.GET(rec."AMC Posted Shipment No.") THEN
+                        IF rec."AMC Posted Whse. Shipment No." <> '' THEN BEGIN
+                            IF PostedWhseShipHeader.GET(rec."AMC Posted Whse. Shipment No.") THEN
                                 Page.RUN(Page::"Posted Whse. Shipment", PostedWhseShipHeader);
                         END;
                     END;
                 end;
             }
-
+            field("AMC Posted Shipment No."; Rec."AMC Posted Shipment No.")
+            {
+                ApplicationArea = All;
+            }
             field("AMC Bill-to Customer No."; Rec."Bill-to Customer No.")
             {
                 ApplicationArea = All;

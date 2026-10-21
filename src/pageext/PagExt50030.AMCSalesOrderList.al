@@ -23,6 +23,10 @@ pageextension 50030 "AMC Sales Order List" extends "Sales Order List"
             {
                 ApplicationArea = All;
             }
+            field("AMC Posted Whse. Shipment No."; Rec."AMC Posted Whse. Shipment No.")
+            {
+                ApplicationArea = All;
+            }
             field("AMC Posted Shipment No."; Rec."AMC Posted Shipment No.")
             {
                 ApplicationArea = All;
