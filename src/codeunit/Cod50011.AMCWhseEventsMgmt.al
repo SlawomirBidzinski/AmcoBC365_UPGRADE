@@ -21,6 +21,7 @@ codeunit 50011 "AMC Whse. Events Mgmt."
         end;
         WarehouseShipmentHeader."AMC Create by User ID" := UserId();
         WarehouseShipmentHeader."AMC Creation Date" := WorkDate();
+        WarehouseShipmentHeader."AMC Notes" := SalesHeader."AMC Notes";
     end;
 
     [EventSubscriber(ObjectType::Report, Report::"Get Source Documents", 'OnBeforeWhseReceiptHeaderInsert', '', false, false)]
@@ -48,6 +49,7 @@ codeunit 50011 "AMC Whse. Events Mgmt."
         end;
         WarehouseReceiptHeader."AMC Create by User ID" := userid;
         WarehouseReceiptHeader."AMC Creation Date" := WorkDate();
+        WarehouseReceiptHeader."AMC Notes" := PurchHdr."AMC Purchase Notes";
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales Warehouse Mgt.", 'OnBeforeCreateShptLineFromSalesLine', '', false, false)]
@@ -114,6 +116,7 @@ codeunit 50011 "AMC Whse. Events Mgmt."
         PostedWhseShipmentHeader."AMC Creation Date" := WarehouseShipmentHeader."AMC Creation Date";
         PostedWhseShipmentHeader."AMC RW Transaction" := WarehouseShipmentHeader."AMC RW Transaction";
         PostedWhseShipmentHeader."AMC Shipment Type" := WarehouseShipmentHeader."AMC Shipment Type";
+        PostedWhseShipmentHeader."AMC Notes" := WarehouseShipmentHeader."AMC Notes";
     end;
 
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Whse.-Post Receipt", 'OnBeforePostedWhseRcptHeaderInsert', '', false, false)]
@@ -133,5 +136,6 @@ codeunit 50011 "AMC Whse. Events Mgmt."
         PostedWhseReceiptHeader."AMC Document ID" := WarehouseReceiptHeader."AMC Document ID";
         PostedWhseReceiptHeader."AMC Customer Search Name" := WarehouseReceiptHeader."AMC Customer Search Name";
         PostedWhseReceiptHeader."AMC PW Transaction" := WarehouseReceiptHeader."AMC PW Transaction";
+        PostedWhseReceiptHeader."AMC Notes" := WarehouseReceiptHeader."AMC Notes";
     end;
 }

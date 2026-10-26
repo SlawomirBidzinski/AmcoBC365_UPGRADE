@@ -32,6 +32,10 @@ pageextension 50039 "AMC Warehouse Shipment" extends "Warehouse Shipment"
             {
                 ApplicationArea = All;
             }
+            field("AMC Notes";Rec."AMC Notes")
+            {
+                ApplicationArea = All;
+            }
         }
         addafter("Shipment Date")
         {

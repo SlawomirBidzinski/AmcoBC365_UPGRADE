@@ -169,6 +169,11 @@ tableextension 50064 "AMC Warehouse Shipment Header" extends "Warehouse Shipment
             DataClassification = CustomerContent;
             TableRelation = Item;
         }
+        field(50019; "AMC Notes"; Text[100])
+        {
+            Caption = 'Uwagi';
+            DataClassification = CustomerContent;
+        }
         field(50020; "AMC Create by User ID"; Code[50])
         {
             Caption = 'Utworzone przez';
