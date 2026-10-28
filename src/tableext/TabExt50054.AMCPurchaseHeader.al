@@ -211,8 +211,10 @@ tableextension 50054 "AMC Purchase HeaderExt" extends "Purchase Header"
             var
                 PurchDocNosTemplate: Record "ITI Purch. Doc. Nos. Template";
             begin
-                if PurchDocNosTemplate.Get("ITI Nos. Template Code") then
+                if PurchDocNosTemplate.Get("ITI Nos. Template Code") then begin
                     Rec.Validate("AMC PW Transaction", PurchDocNosTemplate."AMC PW Transaction");
+                    Rec."Posting No. Series" := PurchDocNosTemplate."Posting No. Series";
+                end;
             end;
         }
     }

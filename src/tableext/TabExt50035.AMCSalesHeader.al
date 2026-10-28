@@ -457,6 +457,7 @@ tableextension 50035 "AMC Sales Header" extends "Sales Header"
                 if SalesDocNosTemplate.Get("ITI Nos. Template Code") then begin
                     Rec.Validate("AMC RW Transaction", SalesDocNosTemplate."AMC RW Transaction");
                     Rec.Validate("AMC RW Transaction Type", SalesDocNosTemplate."AMC RW Transaction Type");
+                    Rec."Posting No. Series" := SalesDocNosTemplate."Posting No. Series";
                 end;
             end;
         }

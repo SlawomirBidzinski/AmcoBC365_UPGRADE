@@ -37,7 +37,7 @@ tableextension 50050 "AMC Price List Line" extends "Price List Line"
         }
         field(50010; "AMC User ID"; Code[50])
         {
-            Caption = 'UserID';
+            Caption = 'User ID';
             TableRelation = User;
             ValidateTableRelation = false;
             DataClassification = CustomerContent;
@@ -53,9 +53,17 @@ tableextension 50050 "AMC Price List Line" extends "Price List Line"
             DataClassification = CustomerContent;
             TableRelation = Currency;
         }
+
+        modify("Unit Price")
+        {
+            trigger OnAfterValidate()
+            begin
+                UpdateChange();
+            end;
+        }
     }
 
-    trigger OnAfterModify()
+    local procedure UpdateChange()
     begin
         "AMC User ID" := UserId;
         "AMC Last Change Date Time" := CurrentDateTime();

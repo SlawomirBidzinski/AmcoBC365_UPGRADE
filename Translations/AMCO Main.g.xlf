@@ -12418,6 +12418,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Posted Whse Shipm. Head. - Field AMC Delivery Date - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 3263791572 - Field 2987765464 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2260220107">
+          <source>Uwagi</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Posted Whse Shipm. Head. - Field AMC Notes - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 3263791572 - Field 4166290465 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2260220107">
           <source>Kod Zapasu palety</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -12513,6 +12518,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Posted Whse. Rec. Hdr. Ext - Field AMC Notes - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 1001768582 - Field 1944204049 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2338847983">
+          <source>Purchase Notes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Posted Whse. Rec. Hdr. Ext - Field AMC Purchase Notes - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 1001768582 - Field 965528664 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2338847983">
           <source>PW Transaction</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -12589,7 +12599,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Price List Line - Field AMC Last Change Date Time - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2273534458 - Field 323211261 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2964960979">
-          <source>UserID</source>
+          <source>User ID</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Price List Line - Field AMC User ID - Property Caption</note>
         </trans-unit>
@@ -17993,6 +18003,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Receipt Header - Field AMC Notes - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2815402059 - Field 1944204049 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1003430490">
+          <source>Purchase Notes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Receipt Header - Field AMC Purchase Notes - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2815402059 - Field 965528664 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1003430490">
           <source>PW Transaction</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -18152,6 +18167,11 @@
           <source>Customer Search Name</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Shipment Header - Field AMC Customer Search Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 363502639 - Field 2987765464 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3880947038">
+          <source>Uwagi</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Shipment Header - Field AMC Notes - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 363502639 - Field 4166290465 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3880947038">
           <source>Kod Zapasu palety</source>

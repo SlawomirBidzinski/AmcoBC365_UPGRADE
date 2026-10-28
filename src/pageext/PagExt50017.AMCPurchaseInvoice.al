@@ -18,6 +18,10 @@ pageextension 50017 "AMC Purchase Invoice" extends "Purchase Invoice"
                     Rec.ValidateITINosTemplateCode(Enum::"Purchase Document Type"::Invoice);
                 end;
             }
+            field("Posting No. Series"; Rec."Posting No. Series")
+            {
+                ApplicationArea = All;
+            }
         }
     }
 }

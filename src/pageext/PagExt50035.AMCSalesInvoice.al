@@ -18,6 +18,10 @@ pageextension 50035 "AMC Sales Invoice" extends "Sales Invoice"
                     Rec.ValidateITINosTemplateCode(Enum::"Sales Document Type"::Invoice);
                 end;
             }
+            field("Posting No. Series"; Rec."Posting No. Series")
+            {
+                ApplicationArea = All;
+            }
         }
         addlast(General)
         {

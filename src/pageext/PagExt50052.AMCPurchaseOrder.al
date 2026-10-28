@@ -21,6 +21,10 @@ pageextension 50052 "AMC Purchase Order Ext" extends "Purchase Order"
             {
                 ApplicationArea = All;
             }
+                        field("Posting No. Series"; Rec."Posting No. Series")
+            {
+                ApplicationArea = All;
+            }
         }
         addlast(General)
         {

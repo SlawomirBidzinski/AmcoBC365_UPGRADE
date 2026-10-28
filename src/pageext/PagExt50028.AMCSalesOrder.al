@@ -22,6 +22,10 @@ pageextension 50028 "AMC Sales Order Subpage" extends "Sales Order"
             {
                 ApplicationArea = All;
             }
+            field("Posting No. Series"; Rec."Posting No. Series")
+            {
+                ApplicationArea = All;
+            }
         }
         addafter("Posting Description")
         {

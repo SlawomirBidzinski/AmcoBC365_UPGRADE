@@ -18,6 +18,10 @@ pageextension 50013 "AMC Sales Credit Memo" extends "Sales Credit Memo"
                     Rec.ValidateITINosTemplateCode(Enum::"Sales Document Type"::"Credit Memo");
                 end;
             }
+            field("Posting No. Series"; Rec."Posting No. Series")
+            {
+                ApplicationArea = All;
+            }
         }
     }
 }

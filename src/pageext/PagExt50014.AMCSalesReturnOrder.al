@@ -18,7 +18,12 @@ pageextension 50014 "AMC Sales Return Order" extends "Sales Return Order"
                     Rec.ValidateITINosTemplateCode(Enum::"Sales Document Type"::"Return Order");
                 end;
             }
+            field("Posting No. Series"; Rec."Posting No. Series")
+            {
+                ApplicationArea = All;
+            }
         }
+
         addafter("No.")
         {
             field("AMC RW Transaction"; Rec."AMC RW Transaction")

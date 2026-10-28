@@ -18,6 +18,10 @@ pageextension 50015 "AMC Purchase Return Order" extends "Purchase Return Order"
                     Rec.ValidateITINosTemplateCode(Enum::"Purchase Document Type"::"Return Order");
                 end;
             }
+            field("Posting No. Series"; Rec."Posting No. Series")
+            {
+                ApplicationArea = All;
+            }
         }
 
         addafter(Status)

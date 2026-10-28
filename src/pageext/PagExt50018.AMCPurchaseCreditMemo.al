@@ -18,6 +18,10 @@ pageextension 50018 "AMC Purchase Credit Memo" extends "Purchase Credit Memo"
                     Rec.ValidateITINosTemplateCode(Enum::"Purchase Document Type"::"Credit Memo");
                 end;
             }
+            field("Posting No. Series"; Rec."Posting No. Series")
+            {
+                ApplicationArea = All;
+            }
         }
     }
 }
