@@ -59,12 +59,6 @@ tableextension 50085 "AMC Item Journal Line Ext." extends "Item Journal Line"
             Description = 'SBi20Mar2014';
             DataClassification = CustomerContent;
         }
-        field(50008; "AMC Set Quality Status"; Code[20])
-        {
-            Caption = 'Przypisz Status Jakości';
-            TableRelation = "AMC QC Status";
-            DataClassification = CustomerContent;
-        }
         field(50009; "AMC Item Test PW"; Boolean)
         {
             Caption = 'Przyjęcie PW Próbek';

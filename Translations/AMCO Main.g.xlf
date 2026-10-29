@@ -2723,6 +2723,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit AMC QC Mgmt. - Method OnAfterInitItemLedgEntry - NamedType StatusErrLbl</note>
         </trans-unit>
+        <trans-unit id="Codeunit 1018368820 - Method 2608192072 - NamedType 3543157280" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The whole lot has been blocked by Quality Control process</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AMC QC Mgmt. - Method OnAfterInitItemLedgEntry - NamedType StatusLotErrLbl</note>
+        </trans-unit>
         <trans-unit id="Page 938075200 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Colours</source>
           <note from="Developer" annotates="general" priority="2"></note>
