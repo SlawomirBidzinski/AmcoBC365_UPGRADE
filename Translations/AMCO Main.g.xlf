@@ -2013,25 +2013,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC QC Status - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 4292882995 - Field 442768151 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Pogrubienie</source>
+        <trans-unit id="Table 4292882995 - Field 4292882995 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>QC Status</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC QC Status - Field Bold - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC QC Status - Field AMC QC Status - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4292882995 - Field 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Kod</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC QC Status - Field Code - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 4292882995 - Field 3397177271 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Kod koloru</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC QC Status - Field Colour Code - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 4292882995 - Field 2984218391 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Numer koloru</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC QC Status - Field Colour ID - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4292882995 - Field 737498079 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Zużycie prod.</source>
@@ -2047,6 +2037,11 @@
           <source>Blokada całej partii</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC QC Status - Field Lot Blocking - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 4292882995 - Field 395510365 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC QC Status - Field Purchase - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4292882995 - Field 1406942772 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Sprzedaż</source>
@@ -2722,6 +2717,11 @@
           <source>Could not connect to the NiceLabel integration service.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit AMC NiceLabel Mgmt. - Method PrintItemLabel - NamedType ConnectionErrLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1018368820 - Method 2608192072 - NamedType 3204376301" size-unit="char" translate="yes" xml:space="preserve">
+          <source>QC Status %1 does not allow type %2</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AMC QC Mgmt. - Method OnAfterInitItemLedgEntry - NamedType StatusErrLbl</note>
         </trans-unit>
         <trans-unit id="Page 938075200 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Colours</source>
@@ -8024,29 +8024,14 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Purchase Line List 2 - Control Vendor Item No. - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 2791008089 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>AMC QC Statuses</source>
+          <source>QC Statuses</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Statuses - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 2791008089 - Control 442768151 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Pogrubienie field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Statuses - Control Bold - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 2791008089 - Control 3004954119 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Kod field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Statuses - Control Code - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2791008089 - Control 3397177271 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Kod koloru field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Statuses - Control Colour Code - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 2791008089 - Control 2984218391 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Numer koloru field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Statuses - Control Colour ID - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 2791008089 - Control 737498079 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Zużycie prod. field.</source>
@@ -9217,6 +9202,11 @@
           <source> </source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Item Card - Control AMC Default QC Status - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1549928602 - Control 2914279559 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Labels</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Item Card - Control AMC Etykiety - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1549928602 - Control 1043393179 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
           <source> </source>
@@ -19017,6 +19007,46 @@
           <source>Zrealizowane</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Purchase Order Status - EnumValue Zrealizowane - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 4292882995 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC QC Status - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 4292882995 - EnumValue 3014990765 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>3M-Expires</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC QC Status - EnumValue 3M-Expires - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 4292882995 - EnumValue 2913119229 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Approved</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC QC Status - EnumValue Approved - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 4292882995 - EnumValue 3543129988 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Blocked</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC QC Status - EnumValue Blocked - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 4292882995 - EnumValue 904185626 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Conditional</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC QC Status - EnumValue Conditional - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 4292882995 - EnumValue 1971932127 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Internal QC</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC QC Status - EnumValue Internal QC - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 4292882995 - EnumValue 1487485508 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pending Approval</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC QC Status - EnumValue Pending Approval - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 4292882995 - EnumValue 2726257986 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Qualified</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC QC Status - EnumValue Qualified - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 1150070955 - EnumValue 1668868500 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Printed</source>

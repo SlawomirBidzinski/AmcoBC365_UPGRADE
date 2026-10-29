@@ -4,7 +4,7 @@ tableextension 50067 "AMC Item Ledger Entry" extends "Item Ledger Entry"
     {
         field(50000; "AMC QC Status"; Code[20])
         {
-            Caption = 'QC Status'; //TODO 'Status KJ';
+            Caption = 'QC Status';
             Description = 'AL.19Nov12';
             TableRelation = "AMC QC Status".Code;
             DataClassification = CustomerContent;

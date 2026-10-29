@@ -27,17 +27,9 @@ table 50028 "AMC QC Status"
         {
             Caption = 'Przesunięcie';
         }
-        field(6; "Colour ID"; Integer)
+        field(6; Purchase; Boolean)
         {
-            Caption = 'Numer koloru';
-        }
-        field(7; Bold; Boolean)
-        {
-            Caption = 'Pogrubienie';
-        }
-        field(8; "Colour Code"; Code[10])
-        {
-            Caption = 'Kod koloru';
+            Caption = 'Purchase';
         }
         field(9; "Lot Blocking"; Boolean)
         {
@@ -47,6 +39,11 @@ table 50028 "AMC QC Status"
         field(10; "Set For PW Test Item"; Boolean)
         {
             Caption = 'Domyślne - Przyjęcie Próbek';
+        }
+        field(11; "AMC QC Status"; Enum "AMC QC Status")
+        {
+            Caption = 'QC Status';
+            DataClassification = CustomerContent;
         }
     }
 
@@ -61,5 +58,31 @@ table 50028 "AMC QC Status"
     fieldgroups
     {
     }
+
+    procedure GetStatusStyle(): Text
+    var
+        RecordStyle: Text;
+    begin
+        case Rec."AMC QC Status" of
+            Rec."AMC QC Status"::" ":
+                RecordStyle := Format(PageStyle::None);
+            Rec."AMC QC Status"::Blocked:
+                RecordStyle := Format(PageStyle::Attention);
+            Rec."AMC QC Status"::Approved:
+                RecordStyle := Format(PageStyle::Favorable);
+            Rec."AMC QC Status"::Conditional:
+                RecordStyle := Format(PageStyle::StandardAccent);
+            Rec."AMC QC Status"::"Internal QC":
+                RecordStyle := Format(PageStyle::Subordinate);
+            Rec."AMC QC Status"::"Pending Approval":
+                RecordStyle := Format(PageStyle::Ambiguous);
+            Rec."AMC QC Status"::Qualified:
+                RecordStyle := Format(PageStyle::StrongAccent);
+            else
+                RecordStyle := Format(PageStyle::Standard);
+        end;
+
+        exit(RecordStyle);
+    end;
 }
 

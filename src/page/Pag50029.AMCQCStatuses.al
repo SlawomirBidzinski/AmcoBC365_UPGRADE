@@ -1,11 +1,11 @@
 page 50029 "AMC QC Statuses"
 {
     ApplicationArea = All;
-    Caption = 'AMC QC Statuses';
+    Caption = 'QC Statuses';
     PageType = List;
     SourceTable = "AMC QC Status";
     UsageCategory = Administration;
-    
+
     layout
     {
         area(Content)
@@ -15,10 +15,16 @@ page 50029 "AMC QC Statuses"
                 field("Code"; Rec."Code")
                 {
                     ToolTip = 'Specifies the value of the Kod field.', Comment = '%';
+                    StyleExpr = RecordStyle;
                 }
                 field(Description; Rec.Description)
                 {
                     ToolTip = 'Specifies the value of the Opis field.', Comment = '%';
+                    StyleExpr = RecordStyle;
+                }
+                field("AMC QC Status"; Rec."AMC QC Status")
+                {
+                    ApplicationArea = All;
                 }
                 field(Sales; Rec.Sales)
                 {
@@ -32,17 +38,9 @@ page 50029 "AMC QC Statuses"
                 {
                     ToolTip = 'Specifies the value of the Przesunięcie field.', Comment = '%';
                 }
-                field("Colour ID"; Rec."Colour ID")
+                field(Purchase; Rec.Purchase)
                 {
-                    ToolTip = 'Specifies the value of the Numer koloru field.', Comment = '%';
-                }
-                field(Bold; Rec.Bold)
-                {
-                    ToolTip = 'Specifies the value of the Pogrubienie field.', Comment = '%';
-                }
-                field("Colour Code"; Rec."Colour Code")
-                {
-                    ToolTip = 'Specifies the value of the Kod koloru field.', Comment = '%';
+                    ApplicationArea = All;
                 }
                 field("Lot Blocking"; Rec."Lot Blocking")
                 {
@@ -55,4 +53,12 @@ page 50029 "AMC QC Statuses"
             }
         }
     }
+
+    trigger OnAfterGetRecord()
+    begin
+        RecordStyle := Rec.GetStatusStyle();
+    end;
+
+    var
+        RecordStyle: Text;
 }

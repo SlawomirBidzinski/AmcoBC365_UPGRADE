@@ -224,6 +224,7 @@ pageextension 50021 "AMC Item Card" extends "Item Card"
             }
             group("AMC Etykiety")
             {
+                Caption = 'Labels';
                 field("AMC Pack Label Code"; Rec."AMC Pack Label Code")
                 {
                     ApplicationArea = All;

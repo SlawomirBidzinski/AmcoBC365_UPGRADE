@@ -30,7 +30,7 @@ tableextension 50025 "AMC Item" extends Item
             Caption = 'Default QC Status'; //TODO 'Domyślny Status KJ';
             DataClassification = CustomerContent;
             Description = 'AL.19Nov12';
-            TableRelation = "AMC QC Status".Code;
+            TableRelation = "AMC QC Status";
         }
         field(50005; "AMC Item Type"; Enum "AMC Item Type")
         {
