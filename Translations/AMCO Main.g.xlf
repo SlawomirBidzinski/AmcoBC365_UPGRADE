@@ -2718,6 +2718,21 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit AMC NiceLabel Mgmt. - Method PrintItemLabel - NamedType ConnectionErrLbl</note>
         </trans-unit>
+        <trans-unit id="Codeunit 1018368820 - Method 732069500 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Do you want change the %1 of the current record?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AMC QC Mgmt. - Method ChangeQCStatus - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1018368820 - Method 732069500 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Do you want to change the %1 of the selected records?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AMC QC Mgmt. - Method ChangeQCStatus - NamedType Text002</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1018368820 - Method 732069500 - NamedType 95063322" size-unit="char" translate="yes" xml:space="preserve">
+          <source>There is no record to change.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AMC QC Mgmt. - Method ChangeQCStatus - NamedType Text003</note>
+        </trans-unit>
         <trans-unit id="Codeunit 1018368820 - Method 2608192072 - NamedType 3204376301" size-unit="char" translate="yes" xml:space="preserve">
           <source>QC Status %1 does not allow type %2</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -8028,6 +8043,196 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Purchase Line List 2 - Control Vendor Item No. - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 924276745 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>QC Status Change</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 2814268646 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Expiration Calculation Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control ExpirationCalculationFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 1228329225 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Expiration Date Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control ExpirationDateFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 1553686271 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control ItemFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 3267737623 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Location Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control LocationFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 2410972065 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Lot Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control LotFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 2660535662 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New QC Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control NewQCStatus - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 2933606700 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purch. Receipt Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control PurchRcptNoFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 2789697163 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control PurchVendorNoFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 2715313802 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>QC Status Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control QCStatusFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 2621587244 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Production Date field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control AMC Production Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 4292882995 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the QC Status field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control AMC QC Status - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 3045335507 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if the entry has been fully invoiced or if more posted invoices are expected. Only completely invoiced entries can be revalued.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control Completely Invoiced - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a description of the entry.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 486908828 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the document number on the entry. The document is the voucher that the entry was based on, for example, a receipt.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control Document No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 121744499 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if your vendor ships the items directly to your customer.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control Drop Shipment - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 883711285 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the entry, as assigned from the specified number series when the entry was created.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control Entry No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 149522872 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies which type of transaction that the entry is created from.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control Entry Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 1579714849 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the last date that the item on the line can be used.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control Expiration Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 1303377601 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code for the global dimension that is linked to the record or entry for analysis purposes. Two global dimensions, typically for the company's most important activities, are available on all cards, documents, reports, and lists.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control Global Dimension 1 Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 1337243520 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code for the global dimension that is linked to the record or entry for analysis purposes. Two global dimensions, typically for the company's most important activities, are available on all cards, documents, reports, and lists.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control Global Dimension 2 Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 629385458 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies how many units of the item on the line have been invoiced.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control Invoiced Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 568743302 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the item in the entry.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control Item No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 2161572060 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code for the location that the entry is linked to.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control Location Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 1482668068 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a lot number if the posted item carries such a number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control Lot No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 656695700 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Receipt Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control LotNoInfoReceiptDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 2960362439 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Search Vendor Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control LotNoInfoSearchVendorName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 4259830144 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether the entry has been fully applied to.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control Open - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 3710982960 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the entry's posting date.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control Posting Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 806193894 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the quantity per item unit of measure.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control Qty. per Unit of Measure - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 2704404533 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of units of the item in the item entry.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 2367056265 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the quantity in the Quantity field that remains to be processed.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control Remaining Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 2562415929 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies how many units of the item on the line have been reserved.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control Reserved Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 47037625 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a serial number if the posted item carries such a number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control Serial No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 3450651614 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the variant of the item on the line.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control Variant Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Control 3135432252 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the last day of warranty for the item on the line.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control Warranty Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Action 1080453686 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Change</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Action ChangeStatus - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 924276745 - Action 1209735907 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Find</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Action FindRec - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 2791008089 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>QC Statuses</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -12217,11 +12422,6 @@
           <source>Production Line Qty Remain</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Journal Line Ext. - Field AMC Production Line Qty Remain - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 309468398 - Field 4220329840 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
-          <source>Przypisz Status Jakości</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Journal Line Ext. - Field AMC Set Quality Status - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 309468398 - Field 738422885 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
           <source>Wiersz wprowadzenia próbki</source>

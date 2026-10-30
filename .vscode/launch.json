@@ -29,7 +29,7 @@
             "port": 7349,
             "serverInstance": "BC270_UPG_DEV",
             "authentication": "Windows",
-            //"startupObjectId": 50029,
+            "startupObjectId": 50012,
             "startupObjectType": "Page",
             "breakOnError": "All",
             "launchBrowser": true,
