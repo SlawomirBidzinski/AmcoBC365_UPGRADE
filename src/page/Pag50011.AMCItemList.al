@@ -27,6 +27,10 @@ page 50011 "AMC Item List"
                 {
                     ApplicationArea = All;
                 }
+                field("AMC Default QC Status";Rec."AMC Default QC Status")
+                {
+                    ApplicationArea = All;
+                }
                 field("Production BOM No."; Rec."Production BOM No.")
                 {
                     ApplicationArea = All;

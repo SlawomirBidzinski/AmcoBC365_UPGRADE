@@ -27,9 +27,9 @@ table 50028 "AMC QC Status"
         {
             Caption = 'Przesunięcie';
         }
-        field(6; Purchase; Boolean)
+        field(6; Default; Boolean)
         {
-            Caption = 'Purchase';
+            Caption = 'Default';
         }
         field(9; "Lot Blocking"; Boolean)
         {

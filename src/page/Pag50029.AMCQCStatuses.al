@@ -38,7 +38,7 @@ page 50029 "AMC QC Statuses"
                 {
                     ToolTip = 'Specifies the value of the Przesunięcie field.', Comment = '%';
                 }
-                field(Purchase; Rec.Purchase)
+                field(Default; Rec.Default)
                 {
                     ApplicationArea = All;
                 }
