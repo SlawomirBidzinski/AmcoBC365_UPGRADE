@@ -149,7 +149,7 @@
         </trans-unit>
         <trans-unit id="Table 3991465941 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Default Bank Account</source>
-          <target>Domyslny Kod Rach. Bankowego</target>
+          <target>Domyślny Kod Rach. Bankowego</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Default Bank Account - Property Caption</note>
         </trans-unit>
@@ -7675,14 +7675,14 @@
         </trans-unit>
         <trans-unit id="Page 4140873756 - Action 4153998688 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Sales Returns Orders</source>
-          <target>Sales Returns Orders</target>
+          <target>Zlecenia Zwrotu Sprzedaży</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Returns Orders - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 4140873756 - Action 1484878399 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Warehouse</source>
-          <target>Warehouse</target>
+          <target>Magazyn</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Warehouse - Property Caption</note>
@@ -7696,7 +7696,7 @@
         </trans-unit>
         <trans-unit id="Page 4140873756 - Action 4285823019 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>&amp;Bin Contents</source>
-          <target>&amp;Bin Contents</target>
+          <target>Zawartość Pojemnika</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action &amp;Bin Contents - Property Caption</note>
@@ -7731,7 +7731,7 @@
         </trans-unit>
         <trans-unit id="Page 4140873756 - Action 2893581338 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Generate New Item</source>
-          <target>Generate New Item</target>
+          <target>Generuj Nowy Zapas</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action AMCNewItem - Property Caption</note>
@@ -7850,7 +7850,7 @@
         </trans-unit>
         <trans-unit id="Page 4140873756 - Action 2394472684 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Create a copy of the current item.</source>
-          <target>Create a copy of the current item.</target>
+          <target>Utwórz Kopię Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action CopyItem - Property ToolTip</note>
@@ -7864,14 +7864,14 @@
         </trans-unit>
         <trans-unit id="Page 4140873756 - Action 4201773078 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>History</source>
-          <target>Kistoria</target>
+          <target>Historia</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action History - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 4140873756 - Action 956727360 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>E&amp;ntries</source>
-          <target>Entries</target>
+          <target>Zapisy</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action E&amp;ntries - Property Caption</note>
@@ -7885,7 +7885,7 @@
         </trans-unit>
         <trans-unit id="Page 4140873756 - Action 3827382521 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>&amp;Phys. Inventory Ledger Entries</source>
-          <target>&amp;Phys. Inventory Ledger Entries</target>
+          <target>Zapisy Inwentaryzacji</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action &amp;Phys. Inventory Ledger Entries - Property Caption</note>
@@ -7899,7 +7899,7 @@
         </trans-unit>
         <trans-unit id="Page 4140873756 - Action 3647306376 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>&amp;Reservation Entries</source>
-          <target>&amp;Reservation Entries</target>
+          <target>Zapisy Rezerwacji</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action &amp;Reservation Entries - Property Caption</note>
@@ -7941,7 +7941,7 @@
         </trans-unit>
         <trans-unit id="Page 4140873756 - Action 162725634 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item &amp;Tracking Entries</source>
-          <target>Zapisy Kod Śledzenia Zapasu</target>
+          <target>Zapisy Śledzenia Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item &amp;Tracking Entries - Property Caption</note>
@@ -8903,19 +8903,19 @@
         </trans-unit>
         <trans-unit id="Page 3186503623 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Salesperson List</source>
-          <target>Item Salesperson List</target>
+          <target>Lista Zapasów Sprzedaży</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Salesperson List - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3186503623 - NamedType 3994261301" size-unit="char" translate="yes" xml:space="preserve">
           <source>Operator %1 nie jest zdefiniowany w ustawieniach uľytkownika</source>
-          <target>Operator %1 nie jest zdefiniowany w ustawieniach uľytkownika</target>
+          <target>Operator %1 nie jest zdefiniowany w ustawieniach użytkownika</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Salesperson List - NamedType Text_001</note>
         </trans-unit>
         <trans-unit id="Page 3186503623 - NamedType 3356564684" size-unit="char" translate="yes" xml:space="preserve">
           <source>Operator %1 nie ma uprawnieä do odczytu kartoteki zapasu w ustawieniach uľytkownika</source>
-          <target>Operator %1 nie ma uprawnieä do odczytu kartoteki zapasu w ustawieniach uľytkownika</target>
+          <target>Operator %1 nie ma uprawnień do odczytu kartoteki zapasu w ustawieniach użytkownika</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Salesperson List - NamedType Text_002</note>
         </trans-unit>
@@ -9423,7 +9423,7 @@
         </trans-unit>
         <trans-unit id="Page 3186503623 - Action 1337265703 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Bin Contents</source>
-          <target>Item Bin Contents</target>
+          <target>Zawartość Pojemnika</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Salesperson List - Action AMCItemBinContents - Property Caption</note>
         </trans-unit>
@@ -9435,31 +9435,31 @@
         </trans-unit>
         <trans-unit id="Page 3186503623 - Action 1507142797 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Open BoM</source>
-          <target>Open BoM</target>
+          <target>Otwórz BOM</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Salesperson List - Action AMCOpenBOM - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3186503623 - Action 3621982849 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Open Routing</source>
-          <target>Open Routing</target>
+          <target>Otwórz Marszrutę</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Salesperson List - Action AMCOpenRouting - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3742461750 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Statistics FactBox</source>
-          <target>Item Statistics FactBox</target>
+          <target>Statystyka Zapasów</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Statistics FactBox - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3742461750 - Control 687971871 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Line Discount</source>
-          <target>Line Discount</target>
+          <target>Rabat Wiersza</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Statistics FactBox - Control Discount - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3742461750 - Control 1393988552 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Whse. Quantity</source>
-          <target>Whse. Quantity</target>
+          <target>Ilość Magazynowa</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Statistics FactBox - Control ItemWhse - Property Caption</note>
         </trans-unit>
@@ -9471,37 +9471,37 @@
         </trans-unit>
         <trans-unit id="Page 3742461750 - Control 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Card</source>
-          <target>Item Card</target>
+          <target>Kartotrka Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Statistics FactBox - Control No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3742461750 - Control 2921469791 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Prod. Order</source>
-          <target>Prod. Order</target>
+          <target>Zlec. Prod.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Statistics FactBox - Control ProdQty - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3742461750 - Control 139402974 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Purch. Order</source>
-          <target>Purch. Order</target>
+          <target>Zlec. Zakupu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Statistics FactBox - Control PurchOrder - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3742461750 - Control 1465337603 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Purch. Price</source>
-          <target>Purch. Price</target>
+          <target>Cena Zakupu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Statistics FactBox - Control PurchPrice - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3742461750 - Control 3226109488 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Prod. Order</source>
-          <target>Prod. Order</target>
+          <target>Zlec. Prod.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Statistics FactBox - Control SalesQty - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 1630811470 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>AMC Labels</source>
-          <target>AMC Labels</target>
+          <target>Etykieta</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Labels - Property Caption</note>
         </trans-unit>
@@ -10101,35 +10101,35 @@
         </trans-unit>
         <trans-unit id="Page 924276745 - Control 2410972065 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Lot Filter</source>
-          <target>Lot Filter</target>
+          <target>Filtr Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control LotFilter - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 924276745 - Control 2660535662 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>New QC Status</source>
-          <target>New QC Status</target>
+          <target>Nowy Status KJ</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control NewQCStatus - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 924276745 - Control 2933606700 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Purch. Receipt Filter</source>
-          <target>Purch. Receipt Filter</target>
+          <target>Filtr Przyjęć Zakupu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control PurchRcptNoFilter - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 924276745 - Control 2789697163 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Vendor Filter</source>
-          <target>Vendor Filter</target>
+          <target>Filtr Dostawcy</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control PurchVendorNoFilter - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 924276745 - Control 2715313802 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>QC Status Filter</source>
-          <target>QC Status Filter</target>
+          <target>Filtr Statusu KJ</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control QCStatusFilter - Property Caption</note>
@@ -10241,14 +10241,14 @@
         </trans-unit>
         <trans-unit id="Page 924276745 - Control 656695700 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Receipt Date</source>
-          <target>Receipt Date</target>
+          <target>Data Przyjęcia</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control LotNoInfoReceiptDate - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 924276745 - Control 2960362439 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Search Vendor Name</source>
-          <target>Search Vendor Name</target>
+          <target>Nazwa Szukana Dostawcy</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Control LotNoInfoSearchVendorName - Property Caption</note>
@@ -10325,14 +10325,14 @@
         </trans-unit>
         <trans-unit id="Page 924276745 - Action 1209735907 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Find</source>
-          <target>Find</target>
+          <target>Znajdź</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Status Change - Action FindRec - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2791008089 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>QC Statuses</source>
-          <target>QC Statuses</target>
+          <target>Statusy KJ</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC QC Statuses - Property Caption</note>
@@ -11677,19 +11677,19 @@
         </trans-unit>
         <trans-unit id="PageExtension 1549928602 - Action 3512808544 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
           <source>Brand List</source>
-          <target>Brand List</target>
+          <target>Lista Brandów</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Item Card - Action AMCBrand - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1549928602 - Action 4226441737 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
           <source>Create Barcode</source>
-          <target>Create Barcode</target>
+          <target>Kod Kreskowy</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Item Card - Action AMCCreateBarcode - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1549928602 - Action 4226441737 - Method 1377591017 - NamedType 2403319717" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 1549928602">
           <source>Create Barcode?</source>
-          <target>Create Barcode?</target>
+          <target>Utworzyć Kod Kreskowy?</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Item Card - Action AMCCreateBarcode - Method OnAction - NamedType cnfCreateBarcode</note>
         </trans-unit>
@@ -11713,19 +11713,19 @@
         </trans-unit>
         <trans-unit id="PageExtension 1549928602 - Action 1507142797 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
           <source>Open BoM</source>
-          <target>Open BoM</target>
+          <target>Otwórz BOM</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Item Card - Action AMCOpenBOM - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1549928602 - Action 3621982849 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
           <source>Open Routing</source>
-          <target>Open Routing</target>
+          <target>Otwórz Marszrutę</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Item Card - Action AMCOpenRouting - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1549928602 - Action 1761258889 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
           <source>Producent List</source>
-          <target>Producent List</target>
+          <target>Lista Producentów</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Item Card - Action AMCProducent - Property Caption</note>
         </trans-unit>
@@ -12529,20 +12529,20 @@
         </trans-unit>
         <trans-unit id="PageExtension 1123802410 - Action 397158027 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2747922353">
           <source>Item Production Plannig</source>
-          <target>Item Production Plannig</target>
+          <target>Planowanie Produkcji Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Order Proc. Role Center - Action AMCItemForecast - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1123802410 - Action 4231700592 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2747922353">
           <source>Item Forecast</source>
-          <target>Item Forecast</target>
+          <target>Prognozowanie Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Order Proc. Role Center - Action AMCForecast - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1123802410 - Action 707675639 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2747922353">
           <source>Item Iternal Transfer List</source>
-          <target>Item Iternal Transfer List</target>
+          <target>Lista Przesunięć Wewn. Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Order Proc. Role Center - Action AMCItemTransferCard - Property Caption</note>
         </trans-unit>
@@ -12633,25 +12633,25 @@
         </trans-unit>
         <trans-unit id="PageExtension 1123802410 - Action 2509608894 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2747922353">
           <source>Sales Return Order Archives</source>
-          <target>Sales Return Order Archives</target>
+          <target>Archiwum Zamowienia Zwrotu Sprzedaży</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Order Proc. Role Center - Action AMCSales Return Order Archives - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 2392720558 - Control 2454647400 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4048657685">
           <source>Notes</source>
-          <target>Notes</target>
+          <target>UWagi</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Posted Purch. Inv. Ext - Control AMCNotes - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 2173981932 - Control 2454647400 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2854365759">
           <source>Notes</source>
-          <target>Notes</target>
+          <target>Uwagi</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Posted Purchase Cr. M. Ext - Control AMCNotes - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 259195042 - Control 2454647400 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2344297010">
           <source>Notes</source>
-          <target>Notes</target>
+          <target>Uwagi</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Posted Purchase Rec. Ext - Control AMCNotes - Property Caption</note>
         </trans-unit>
@@ -12669,7 +12669,7 @@
         </trans-unit>
         <trans-unit id="PageExtension 122923222 - Control 2454647400 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2716593954">
           <source>Notes</source>
-          <target>Notes</target>
+          <target>Uwagi</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Posted Sales Cr. Memo Ext - Control AMCNotes - Property Caption</note>
         </trans-unit>
@@ -12705,7 +12705,7 @@
         </trans-unit>
         <trans-unit id="PageExtension 3711627762 - Control 2454647400 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2420212404">
           <source>Notes</source>
-          <target>Notes</target>
+          <target>Uwagi</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Posted Sales Invoice Ext - Control AMCNotes - Property Caption</note>
         </trans-unit>
@@ -12729,7 +12729,7 @@
         </trans-unit>
         <trans-unit id="PageExtension 872089155 - Control 2454647400 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3373253667">
           <source>Notes</source>
-          <target>Notes</target>
+          <target>Uwagi</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Posted Sales Shipment Ext. - Control AMCNotes - Property Caption</note>
         </trans-unit>
@@ -14141,19 +14141,19 @@
         </trans-unit>
         <trans-unit id="TableExtension 1317779982 - Field 2680729520 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
           <source>Default Location Code</source>
-          <target>Default Location Code</target>
+          <target>Domyślny Kod Lokalizacji</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Default Location Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1317779982 - Field 1043393179 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
           <source>Item Label Code</source>
-          <target>Item Label Code</target>
+          <target>Kod Etykiety Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Item Label Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1317779982 - Field 960526130 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1180040559">
           <source>Item Label Code</source>
-          <target>Item Label Code</target>
+          <target>Kod Etykiety Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Inventory Setup - Field AMC Item Label Code Add. - Property Caption</note>
         </trans-unit>
@@ -15602,7 +15602,7 @@
         </trans-unit>
         <trans-unit id="TableExtension 1139453565 - Field 4292882995 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
           <source>QC Status</source>
-          <target>QC Status</target>
+          <target>Status KJ</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Ledger Entry - Field AMC QC Status - Property Caption</note>
         </trans-unit>
@@ -16769,19 +16769,19 @@
         </trans-unit>
         <trans-unit id="TableExtension 4234373526 - Field 4174224553 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2308244223">
           <source>Planning Creation Date</source>
-          <target>Planning Creation Date</target>
+          <target>Planowana Data Utworzenia</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Production Order - Field AMC Planning Creation Date - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 4234373526 - Field 3810786689 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2308244223">
           <source>Planning Creation User Id</source>
-          <target>Planning Creation User Id</target>
+          <target>Planowany Użytkownik Utworzenia</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Production Order - Field AMC Planning Creation User Id - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 4234373526 - Field 3220021072 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2308244223">
           <source>AMC Update End Time</source>
-          <target>AMC Update End Time</target>
+          <target>Zaktualizowana Data Końca</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Production Order - Field AMC Update End Time - Property Caption</note>
         </trans-unit>
@@ -16835,7 +16835,7 @@
         </trans-unit>
         <trans-unit id="TableExtension 1031299427 - Field 2381984650 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2271228953">
           <source>Vendor Invoice Date</source>
-          <target>Vendor Invoice Date</target>
+          <target>Data Faktury Dostawcy</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purch. Cr. Memo Hdr.Ext - Field AMC Vendor Invoice Date - Property Caption</note>
         </trans-unit>
@@ -16847,7 +16847,7 @@
         </trans-unit>
         <trans-unit id="TableExtension 1031299427 - Field 3263338086 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2271228953">
           <source>Vendor Service Date</source>
-          <target>Vendor Service Date</target>
+          <target>Data Usługi Dostawcy</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purch. Cr. Memo Hdr.Ext - Field AMC Vendor Service Date - Property Caption</note>
         </trans-unit>
@@ -16991,13 +16991,13 @@
         </trans-unit>
         <trans-unit id="TableExtension 3639840624 - Field 86768191 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1592379974">
           <source>Invoice creator</source>
-          <target>Invoice creator</target>
+          <target>Kreator Faktury</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purch. Inv. HeaderExt - Field AMC Tworca faktury - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3639840624 - Field 2381984650 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1592379974">
           <source>Vendor Invoice Date</source>
-          <target>Vendor Invoice Date</target>
+          <target>Data Faktury Dostawcy</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purch. Inv. HeaderExt - Field AMC Vendor Invoice Date - Property Caption</note>
         </trans-unit>
@@ -17009,7 +17009,7 @@
         </trans-unit>
         <trans-unit id="TableExtension 3639840624 - Field 3263338086 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1592379974">
           <source>Vendor Service Date</source>
-          <target>Vendor Service Date</target>
+          <target>Data Usługi Dostawcy</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purch. Inv. HeaderExt - Field AMC Vendor Service Date - Property Caption</note>
         </trans-unit>
@@ -17333,13 +17333,13 @@
         </trans-unit>
         <trans-unit id="TableExtension 2834931075 - Field 4174224553 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 146271610">
           <source>Planning Creation Date</source>
-          <target>Planning Creation Date</target>
+          <target>Planowana Data Utworzenia</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purchase Header Archive - Field AMC Planning Creation Date - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2834931075 - Field 3810786689 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 146271610">
           <source>Planning Creation User Id</source>
-          <target>Planning Creation User Id</target>
+          <target>Planowany Użytkownik Utworzenia</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purchase Header Archive - Field AMC Planning Creation User Id - Property Caption</note>
         </trans-unit>
@@ -17351,7 +17351,7 @@
         </trans-unit>
         <trans-unit id="TableExtension 2834931075 - Field 169932639 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 146271610">
           <source>Posted Receipt No.</source>
-          <target>Posted Receipt No.</target>
+          <target>Nr Zaks. Przyjęcia</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purchase Header Archive - Field AMC Posted Receipt No. - Property Caption</note>
         </trans-unit>
@@ -17507,13 +17507,13 @@
         </trans-unit>
         <trans-unit id="TableExtension 2554461558 - Field 4174224553 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2072992664">
           <source>Planning Creation Date</source>
-          <target>Planning Creation Date</target>
+          <target>Planowana Data Utworzenia</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purchase HeaderExt - Field AMC Planning Creation Date - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2554461558 - Field 3810786689 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2072992664">
           <source>Planning Creation User Id</source>
-          <target>Planning Creation User Id</target>
+          <target>Planowany Użytkownik Utworzenia</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purchase HeaderExt - Field AMC Planning Creation User Id - Property Caption</note>
         </trans-unit>
@@ -17532,7 +17532,7 @@
         </trans-unit>
         <trans-unit id="TableExtension 2554461558 - Field 2268727526 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2072992664">
           <source>Posted Whse. Receipt No.</source>
-          <target>Posted Whse. Receipt No.</target>
+          <target>Nr Zaks. Przyjęcie Magaz.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Purchase HeaderExt - Field AMC Posted Whse. Receipt No. - Property Caption</note>
@@ -22420,37 +22420,37 @@
         </trans-unit>
         <trans-unit id="TableExtension 1088597594 - Field 3765184228 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1788793769">
           <source>Gen. Bus. Posting Group</source>
-          <target>Gen. Bus. Posting Group</target>
+          <target>Gł. Towarowa Grupa Księgowa</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Entry - Field AMC Gen. Bus. Posting Group - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2815402059 - Field 1475039240 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1003430490">
           <source>Create by Id User</source>
-          <target>Create by Id User</target>
+          <target>Użytkownik Utworzenia</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Receipt Header - Field AMC Create by User ID - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2815402059 - Field 1573810870 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1003430490">
           <source>Creation Date</source>
-          <target>Creation Date</target>
+          <target>Data Utworzenia</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Receipt Header - Field AMC Creation Date - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2815402059 - Field 1461316374 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1003430490">
           <source>Customer Search Name</source>
-          <target>Customer Search Name</target>
+          <target>Nazwa Szukana Nabywcy</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Receipt Header - Field AMC Customer Search Name - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2815402059 - Field 981946783 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1003430490">
           <source>Document ID</source>
-          <target>Document ID</target>
+          <target>ID Dokumentu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Receipt Header - Field AMC Document ID - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2815402059 - Field 1201810457 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1003430490">
           <source>Firm Type</source>
-          <target>Firm Type</target>
+          <target>Typ Firmy</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Receipt Header - Field AMC FirmType - Property Caption</note>
         </trans-unit>
