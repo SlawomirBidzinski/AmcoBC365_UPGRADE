@@ -18553,31 +18553,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Color - EnumValue White - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 2563987340 - EnumValue 965516551 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>51.000.01</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Consolidate Item Code - EnumValue 51.000.01 - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Enum 2563987340 - EnumValue 2078052501 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>51.000.01.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Consolidate Item Code - EnumValue 51.000.01. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Enum 2563987340 - EnumValue 412453073 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>52.001.10</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Consolidate Item Code - EnumValue 52.001.10 - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Enum 2563987340 - EnumValue 986782193 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>52.002.20</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Consolidate Item Code - EnumValue 52.002.20 - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Enum 2563987340 - EnumValue 2211190133 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>54.000.20</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Consolidate Item Code - EnumValue 54.000.20 - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Enum 2549442328 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source> </source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -18807,6 +18782,16 @@
           <source>Reported</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Firm Code - EnumValue Reported - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1201810457 - EnumValue 1994964448 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC FirmType - EnumValue Customer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1201810457 - EnumValue 1936001480 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC FirmType - EnumValue Vendor - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 306349131 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source> </source>
@@ -19257,6 +19242,21 @@
           <source>Printed</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Query Status - EnumValue Printed - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 409800533 - EnumValue 395510365 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Receipt Type - EnumValue Purchase - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 409800533 - EnumValue 1607422819 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sale Return</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Receipt Type - EnumValue Sale Return - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 409800533 - EnumValue 4224198349 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transfer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Receipt Type - EnumValue Transfer - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 3724311386 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source> </source>
