@@ -2074,9 +2074,10 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Payment Autor. Contr. - Field Authorisation for Posting - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1288086224 - Field 3368184125 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Serial No.</source>
-          <target>Serial No.</target>
+          <source>Balance Limit</source>
+          <target>Limit Przekr. Płatn.</target>
           <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Payment Autor. Contr. - Field Balance Limit - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1288086224 - Field 1699691355 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -2086,21 +2087,24 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Payment Autor. Contr. - Field Bill to Customer Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1288086224 - Field 3408202293 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Description</source>
-          <target>Opis</target>
+          <source>Bill to Customer Name</source>
+          <target>Nazwa Odbiorcy Płatności</target>
           <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Payment Autor. Contr. - Field Bill to Customer Name - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1288086224 - Field 2759841350 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>In Use</source>
+          <source>Customer Balance Overterm</source>
           <target>Saldo Przeterm. Płatn.</target>
           <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Payment Autor. Contr. - Field Customer Balance Overterm - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1288086224 - Field 2872224724 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>To Date</source>
-          <target>Data Do</target>
+          <source>Customer Payment Balance</source>
+          <target>Saldo Nierozliczonych Płatn.</target>
           <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Payment Autor. Contr. - Field Customer Payment Balance - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1288086224 - Field 524780934 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -2110,33 +2114,38 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Payment Autor. Contr. - Field Days Limit - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1288086224 - Field 486908828 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Misc. Article Code</source>
-          <target>Nr Zamówienia</target>
+          <source>Document No</source>
+          <target>Nr Dokumentu</target>
           <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Payment Autor. Contr. - Field Document No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1288086224 - Field 2363328873 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Employee No.</source>
+          <source>Sales Document Type</source>
           <target>Typ Dokumentu</target>
           <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Payment Autor. Contr. - Field Document Type - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1288086224 - Field 499173185 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Kwota Transakcji</source>
+          <source>Invoice Authorisation Amount</source>
           <target>Kwota Transakcji</target>
           <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Payment Autor. Contr. - Field Invoice Authorisation Amount - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1288086224 - Field 4208182507 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>From Date</source>
-          <target>Daty Od</target>
+          <source>Payment Control Date</source>
+          <target>Data Kontroli Płatności</target>
           <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Payment Autor. Contr. - Field Payment Control Date - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1288086224 - Field 1231822036 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Comment</source>
-          <target>Komentarz</target>
+          <source>Qty of Days past Due</source>
+          <target>Ilość Dni Przetrm.</target>
           <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Payment Autor. Contr. - Field Qty of Days past Due - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3100073494 - Field 4063593187 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -15494,7 +15503,7 @@
         </trans-unit>
         <trans-unit id="TableExtension 1001768582 - Field 1944204049 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2338847983">
           <source>Purchase Notes</source>
-          <target>Purchase Notes</target>
+          <target>Uwagi Zakupu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Posted Whse. Rec. Hdr. Ext - Field AMC Purchase Notes - Property Caption</note>
         </trans-unit>
@@ -22501,36 +22510,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Color - EnumValue White - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 2563987340 - EnumValue 965516551 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>51.000.01</source>
-          <target>51.000.01</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Consolidate Item Code - EnumValue 51.000.01 - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Enum 2563987340 - EnumValue 2078052501 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>51.000.01.</source>
-          <target>51.000.01.</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Consolidate Item Code - EnumValue 51.000.01. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Enum 2563987340 - EnumValue 412453073 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>52.001.10</source>
-          <target>52.001.10</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Consolidate Item Code - EnumValue 52.001.10 - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Enum 2563987340 - EnumValue 986782193 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>52.002.20</source>
-          <target>52.002.20</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Consolidate Item Code - EnumValue 52.002.20 - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Enum 2563987340 - EnumValue 2211190133 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>54.000.20</source>
-          <target>54.000.20</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Consolidate Item Code - EnumValue 54.000.20 - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Enum 2549442328 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source> </source>
           <target> </target>
@@ -22721,61 +22700,61 @@
         </trans-unit>
         <trans-unit id="Enum 4262805248 - EnumValue 3844911025 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Canceled</source>
-          <target>Canceled</target>
+          <target>Anulowane</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Document Status - EnumValue Canceled - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 4262805248 - EnumValue 1778072510 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Closed</source>
-          <target>Closed</target>
+          <target>Zamknięte</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Document Status - EnumValue Closed - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 4262805248 - EnumValue 293070022 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Finished</source>
-          <target>Finished</target>
+          <target>Zakończone</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Document Status - EnumValue Finished - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 4262805248 - EnumValue 4259830144 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Open</source>
-          <target>Open</target>
+          <target>Otwarte</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Document Status - EnumValue Open - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 4262805248 - EnumValue 4032263875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Release</source>
-          <target>Release</target>
+          <target>Zwolnione</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Document Status - EnumValue Release - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 2854635287 - EnumValue 765483476 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Code</source>
-          <target>Item Code</target>
+          <target>Kod Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC EAN Type - EnumValue Item Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 2854635287 - EnumValue 2394640774 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Lot code</source>
-          <target>Lot code</target>
+          <target>Kod Partii</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC EAN Type - EnumValue Lot code - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 2854635287 - EnumValue 3062875407 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Serial Code</source>
-          <target>Serial Code</target>
+          <target>Kod Seryjny</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC EAN Type - EnumValue Serial Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 3332415935 - EnumValue 2913119229 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Approved</source>
-          <target>Approved</target>
+          <target>Zatwierdzone</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC EDI Order Status - EnumValue Approved - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 3332415935 - EnumValue 281352744 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Imported</source>
-          <target>Imported</target>
+          <target>Zaimportowane</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC EDI Order Status - EnumValue Imported - Property Caption</note>
         </trans-unit>
@@ -22809,6 +22788,20 @@
           <target>Reported</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Firm Code - EnumValue Reported - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1201810457 - EnumValue 1994964448 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer</source>
+          <target>Nabywca</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC FirmType - EnumValue Customer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1201810457 - EnumValue 1936001480 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor</source>
+          <target>Dostawca</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC FirmType - EnumValue Vendor - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 306349131 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source> </source>
@@ -23357,6 +23350,27 @@
           <target>Wydrukowane</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Query Status - EnumValue Printed - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 409800533 - EnumValue 395510365 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase</source>
+          <target>Zakup</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Receipt Type - EnumValue Purchase - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 409800533 - EnumValue 1607422819 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sale Return</source>
+          <target>Zwrot Sprzedaży</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Receipt Type - EnumValue Sale Return - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 409800533 - EnumValue 4224198349 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Transfer</source>
+          <target>Przesunięcie</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Receipt Type - EnumValue Transfer - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 3724311386 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source> </source>
