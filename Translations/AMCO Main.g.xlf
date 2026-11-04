@@ -1729,7 +1729,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Payment Autor. Contr. - Field Authorisation for Posting - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1288086224 - Field 3368184125 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Serial No.</source>
+          <source>Balance Limit</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Payment Autor. Contr. - Field Balance Limit - Property Caption</note>
         </trans-unit>
@@ -1739,17 +1739,17 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Payment Autor. Contr. - Field Bill to Customer Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1288086224 - Field 3408202293 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Description</source>
+          <source>Bill to Customer Name</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Payment Autor. Contr. - Field Bill to Customer Name - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1288086224 - Field 2759841350 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>In Use</source>
+          <source>Customer Balance Overterm</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Payment Autor. Contr. - Field Customer Balance Overterm - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1288086224 - Field 2872224724 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>To Date</source>
+          <source>Customer Payment Balance</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Payment Autor. Contr. - Field Customer Payment Balance - Property Caption</note>
         </trans-unit>
@@ -1759,27 +1759,27 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Payment Autor. Contr. - Field Days Limit - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1288086224 - Field 486908828 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Misc. Article Code</source>
+          <source>Document No</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Payment Autor. Contr. - Field Document No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1288086224 - Field 2363328873 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Employee No.</source>
+          <source>Sales Document Type</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Payment Autor. Contr. - Field Document Type - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1288086224 - Field 499173185 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Kwota Transakcji</source>
+          <source>Invoice Authorisation Amount</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Payment Autor. Contr. - Field Invoice Authorisation Amount - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1288086224 - Field 4208182507 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>From Date</source>
+          <source>Payment Control Date</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Payment Autor. Contr. - Field Payment Control Date - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1288086224 - Field 1231822036 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Comment</source>
+          <source>Qty of Days past Due</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Payment Autor. Contr. - Field Qty of Days past Due - Property Caption</note>
         </trans-unit>
