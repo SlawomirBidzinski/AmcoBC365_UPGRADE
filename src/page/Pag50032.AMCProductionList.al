@@ -30,6 +30,10 @@ page 50032 "AMC Production List"
                 {
                     ApplicationArea = All;
                 }
+                field("Nazwa Fabryki"; Rec."Nazwa Fabryki")
+                {
+                    ApplicationArea = All;
+                }
                 field("Currency Code"; Rec."Currency Code")
                 {
                     ToolTip = 'Specifies the value of the Currency Code field.', Comment = '%';
