@@ -2028,6 +2028,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC QC Status - Field Consumption - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 4292882995 - Field 1383905037 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Default</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC QC Status - Field Default - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 4292882995 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Opis</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2037,11 +2042,6 @@
           <source>Blokada całej partii</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC QC Status - Field Lot Blocking - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 4292882995 - Field 395510365 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Purchase</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC QC Status - Field Purchase - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 4292882995 - Field 1406942772 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Sprzedaż</source>
@@ -2732,16 +2732,6 @@
           <source>There is no record to change.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit AMC QC Mgmt. - Method ChangeQCStatus - NamedType Text003</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1018368820 - Method 2608192072 - NamedType 3204376301" size-unit="char" translate="yes" xml:space="preserve">
-          <source>QC Status %1 does not allow type %2</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AMC QC Mgmt. - Method OnAfterInitItemLedgEntry - NamedType StatusErrLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1018368820 - Method 2608192072 - NamedType 3543157280" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The whole lot has been blocked by Quality Control process</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AMC QC Mgmt. - Method OnAfterInitItemLedgEntry - NamedType StatusLotErrLbl</note>
         </trans-unit>
         <trans-unit id="Page 938075200 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Colours</source>

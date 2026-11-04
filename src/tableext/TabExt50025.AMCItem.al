@@ -1137,6 +1137,17 @@ tableextension 50025 "AMC Item" extends Item
         key(K50000; "AMC Item Type", "AMC Long Item Description") { }
     }
 
+    trigger OnAfterInsert()
+    var
+        QCStatus: Record "AMC QC Status";
+    begin
+        QCStatus.Reset();
+        QCStatus.SetRange(Default, true);
+        QCStatus.FindFirst();
+
+        Rec."AMC Default QC Status" := QCStatus.Code;
+    end;
+
     procedure AMCCreateProdBomHeader()
     var
         ProdBomHeader: Record "Production BOM Header";

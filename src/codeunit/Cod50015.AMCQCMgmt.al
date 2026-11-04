@@ -7,16 +7,75 @@ codeunit 50015 "AMC QC Mgmt."
     var
         QCStatus: Record "AMC QC Status";
         Item: Record Item;
-        StatusErrLbl: Label 'QC Status %1 does not allow type %2';
-        StatusLotErrLbl: Label 'The whole lot has been blocked by Quality Control process';
+        TransferItemLedgEntry: Record "Item Ledger Entry";
     begin
         Item.Get(NewItemLedgEntry."Item No.");
-        Item.TestField("AMC Default QC Status");
-        QCStatus.Get(Item."AMC Default QC Status");
-        if QCStatus."Lot Blocking" then
-            Error(StatusLotErrLbl);
 
-        NewItemLedgEntry."AMC QC Status" := Item."AMC Default QC Status";
+        if (NewItemLedgEntry."Entry Type" = NewItemLedgEntry."Entry Type"::Transfer) and
+           (NewItemLedgEntry.Quantity > 0) then begin
+            TransferItemLedgEntry.Reset();
+            TransferItemLedgEntry.SetRange("Item No.", NewItemLedgEntry."Item No.");
+            TransferItemLedgEntry.SetRange("Document No.", NewItemLedgEntry."Document No.");
+            TransferItemLedgEntry.SetRange("Lot No.", NewItemLedgEntry."Lot No.");
+            TransferItemLedgEntry.SetFilter(Quantity, '<0');
+            if TransferItemLedgEntry.FindFirst() then
+                NewItemLedgEntry."AMC QC Status" := TransferItemLedgEntry."AMC QC Status";
+        end
+        else if NewItemLedgEntry.Quantity > 0 then begin
+            Item.TestField("AMC Default QC Status");
+            QCStatus.Get(Item."AMC Default QC Status");
+
+            NewItemLedgEntry."AMC QC Status" := Item."AMC Default QC Status";
+        end;
+
+        CheckQCStatus(NewItemLedgEntry);
+    end;
+
+    local procedure CheckQCStatus(NewItemLedgEntry: Record "Item Ledger Entry")
+    var
+        QCStatus: Record "AMC QC Status";
+        ItemLedgEntry: Record "Item Ledger Entry";
+        ShowError: Boolean;
+        ErrorLbl: Label 'The item %1, lot %2 has not passed the quality control.';
+    begin
+        if NewItemLedgEntry."AMC QC Status" = '' then
+            exit;
+
+        QCStatus.Get(NewItemLedgEntry."AMC QC Status");
+        ShowError := false;
+
+        if QCStatus."Lot Blocking" then begin
+            ItemLedgEntry.Reset();
+            ItemLedgEntry.SetRange("Item No.", NewItemLedgEntry."Item No.");
+            ItemLedgEntry.SetRange("Variant Code", NewItemLedgEntry."Variant Code");
+            ItemLedgEntry.SetRange("Location Code", NewItemLedgEntry."Location Code");
+            ItemLedgEntry.SetRange("Lot No.", NewItemLedgEntry."Lot No.");
+            ItemLedgEntry.SetRange(Open, true);
+            if ItemLedgEntry.FindSet() then
+                repeat
+                    QCStatus.Get(ItemLedgEntry."AMC QC Status");
+                    case NewItemLedgEntry."Entry Type" of
+                        NewItemLedgEntry."Entry Type"::Consumption:
+                            ShowError := not QCStatus.Consumption;
+                        NewItemLedgEntry."Entry Type"::Sale:
+                            ShowError := not QCStatus.Sales;
+                        NewItemLedgEntry."Entry Type"::Transfer:
+                            ShowError := not QCStatus.Transfer;
+                    end;
+                until ItemLedgEntry.Next = 0;
+        end
+        else
+            case NewItemLedgEntry."Entry Type" of
+                NewItemLedgEntry."Entry Type"::Consumption:
+                    ShowError := not QCStatus.Consumption;
+                NewItemLedgEntry."Entry Type"::Sale:
+                    ShowError := not QCStatus.Sales;
+                NewItemLedgEntry."Entry Type"::Transfer:
+                    ShowError := not QCStatus.Transfer;
+            end;
+
+        if ShowError then
+            Error(ErrorLbl, ItemLedgEntry."Item No.", ItemLedgEntry."Lot No.");
     end;
 
     procedure GetTmpRecordset(var TmpItemLedgerEntry: Record "Item Ledger Entry" temporary; ItemFilter: Text; LocationFilter: Text;
