@@ -2733,6 +2733,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit AMC QC Mgmt. - Method ChangeQCStatus - NamedType Text003</note>
         </trans-unit>
+        <trans-unit id="Codeunit 1018368820 - Method 122885412 - NamedType 3941846598" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The item %1, lot %2 has not passed the quality control.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit AMC QC Mgmt. - Method CheckQCStatus - NamedType ErrorLbl</note>
+        </trans-unit>
         <trans-unit id="Page 938075200 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Colours</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -6793,16 +6798,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Status - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 4140873756 - Action 4251833623 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>View a list of the quantity of each item in customer, purchase, and transfer orders and the quantity available in inventory. The list is divided into columns that cover six periods with starting and ending dates as well as the periods before and after those periods. The list is useful when you are planning your inventory purchases.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory - Availability Plan - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 4140873756 - Action 4251833623 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Inventory - Availability Plan</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory - Availability Plan - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Page 4140873756 - Action 359861775 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>View various information about the item, such as name, unit of measure, posting group, shelf number, vendor's item number, lead time calculation, minimum inventory, and alternate item number. You can also see if the item is blocked.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -6857,16 +6852,6 @@
           <source>Inventory - Transaction Detail</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Inventory - Transaction Detail - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 4140873756 - Action 287534636 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>View, print, or save an overview of the current age composition of selected items in your inventory.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Age Composition - Quantity - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 4140873756 - Action 287534636 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Item Age Composition - Quantity</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item List - Action Item Age Composition - Quantity - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 4140873756 - Action 714056616 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>View a specification of the direct costs that your company has assigned and posted as item charges. The report shows the various value entries that have been posted as item charges. It includes all costs, both those posted as invoiced and those posted as expected.</source>

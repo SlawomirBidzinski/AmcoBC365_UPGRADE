@@ -1108,14 +1108,6 @@ page 50011 "AMC Item List"
                     RunObject = Report "Inventory - List";
                     ToolTip = 'View various information about the item, such as name, unit of measure, posting group, shelf number, vendor''s item number, lead time calculation, minimum inventory, and alternate item number. You can also see if the item is blocked.';
                 }
-                action("Inventory - Availability Plan")
-                {
-                    ApplicationArea = Basic, Suite;
-                    Caption = 'Inventory - Availability Plan';
-                    Image = ItemAvailability;
-                    RunObject = Report "Inventory - Availability Plan";
-                    ToolTip = 'View a list of the quantity of each item in customer, purchase, and transfer orders and the quantity available in inventory. The list is divided into columns that cover six periods with starting and ending dates as well as the periods before and after those periods. The list is useful when you are planning your inventory purchases.';
-                }
                 action("Item/Vendor Catalog")
                 {
                     ApplicationArea = Basic, Suite;
@@ -1248,14 +1240,6 @@ page 50011 "AMC Item List"
                         Image = "Report";
                         RunObject = Report "Item Charges - Specification";
                         ToolTip = 'View a specification of the direct costs that your company has assigned and posted as item charges. The report shows the various value entries that have been posted as item charges. It includes all costs, both those posted as invoiced and those posted as expected.';
-                    }
-                    action("Item Age Composition - Quantity")
-                    {
-                        ApplicationArea = Basic, Suite;
-                        Caption = 'Item Age Composition - Quantity';
-                        Image = "Report";
-                        RunObject = Report "Item Age Composition - Qty.";
-                        ToolTip = 'View, print, or save an overview of the current age composition of selected items in your inventory.';
                     }
                     action("Item Expiration - Quantity")
                     {
