@@ -53,6 +53,12 @@ codeunit 50014 "AMC Sales Events Mgmt."
             BestPriceListLine := PriceListLine;
             FoundBestLine := true;
             IsHandled := true;
+        end
+        else if (BestPriceListLine."Source Type" = PriceListLine."Source Type") and
+                (BestPriceListLine."Unit Price" > PriceListLine."Unit Price") then begin
+            BestPriceListLine := PriceListLine;
+            FoundBestLine := true;
+            IsHandled := true;
         end;
     end;
 
