@@ -10503,6 +10503,36 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Warehouse Pick - Control AMCSearchName - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 2008339788 - Control 1190933466 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 886964289">
+          <source>Customer Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Warehouse Picks - Control CustName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3106207636 - Control 193665107 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2889212609">
+          <source>Vendor Search Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Warehouse Put-away - Control SearchName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 3106207636 - Control 2824031890 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2889212609">
+          <source>Vendor Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Warehouse Put-away - Control VendName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2719566165 - Control 193665107 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1535399064">
+          <source>Vendor Search Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Warehouse Put-aways - Control SearchName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2719566165 - Control 2824031890 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1535399064">
+          <source>Vendor Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Warehouse Put-aways - Control VendName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1129449230 - Control 1563179466 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4284303991">
+          <source>Inventory</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Whse. Shipment Subform - Control InventoryQty - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 1414654466 - Control 3153818016 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4055858012">
           <source>EIS Data Export</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -17889,9 +17919,14 @@
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Activity Header - Field AMC From Bin Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3603152044 - Field 1668562876 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809570257">
-          <source>AMC Order No</source>
+          <source>Order No</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Activity Header - Field AMC Order No - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3603152044 - Field 2253256055 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809570257">
+          <source>Data zatwierdzenia</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Activity Header - Field AMC Terminal Confirm Date - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3603152044 - Field 975915912 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809570257">
           <source>Czas zatwierdzenia</source>
@@ -17922,11 +17957,6 @@
           <source>Strefa</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Activity Header - Field AMC Zone Code - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 3603152044 - Field 3244506567 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809570257">
-          <source>Data zatwierdzenia</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Activity Header - Field AMCTerminal Confirm Date - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1108439507 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve" al-object-target="TableExtension 1108439507">
           <source>You cannot rename a %1.</source>

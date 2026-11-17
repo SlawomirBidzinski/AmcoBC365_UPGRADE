@@ -216,7 +216,7 @@ tableextension 50035 "AMC Sales Header" extends "Sales Header"
         {
             FieldClass = FlowField;
             CalcFormula = Lookup("Warehouse Shipment Line"."No." WHERE("Source Document" = CONST("Sales Order"),
-                                                                      "Source No." = FIELD("No.")));
+                                                                       "Source No." = FIELD("No.")));
             Caption = 'Nr Wydania Magaz.';
             Editable = false;
         }

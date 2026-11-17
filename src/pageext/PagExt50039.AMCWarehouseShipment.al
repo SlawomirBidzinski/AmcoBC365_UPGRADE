@@ -32,10 +32,6 @@ pageextension 50039 "AMC Warehouse Shipment" extends "Warehouse Shipment"
             {
                 ApplicationArea = All;
             }
-            field("AMC Notes";Rec."AMC Notes")
-            {
-                ApplicationArea = All;
-            }
         }
         addafter("Shipment Date")
         {
@@ -66,6 +62,17 @@ pageextension 50039 "AMC Warehouse Shipment" extends "Warehouse Shipment"
             field("AMC Ship-to City"; Rec."AMC Ship-to City")
             {
                 ApplicationArea = All;
+            }
+        }
+        addafter(General)
+        {
+            group(Notes)
+            {
+                Caption = 'Notes';
+                field("AMC Notes"; Rec."AMC Notes")
+                {
+                    ApplicationArea = All;
+                }
             }
         }
     }

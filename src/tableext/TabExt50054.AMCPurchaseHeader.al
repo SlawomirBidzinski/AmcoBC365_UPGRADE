@@ -156,7 +156,7 @@ tableextension 50054 "AMC Purchase HeaderExt" extends "Purchase Header"
         }
         field(50101; "AMC Vendor Search Name"; Code[100])
         {
-            CalcFormula = lookup(Vendor."Search Name" where("Search Name" = field("Buy-from Vendor No.")));
+            CalcFormula = lookup(Vendor."Search Name" where("No." = field("Buy-from Vendor No.")));
             Caption = 'Nazwa Szukana Nabywcy';
             Editable = false;
             FieldClass = FlowField;

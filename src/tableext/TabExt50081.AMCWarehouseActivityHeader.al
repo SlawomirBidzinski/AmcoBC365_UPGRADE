@@ -4,6 +4,7 @@ tableextension 50081 "AMC Warehouse Activity Header" extends "Warehouse Activity
     {
         field(50001; "AMC Order No"; Code[20])
         {
+            Caption = 'Order No';
             CalcFormula = Lookup("Warehouse Activity Line"."Source No." WHERE("Activity Type"=FIELD(Type),
                                                                                "No."=FIELD("No.")));
             Editable = false;
@@ -28,7 +29,7 @@ tableextension 50081 "AMC Warehouse Activity Header" extends "Warehouse Activity
             DataClassification = CustomerContent;
             Description = 'AL.18Jul13';
         }
-        field(50005; "AMCTerminal Confirm Date"; Date)
+        field(50005; "AMC Terminal Confirm Date"; Date)
         {
             Caption = 'Data zatwierdzenia';
             DataClassification = CustomerContent;

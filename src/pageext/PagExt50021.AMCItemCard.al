@@ -94,6 +94,10 @@ pageextension 50021 "AMC Item Card" extends "Item Card"
                 ApplicationArea = All;
                 ToolTip = ' ';
             }
+            field("Units per Parcel"; Rec."Units per Parcel")
+            {
+                ApplicationArea = All;
+            }
             field("AMC Units per Palet"; Rec."AMC Units per Palet")
             {
                 ApplicationArea = All;

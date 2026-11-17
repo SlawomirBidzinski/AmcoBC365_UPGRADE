@@ -21742,8 +21742,8 @@
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Activity Header - Field AMC From Bin Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3603152044 - Field 1668562876 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809570257">
-          <source>AMC Order No</source>
-          <target>AMC Order No</target>
+          <source>Order No</source>
+          <target>Order No</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Activity Header - Field AMC Order No - Property Caption</note>
         </trans-unit>
