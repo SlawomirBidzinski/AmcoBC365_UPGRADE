@@ -186,6 +186,28 @@ tableextension 50036 "AMC Sales Line" extends "Sales Line"
             TableRelation = Item;
             ValidateTableRelation = false;
             DataClassification = CustomerContent;
+
+            trigger OnValidate()
+            var
+                ErrLbl: Label 'Item %1 is already on the sales order line.';
+                TypeErrLbl: Label 'Type must be '' ''';
+                QtyShptErrLbl: Label 'Modification of the line is not allowed';
+                NoErrLbl: Label 'Number %1 must be blank';
+            begin
+                if "AMC Set Item" <> '' then begin
+                    IF Type <> Type::" " THEN
+                        ERROR(TypeErrLbl);
+
+                    IF "Quantity Shipped" <> 0 THEN
+                        Error(QtyShptErrLbl);
+
+                    IF "No." <> '' THEN
+                        ERROR(NoErrLbl, "No.");
+
+                    if (Type = Type::Item) and ("No." <> '') then
+                        Error(ErrLbl, "No.");
+                end;
+            end;
         }
         field(50046; "AMC Qty to Create"; Decimal)
         {
@@ -440,4 +462,53 @@ tableextension 50036 "AMC Sales Line" extends "Sales Line"
             end;
         }
     }
+
+    procedure CreateItemRw(SetItemCode: Code[20]): Code[20]
+    var
+        Item: Record Item;
+        SalesSetup: Record "Sales & Receivables Setup";
+        QCStatus: Record "AMC QC Status";
+        ItemUoM: Record "Item Unit of Measure";
+        NoSeriesMgmt: Codeunit "No. Series";
+        DescriptionNew: Text;
+    begin
+        IF SetItemCode = '' THEN BEGIN
+            SalesSetup.GET;
+            SalesSetup.TESTFIELD("AMC RW Item Nos.");
+            SetItemCode := NoSeriesMgmt.GetNextNo(SalesSetup."AMC RW Item Nos.", WORKDATE);
+        END;
+        Item.INIT;
+        Item."No." := SetItemCode;
+        DescriptionNew := STRSUBSTNO('X/%1', Description);
+        Item.VALIDATE(Description, DescriptionNew);
+
+        Item."AMC Sales Item" := TRUE;
+        Item."AMC RiD Item" := TRUE;
+        Item."Base Unit of Measure" := 'KG';
+        Item."Purch. Unit of Measure" := 'KG';
+        Item."Sales Unit of Measure" := 'KG';
+        Item.VALIDATE("AMC Pack Unit of Measure", 'KG');
+
+        Item."Item Tracking Code" := 'PARTIA W';
+
+        QCStatus.Reset();
+        QCStatus.SetRange(Default, true);
+        QCStatus.FindFirst();
+        Item."AMC Default QC Status" := QCStatus.Code;
+        Item."AMC Item Type" := Item."AMC Item Type"::Próba;
+        Item."AMC Planning Location" := 'M.PROBY';
+
+        Item.INSERT;
+
+        ItemUoM.INIT;
+        ItemUoM."Item No." := SetItemCode;
+        ItemUoM.Code := 'KG';
+        ItemUoM."Qty. per Unit of Measure" := 1;
+        ItemUoM.INSERT;
+
+        Item.VALIDATE("Item Category Code", 'WYR.08');
+        Item.MODIFY;
+
+        EXIT(SetItemCode);
+    end;
 }

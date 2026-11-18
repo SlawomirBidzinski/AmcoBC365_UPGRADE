@@ -4,6 +4,50 @@ pageextension 50029 "AMC Sales Order Subform" extends "Sales Order Subform"
     {
         addafter("Description")
         {
+            field("AMC Set Item"; Rec."AMC Set Item")
+            {
+                ApplicationArea = All;
+
+                trigger OnAssistEdit()
+                var
+                    Item: Record Item;
+                    QuestText: Text;
+                    Text_000: Label 'Czy wprowadziæ zapas %1\w miejsce wprowadzonego kodu zapasu%2?';
+                    Text_003: Label 'Czy utworzyc zapas próbki %1 i zaktualizowaæ linie?';
+                    SetQty: Decimal;
+                    LineNotes: Text;
+                begin
+                    IF Rec."AMC Set Item" <> '' THEN BEGIN
+                        Item.RESET;
+                        Item.SETRANGE("No.", Rec."AMC Set Item");
+                        IF Item.FINDFIRST() THEN BEGIN
+                            QuestText := STRSUBSTNO(Text_000, Rec."AMC Set Item", Rec."No.");
+                            IF CONFIRM(QuestText, FALSE) THEN BEGIN
+                                SetQty := Rec.Quantity;
+                                LineNotes := Rec."AMC Line Notes";
+                                Rec.Type := Rec.Type::Item;
+
+                                Rec.VALIDATE("No.", Rec."AMC Set Item");
+                                Rec.Validate(Quantity, SetQty);
+                                Rec."Location Code" := 'M.PROBY';
+                                Rec."AMC Line Notes" := LineNotes;
+                            END;
+                        END ELSE BEGIN
+                            QuestText := STRSUBSTNO(Text_003, Rec.Description);
+                            IF CONFIRM(QuestText, FALSE) THEN BEGIN
+                                Rec."AMC Set Item" := Rec.CreateItemRw(Rec."AMC Set Item");
+                                Rec."Location Code" := 'M.PROBY';
+                            END;
+                        END;
+                    END ELSE BEGIN
+                        QuestText := STRSUBSTNO(Text_003, Rec.Description);
+                        IF CONFIRM(QuestText, FALSE) THEN BEGIN
+                            Rec."AMC Set Item" := Rec.CreateItemRw('');
+                            Rec."Location Code" := 'M.PROBY';
+                        END;
+                    END;
+                end;
+            }
             field("AMC EDI Order Line No"; Rec."AMC EDI Order Line No")
             {
                 ApplicationArea = All;

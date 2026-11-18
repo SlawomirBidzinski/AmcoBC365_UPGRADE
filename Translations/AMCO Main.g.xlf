@@ -10238,6 +10238,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Order Archive - Control AMCPayAutorContr - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 881466389 - Control 1173911236 - Method 2699620902 - NamedType 336990622" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 881466389">
+          <source>Czy wprowadziæ zapas %1\w miejsce wprowadzonego kodu zapasu%2?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Order Subform - Control AMC Set Item - Method OnAssistEdit - NamedType Text_000</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 881466389 - Control 1173911236 - Method 2699620902 - NamedType 2718868067" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 881466389">
+          <source>Czy utworzyc zapas próbki %1 i zaktualizowaæ linie?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Order Subform - Control AMC Set Item - Method OnAssistEdit - NamedType Text_003</note>
+        </trans-unit>
         <trans-unit id="PageExtension 99853858 - Action 1438536865 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
           <source>Posted Whse. Shipment</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -10527,6 +10537,11 @@
           <source>Vendor Name</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Warehouse Put-aways - Control VendName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2638353790 - Control 222620933 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2938519335">
+          <source>Notes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Warehouse Shipment - Control Notes - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1129449230 - Control 1563179466 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4284303991">
           <source>Inventory</source>
@@ -16852,6 +16867,26 @@
           <source>Wybór Zapasu</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line - Field AMC Set Item - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3716254643 - Field 1173911236 - Method 2126772001 - NamedType 3024544721" size-unit="char" translate="yes" xml:space="preserve" al-object-target="TableExtension 3716254643">
+          <source>Item %1 is already on the sales order line.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line - Field AMC Set Item - Method OnValidate - NamedType ErrLbl</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3716254643 - Field 1173911236 - Method 2126772001 - NamedType 2855965417" size-unit="char" translate="yes" xml:space="preserve" al-object-target="TableExtension 3716254643">
+          <source>Type must be ' '</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line - Field AMC Set Item - Method OnValidate - NamedType TypeErrLbl</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3716254643 - Field 1173911236 - Method 2126772001 - NamedType 2202118584" size-unit="char" translate="yes" xml:space="preserve" al-object-target="TableExtension 3716254643">
+          <source>Modification of the line is not allowed</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line - Field AMC Set Item - Method OnValidate - NamedType QtyShptErrLbl</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3716254643 - Field 1173911236 - Method 2126772001 - NamedType 2511827018" size-unit="char" translate="yes" xml:space="preserve" al-object-target="TableExtension 3716254643">
+          <source>Number %1 must be blank</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line - Field AMC Set Item - Method OnValidate - NamedType NoErrLbl</note>
         </trans-unit>
         <trans-unit id="TableExtension 3716254643 - Field 3069240917 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
           <source>Nr Wydania Magazynowego</source>
