@@ -48,6 +48,18 @@ pageextension 50029 "AMC Sales Order Subform" extends "Sales Order Subform"
                     END;
                 end;
             }
+            field("AMC Qty to Create"; Rec."AMC Qty to Create")
+            {
+                ApplicationArea = All;
+            }
+            field("AMC Lot No to Create"; Rec."AMC Lot No to Create")
+            {
+                ApplicationArea = All;
+            }
+            field("AMC Item Exp Date"; Rec."AMC Item Exp Date")
+            {
+                ApplicationArea = All;
+            }
             field("AMC EDI Order Line No"; Rec."AMC EDI Order Line No")
             {
                 ApplicationArea = All;
@@ -149,4 +161,131 @@ pageextension 50029 "AMC Sales Order Subform" extends "Sales Order Subform"
             Visible = false;
         }
     }
+
+    actions
+    {
+        addlast(processing)
+        {
+            action(LotNoSample)
+            {
+                Caption = 'Nr partii próbek';
+                ApplicationArea = All;
+                Image = SalesShipment;
+
+                trigger OnAction()
+                begin
+                    GenerateLots();
+                end;
+            }
+            action(GenerateSample)
+            {
+                Caption = 'Generuj zapasy próbek';
+                ApplicationArea = All;
+                Image = SalesShipment;
+
+                trigger OnAction()
+                begin
+                    PostItems();
+                end;
+            }
+        }
+    }
+
+    local procedure GenerateLots()
+    var
+        SalesHeader: Record "Sales Header";
+        SalesLine: Record "Sales Line";
+        Location: Record Location;
+        QestLine: Text;
+        QtyLines: Integer;
+        Text_loc: Label 'Czy wygenerowac w liniach nr partii próbek?';
+    begin
+        SalesHeader.GET(SalesHeader."Document Type"::Order, Rec."Document No.");
+
+        QestLine := STRSUBSTNO(Text_loc);
+        IF CONFIRM(QestLine, FALSE) THEN BEGIN
+
+            SalesLine.RESET;
+            SalesLine.SETRANGE(SalesLine."Document No.", Rec."Document No.");
+            SalesLine.SETRANGE("Document Type", SalesLine."Document Type"::Order);
+            SalesLine.SETRANGE(Type, SalesLine.Type::Item);
+            SalesLine.SETFILTER("AMC Lot No to Create", '<>%1', '');
+            QtyLines := SalesLine.COUNT;
+
+            SalesLine.RESET;
+            SalesLine.SETRANGE(SalesLine."Document No.", Rec."Document No.");
+            SalesLine.SETRANGE("Document Type", SalesLine."Document Type"::Order);
+            SalesLine.SETRANGE(Type, SalesLine.Type::Item);
+            IF SalesLine.FindSet() THEN
+                REPEAT
+                    IF Location.GET(SalesLine."Location Code") THEN
+                        IF Location."AMC Quality Item Test Loc." THEN
+                            IF (SalesLine."AMC Lot No to Create" = '') AND (SalesLine.Quantity <= 2) THEN BEGIN
+
+                                SalesLine."AMC Qty to Create" := SalesLine.Quantity;
+                                SalesLine."AMC Lot No to Create" := GetNewLot(SalesHeader);
+                                SalesLine."AMC Item Exp Date" := CALCDATE('<1Y>', SalesHeader."Order Date");
+                                SalesLine.MODIFY;
+                            END;
+                UNTIL SalesLine.NEXT = 0;
+        END;
+    end;
+
+    local procedure GetNewLot(SetSalesHeader: Record "Sales Header"): Code[20]
+    var
+        QtyLines: Integer;
+        FindLot: Boolean;
+        SalesLineLoc: Record "Sales Line";
+        LotNo: Text;
+    begin
+        QtyLines := 0;
+        FindLot := FALSE;
+
+        REPEAT
+            QtyLines := QtyLines + 1;
+            LotNo := STRSUBSTNO('%1/%2', SetSalesHeader."No.", QtyLines);
+
+            SalesLineLoc.RESET;
+            SalesLineLoc.SETRANGE("Document No.", SetSalesHeader."No.");
+            SalesLineLoc.SETRANGE("Document Type", SalesLineLoc."Document Type"::Order);
+            SalesLineLoc.SETRANGE(Type, SalesLineLoc.Type::Item);
+            SalesLineLoc.SETRANGE("AMC Lot No to Create", LotNo);
+            IF NOT SalesLineLoc.FINDFIRST THEN
+                FindLot := TRUE;
+        UNTIL (QtyLines = 100) OR (FindLot = TRUE);
+
+        EXIT(LotNo);
+    end;
+
+    local procedure PostItems()
+    var
+        ItemJnlLine: Record "Item Journal Line";
+        SalesLine: Record "Sales Line";
+        WarehouseCreateStock: Codeunit "AMC Warehouse Create Stock";
+        QestLine: Text;
+        Text_Loc: Label 'Czy wygenerowac stan magazynowy dla zapasów?';
+        Text_003: Label 'Nie ma zadnych linii do wygenerowania zapasu';
+    begin
+        ItemJnlLine.RESET;
+        ItemJnlLine.SETRANGE("Journal Template Name", 'PROBA_INS');
+        ItemJnlLine.SETRANGE("Journal Batch Name", 'ITEM_INS');
+        ItemJnlLine.DELETEALL;
+
+        QestLine := STRSUBSTNO(Text_Loc);
+        IF CONFIRM(QestLine, FALSE) THEN BEGIN
+            SalesLine.RESET;
+            SalesLine.SETRANGE(SalesLine."Document No.", Rec."Document No.");
+            SalesLine.SETRANGE("Document Type", SalesLine."Document Type"::Order);
+            SalesLine.SETFILTER("AMC Qty to Create", '<>0');
+            IF SalesLine.FindSet() THEN BEGIN
+                REPEAT
+                    IF SalesLine."AMC Qty to Create" <> 0 THEN BEGIN
+                        CLEAR(WarehouseCreateStock);
+                        WarehouseCreateStock.PostItemLine(SalesLine, Rec."Document No.");
+                    END;
+                UNTIL SalesLine.NEXT = 0;
+            END ELSE
+                ERROR(Text_003);
+        END;
+    end;
 }
