@@ -398,6 +398,10 @@ tableextension 50020 "AMC Customer" extends Customer
             Editable = false;
             DataClassification = CustomerContent;
         }
+        field(50217; "E-Mail Document Sent Type"; Enum "AMC Document Sent Type")
+        {
+            Caption = 'E-Mail Document Sent Type';
+        }
         field(50221; "AMC Show Open FlowFilter"; Boolean)
         {
             Caption = 'Pokazuj Otwarte FlowFilter';
@@ -446,6 +450,16 @@ tableextension 50020 "AMC Customer" extends Customer
         field(50242; "AMC Telefon Windykacja"; Text[30])
         {
             Caption = 'Telefon Windykacja';
+            DataClassification = CustomerContent;
+        }
+        field(50243; "AMC Shipment e-mail Address"; Text[100])
+        {
+            Caption = 'Adres e-mail dla Dok. WZ';
+            DataClassification = CustomerContent;
+        }
+        field(50244; "AMC Atest e-mail Address"; Text[100])
+        {
+            Caption = 'Adres e-mail dla Dok. Atestów';
             DataClassification = CustomerContent;
         }
         field(50250; "AMC Sales Act. Month"; Decimal)

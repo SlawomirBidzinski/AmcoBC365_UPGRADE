@@ -380,7 +380,7 @@ tableextension 50025 "AMC Item" extends Item
         {
             CalcFormula = lookup("AMC Item Production"."Nazwa Producenta" where(Producent = field("AMC Producent"),
                                                                              "Entry Type" = const(Producent)));
-            Caption = 'Nazwa Fabryki';
+            Caption = 'Nazwa Producenta';
             Editable = false;
             FieldClass = FlowField;
         }

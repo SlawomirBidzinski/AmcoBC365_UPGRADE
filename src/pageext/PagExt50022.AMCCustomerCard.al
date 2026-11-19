@@ -175,6 +175,18 @@ pageextension 50022 "AMC Customer Card" extends "Customer Card"
                 {
                     ApplicationArea = All;
                 }
+                field("AMC Shipment e-mail Address"; Rec."AMC Shipment e-mail Address")
+                {
+                    ApplicationArea = All;
+                }
+                field("AMC Atest e-mail Address"; Rec."AMC Atest e-mail Address")
+                {
+                    ApplicationArea = All;
+                }
+                field("E-Mail Document Sent Type"; Rec."E-Mail Document Sent Type")
+                {
+                    ApplicationArea = All;
+                }
             }
             group(AMCEISDataExport)
             {

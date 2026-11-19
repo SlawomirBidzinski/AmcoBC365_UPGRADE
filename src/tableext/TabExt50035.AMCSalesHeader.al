@@ -461,6 +461,13 @@ tableextension 50035 "AMC Sales Header" extends "Sales Header"
                 end;
             end;
         }
+        modify("Posting Date")
+        {
+            trigger OnAfterValidate()
+            begin
+                Rec.Validate("ITI VAT Settlement Date", Rec."Posting Date");
+            end;
+        }
     }
     trigger OnInsert()
     var

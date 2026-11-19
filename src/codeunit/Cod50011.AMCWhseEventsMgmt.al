@@ -22,6 +22,12 @@ codeunit 50011 "AMC Whse. Events Mgmt."
         WarehouseShipmentHeader."AMC Create by User ID" := UserId();
         WarehouseShipmentHeader."AMC Creation Date" := WorkDate();
         WarehouseShipmentHeader."AMC Notes" := SalesHeader."AMC Notes";
+        WarehouseShipmentHeader."AMC Customer Name" := SalesHeader."Sell-to Customer Name";
+        WarehouseShipmentHeader."AMC Customer Address" := SalesHeader."Sell-to Address";
+        WarehouseShipmentHeader."AMC Customer City" := SalesHeader."Sell-to City";
+        WarehouseShipmentHeader."AMC Customer Code" := SalesHeader."Sell-to Customer No.";
+        WarehouseShipmentHeader."AMC Customer post code" := SalesHeader."Sell-to Post Code";
+        WarehouseShipmentHeader."AMC Customer Search Name" := SalesHeader."AMC Customer Search Name";
     end;
 
     [EventSubscriber(ObjectType::Report, Report::"Get Source Documents", 'OnBeforeWhseReceiptHeaderInsert', '', false, false)]
