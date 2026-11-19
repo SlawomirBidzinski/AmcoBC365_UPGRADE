@@ -56,7 +56,7 @@ pageextension 50057 "AMC Posted Sales Invoice Ext" extends "Posted Sales Invoice
         }
         addafter("Currency Code")
         {
-            field("AMC Currancy Exchange Date"; Rec."AMC Currancy Exchange Date")
+            field("AMC Currancy Exchange Date"; Rec."AMC Currency Exchange Date")
             {
                 ApplicationArea = All;
             }

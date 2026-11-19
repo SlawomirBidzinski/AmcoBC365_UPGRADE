@@ -67,4 +67,12 @@ codeunit 50014 "AMC Sales Events Mgmt."
     begin
         SalesHeaderArchive.Validate("AMC Last Archive", true);
     end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Sales-Post", 'OnBeforeSalesInvHeaderInsert', '', false, false)]
+    local procedure OnBeforeSalesInvHeaderInsert(var SalesInvHeader: Record "Sales Invoice Header"; var SalesHeader: Record "Sales Header"; CommitIsSuppressed: Boolean; var IsHandled: Boolean; WhseShip: Boolean; WhseShptHeader: Record "Warehouse Shipment Header"; InvtPickPutaway: Boolean)
+    begin
+        SalesInvHeader."AMC Currency Exchange Date" := SalesHeader."AMC Currency Exchange Date";
+        SalesInvHeader."AMC Price Currency" := SalesHeader."AMC Price Currency";
+        SalesInvHeader."AMC Exchange Rate" := SalesHeader."AMC Exchange Rate";
+    end;
 }

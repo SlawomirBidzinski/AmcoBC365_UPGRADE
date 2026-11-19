@@ -28,7 +28,7 @@ tableextension 50021 "AMC Sales Invoice Header" extends "Sales Invoice Header"
             Caption = 'Faktury w Szt';
             DataClassification = CustomerContent;
         }
-        field(50010; "AMC Currancy Exchange Date"; Date)
+        field(50010; "AMC Currency Exchange Date"; Date)
         {
             Caption = 'Data Kursu Wymiany';
             DataClassification = CustomerContent;
