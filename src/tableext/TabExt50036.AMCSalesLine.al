@@ -463,11 +463,12 @@ tableextension 50036 "AMC Sales Line" extends "Sales Line"
         }
     }
 
-    procedure CreateItemRw(SetItemCode: Code[20]): Code[20]
+    procedure CreateItemRW(SetItemCode: Code[20]): Code[20]
     var
         Item: Record Item;
         SalesSetup: Record "Sales & Receivables Setup";
         QCStatus: Record "AMC QC Status";
+        ItemTemplate: Record "Item Templ.";
         ItemUoM: Record "Item Unit of Measure";
         NoSeriesMgmt: Codeunit "No. Series";
         DescriptionNew: Text;
@@ -477,6 +478,11 @@ tableextension 50036 "AMC Sales Line" extends "Sales Line"
             SalesSetup.TESTFIELD("AMC RW Item Nos.");
             SetItemCode := NoSeriesMgmt.GetNextNo(SalesSetup."AMC RW Item Nos.", WORKDATE);
         END;
+
+        ItemTemplate.Reset();
+        ItemTemplate.SetRange("AMC Sample Type", ItemTemplate."AMC Sample Type"::Product);
+        ItemTemplate.FindFirst();
+
         Item.INIT;
         Item."No." := SetItemCode;
         DescriptionNew := STRSUBSTNO('X/%1', Description);
@@ -484,29 +490,29 @@ tableextension 50036 "AMC Sales Line" extends "Sales Line"
 
         Item."AMC Sales Item" := TRUE;
         Item."AMC RiD Item" := TRUE;
-        Item."Base Unit of Measure" := 'KG';
-        Item."Purch. Unit of Measure" := 'KG';
-        Item."Sales Unit of Measure" := 'KG';
-        Item.VALIDATE("AMC Pack Unit of Measure", 'KG');
+        Item."Base Unit of Measure" := ItemTemplate."Base Unit of Measure";
+        Item."Purch. Unit of Measure" := ItemTemplate."Base Unit of Measure";
+        Item."Sales Unit of Measure" := ItemTemplate."Base Unit of Measure";
+        Item.VALIDATE("AMC Pack Unit of Measure", ItemTemplate."Base Unit of Measure");
 
-        Item."Item Tracking Code" := 'PARTIA W';
+        Item."Item Tracking Code" := ItemTemplate."Item Tracking Code";
 
         QCStatus.Reset();
         QCStatus.SetRange(Default, true);
         QCStatus.FindFirst();
         Item."AMC Default QC Status" := QCStatus.Code;
         Item."AMC Item Type" := Item."AMC Item Type"::Próba;
-        Item."AMC Planning Location" := 'M.PROBY';
+        Item."AMC Planning Location" := ItemTemplate."AMC Location Code";
 
         Item.INSERT;
 
         ItemUoM.INIT;
         ItemUoM."Item No." := SetItemCode;
-        ItemUoM.Code := 'KG';
+        ItemUoM.Code := ItemTemplate."Base Unit of Measure";
         ItemUoM."Qty. per Unit of Measure" := 1;
         ItemUoM.INSERT;
 
-        Item.VALIDATE("Item Category Code", 'WYR.08');
+        Item.VALIDATE("Item Category Code", ItemTemplate."Item Category Code");
         Item.MODIFY;
 
         EXIT(SetItemCode);
