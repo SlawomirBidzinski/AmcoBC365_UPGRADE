@@ -91,6 +91,7 @@ pageextension 50050 "AMC Warehouse Receipt Ext" extends "Warehouse Receipt"
                 field("AMC Notes"; Rec."AMC Notes")
                 {
                     ApplicationArea = All;
+
                 }
             }
         }

@@ -41,6 +41,25 @@ pageextension 50071 "AMC Posted Whse. Shipment Ext" extends "Posted Whse. Shipme
             }
         }
 
+        addafter("Posting Date")
+        {
+            group(AMCReceipt)
+            {
+                Caption = 'Receipt';
+
+                field("AMC Create by User ID"; Rec."AMC Create by User ID")
+                {
+                    ApplicationArea = All;
+                    Editable = false;
+                }
+                field("AMC Creation Date"; Rec."AMC Creation Date")
+                {
+                    ApplicationArea = All;
+                    Editable = false;
+                }
+            }
+        }
+
         modify("Assigned User ID")
         {
             Visible = false;
@@ -50,14 +69,13 @@ pageextension 50071 "AMC Posted Whse. Shipment Ext" extends "Posted Whse. Shipme
         {
             Visible = false;
         }
+        modify("Assignment Time")
+        {
+            Visible = false;
+        }
 
         addafter("Shipment Date")
         {
-            field("AMC Creation Date"; Rec."AMC Creation Date")
-            {
-                ApplicationArea = All;
-                Editable = false;
-            }
             field("AMC Ship-to Name"; Rec."AMC Ship-to Name")
             {
                 ApplicationArea = All;
@@ -88,6 +106,7 @@ pageextension 50071 "AMC Posted Whse. Shipment Ext" extends "Posted Whse. Shipme
                 field("AMC Notes"; Rec."AMC Notes")
                 {
                     ApplicationArea = All;
+                    Editable = false;
                 }
             }
         }

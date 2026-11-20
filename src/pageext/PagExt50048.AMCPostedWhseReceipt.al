@@ -76,6 +76,11 @@ pageextension 50048 "AMC Posted Whse. Receipt Ext" extends "Posted Whse. Receipt
             Visible = false;
         }
 
+        modify("Assignment Time")
+        {
+            Visible = false;
+        }
+
         addafter("AMC Receipt Date")
         {
             group(AMCReceipt)
@@ -102,6 +107,7 @@ pageextension 50048 "AMC Posted Whse. Receipt Ext" extends "Posted Whse. Receipt
                 field("AMC Notes"; Rec."AMC Notes")
                 {
                     ApplicationArea = All;
+                    Editable = false;
                 }
             }
         }
