@@ -2,8 +2,8 @@ pageextension 50085 "AMC Posted Whse. Shipment List" extends "Posted Whse. Shipm
 {
     layout
     {
-        moveafter("No."; "Posting Date")
-        addafter("Posting Date")
+
+        addafter("No.")
         {
             field("AMC Customer Code"; Rec."AMC Customer Code")
             {
@@ -22,6 +22,8 @@ pageextension 50085 "AMC Posted Whse. Shipment List" extends "Posted Whse. Shipm
                 ApplicationArea = All;
             }
         }
+        moveafter("No."; "Posting Date")
+
         modify("Assigned User ID")
         {
             Visible = false;

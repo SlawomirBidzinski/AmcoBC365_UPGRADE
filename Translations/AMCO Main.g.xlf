@@ -10588,10 +10588,10 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Warehouse Put-aways - Control VendName - Property Caption</note>
         </trans-unit>
-        <trans-unit id="PageExtension 1269850881 - Control 3172211549 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2447066187">
-          <source>Receipt</source>
+        <trans-unit id="PageExtension 1269850881 - Control 4269056937 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2447066187">
+          <source>Shipment</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Warehouse Receipt Ext - Control AMCReceipt - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Warehouse Receipt Ext - Control AMCShipment - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1269850881 - Control 222620933 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2447066187">
           <source>Notes</source>

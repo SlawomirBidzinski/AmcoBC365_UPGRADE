@@ -6,9 +6,7 @@ pageextension 50084 "AMC Posted Whse. Receipt List" extends "Posted Whse. Receip
         {
             Visible = true;
         }
-        moveafter("No."; "Posting Date")
-
-        addafter("Posting Date")
+        addafter("No.")
         {
             field("AMC Vendor Code"; Rec."AMC Vendor Code")
             {
@@ -28,6 +26,8 @@ pageextension 50084 "AMC Posted Whse. Receipt List" extends "Posted Whse. Receip
                 ApplicationArea = All;
             }
         }
+
+        moveafter("No."; "Posting Date")
 
         modify("Assigned User ID")
         {
