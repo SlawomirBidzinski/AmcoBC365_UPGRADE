@@ -10123,6 +10123,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Posted Whse. Receipt Ext - Control Notes - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 2221030860 - Control 3172211549 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2839142818">
+          <source>Receipt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Posted Whse. Shipment Ext - Control AMCReceipt - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 2221030860 - Control 222620933 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2839142818">
           <source>Notes</source>
           <note from="Developer" annotates="general" priority="2"></note>

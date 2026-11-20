@@ -15668,7 +15668,7 @@
         </trans-unit>
         <trans-unit id="TableExtension 1001768582 - Field 2725432504 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2338847983">
           <source>Vendor City</source>
-          <target>Miasto Dostwcy</target>
+          <target>Miasto Dostawcy</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Posted Whse. Rec. Hdr. Ext - Field AMC Vendor City - Property Caption</note>
         </trans-unit>

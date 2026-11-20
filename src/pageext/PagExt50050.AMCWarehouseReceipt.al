@@ -55,9 +55,9 @@ pageextension 50050 "AMC Warehouse Receipt Ext" extends "Warehouse Receipt"
 
         addafter("AMC Receipt Date")
         {
-            group(AMCReceipt)
+            group(AMCShipment)
             {
-                Caption = 'Receipt';
+                Caption = 'Shipment';
 
                 field("AMC Create by User ID"; Rec."AMC Create by User ID")
                 {
