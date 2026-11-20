@@ -36,6 +36,8 @@ pageextension 50029 "AMC Sales Order Subform" extends "Sales Order Subform"
                             QuestText := STRSUBSTNO(Text_003, Rec.Description);
                             IF CONFIRM(QuestText, FALSE) THEN BEGIN
                                 Rec."AMC Set Item" := Rec.CreateItemRw(Rec."AMC Set Item");
+                                Rec.Type := Rec.Type::Item;
+                                Rec.VALIDATE("No.", Rec."AMC Set Item");
                                 Rec."Location Code" := 'M.PROBY';
                             END;
                         END;
@@ -43,6 +45,8 @@ pageextension 50029 "AMC Sales Order Subform" extends "Sales Order Subform"
                         QuestText := STRSUBSTNO(Text_003, Rec.Description);
                         IF CONFIRM(QuestText, FALSE) THEN BEGIN
                             Rec."AMC Set Item" := Rec.CreateItemRw('');
+                            Rec.Type := Rec.Type::Item;
+                            Rec.VALIDATE("No.", Rec."AMC Set Item");
                             Rec."Location Code" := 'M.PROBY';
                         END;
                     END;
