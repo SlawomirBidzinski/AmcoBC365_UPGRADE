@@ -73,6 +73,10 @@ pageextension 50025 "AMC Sales & Receivables Setup" extends "Sales & Receivables
                 {
                     ApplicationArea = All;
                 }
+                field("AMC Samples Bin Type Code"; Rec."AMC Samples Bin Type Code")
+                {
+                    ApplicationArea = All;
+                }
                 field("AMC Samples Source Code"; Rec."AMC Samples Source Code")
                 {
                     ApplicationArea = All;

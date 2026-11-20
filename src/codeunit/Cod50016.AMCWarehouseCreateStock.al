@@ -16,6 +16,7 @@ codeunit 50016 "AMC Warehouse Create Stock"
         SalesSetup.Get();
         SalesSetup.TestField("AMC Samples Jnl. Temp. Name");
         SalesSetup.TestField("AMC Samples Jnl. Batch Name");
+        SalesSetup.TestField("AMC Samples Bin Type Code");
 
         PostDate := 0D;
         LocactionSet := '';
@@ -54,7 +55,6 @@ codeunit 50016 "AMC Warehouse Create Stock"
         ItemJnlLine."Unit of Measure Code" := SalesLine."Unit of Measure Code";
 
         IF ItemRec.GET(SalesLine."No.") THEN BEGIN
-
             ItemJnlLine."Inventory Posting Group" := ItemRec."Inventory Posting Group";
             ItemJnlLine."Gen. Prod. Posting Group" := ItemRec."Gen. Prod. Posting Group";
 
