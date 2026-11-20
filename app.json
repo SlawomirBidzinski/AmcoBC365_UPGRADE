@@ -17,7 +17,13 @@
     "name": "Polish Localization",
     "publisher": "IT.integro sp. z o.o.",
     "version": "10.11.0.2"
-    }
+    },
+    {
+    "id": "dc5453b1-d0bf-4340-9f17-07d1fd605bd9",
+    "name": "HR & Payroll Manager",
+    "publisher": "IT.integro sp. z o.o.",
+    "version": "7.0.0.29005"
+    }    
   ],
 
   "platform": "29.0.0.0",
