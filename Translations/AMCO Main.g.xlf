@@ -10163,6 +10163,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Purchase Return Order - Control AMC Waluta Zamówienia - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 947627379 - Control 16712031 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4145206282">
+          <source>Item Setup - Samples</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales &amp; Receivables Setup - Control Samples - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 947627379 - Control 3851846705 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4145206282">
           <source>AMCO</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -15352,6 +15357,36 @@
           <source>Seria num. zam. zwrotu RW</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales &amp; Receivables Setup - Field AMC RW Return Order Corr. No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 947627379 - Field 1142477022 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
+          <source>Samples Bin Type Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales &amp; Receivables Setup - Field AMC Samples Bin Type Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 947627379 - Field 3252169201 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
+          <source>Samples Journal Batch Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales &amp; Receivables Setup - Field AMC Samples Jnl. Batch Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 947627379 - Field 2720114403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
+          <source>Samples Journal Template Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales &amp; Receivables Setup - Field AMC Samples Jnl. Temp. Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 947627379 - Field 2136047670 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
+          <source>Samples Source Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales &amp; Receivables Setup - Field AMC Samples Source Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 947627379 - Field 1511347804 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
+          <source>Samples Whse. Class. Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales &amp; Receivables Setup - Field AMC Samples Whse. Class. Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 947627379 - Field 822058971 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
+          <source>Samples Zone Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales &amp; Receivables Setup - Field AMC Samples Zone Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 947627379 - Field 3538617562 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
           <source>Selgros xmlport Faktury Korekty EDI</source>

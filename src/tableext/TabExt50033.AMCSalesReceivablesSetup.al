@@ -120,7 +120,42 @@ tableextension 50033 "AMC Sales & Receivables Setup" extends "Sales & Receivable
             TableRelation = "Unit of Measure";
             DataClassification = CustomerContent;
         }
-
+        field(50023; "AMC Samples Jnl. Temp. Name"; Code[20])
+        {
+            Caption = 'Samples Journal Template Name';
+            DataClassification = CustomerContent;
+            TableRelation = "Item Journal Template";
+        }
+        field(50024; "AMC Samples Jnl. Batch Name"; Code[20])
+        {
+            Caption = 'Samples Journal Batch Name';
+            DataClassification = CustomerContent;
+            TableRelation = "Item Journal Batch".Name where("Journal Template Name" = field("AMC Samples Jnl. Temp. Name"));
+        }
+        field(50025; "AMC Samples Source Code"; Code[20])
+        {
+            Caption = 'Samples Source Code';
+            DataClassification = CustomerContent;
+            TableRelation = "Source Code";
+        }
+        field(50026; "AMC Samples Bin Type Code"; Code[20])
+        {
+            Caption = 'Samples Bin Type Code';
+            DataClassification = CustomerContent;
+            TableRelation = "Bin Type";
+        }
+        field(50027; "AMC Samples Zone Code"; Code[20])
+        {
+            Caption = 'Samples Zone Code';
+            DataClassification = CustomerContent;
+            TableRelation = Zone.Code;
+        }
+        field(50028; "AMC Samples Whse. Class. Code"; Code[20])
+        {
+            Caption = 'Samples Whse. Class. Code';
+            DataClassification = CustomerContent;
+            TableRelation = "Warehouse Class";
+        }
         field(50030; "AMC Consolidate Item Code 3"; Code[20])
         {
             Caption = 'Kod zapasu konsolidacji 3';

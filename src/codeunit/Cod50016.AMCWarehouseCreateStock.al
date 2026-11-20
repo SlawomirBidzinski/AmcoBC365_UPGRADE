@@ -13,6 +13,10 @@ codeunit 50016 "AMC Warehouse Create Stock"
         ItemJnlPostLine: Codeunit "Item Jnl.-Post Line";
         Direction: Integer;
     begin
+        SalesSetup.Get();
+        SalesSetup.TestField("AMC Samples Jnl. Temp. Name");
+        SalesSetup.TestField("AMC Samples Jnl. Batch Name");
+
         PostDate := 0D;
         LocactionSet := '';
         BinSet := '';
@@ -23,9 +27,9 @@ codeunit 50016 "AMC Warehouse Create Stock"
 
         ItemJnlLine.INIT;
 
-        ItemJnlLine."Journal Template Name" := 'PROBA_INS';
-        ItemJnlLine."Journal Batch Name" := 'ITEM_INS';
-        ItemJnlLine."Source Code" := 'DZKZAPAS';
+        ItemJnlLine."Journal Template Name" := SalesSetup."AMC Samples Jnl. Temp. Name";
+        ItemJnlLine."Journal Batch Name" := SalesSetup."AMC Samples Jnl. Batch Name";
+        ItemJnlLine."Source Code" := SalesSetup."AMC Samples Source Code";
 
         SalesHeader.RESET;
         SalesHeader.SETRANGE("Document Type", SalesHeader."Document Type"::Order);
@@ -160,8 +164,8 @@ codeunit 50016 "AMC Warehouse Create Stock"
 
         ReservEntry."Source Type" := 83;
         ReservEntry."Source Subtype" := 2;
-        ReservEntry."Source ID" := 'PROBA_INS';
-        ReservEntry."Source Batch Name" := 'ITEM_INS';
+        ReservEntry."Source ID" := SalesSetup."AMC Samples Jnl. Temp. Name";
+        ReservEntry."Source Batch Name" := SalesSetup."AMC Samples Jnl. Batch Name";
         ReservEntry."Source Ref. No." := ItemJnlLine."Line No.";
         ReservEntry."Shipment Date" := ItemJnlLine."Posting Date";
 
@@ -209,7 +213,7 @@ codeunit 50016 "AMC Warehouse Create Stock"
             WhseEntry.INIT;
             WhseEntry."Entry No." := EntryNo;
 
-            WhseEntry."Source Code" := 'DZKZAPAS';
+            WhseEntry."Source Code" := SalesSetup."AMC Samples Source Code";
             WhseEntry."Entry Type" := WhseEntry."Entry Type"::"Positive Adjmt.";
             WhseEntry."Reference Document" := WhseEntry."Reference Document"::"Item Journal";
 
@@ -238,9 +242,9 @@ codeunit 50016 "AMC Warehouse Create Stock"
                 BinContent.INIT;
                 BinContent."Location Code" := LocactionSet;
                 BinContent."Bin Code" := BinSet;
-                BinContent."Zone Code" := 'PROBY';
-                BinContent.Validate("Bin Type Code", 'ODŁPOBR');
-                BinContent."Warehouse Class Code" := 'MS';
+                BinContent."Zone Code" := SalesSetup."AMC Samples Zone Code";
+                BinContent.Validate("Bin Type Code", SalesSetup."AMC Samples Bin Type Code");
+                BinContent."Warehouse Class Code" := SalesSetup."AMC Samples Whse. Class. Code";
                 BinContent."Item No." := SalesLineRec."No.";
                 BinContent."Unit of Measure Code" := SalesLineRec."Unit of Measure Code";
                 BinContent.INSERT;
@@ -258,6 +262,7 @@ codeunit 50016 "AMC Warehouse Create Stock"
 
     var
         Location: Record Location;
+        SalesSetup: Record "Sales & Receivables Setup";
         LocactionSet: Code[20];
         WhseTransaction: Boolean;
         PostDate: Date;

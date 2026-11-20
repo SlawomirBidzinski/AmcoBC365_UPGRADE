@@ -59,6 +59,34 @@ pageextension 50025 "AMC Sales & Receivables Setup" extends "Sales & Receivables
                 ApplicationArea = All;
             }
         }
+        addafter("Number Series")
+        {
+            group(Samples)
+            {
+                Caption = 'Item Setup - Samples';
+
+                field("AMC Samples Jnl. Temp. Name"; Rec."AMC Samples Jnl. Temp. Name")
+                {
+                    ApplicationArea = All;
+                }
+                field("AMC Samples Jnl. Batch Name"; Rec."AMC Samples Jnl. Batch Name")
+                {
+                    ApplicationArea = All;
+                }
+                field("AMC Samples Source Code"; Rec."AMC Samples Source Code")
+                {
+                    ApplicationArea = All;
+                }
+                field("AMC Samples Whse. Class. Code"; Rec."AMC Samples Whse. Class. Code")
+                {
+                    ApplicationArea = All;
+                }
+                field("AMC Samples Zone Code"; Rec."AMC Samples Zone Code")
+                {
+                    ApplicationArea = All;
+                }
+            }
+        }
         addlast(content)
         {
             group(AMCEDI)
