@@ -513,6 +513,10 @@ tableextension 50036 "AMC Sales Line" extends "Sales Line"
         ItemUoM.INSERT;
 
         Item.VALIDATE("Item Category Code", ItemTemplate."Item Category Code");
+        Item."Tax Group Code" := ItemTemplate."Tax Group Code";
+        Item."Inventory Posting Group" := ItemTemplate."Inventory Posting Group";
+        Item."Gen. Prod. Posting Group" := ItemTemplate."Gen. Prod. Posting Group";
+        Item."VAT Prod. Posting Group" := ItemTemplate."VAT Prod. Posting Group";
         Item.MODIFY;
 
         EXIT(SetItemCode);
