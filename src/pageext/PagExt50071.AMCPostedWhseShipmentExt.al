@@ -43,9 +43,9 @@ pageextension 50071 "AMC Posted Whse. Shipment Ext" extends "Posted Whse. Shipme
 
         addafter("Posting Date")
         {
-            group(AMCReceipt)
+            group(AMCShipment)
             {
-                Caption = 'Receipt';
+                Caption = 'Shipment';
 
                 field("AMC Create by User ID"; Rec."AMC Create by User ID")
                 {

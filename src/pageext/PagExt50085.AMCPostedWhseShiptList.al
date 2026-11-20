@@ -2,6 +2,10 @@ pageextension 50085 "AMC Posted Whse. Shipment List" extends "Posted Whse. Shipm
 {
     layout
     {
+        modify("Posting Date")
+        {
+            Visible = true;
+        }
 
         addafter("No.")
         {
