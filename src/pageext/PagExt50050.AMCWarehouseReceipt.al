@@ -39,16 +39,6 @@ pageextension 50050 "AMC Warehouse Receipt Ext" extends "Warehouse Receipt"
         }
         addlast(General)
         {
-
-            field("AMC Create by User ID"; Rec."AMC Create by User ID")
-            {
-                ApplicationArea = All;
-            }
-            field("AMC Creation Date"; Rec."AMC Creation Date")
-            {
-                ApplicationArea = All;
-            }
-
             field("AMC Document ID"; Rec."AMC Document ID")
             {
                 ApplicationArea = All;
@@ -61,11 +51,46 @@ pageextension 50050 "AMC Warehouse Receipt Ext" extends "Warehouse Receipt"
             {
                 ApplicationArea = All;
             }
-            field("AMC Notes"; Rec."AMC Notes")
-            {
-                ApplicationArea = All;
-            }
+        }
 
+        addafter("AMC Receipt Date")
+        {
+            group(AMCShipment)
+            {
+                Caption = 'Shipment';
+
+                field("AMC Create by User ID"; Rec."AMC Create by User ID")
+                {
+                    ApplicationArea = All;
+                }
+                field("AMC Creation Date"; Rec."AMC Creation Date")
+                {
+                    ApplicationArea = All;
+                }
+            }
+        }
+
+        modify("Assigned User ID")
+        {
+            Visible = false;
+        }
+
+        modify("Assignment Date")
+        {
+            Visible = false;
+
+        }
+
+        addafter(General)
+        {
+            group(Notes)
+            {
+                Caption = 'Notes';
+                field("AMC Notes"; Rec."AMC Notes")
+                {
+                    ApplicationArea = All;
+                }
+            }
         }
     }
 }

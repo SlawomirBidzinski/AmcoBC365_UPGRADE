@@ -10568,6 +10568,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Warehouse Put-aways - Control VendName - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 2638353790 - Control 4269056937 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2938519335">
+          <source>Shipment</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Warehouse Shipment - Control AMCShipment - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 2638353790 - Control 222620933 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2938519335">
           <source>Notes</source>
           <note from="Developer" annotates="general" priority="2"></note>

@@ -37,6 +37,25 @@ pageextension 50076 "AMC Warehouse Receipts" extends "Warehouse Receipts"
                 ApplicationArea = All;
             }
 
+            field("AMC Create by User ID"; Rec."AMC Create by User ID")
+            {
+                ApplicationArea = All;
+            }
+            field("AMC Creation Date"; Rec."AMC Creation Date")
+            {
+                ApplicationArea = All;
+            }
+        }
+
+        modify("Assigned User ID")
+        {
+            Visible = false;
+        }
+
+        modify("Assignment Date")
+        {
+            Visible = false;
+
         }
     }
 }
