@@ -33,16 +33,36 @@ pageextension 50039 "AMC Warehouse Shipment" extends "Warehouse Shipment"
                 ApplicationArea = All;
             }
         }
+        modify("Assigned User ID")
+        {
+            Visible = false;
+        }
+        modify("Assignment Date")
+        {
+            Visible = false;
+        }
+        modify("Assignment Time")
+        {
+            Visible = false;
+        }
+        addafter("Posting Date")
+        {
+            group(AMCShipment)
+            {
+                Caption = 'Shipment';
+
+                field("AMC Create by User ID"; Rec."AMC Create by User ID")
+                {
+                    ApplicationArea = All;
+                }
+                field("AMC Creation Date"; Rec."AMC Creation Date")
+                {
+                    ApplicationArea = All;
+                }
+            }
+        }
         addafter("Shipment Date")
         {
-            field("AMC Create by User ID"; Rec."AMC Create by User ID")
-            {
-                ApplicationArea = All;
-            }
-            field("AMC Creation Date"; Rec."AMC Creation Date")
-            {
-                ApplicationArea = All;
-            }
             field("AMC Ship-to Code"; Rec."AMC Ship-to Code")
             {
                 ApplicationArea = All;
@@ -64,6 +84,7 @@ pageextension 50039 "AMC Warehouse Shipment" extends "Warehouse Shipment"
                 ApplicationArea = All;
             }
         }
+
         addafter(General)
         {
             group(Notes)

@@ -3283,7 +3283,6 @@
           <source>The item %1, lot %2 has not passed the quality control.</source>
           <target>The item %1, lot %2 has not passed the quality control.</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit AMC QC Mgmt. - Method CheckQCStatus - NamedType ErrorLbl</note>
         </trans-unit>
         <trans-unit id="Page 938075200 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -12180,7 +12179,7 @@
         </trans-unit>
         <trans-unit id="PageExtension 1123802410 - Action 1336913026 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2747922353">
           <source>AMC Items</source>
-          <target>Zapasy</target>
+          <target>Lista Zapasów</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Order Proc. Role Center - Action DetailedItems - Property Caption</note>
         </trans-unit>
@@ -12404,7 +12403,6 @@
           <source>Item Setup - Samples</source>
           <target>Ustawienie Zapasu - Próbki</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales &amp; Receivables Setup - Control Samples - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 947627379 - Control 3851846705 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4145206282">
@@ -12501,49 +12499,42 @@
           <source>Czy wygenerowac w liniach nr partii próbek?</source>
           <target>Czy wygenerować w liniach nr partii próbek?</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Order Subform - Method GenerateLots - NamedType Text_loc</note>
         </trans-unit>
         <trans-unit id="PageExtension 881466389 - Method 3365556610 - NamedType 4120276262" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 881466389">
           <source>Czy wygenerowac stan magazynowy dla zapasów?</source>
           <target>Czy wygenerować stan magazynowy dla zapasów?</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Order Subform - Method PostItems - NamedType Text_Loc</note>
         </trans-unit>
         <trans-unit id="PageExtension 881466389 - Method 3365556610 - NamedType 2718868067" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 881466389">
           <source>Nie ma zadnych linii do wygenerowania zapasu</source>
           <target>Nie ma zadnych linii do wygenerowania zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Order Subform - Method PostItems - NamedType Text_003</note>
         </trans-unit>
         <trans-unit id="PageExtension 881466389 - Action 1497716919 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2026081320">
           <source>Generuj zapasy próbek</source>
           <target>Generuj zapasy próbek</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Order Subform - Action GenerateSample - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 881466389 - Action 1792226452 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2026081320">
           <source>Nr partii próbek</source>
           <target>Nr partii próbek</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Order Subform - Action LotNoSample - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 881466389 - Control 1173911236 - Method 2699620902 - NamedType 336990622" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 881466389">
           <source>Czy wprowadziæ zapas %1\w miejsce wprowadzonego kodu zapasu%2?</source>
           <target>Czy wprowadzić zapas %1\w miejsce wprowadzonego kodu zapasu%2?</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Order Subform - Control AMC Set Item - Method OnAssistEdit - NamedType Text_000</note>
         </trans-unit>
         <trans-unit id="PageExtension 881466389 - Control 1173911236 - Method 2699620902 - NamedType 2718868067" size-unit="char" translate="yes" xml:space="preserve" al-object-target="PageExtension 881466389">
           <source>Czy utworzyc zapas próbki %1 i zaktualizowaæ linie?</source>
           <target>Czy utworzyć zapas próbki %1 i zaktualizowaæ linie?</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Sales Order Subform - Control AMC Set Item - Method OnAssistEdit - NamedType Text_003</note>
         </trans-unit>
         <trans-unit id="PageExtension 99853858 - Action 1438536865 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1673401186">
@@ -12901,49 +12892,42 @@
           <source>Customer Name</source>
           <target>Nazwa Nabywcy</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Warehouse Picks - Control CustName - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 3106207636 - Control 193665107 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2889212609">
           <source>Vendor Search Name</source>
           <target>Nazwa Szukana Dostawcy</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Warehouse Put-away - Control SearchName - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 3106207636 - Control 2824031890 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2889212609">
           <source>Vendor Name</source>
           <target>nazwa Dostawcy</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Warehouse Put-away - Control VendName - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 2719566165 - Control 193665107 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1535399064">
           <source>Vendor Search Name</source>
           <target>Nazwa Szuana Dostawcy</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Warehouse Put-aways - Control SearchName - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 2719566165 - Control 2824031890 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1535399064">
           <source>Vendor Name</source>
           <target>Nazwa Dostawcy</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Warehouse Put-aways - Control VendName - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 2638353790 - Control 222620933 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2938519335">
           <source>Notes</source>
           <target>Uwagi</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Warehouse Shipment - Control Notes - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1129449230 - Control 1563179466 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4284303991">
           <source>Inventory</source>
           <target>Zapasy Mag.</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Whse. Shipment Subform - Control InventoryQty - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 1414654466 - Control 3153818016 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4055858012">
@@ -13082,7 +13066,6 @@
           <source>Adres e-mail dla Dok. Atestów</source>
           <target>Adres e-mail dla Dok. Atestów</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Customer - Field AMC Atest e-mail Address - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3182203493 - Field 3371952551 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
@@ -13701,7 +13684,6 @@
           <source>Adres e-mail dla Dok. WZ</source>
           <target>Adres e-mail dla Dok. WZ</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Customer - Field AMC Shipment e-mail Address - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3182203493 - Field 2346008622 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
@@ -13762,7 +13744,6 @@
           <source>E-Mail Document Sent Type</source>
           <target>Typ Wysyłki Dokumentów</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Customer - Field E-Mail Document Sent Type - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 780863120 - Field 293422000 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1468132285">
@@ -14625,13 +14606,13 @@
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 3035493537 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Kaloryczn kcal</source>
-          <target>Kaloryczn kcal</target>
+          <target>Kaloryczn. kcal</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Kaloryczn kcal - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 2573041645 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Kaloryczn kJ</source>
-          <target>Kaloryczn kJ</target>
+          <target>Kaloryczn. kJ</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Kaloryczn kJ - Property Caption</note>
         </trans-unit>
@@ -14717,7 +14698,6 @@
           <source>Nazwa Producenta</source>
           <target>Nazwa Producenta</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Source has been modified.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Nazwa Producenta - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 3801836374 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
@@ -14770,13 +14750,13 @@
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 3324550618 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Planning Issues (Qty.)</source>
-          <target>Planning Issues (Qty.)</target>
+          <target>Planowanie Użycia (Il.)</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Planning Component (Qty.) - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 2941174385 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Planning Location</source>
-          <target>Planning Location</target>
+          <target>Kod Lokalizacji</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Planning Location - Property Caption</note>
         </trans-unit>
@@ -14794,7 +14774,7 @@
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 1857942990 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Positive Adjmt. (LCY)</source>
-          <target>Positive Adjmt. (LCY)</target>
+          <target>Dodatnia Korekta (LCY)</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Positive Adjmt. All (LCY) - Property Caption</note>
         </trans-unit>
@@ -14848,19 +14828,19 @@
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 3583320876 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Product Safety Stock</source>
-          <target>Product Safety Stock</target>
+          <target>Poziom Bezp. Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Product Safety Stock - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 4204910987 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Production BOM No.</source>
-          <target>Production BOM No.</target>
+          <target>Nr BOM Produkcyjnego</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Production BOM Karagen - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 2937802070 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Production Date Set</source>
-          <target>Production Date Set</target>
+          <target>Data Produkcji</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Production Date Set - Property Caption</note>
         </trans-unit>
@@ -14878,7 +14858,7 @@
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 691805653 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Production Lot</source>
-          <target>Production Lot</target>
+          <target>Partia produkcji</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Production Lot - Property Caption</note>
         </trans-unit>
@@ -14950,19 +14930,19 @@
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 1229185075 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Sales (LCY)</source>
-          <target>Sales (LCY)</target>
+          <target>Sprzedaż (LCY)</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Sales All (LCY) - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 4241397926 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Sales Item</source>
-          <target>Sales Item</target>
+          <target>Zapas Sprzedaży</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Sales Item - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 3486181707 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Sales Process Item</source>
-          <target>Sales Process Item</target>
+          <target>Proces Sprzedaży Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Sales Process Item - Property Caption</note>
         </trans-unit>
@@ -15124,7 +15104,7 @@
         </trans-unit>
         <trans-unit id="TableExtension 657677974 - Field 3132578616 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1487222247">
           <source>Lot Nos.</source>
-          <target>No Serii Partii </target>
+          <target>Nr Serii Partii</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Category - Field AMC Lot Nos. - Property Caption</note>
         </trans-unit>
@@ -15148,13 +15128,13 @@
         </trans-unit>
         <trans-unit id="TableExtension 657677974 - Field 309434570 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1487222247">
           <source>Reordering Policy</source>
-          <target>Reordering Policy</target>
+          <target>Zasady ponownego zamawiania</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Category - Field AMC Reordering Policy - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 657677974 - Field 1631526878 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1487222247">
           <source>Replenishment System</source>
-          <target>Replenishment System</target>
+          <target>Metoda uzupełnień</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Category - Field AMC Replenishment System - Property Caption</note>
         </trans-unit>
@@ -15220,25 +15200,25 @@
         </trans-unit>
         <trans-unit id="TableExtension 309468398 - Field 2749880545 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
           <source>AMC Prod. Order Line No.</source>
-          <target>AMC Prod. Order Line No.</target>
+          <target>Nr Linii Zamówienia Produkcji</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Journal Line Ext. - Field AMC Prod. Order Line No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 309468398 - Field 3999135955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
           <source>Prod. Order No.</source>
-          <target>Prod. Order No.</target>
+          <target>Nr Zamówienia Produkcji</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Journal Line Ext. - Field AMC Prod. Order No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 309468398 - Field 2621587244 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
           <source>Production Date</source>
-          <target>Production Date</target>
+          <target>Data Produkcji</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Journal Line Ext. - Field AMC Production Date - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 309468398 - Field 2607718158 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
           <source>Production Line Qty Remain</source>
-          <target>Production Line Qty Remain</target>
+          <target>Pozostała Ilość Linii Produkcji</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Journal Line Ext. - Field AMC Production Line Qty Remain - Property Caption</note>
         </trans-unit>
@@ -15250,43 +15230,43 @@
         </trans-unit>
         <trans-unit id="TableExtension 309468398 - Field 1060625678 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
           <source>Transfer Line</source>
-          <target>Transfer Line</target>
+          <target>Linia Przesunięcia</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Journal Line Ext. - Field AMC Transfer Line - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1139453565 - Field 3379621373 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
           <source>Date Filter</source>
-          <target>Date Filter</target>
+          <target>Filtr Daty</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Ledger Entry - Field AMC Date Filter - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1139453565 - Field 3371900220 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
           <source>Ext. Lot No.</source>
-          <target>Ext. Lot No.</target>
+          <target>Zewn. Nr Partii</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Ledger Entry - Field AMC Ext. Lot No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1139453565 - Field 2468160904 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
           <source>Item Description</source>
-          <target>Item Description</target>
+          <target>Nazwa Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Ledger Entry - Field AMC Item Description - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1139453565 - Field 2833295560 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
           <source>Item Production Code</source>
-          <target>Item Production Code</target>
+          <target>Kod Zapasu Produkcji</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Ledger Entry - Field AMC Item Production Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1139453565 - Field 2627062001 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
           <source>Item Production Lot No</source>
-          <target>Item Production Lot No</target>
+          <target>Nr Partii Produkcji</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Ledger Entry - Field AMC Item Production Lot No - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1139453565 - Field 939435837 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
           <source>Item Test PW</source>
-          <target>Item Test PW</target>
+          <target>Próbka Zapasu PW</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Ledger Entry - Field AMC Item Test PW - Property Caption</note>
         </trans-unit>
@@ -15310,13 +15290,13 @@
         </trans-unit>
         <trans-unit id="TableExtension 1139453565 - Field 1845476840 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
           <source>Purchase Invoice No</source>
-          <target>Purchase Invoice No</target>
+          <target>Nr Faktury Zakupu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Ledger Entry - Field AMC Purchase Invoice No - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1139453565 - Field 3916821051 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
           <source>Purchase Item</source>
-          <target>Purchase Item</target>
+          <target>Zapas Zakupy</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Ledger Entry - Field AMC Purchase Item - Property Caption</note>
         </trans-unit>
@@ -15328,13 +15308,13 @@
         </trans-unit>
         <trans-unit id="TableExtension 1139453565 - Field 4241397926 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
           <source>Sales Item</source>
-          <target>Sales Item</target>
+          <target>Zapas Sprzedaż</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Ledger Entry - Field AMC Sales Item - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1139453565 - Field 3021343849 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
           <source>Set Item Control</source>
-          <target>Set Item Control</target>
+          <target>Ustaw Kontr. Zapasu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Ledger Entry - Field AMC Set Item Control - Property Caption</note>
         </trans-unit>
@@ -15342,21 +15322,18 @@
           <source>Location Code</source>
           <target>Kod Lokalizacji</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Templ. - Field AMC Location Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2378313840 - Field 44920667 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 463323981">
           <source>Sample Type</source>
           <target>Typ Próbki</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Templ. - Field AMC Sample Type - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 2378313840 - Field 44920667 - Method 2126772001 - NamedType 3291229668" size-unit="char" translate="yes" xml:space="preserve" al-object-target="TableExtension 2378313840">
           <source>The template with %1 already exists</source>
-          <target>The template with %1 already exists</target>
+          <target>Szablon %1 już istnieje</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item Templ. - Field AMC Sample Type - Method OnValidate - NamedType ExistingRecErrLbl</note>
         </trans-unit>
         <trans-unit id="TableExtension 3682173539 - Field 3506169379 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 553485970">
@@ -15387,56 +15364,48 @@
           <source>Breakbulk in Inbound Prod. Bin</source>
           <target>Breakbulk in Inbound Prod. Bin</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC LocationExt - Field AMC Break. in Inb. Prod. Bin - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1794201229 - Field 264383093 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3891454143">
           <source>Control Negative Adjmt.</source>
           <target>Korekta In-Minus</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC LocationExt - Field AMC Control Negative Adjmt. - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1794201229 - Field 3529669746 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3891454143">
           <source>Control Sales From</source>
           <target>Sprzedaż z </target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC LocationExt - Field AMC Control Sales From - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1794201229 - Field 60049972 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3891454143">
           <source>Control Transfer-From</source>
           <target>Przesunięcie z</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC LocationExt - Field AMC Control Transfer-From - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1794201229 - Field 1503270023 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3891454143">
           <source>Control Transfer-To</source>
           <target>Przesunięcie do</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC LocationExt - Field AMC Control Transfer-To - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1794201229 - Field 3864754072 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3891454143">
           <source>Default Bin Code</source>
           <target>Domyślny Kod Pojemnika</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC LocationExt - Field AMC Default Bin Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1794201229 - Field 3644015569 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3891454143">
           <source>Generate Test Item</source>
           <target>Generuj Zapas Próbki</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC LocationExt - Field AMC Quality Item Test Loc. - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1794201229 - Field 483535764 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3891454143">
           <source>Remaining Production Bin Code</source>
           <target>Kod Pojemnika Prod. Nadmiarów</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC LocationExt - Field AMC Rem. Production Bin Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3096963661 - Field 2758535236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3361278800">
@@ -18701,42 +18670,36 @@
           <source>Samples Bin Type Code</source>
           <target>Kod Pojemnika Próbek</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales &amp; Receivables Setup - Field AMC Samples Bin Type Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 947627379 - Field 3252169201 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
           <source>Samples Journal Batch Name</source>
           <target>Dziennik Zapasów - Próbki</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales &amp; Receivables Setup - Field AMC Samples Jnl. Batch Name - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 947627379 - Field 2720114403 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
           <source>Samples Journal Template Name</source>
           <target>Nazwa Instacji Dziennika - Próbki</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales &amp; Receivables Setup - Field AMC Samples Jnl. Temp. Name - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 947627379 - Field 2136047670 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
           <source>Samples Source Code</source>
           <target>Kod Źródłowy Próbki</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales &amp; Receivables Setup - Field AMC Samples Source Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 947627379 - Field 1511347804 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
           <source>Samples Whse. Class. Code</source>
           <target>Kod Klasy Magaz. Próbki</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales &amp; Receivables Setup - Field AMC Samples Whse. Class. Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 947627379 - Field 822058971 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
           <source>Samples Zone Code</source>
           <target>Strefa Magazyn. Próbki</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales &amp; Receivables Setup - Field AMC Samples Zone Code - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 947627379 - Field 3538617562 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
@@ -19961,7 +19924,6 @@
           <source>Data Kursu Wymiany</source>
           <target>Data Kursu Wymiany</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Invoice Header - Field AMC Currency Exchange Date - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1866123563 - Field 2391642599 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809936682">
@@ -20676,28 +20638,24 @@
           <source>Item %1 is already on the sales order line.</source>
           <target>Zapas %1 istnieje już w linii wiersza zamówienia sprzedaży </target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line - Field AMC Set Item - Method OnValidate - NamedType ErrLbl</note>
         </trans-unit>
         <trans-unit id="TableExtension 3716254643 - Field 1173911236 - Method 2126772001 - NamedType 2855965417" size-unit="char" translate="yes" xml:space="preserve" al-object-target="TableExtension 3716254643">
           <source>Type must be ' '</source>
           <target>Typ musi być ' '</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line - Field AMC Set Item - Method OnValidate - NamedType TypeErrLbl</note>
         </trans-unit>
         <trans-unit id="TableExtension 3716254643 - Field 1173911236 - Method 2126772001 - NamedType 2202118584" size-unit="char" translate="yes" xml:space="preserve" al-object-target="TableExtension 3716254643">
           <source>Modification of the line is not allowed</source>
           <target>Modyfikacja linii jest niedozwolona</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line - Field AMC Set Item - Method OnValidate - NamedType QtyShptErrLbl</note>
         </trans-unit>
         <trans-unit id="TableExtension 3716254643 - Field 1173911236 - Method 2126772001 - NamedType 2511827018" size-unit="char" translate="yes" xml:space="preserve" al-object-target="TableExtension 3716254643">
           <source>Number %1 must be blank</source>
           <target>Numer %1 nie może być pusty</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales Line - Field AMC Set Item - Method OnValidate - NamedType NoErrLbl</note>
         </trans-unit>
         <trans-unit id="TableExtension 3716254643 - Field 3069240917 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2574427010">
@@ -21988,7 +21946,6 @@
           <source>Data zatwierdzenia</source>
           <target>Data zatwierdzenia</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Activity Header - Field AMC Terminal Confirm Date - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3603152044 - Field 975915912 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 809570257">
@@ -22940,21 +22897,18 @@
           <source>All in One e-mail</source>
           <target>Wszystko w jednym E-mail</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Document Sent Type - EnumValue All in One e-mail - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 2393976904 - EnumValue 3194653529 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>All in Separate e-maile</source>
           <target>Wszystko w oddzielnych E-mail</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Document Sent Type - EnumValue All in Separate e-maile - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 2393976904 - EnumValue 1885437645 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Shipment and Atest in Seperate e-mail</source>
           <target>WZ i Atest w osobnym E-mail</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Document Sent Type - EnumValue Shipment and Atest in Seperate e-mail - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 4262805248 - EnumValue 3844911025 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -23180,13 +23134,13 @@
         </trans-unit>
         <trans-unit id="Enum 170834571 - EnumValue 1728521651 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Prod. Order</source>
-          <target>Prod. Order</target>
+          <target>Zlec. Prod.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Item Cat. Replen. System - EnumValue Prod. Order - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 170834571 - EnumValue 395510365 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Purchase</source>
-          <target>Purchase</target>
+          <target>Zakup</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Item Cat. Replen. System - EnumValue Purchase - Property Caption</note>
         </trans-unit>
@@ -23747,14 +23701,12 @@
           <source>Component</source>
           <target>Surowiec</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Sample Type - EnumValue Component - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 44920667 - EnumValue 1137027125 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Product</source>
           <target>Wyrób</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Sample Type - EnumValue Product - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 498156095 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
