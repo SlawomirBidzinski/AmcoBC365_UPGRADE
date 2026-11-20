@@ -15413,7 +15413,7 @@
         </trans-unit>
         <trans-unit id="TableExtension 1794201229 - Field 1503270023 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3891454143">
           <source>Control Transfer-To</source>
-          <target>Przesunięcie do<target>
+          <target>Przesunięcie do</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation. Target copied from source.</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC LocationExt - Field AMC Control Transfer-To - Property Caption</note>
