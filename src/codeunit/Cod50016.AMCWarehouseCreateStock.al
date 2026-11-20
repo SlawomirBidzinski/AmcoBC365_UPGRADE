@@ -1,5 +1,7 @@
 codeunit 50016 "AMC Warehouse Create Stock"
 {
+    Permissions = tabledata "Warehouse Entry" = rmid,
+                  tabledata "Reservation Entry" = rmid;
     procedure PostItemLine(SalesLine: Record "Sales Line"; PostedDocNo: Code[20])
     var
         ItemJnlLine: Record "Item Journal Line" temporary;
@@ -237,7 +239,7 @@ codeunit 50016 "AMC Warehouse Create Stock"
                 BinContent."Location Code" := LocactionSet;
                 BinContent."Bin Code" := BinSet;
                 BinContent."Zone Code" := 'PROBY';
-                BinContent."Bin Type Code" := 'ODPOBR';
+                BinContent.Validate("Bin Type Code", 'ODŁPOBR');
                 BinContent."Warehouse Class Code" := 'MS';
                 BinContent."Item No." := SalesLineRec."No.";
                 BinContent."Unit of Measure Code" := SalesLineRec."Unit of Measure Code";
