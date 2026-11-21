@@ -10113,6 +10113,26 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Posted Sales Shipment Ext. - Control AMCPriceCurr - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 4221948360 - Control 3172211549 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3013621822">
+          <source>Receipt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Posted Whse. Receipt Ext - Control AMCReceipt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 4221948360 - Control 222620933 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3013621822">
+          <source>Notes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Posted Whse. Receipt Ext - Control Notes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2221030860 - Control 4269056937 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2839142818">
+          <source>Shipment</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Posted Whse. Shipment Ext - Control AMCShipment - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2221030860 - Control 222620933 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2839142818">
+          <source>Notes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Posted Whse. Shipment Ext - Control Notes - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 611176647 - Control 433815886 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 881164414">
           <source>Item Blocked</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -10567,6 +10587,21 @@
           <source>Vendor Name</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Warehouse Put-aways - Control VendName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1269850881 - Control 3172211549 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2447066187">
+          <source>Receipt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Warehouse Receipt Ext - Control AMCReceipt - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 1269850881 - Control 222620933 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2447066187">
+          <source>Notes</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Warehouse Receipt Ext - Control Notes - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2638353790 - Control 4269056937 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2938519335">
+          <source>Shipment</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension AMC Warehouse Shipment - Control AMCShipment - Property Caption</note>
         </trans-unit>
         <trans-unit id="PageExtension 2638353790 - Control 222620933 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2938519335">
           <source>Notes</source>
@@ -19544,7 +19579,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC RW Transaction Type - EnumValue Utylizacja - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 44920667 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source></source>
+          <source> </source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum AMC Sample Type - EnumValue   - Property Caption</note>
         </trans-unit>

@@ -33,6 +33,24 @@ pageextension 50075 "AMC Warehouse Shipment List" extends "Warehouse Shipment Li
             {
                 ApplicationArea = All;
             }
+            field("AMC Create by User ID"; Rec."AMC Create by User ID")
+            {
+                ApplicationArea = All;
+            }
+            field("AMC Creation Date"; Rec."AMC Creation Date")
+            {
+                ApplicationArea = All;
+            }
+        }
+
+        modify("Assigned User ID")
+        {
+            Visible = false;
+        }
+
+        modify("Assignment Date")
+        {
+            Visible = false;
         }
     }
 }
