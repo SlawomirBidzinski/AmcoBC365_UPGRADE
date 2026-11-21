@@ -481,6 +481,18 @@ tableextension 50025 "AMC Item" extends Item
             TableRelation = "AMC Label";
             DataClassification = CustomerContent;
         }
+        field(50066; "AMC Location Code"; Code[20])
+        {
+            Caption = 'Location Code';
+            TableRelation = Location;
+            Description = 'Dodany do zgodnosci z szablonami zapasow, inaczej kod ITI pokazuje blad.';
+        }
+        field(50067; "AMC Sample Type"; Enum "AMC Sample Type")
+        {
+            Caption = 'Sample Type';
+            DataClassification = ToBeClassified;
+            Description = 'Dodany do zgodnosci z szablonami zapasow, inaczej kod ITI pokazuje blad.';
+        }
         field(50070; "AMC Ask for Calculate Date"; DateTime)
         {
             Caption = 'Data Zlecenia Wyceny';

@@ -2,7 +2,12 @@ tableextension 50013 "AMC Item Templ." extends "Item Templ."
 {
     fields
     {
-        field(50010; "AMC Sample Type"; Enum "AMC Sample Type")
+        field(50066; "AMC Location Code"; Code[20])
+        {
+            Caption = 'Location Code';
+            TableRelation = Location;
+        }
+        field(50067; "AMC Sample Type"; Enum "AMC Sample Type")
         {
             Caption = 'Sample Type';
             DataClassification = ToBeClassified;
@@ -21,11 +26,6 @@ tableextension 50013 "AMC Item Templ." extends "Item Templ."
                 if not ItemTemplate.IsEmpty then
                     Error(ExistingRecErrLbl, Rec."AMC Sample Type");
             end;
-        }
-        field(50011; "AMC Location Code"; Code[20])
-        {
-            Caption = 'Location Code';
-            TableRelation = Location;
         }
     }
 }
