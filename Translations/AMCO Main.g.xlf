@@ -18338,10 +18338,10 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Activity Line - Field AMC QC Status - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 1108439507 - Field 2424538617 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2624270058">
+        <trans-unit id="TableExtension 1108439507 - Field 1356311291 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2624270058">
           <source>Ilość w pojemniku</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Activity Line - Field AMC Qty on Bin - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Activity Line - Field AMC Qty in Bin - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1108439507 - Field 1916232469 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2624270058">
           <source>Ilość na Magazyn</source>

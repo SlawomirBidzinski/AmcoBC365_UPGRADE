@@ -52,7 +52,7 @@ tableextension 50082 "AMC Warehouse Activity Line" extends "Warehouse Activity L
             Caption = 'Ilość na Magazyn';
             FieldClass = FlowField;
         }
-        field(50005; "AMC Qty on Bin"; Decimal)
+        field(50005; "AMC Qty in Bin"; Decimal)
         {
             CalcFormula = sum("Warehouse Entry"."Qty. (Base)" where("Location Code" = field("Location Code"),
                                                                      "Zone Code" = field("Zone Code"),

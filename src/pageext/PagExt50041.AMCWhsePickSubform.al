@@ -33,7 +33,7 @@ pageextension 50041 "AMC Whse. Pick Subform" extends "Whse. Pick Subform"
                 ApplicationArea = All;
                 Style = Attention;
             }
-            field("AMC Qty on Bin"; Rec."AMC Qty on Bin")
+            field("AMC Qty in Bin"; Rec."AMC Qty in Bin")
             {
                 ApplicationArea = All;
                 Style = Attention;
