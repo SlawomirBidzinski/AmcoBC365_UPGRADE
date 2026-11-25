@@ -52,14 +52,13 @@ tableextension 50082 "AMC Warehouse Activity Line" extends "Warehouse Activity L
             Caption = 'Ilość na Magazyn';
             FieldClass = FlowField;
         }
-        field(50005; "AMC Qty in Bin"; Decimal)
+        field(50005; "AMC Qty in Bin/Lot"; Decimal)
         {
             CalcFormula = sum("Warehouse Entry"."Qty. (Base)" where("Location Code" = field("Location Code"),
-                                                                     "Zone Code" = field("Zone Code"),
                                                                      "Bin Code" = field("Bin Code"),
                                                                      "Item No." = field("Item No."),
                                                                      "Lot No." = field("Lot No.")));
-            Caption = 'Ilość w pojemniku';
+            Caption = 'Ilość w pojemniku/partii';
             DecimalPlaces = 2 : 5;
             Editable = false;
             FieldClass = FlowField;
@@ -241,6 +240,16 @@ tableextension 50082 "AMC Warehouse Activity Line" extends "Warehouse Activity L
             Caption = 'Item KJ Qty registered';
             DecimalPlaces = 0 : 3;
             Editable = false;
+        }
+        field(50012; "AMC Qty in Bin"; Decimal)
+        {
+            CalcFormula = sum("Warehouse Entry"."Qty. (Base)" where("Location Code" = field("Location Code"),
+                                                                     "Bin Code" = field("Bin Code"),
+                                                                     "Item No." = field("Item No.")));
+            Caption = 'Ilość w pojemniku';
+            DecimalPlaces = 2 : 5;
+            Editable = false;
+            FieldClass = FlowField;
         }
         field(50100; "AMC Terminal Quantity"; Decimal)
         {
@@ -492,7 +501,7 @@ tableextension 50082 "AMC Warehouse Activity Line" extends "Warehouse Activity L
         CreatePick: Codeunit "Create Pick";
         Confirmed: Boolean;
     begin
-//FIXME
+        //FIXME
 #if false
         //---AL.17Jul13 - Delete related Lines from Terminal
         with WhseActivLine do begin

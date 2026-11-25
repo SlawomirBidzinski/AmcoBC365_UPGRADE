@@ -4148,6 +4148,266 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Internal Transfer List - Action Transfer - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 814410315 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory Stage</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - NamedType 3994261301" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Operator %1 nie jest zdefiniowany w ustawieniach użytkownika</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - NamedType Text_001</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - NamedType 3356564684" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Operator %1 nie ma uprawnieñ do odczytu kartoteki zapasu w ustawieniach użytkownika</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - NamedType Text_002</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - NamedType 2718868067" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Należy wpierw wypełnić Datę Filta Przeterminowania</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - NamedType Text_003</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - NamedType 2081171450" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Należy najpierw wprowadzić pole:\Nowy Status KJ</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - NamedType Text_004</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - NamedType 1443474833" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nie oznaczono żadnej linii d aktualizacji statusu KJ</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - NamedType Text_005</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - NamedType 805778216" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Czy zaktualizować linie statusu KJ?\Ilość: %1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - NamedType Text_006</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - NamedType 168081599" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zaktualizowano liniie statusu KJ.\Ilość %1.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - NamedType Text_007</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - NamedType 1143596262" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zaniechano aktualizacji linii statusu KJ. </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - NamedType Text_008</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 3277932604 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>QC Status Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control CurrQCStatus - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 1693886691 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filtr daty przeterminowania</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control ExpDateFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 2310758687 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filtr zapasow przeterminowania</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control ExpFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 4151078276 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Global Sum</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control GlobalSum - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 3267737623 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Kod lokalizacji</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control LocationFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 2660535662 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New QC Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control NewQCStatus - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 3371900220 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Ext. Lot No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control AMC Ext. Lot No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 2468160904 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Item Description field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control AMC Item Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 2621587244 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Production Date field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control AMC Production Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 4292882995 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the QC Status field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control AMC QC Status - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 3021343849 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Set Item Control field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control AMC Set Item Control - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 3045335507 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if the entry has been fully invoiced or if more posted invoices are expected. Only completely invoiced entries can be revalued.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Completely Invoiced - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 555940972 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the adjusted cost, in LCY, of the quantity posting.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Cost Amount (Actual) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 1418046212 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the expected cost, in LCY, of the quantity posting.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Cost Amount (Expected) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a description of the entry.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 2480638018 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the line on the posted document that corresponds to the item ledger entry.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Document Line No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 486908828 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the document number on the entry. The document is the voucher that the entry was based on, for example, a receipt.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Document No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 883711285 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the entry, as assigned from the specified number series when the entry was created.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Entry No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 149522872 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies which type of transaction that the entry is created from.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Entry Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 1579714849 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the last date that the item on the line can be used.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Expiration Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 1303377601 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code for the global dimension that is linked to the record or entry for analysis purposes. Two global dimensions, typically for the company's most important activities, are available on all cards, documents, reports, and lists.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Global Dimension 1 Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 1337243520 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code for the global dimension that is linked to the record or entry for analysis purposes. Two global dimensions, typically for the company's most important activities, are available on all cards, documents, reports, and lists.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Global Dimension 2 Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 568743302 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the item in the entry.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Item No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 1908272084 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of the related job.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Job No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 2161572060 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code for the location that the entry is linked to.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Location Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 1482668068 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a lot number if the posted item carries such a number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Lot No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 4259830144 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies whether the entry has been fully applied to.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Open - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 3710982960 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the entry's posting date.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Posting Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 598040673 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the line number of the production order component.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Prod. Order Comp. Line No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 806193894 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the quantity per item unit of measure.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Qty. per Unit of Measure - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 2704404533 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of units of the item in the item entry.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 2367056265 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the quantity in the Quantity field that remains to be processed.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Remaining Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 2832544019 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Remaining Line Cost</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control RemainLineCost - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 2562415929 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies how many units of the item on the line have been reserved.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Reserved Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 1576505637 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code explaining why the item was returned.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Return Reason Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 47037625 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies a serial number if the posted item carries such a number.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Serial No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 2385270358 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies how each unit of the item or resource is measured, such as in pieces or hours. By default, the value in the Base Unit of Measure field on the item or resource card is inserted.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Unit of Measure Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 3770823853 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unit Line Cost</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control UnitLineCost - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Control 3450651614 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the variant of the item on the line.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Control Variant Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Action 1654298309 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Bin Content</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Action AMCBinContent - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Action 2798108316 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Kalkuluj Sumy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Action AMCCalculateSum - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Action 1665146601 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reset Item Control</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Action ResetItemControl - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 814410315 - Action 1665146601 - Method 1377591017 - NamedType 3764383116" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Do you want to set %1 for all items?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Inventory Stage - Action ResetItemControl - Method OnAction - NamedType ConfirmLbl</note>
+        </trans-unit>
         <trans-unit id="Page 4162536682 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Invoice PDF List</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -18342,6 +18602,11 @@
           <source>Ilość w pojemniku</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Activity Line - Field AMC Qty in Bin - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1108439507 - Field 1312735395 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2624270058">
+          <source>Ilość w pojemniku/partii</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Warehouse Activity Line - Field AMC Qty in Bin/Lot - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 1108439507 - Field 1916232469 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 2624270058">
           <source>Ilość na Magazyn</source>

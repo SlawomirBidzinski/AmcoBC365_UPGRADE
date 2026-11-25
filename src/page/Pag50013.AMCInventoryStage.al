@@ -7,6 +7,7 @@ page 50013 "AMC Inventory Stage"
     UsageCategory = Lists;
     InsertAllowed = false;
     DeleteAllowed = false;
+    Permissions = tabledata "Item Ledger Entry" = rmid;
 
     layout
     {
@@ -40,6 +41,7 @@ page 50013 "AMC Inventory Stage"
                 {
                     ApplicationArea = All;
                     Caption = 'Kod lokalizacji';
+                    TableRelation = Location;
 
                     trigger OnValidate()
                     begin
@@ -51,6 +53,7 @@ page 50013 "AMC Inventory Stage"
                 {
                     ApplicationArea = All;
                     Caption = 'QC Status Filter';
+                    TableRelation = "AMC QC Status";
 
                     trigger OnValidate()
                     begin
@@ -243,20 +246,30 @@ page 50013 "AMC Inventory Stage"
                 RunObject = page "Bin Content";
                 RunPageLink = "Location Code" = FIELD("Location Code"), "Item No." = FIELD("Item No."), "Lot No. Filter" = FIELD("Lot No.");
             }
+            action(ResetItemControl)
+            {
+                ApplicationArea = All;
+                Caption = 'Reset Item Control';
+                Image = ConsumptionJournal;
+
+                trigger OnAction()
+                var
+                    ConfirmLbl: Label 'Do you want to set %1 for all items?';
+                begin
+                    if not Confirm(StrSubstNo(ConfirmLbl, Rec.FieldCaption("AMC Set Item Control"))) then
+                        exit;
+
+                    ItemLedgerEntry.RESET();
+                    ItemLedgerEntry.SETCURRENTKEY("Item No.", "Location Code", "Lot No.", "AMC Set Item Control");
+                    ItemLedgerEntry.SETRANGE("AMC Set Item Control", TRUE);
+                    ItemLedgerEntry.ModifyAll("AMC Set Item Control", FALSE);
+                end;
+            }
         }
     }
 
     trigger OnOpenPage()
     begin
-        ItemLedgerEntry.RESET();
-        ItemLedgerEntry.SETCURRENTKEY("Item No.", "Location Code", "Lot No.", "AMC Set Item Control");
-        ItemLedgerEntry.SETRANGE("AMC Set Item Control", TRUE);
-        IF ItemLedgerEntry.FindSet() THEN
-            REPEAT
-                ItemLedgerEntry."AMC Set Item Control" := FALSE;
-                ItemLedgerEntry.MODIFY();
-            UNTIL ItemLedgerEntry.NEXT() = 0;
-
         UserSetup.RESET();
         UserSetup.SETRANGE("User ID", USERID);
         IF UserSetup.FINDFIRST() THEN BEGIN
@@ -368,61 +381,6 @@ page 50013 "AMC Inventory Stage"
                                       ItemLedgerEntry."Cost Amount (Actual)") *
                                       ItemLedgerEntry."Remaining Quantity" / ItemLedgerEntry.Quantity, 0.01);
             UNTIL ItemLedgerEntry.NEXT() = 0;
-    end;
-
-    local procedure UpdateKJStatus()
-    begin
-        MakeKJ_Update := FALSE;
-        UpdateLineNo := 0;
-
-        IF NewQCStatus = '' THEN
-            ERROR(Text_004);
-
-        ItemLedgerEntry.RESET();
-        ItemLedgerEntry.SETCURRENTKEY("Item No.", "Location Code", "Lot No.", "AMC Set Item Control");
-        ItemLedgerEntry.SETRANGE("AMC Set Item Control", TRUE);
-
-        IF CurrQCStatus <> '' THEN
-            ItemLedgerEntry.SETRANGE("AMC QC Status", CurrQCStatus);
-
-        IF LocationFilter <> '' THEN
-            ItemLedgerEntry.SETRANGE("Location Code", LocationFilter);
-
-        IF ItemLedgerEntry.FINDFIRST() THEN BEGIN
-            LineCount := ItemLedgerEntry.COUNT;
-            SetQuestion := STRSUBSTNO(Text_006, LineCount);
-            IF CONFIRM(SetQuestion, FALSE) THEN
-                MakeKJ_Update := TRUE
-            ELSE
-                ERROR(Text_008);
-        END ELSE
-            ERROR(Text_005);
-
-        IF MakeKJ_Update = TRUE THEN BEGIN
-
-            ItemLedgerEntry.RESET();
-            ItemLedgerEntry.SETCURRENTKEY("Item No.", "Location Code", "Lot No.", "AMC Set Item Control");
-            ItemLedgerEntry.SETRANGE("AMC Set Item Control", TRUE);
-
-            IF CurrQCStatus <> '' THEN
-                ItemLedgerEntry.SETRANGE("AMC QC Status", CurrQCStatus);
-
-            IF LocationFilter <> '' THEN
-                ItemLedgerEntry.SETRANGE("Location Code", LocationFilter);
-
-            IF ItemLedgerEntry.FindSet() THEN
-                REPEAT
-                    IF ItemLedgerEntry."AMC QC Status" <> NewQCStatus THEN BEGIN
-
-                        ItemLedgerEntry."AMC QC Status" := NewQCStatus;
-                        ItemLedgerEntry.MODIFY();
-                        UpdateLineNo := UpdateLineNo + 1;
-                    END;
-
-                UNTIL ItemLedgerEntry.NEXT() = 0;
-        END;
-
-        MESSAGE(Text_007, UpdateLineNo);
     end;
 
     var
