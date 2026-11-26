@@ -2,7 +2,7 @@ page 50049 "AMC Item Forecast Planning"
 {
     ApplicationArea = All;
     Caption = 'Item Forecast Planning';
-    PageType = List;
+    PageType = Document;
     SourceTable = "AMC Forecast Planning";
 
     layout
@@ -20,13 +20,11 @@ page 50049 "AMC Item Forecast Planning"
                         ApplicationArea = All;
                         Editable = false;
                         Caption = 'Nazwa Prognozy Produkcji';
-                        Importance = Additional;
                     }
                     field(SetYear; SetYear)
                     {
                         ApplicationArea = All;
                         Caption = 'Year';
-                        Importance = Additional;
                         trigger OnValidate()
                         begin
                             UpdateForecast();
@@ -37,7 +35,7 @@ page 50049 "AMC Item Forecast Planning"
                     {
                         ApplicationArea = All;
                         Caption = 'Week';
-                        Importance = Additional;
+
                         trigger OnValidate()
                         begin
                             UpdateForecast();
@@ -50,14 +48,12 @@ page 50049 "AMC Item Forecast Planning"
                         ApplicationArea = All;
                         Editable = false;
                         Caption = 'From';
-                        Importance = Additional;
                     }
                     field(SetDateTo; SetDateTo)
                     {
                         ApplicationArea = All;
                         Editable = false;
                         Caption = 'To';
-                        Importance = Additional;
                     }
                     field(LowItemLevel; LowItemLevel)
                     {
@@ -93,7 +89,6 @@ page 50049 "AMC Item Forecast Planning"
                     {
                         Caption = 'Set Monday';
                         ApplicationArea = All;
-                        Importance = Additional;
                         Style = StrongAccent;
                         trigger OnValidate()
                         begin
@@ -104,7 +99,6 @@ page 50049 "AMC Item Forecast Planning"
                     {
                         Caption = 'Set Tuesday';
                         ApplicationArea = All;
-                        Importance = Additional;
                         Style = StrongAccent;
                         trigger OnValidate()
                         begin
@@ -115,7 +109,7 @@ page 50049 "AMC Item Forecast Planning"
                     {
                         Caption = 'Set Wednesday';
                         ApplicationArea = All;
-                        Importance = Additional;
+
                         Style = StrongAccent;
                         trigger OnValidate()
                         begin
@@ -126,7 +120,7 @@ page 50049 "AMC Item Forecast Planning"
                     {
                         Caption = 'Set Thursday';
                         ApplicationArea = All;
-                        Importance = Additional;
+
                         Style = StrongAccent;
 
                         trigger OnValidate()
@@ -138,7 +132,7 @@ page 50049 "AMC Item Forecast Planning"
                     {
                         Caption = 'Set Friday';
                         ApplicationArea = All;
-                        Importance = Additional;
+
                         Style = StrongAccent;
                         trigger OnValidate()
                         begin
@@ -149,7 +143,7 @@ page 50049 "AMC Item Forecast Planning"
                     {
                         Caption = 'Set Saturday';
                         ApplicationArea = All;
-                        Importance = Additional;
+
                         Style = StrongAccent;
                         trigger OnValidate()
                         begin
@@ -160,7 +154,7 @@ page 50049 "AMC Item Forecast Planning"
                     {
                         Caption = 'Set Sunday';
                         ApplicationArea = All;
-                        Importance = Additional;
+
                         Style = StrongAccent;
                         trigger OnValidate()
                         begin
@@ -555,6 +549,14 @@ page 50049 "AMC Item Forecast Planning"
                         ForecPlanning.SETRANGE("Forecast Code", SetForecastCode);
                         ForecPlanning.SETRANGE(Year, SetYear);
                         ForecPlanning.SETRANGE("Week No.", SetWeekNo);
+                        ForecPlanning.SetRange("Item No.", '');
+                        ForecPlanning.DeleteAll();
+
+                        ForecPlanning.RESET();
+                        ForecPlanning.SETRANGE("Forecast Code", SetForecastCode);
+                        ForecPlanning.SETRANGE(Year, SetYear);
+                        ForecPlanning.SETRANGE("Week No.", SetWeekNo);
+                        ForecPlanning.SetFilter("Item No.", '<>%1', '');
                         IF ForecPlanning.FINDFIRST() THEN BEGIN
                             Question2 := STRSUBSTNO(Text_008, SetYear, SetWeekNo);
                             IF NOT CONFIRM(Question2, TRUE) THEN
@@ -1156,7 +1158,7 @@ page 50049 "AMC Item Forecast Planning"
         SetForecastCode := Rec."Forecast Code";
         if SetForecastCode = '' then
             SetForecastCode := SalesSetup."AMC Production Forecast Code";
-            
+
         SetYear := Rec.Year;
         if SetYear = 0 then
             SetYear := DATE2DWY(WORKDATE(), 3);
