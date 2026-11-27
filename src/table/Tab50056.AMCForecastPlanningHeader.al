@@ -134,7 +134,7 @@ table 50056 "AMC Forecast Planning Header"
         {
             Caption = 'Potw. Pn';
         }
-        field(112; "Set Tuesdy"; Boolean)
+        field(112; "Set Tuesday"; Boolean)
         {
             Caption = 'Potw. Wt';
         }
@@ -233,12 +233,6 @@ table 50056 "AMC Forecast Planning Header"
         SalesSetup.TESTFIELD("AMC Production Forecast Code");
         if Rec."Forecast Code" = '' then
             Rec."Forecast Code" := SalesSetup."AMC Production Forecast Code";
-
-        if Rec.Year = 0 then
-            Rec.Year := Date2DMY(WorkDate(), 3);
-
-        if Rec."Week No." = 0 then
-            Rec."Week No." := Date2DWY(WorkDate(), 2);
     end;
 
     trigger OnInsert()
@@ -257,6 +251,31 @@ table 50056 "AMC Forecast Planning Header"
             while ForecastPlanningHdr.Get("No.") do
                 "No." := NoSeries.GetNextNo("No. Series");
         end;
+    end;
+
+    trigger OnDelete()
+    var
+        ForecastPlanningLine: Record "AMC Forecast Planning Line";
+    begin
+        ForecastPlanningLine.Reset();
+        ForecastPlanningLine.SETRANGE("Forecast Planning No.", Rec."No.");
+        ForecastPlanningLine.DeleteAll(true);
+    end;
+
+    local procedure UpdateLine()
+    begin
+        Rec.CALCFIELDS("Total Week Forecast", "Total Monday", "Total Tuesdey", "Total Wednesday", "Total Thursday", "Total Friday",
+         "Total Saturday", "Total Sunday");
+        //rec.CalcFields("Date Filter CM", "Date Filter CM-1M", "Date Filter CM-2M", "Date Filter CM-3M", "Date Filter CM-4M", "Date Filter 5M");
+
+        /*RemainingForecast := Rec."Week Forecast Qty"
+                           - Rec.Monday
+                           - Rec.Tuesday
+                           - Rec.Wednesday
+                           - Rec.Thursday
+                           - Rec.Friday
+                           - Rec.Saturday
+                           - Rec.Sunday; */
     end;
 
     var

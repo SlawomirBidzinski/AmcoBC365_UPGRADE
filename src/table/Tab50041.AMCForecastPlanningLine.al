@@ -54,11 +54,15 @@ table 50041 "AMC Forecast Planning Line"
             TableRelation = Item;
 
             trigger OnValidate()
+            var
+                PrevForecEntry: Record "AMC Forecast Planning Line";
+                Item: Record Item;
+                ItemDimension: Record "AMC Item Dimension";
             begin
-                /* if ItemRec.GET("Item No.") then begin
-                    "Item Description" := ItemRec.Description;
-                    "Base Unit of Measure" := ItemRec."Base Unit of Measure";
-                    "Pack Unit of Measure" := ItemRec."AMC Pack Unit of Measure";
+                if Item.GET("Item No.") then begin
+                    "Item Description" := Item.Description;
+                    "Base Unit of Measure" := Item."Base Unit of Measure";
+                    "Pack Unit of Measure" := Item."AMC Pack Unit of Measure";
 
                     ItemDimension.RESET();
                     ItemDimension.SETRANGE("Item No.", "Item No.");
@@ -75,7 +79,7 @@ table 50041 "AMC Forecast Planning Line"
 
                     if "Forecast Remarks" = '' then begin
                         PrevForecEntry.RESET();
-                        PrevForecEntry.SETRANGE("Item No.", ItemRec."No.");
+                        PrevForecEntry.SETRANGE("Item No.", Item."No.");
                         if "Week No." > 1 then begin
                             PrevForecEntry.SETRANGE(Year, Year);
                             PrevForecEntry.SETRANGE("Week No.", "Week No." - 1);
@@ -85,7 +89,7 @@ table 50041 "AMC Forecast Planning Line"
                             if PrevForecEntry."Forecast Remarks" <> '' then
                                 "Forecast Remarks" := PrevForecEntry."Forecast Remarks";
                     end;
-                end; */
+                end;
             end;
         }
         field(10; "Item Description"; Text[100])
@@ -377,9 +381,6 @@ table 50041 "AMC Forecast Planning Line"
     var
         SalesSetup: Record "Sales & Receivables Setup";
         ForecPlanning: Record "AMC Forecast Planning Line";
-        PrevForecEntry: Record "AMC Forecast Planning Line";
-        ItemRec: Record Item;
-        ItemDimension: Record "AMC Item Dimension";
         DimValueTrans: Record "AMC Dimension Value Transl.";
 
     procedure CalcForecast()

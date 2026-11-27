@@ -4,7 +4,6 @@ page 50049 "AMC Item Forecast Plan. Card"
     Caption = 'Item Forecast Planning Card';
     PageType = Document;
     SourceTable = "AMC Forecast Planning Header";
-    DelayedInsert = true;
 
     layout
     {
@@ -158,77 +157,73 @@ page 50049 "AMC Item Forecast Plan. Card"
                         end;
                     }
                 }
-                group(TotalWeek)
-                {
-                    ShowCaption = false;
-
-                    field("Total Monday"; Rec."Total Monday")
-                    {
-                        Caption = 'Total Monday';
-                        ApplicationArea = All;
-                        Editable = false;
-                        Style = StrongAccent;
-                    }
-                    field("Total Tuesday"; Rec."Total Tuesdey")
-                    {
-                        Caption = 'Total Tuesday';
-                        ApplicationArea = All;
-                        Editable = false;
-                        Style = StrongAccent;
-                    }
-                    field("Total Wednesday"; Rec."Total Wednesday")
-                    {
-                        Caption = 'Total Wednesday';
-                        ApplicationArea = All;
-                        Editable = false;
-                        Style = StrongAccent;
-                    }
-                    field("Total Thursday"; Rec."Total Thursday")
-                    {
-                        Caption = 'Total Thursday';
-                        ApplicationArea = All;
-                        Editable = false;
-                        Style = StrongAccent;
-                    }
-                    field("Total Friday"; Rec."Total Friday")
-                    {
-                        Caption = 'Total Friday';
-                        ApplicationArea = All;
-                        Editable = false;
-                        Style = StrongAccent;
-                    }
-                }
-                group(TotalWeek2)
-                {
-
-                    ShowCaption = false;
-
-                    field("Total Saturday"; Rec."Total Saturday")
-                    {
-                        Caption = 'Razem Sb.';
-                        ApplicationArea = All;
-                        Editable = false;
-                        Style = StrongAccent;
-                    }
-                    field("Total Sunday"; Rec."Total Sunday")
-                    {
-                        Caption = 'Razem Ni.';
-                        ApplicationArea = All;
-                        Editable = false;
-                        Style = StrongAccent;
-                    }
-                    field("Total Week Forecast"; Rec."Total Week Forecast")
-                    {
-                        Caption = 'Zapl. w tygod.';
-                        ApplicationArea = All;
-                        Editable = false;
-                        Style = StrongAccent;
-                    }
-
-                }
             }
+            group(TotalWeek)
+            {
+                Caption = 'Week';
+
+                field("Total Monday"; Rec."Total Monday")
+                {
+                    Caption = 'Total Monday';
+                    ApplicationArea = All;
+                    Editable = false;
+                    Style = StrongAccent;
+                }
+                field("Total Tuesday"; Rec."Total Tuesdey")
+                {
+                    Caption = 'Total Tuesday';
+                    ApplicationArea = All;
+                    Editable = false;
+                    Style = StrongAccent;
+                }
+                field("Total Wednesday"; Rec."Total Wednesday")
+                {
+                    Caption = 'Total Wednesday';
+                    ApplicationArea = All;
+                    Editable = false;
+                    Style = StrongAccent;
+                }
+                field("Total Thursday"; Rec."Total Thursday")
+                {
+                    Caption = 'Total Thursday';
+                    ApplicationArea = All;
+                    Editable = false;
+                    Style = StrongAccent;
+                }
+                field("Total Friday"; Rec."Total Friday")
+                {
+                    Caption = 'Total Friday';
+                    ApplicationArea = All;
+                    Editable = false;
+                    Style = StrongAccent;
+                }
+                field("Total Saturday"; Rec."Total Saturday")
+                {
+                    Caption = 'Razem Sb.';
+                    ApplicationArea = All;
+                    Editable = false;
+                    Style = StrongAccent;
+                }
+                field("Total Sunday"; Rec."Total Sunday")
+                {
+                    Caption = 'Razem Ni.';
+                    ApplicationArea = All;
+                    Editable = false;
+                    Style = StrongAccent;
+                }
+                field("Total Week Forecast"; Rec."Total Week Forecast")
+                {
+                    Caption = 'Zapl. w tygod.';
+                    ApplicationArea = All;
+                    Editable = false;
+                    Style = StrongAccent;
+                }
+
+            }
+
             part("AMC Forecast Planning Subpage"; "AMC Forecast Planning Subpage")
             {
+                Caption = 'Items';
                 SubPageLink = "Forecast Planning No." = field("No.");
                 ApplicationArea = All;
             }
@@ -316,58 +311,58 @@ page 50049 "AMC Item Forecast Plan. Card"
                     Image = Interaction;
 
                     trigger OnAction()
+                    var
+                        ForecastPlanningLine: Record "AMC Forecast Planning Line";
+                        Item: Record Item;
+                        ItemCategory: Record "Item Category";
+                        Text001: Label 'Zaniechano Inicjowania Linii Prognozy';
+                        Text002: Label 'W okresie %1/%2 znaleziono wygenerowaną prognozę,\czy uzupełnić brakujące linie?';
                     begin
-                        /* ForecPlanning.RESET();
-                        ForecPlanning.SETRANGE("Forecast Code", SetForecastCode);
-                        ForecPlanning.SETRANGE(Year, Rec.Year);
-                        ForecPlanning.SETRANGE("Week No.", Rec."Week No.");
-                        ForecPlanning.SetRange("Item No.", '');
-                        ForecPlanning.DeleteAll();
+                        ForecastPlanningLine.RESET();
+                        ForecastPlanningLine.SETRANGE("Forecast Planning No.", Rec."No.");
+                        ForecastPlanningLine.SetRange("Item No.", '');
+                        ForecastPlanningLine.DeleteAll();
 
-                        ForecPlanning.RESET();
-                        ForecPlanning.SETRANGE("Forecast Code", SetForecastCode);
-                        ForecPlanning.SETRANGE(Year, Rec.Year);
-                        ForecPlanning.SETRANGE("Week No.", Rec."Week No.");
-                        ForecPlanning.SetFilter("Item No.", '<>%1', '');
-                        IF ForecPlanning.FINDFIRST() THEN BEGIN
-                            Question2 := STRSUBSTNO(Text_008, Rec.Year, Rec."Week No.");
-                            IF NOT CONFIRM(Question2, TRUE) THEN
-                                ERROR('Zaniechano Inicjowania Linii Prognozy');
+                        ForecastPlanningLine.SetFilter("Item No.", '<>%1', '');
+                        IF not ForecastPlanningLine.IsEmpty THEN BEGIN
+                            IF NOT Confirm(StrSubstNo(Text002, Rec.Year, Rec."Week No."), TRUE) THEN
+                                Error(Text001);
                         END;
 
-                        IF (Rec.Year <> 0) AND (Rec."Week No." <> 0) AND (SetForecastCode <> '') THEN BEGIN
-                            ItemRec.RESET();
-                            ItemRec.SETRANGE(Blocked, FALSE);
-                            ItemRec.SETRANGE("Replenishment System", ItemRec."Replenishment System"::"Prod. Order");
-                            IF ItemRec.FINDSet() THEN
-                                REPEAT
-                                    IF (ItemRec."AMC Item Type" <> ItemRec."AMC Item Type"::Próba) AND
-                                       (ItemRec."AMC Item Type" <> ItemRec."AMC Item Type"::" ") AND
-                                       (ItemRec."AMC Out Off Item List" = FALSE) THEN BEGIN
+                        if (Rec."Forecast Code" = '') or (Rec.Year = 0) or (Rec."Week No." = 0) then
+                            exit;
 
-                                        ItemRec.TESTFIELD("Item Category Code");
-                                        ForecPlanning.RESET();
-                                        ForecPlanning.SETRANGE("Forecast Code", SetForecastCode);
-                                        ForecPlanning.SETRANGE(Year, Rec.Year);
-                                        ForecPlanning.SETRANGE("Week No.", Rec."Week No.");
-                                        ForecPlanning.SETRANGE("Item No.", ItemRec."No.");
-                                        IF NOT ForecPlanning.FINDFIRST() THEN BEGIN
-                                            Rec.INIT();
-                                            Rec."Forecast Code" := SetForecastCode;
-                                            Rec.Year := Rec.Year;
-                                            Rec."Week No." := Rec."Week No.";
-                                            Rec."Week From Day" := SetDateFrom;
-                                            Rec."Previous Week From Date" := CALCDATE('<-7D>', SetDateFrom);
-                                            ItemCategory.RESET();
-                                            IF ItemCategory.GET(ItemRec."Item Category Code") THEN
-                                                Rec."Location Code" := ItemCategory."AMC Planning Location";
+                        Item.RESET();
+                        Item.SETRANGE(Blocked, FALSE);
+                        Item.SETRANGE("Replenishment System", Item."Replenishment System"::"Prod. Order");
+                        IF Item.FindSet() THEN
+                            REPEAT
+                                IF (Item."AMC Item Type" <> Item."AMC Item Type"::Próba) AND
+                                   (Item."AMC Item Type" <> Item."AMC Item Type"::" ") AND
+                                   (not Item."AMC Out Off Item List") THEN BEGIN
 
-                                            Rec.VALIDATE("Item No.", ItemRec."No.");
-                                            Rec.INSERT();
-                                        END;
+                                    Item.TESTFIELD("Item Category Code");
+                                    ForecastPlanningLine.RESET();
+                                    ForecastPlanningLine.SETRANGE("Forecast Planning No.", Rec."No.");
+                                    ForecastPlanningLine.SETRANGE("Item No.", Item."No.");
+                                    IF ForecastPlanningLine.IsEmpty THEN BEGIN
+                                        ForecastPlanningLine.Init();
+                                        ForecastPlanningLine."Forecast Planning No." := Rec."No.";
+                                        ForecastPlanningLine."Forecast Code" := Rec."No.";
+                                        ForecastPlanningLine.Year := Rec.Year;
+                                        ForecastPlanningLine."Week No." := Rec."Week No.";
+                                        ForecastPlanningLine."Week Starting Date" := Rec."Week Starting Date";
+                                        ForecastPlanningLine."Week Ending Date" := Rec."Week Ending Date";
+                                        ForecastPlanningLine."Previous Week From Date" := Rec."Previous Week From Date";
+
+                                        IF ItemCategory.GET(Item."Item Category Code") THEN
+                                            ForecastPlanningLine."Location Code" := ItemCategory."AMC Planning Location";
+
+                                        ForecastPlanningLine.Validate("Item No.", Item."No.");
+                                        ForecastPlanningLine.Insert();
                                     END;
-                                UNTIL ItemRec.NEXT() = 0;
-                        END; */
+                                END;
+                            UNTIL Item.NEXT() = 0;
                     end;
                 }
                 action(Update)
@@ -378,555 +373,87 @@ page 50049 "AMC Item Forecast Plan. Card"
 
                     trigger OnAction()
                     var
+                        ForecastPlanningLine: Record "AMC Forecast Planning Line";
+                        Text001: Label 'Zapas %1 posiada nierozpisaną ilość planowania.\ Czy kontynuować?';
                         ConfirmText: Text[200];
                         OldQty: Decimal;
                     begin
-                        /* //---AL.06Jun13
                         ProdOrderTemp.RESET();
                         ProdOrderTemp.DELETEALL();
                         CLEAR(ProdOrderTemp);
-                        //---AL.06Jun13
 
                         ContrForRemain := FALSE;
 
-                        ForecastPlanning.RESET();
-                        ForecastPlanning.SETRANGE("Forecast Code", Rec."Forecast Code");
-                        ForecastPlanning.SETRANGE(Year, Rec.Year);
-                        ForecastPlanning.SETRANGE("Week No.", Rec."Week No.");
-                        ForecastPlanning.SETFILTER("Week Forecast Qty", '<>0');
-
-                        IF ForecastPlanning.FINDSet() THEN
+                        ForecastPlanningLine.RESET();
+                        ForecastPlanningLine.SETRANGE("Forecast Planning No.", Rec."No.");
+                        ForecastPlanningLine.SETFILTER("Week Forecast Qty", '<>0');
+                        IF ForecastPlanningLine.FindSet() THEN
                             REPEAT
-                                RemainForec := ForecastPlanning."Week Forecast Qty"
-                                                 - ForecastPlanning.Monday
-                                                 - ForecastPlanning.Tuesday
-                                                 - ForecastPlanning.Wednesday
-                                                 - ForecastPlanning.Thursday
-                                                 - ForecastPlanning.Friday
-                                                 - ForecastPlanning.Saturday
-                                                 - ForecastPlanning.Sunday;
+                                RemainForec := ForecastPlanningLine."Week Forecast Qty"
+                                                 - ForecastPlanningLine.Monday
+                                                 - ForecastPlanningLine.Tuesday
+                                                 - ForecastPlanningLine.Wednesday
+                                                 - ForecastPlanningLine.Thursday
+                                                 - ForecastPlanningLine.Friday
+                                                 - ForecastPlanningLine.Saturday
+                                                 - ForecastPlanningLine.Sunday;
 
                                 IF RemainForec <> 0 THEN BEGIN
-                                    ConfirmText := STRSUBSTNO(Text_003, ForecastPlanning."Item No.");
+                                    ConfirmText := STRSUBSTNO(Text001, ForecastPlanningLine."Item No.");
                                     IF CONFIRM(ConfirmText, FALSE) THEN
                                         ContrForRemain := TRUE
                                 END;
-                            UNTIL (ForecastPlanning.NEXT() = 0) OR (ContrForRemain = TRUE);
+                            UNTIL (ForecastPlanningLine.NEXT() = 0) OR (ContrForRemain);
 
                         CLEAR(ProdDate);
                         InitProductDate();
                         MfgSetup.GET();
 
-                        ForecastPlanning.RESET();
-                        ForecastPlanning.SETRANGE("Forecast Code", Rec."Forecast Code");
-                        ForecastPlanning.SETRANGE(Year, Rec.Year);
-                        ForecastPlanning.SETRANGE("Week No.", Rec."Week No.");
-                        ForecastPlanning.SETFILTER("Week Forecast Qty", '<>0');
-                        IF ForecastPlanning.FINDSet() THEN
+                        ForecastPlanningLine.RESET();
+                        ForecastPlanningLine.SETRANGE("Forecast Planning No.", Rec."No.");
+                        ForecastPlanningLine.SETFILTER("Week Forecast Qty", '<>0');
+                        IF ForecastPlanningLine.FindSet() THEN
                             REPEAT
-                                IF ForecastPlanning.Monday <> 0 THEN BEGIN
+                                IF ForecastPlanningLine.Monday <> 0 THEN
+                                    UpdateProdOrder(Rec."Set Monday", ForecastPlanningLine.Monday, ForecastPlanningLine);
 
-                                    ProdOrder.RESET();
-                                    ProdOrder.SETRANGE("AMC Forecast Planning Year", ForecastPlanning.Year);
-                                    ProdOrder.SETRANGE("AMC Forecast Planning Week", ForecastPlanning."Week No.");
-                                    ProdOrder.SETRANGE("Source Type", ProdOrder."Source Type"::Item);
-                                    ProdOrder.SETRANGE("Source No.", ForecastPlanning."Item No.");
-                                    ProdOrder.SETRANGE("Due Date", ProdDate[1]);
-                                    IF ProdOrder.FINDFIRST() THEN BEGIN
-                                        //---AL.05Jun13
-                                        OldQty := ProdOrder.Quantity;
-                                        //+++AL.05Jun13
-                                        ProdOrder.VALIDATE(Quantity, ForecastPlanning.Monday);
-                                        ProdOrder."Last Date Modified" := WORKDATE();
-                                        ProdOrder."AMC Planning Creation User Id" := USERID;
-                                        ProdOrder."AMC Forecast Order" := NOT ForecastPlanning."Set Monday";
-                                        ProdOrder.MODIFY();
-                                        //---AL.03Jan13
-                                        IF OldQty <> ProdOrder.Quantity THEN
-                                            RefreshOrder(ProdOrder);
-                                        //+++AL.03Jan13
-                                    END ELSE BEGIN
-                                        ProdOrder.INIT();
-                                        ProdOrder.Status := ProdOrder.Status::"Firm Planned";
+                                IF ForecastPlanningLine.Tuesday <> 0 THEN
+                                    UpdateProdOrder(Rec."Set Tuesday", ForecastPlanningLine.Tuesday, ForecastPlanningLine);
 
-                                        ProdOrder."No." := NoSeriesMgt.GetNextNo(
-                                            MfgSetup."Firm Planned Order Nos.",
-                                            ProdOrder."Due Date", true);
-                                        ProdOrder."No. Series" := MfgSetup."Firm Planned Order Nos.";
+                                IF ForecastPlanningLine.Wednesday <> 0 Then
+                                    UpdateProdOrder(Rec."Set Wednesday", ForecastPlanningLine.Wednesday, ForecastPlanningLine);
 
-                                        ProdOrder."Location Code" := ForecastPlanning."Location Code";
-                                        ProdOrder."Source Type" := ProdOrder."Source Type"::Item;
-                                        ProdOrder.VALIDATE("Source No.", ForecastPlanning."Item No.");
-                                        ProdOrder."AMC Update End Time" := TRUE;
-                                        ProdOrder.INSERT();
+                                IF ForecastPlanningLine.Thursday <> 0 THEN
+                                    UpdateProdOrder(Rec."Set Thursday", ForecastPlanningLine.Thursday, ForecastPlanningLine);
 
-                                        ProdOrder.VALIDATE("Due Date", ProdDate[1]);
-                                        ProdOrder.VALIDATE(Quantity, ForecastPlanning.Monday);
+                                IF ForecastPlanningLine.Friday <> 0 THEN
+                                    UpdateProdOrder(Rec."Set Friday", ForecastPlanningLine.Friday, ForecastPlanningLine);
 
-                                        ProdOrder."AMC Forecast Planning Year" := ForecastPlanning.Year;
-                                        ProdOrder."AMC Forecast Planning Week" := ForecastPlanning."Week No.";
-                                        ProdOrder."AMC Planning Creation User Id" := USERID;
-                                        ProdOrder."AMC Forecast Order" := NOT ForecastPlanning."Set Monday";
-                                        ProdOrder."Creation Date" := WORKDATE();
-                                        ProdOrder."Last Date Modified" := WORKDATE();
-                                        ProdOrder."AMC Planning Creation Date" := WORKDATE();
-                                        ProdOrder."Starting Time" := MfgSetup."Normal Starting Time";
-                                        ProdOrder."Ending Time" := MfgSetup."Normal Ending Time";
-                                        ProdOrder."Starting Date-Time" := CREATEDATETIME(ProdOrder."Starting Date", ProdOrder."Starting Time");
-                                        ProdOrder."Ending Date-Time" := CREATEDATETIME(ProdOrder."Ending Date", ProdOrder."Ending Time");
+                                IF ForecastPlanningLine.Saturday <> 0 THEN
+                                    UpdateProdOrder(Rec."Set Saturday", ForecastPlanningLine.Saturday, ForecastPlanningLine);
 
-                                        ProdOrder.MODIFY();
-                                        //---AL.03Jan13
-                                        RefreshOrder(ProdOrder);
-                                        //+++AL.03Jan13
-
-                                    END;
-                                END;
-
-                                IF ForecastPlanning.Tuesday <> 0 THEN BEGIN
-
-                                    ProdOrder.RESET();
-                                    ProdOrder.SETRANGE("AMC Forecast Planning Year", ForecastPlanning.Year);
-                                    ProdOrder.SETRANGE("AMC Forecast Planning Week", ForecastPlanning."Week No.");
-                                    ProdOrder.SETRANGE("Source Type", ProdOrder."Source Type"::Item);
-                                    ProdOrder.SETRANGE("Source No.", ForecastPlanning."Item No.");
-                                    ProdOrder.SETRANGE("Due Date", ProdDate[2]);
-                                    IF ProdOrder.FINDFIRST() THEN BEGIN
-                                        //---AL.05Jun13
-                                        OldQty := ProdOrder.Quantity;
-                                        //+++AL.05Jun13
-
-                                        ProdOrder.VALIDATE(Quantity, ForecastPlanning.Tuesday);
-                                        ProdOrder."Last Date Modified" := WORKDATE();
-                                        ProdOrder."AMC Planning Creation User Id" := USERID;
-                                        ProdOrder."AMC Forecast Order" := NOT ForecastPlanning."Set Tuesdy";
-                                        ProdOrder.MODIFY();
-                                        //---AL.03Jan13
-                                        IF OldQty <> ProdOrder.Quantity THEN
-                                            RefreshOrder(ProdOrder);
-                                        //+++AL.03Jan13
-                                    END ELSE BEGIN
-                                        ProdOrder.INIT();
-                                        ProdOrder.Status := ProdOrder.Status::"Firm Planned";
-
-                                        ProdOrder."No." := NoSeriesMgt.GetNextNo(MfgSetup."Firm Planned Order Nos.", ProdOrder."Due Date", true);
-                                        ProdOrder."No. Series" := MfgSetup."Firm Planned Order Nos.";
-
-                                        ProdOrder."Location Code" := ForecastPlanning."Location Code";
-                                        ProdOrder."Source Type" := ProdOrder."Source Type"::Item;
-                                        ProdOrder.VALIDATE("Source No.", ForecastPlanning."Item No.");
-                                        ProdOrder."AMC Update End Time" := TRUE;
-
-                                        ProdOrder.INSERT();
-                                        ProdOrder.VALIDATE("Due Date", ProdDate[2]);
-                                        ProdOrder.VALIDATE(Quantity, ForecastPlanning.Tuesday);
-
-                                        ProdOrder."AMC Forecast Planning Year" := ForecastPlanning.Year;
-                                        ProdOrder."AMC Forecast Planning Week" := ForecastPlanning."Week No.";
-                                        ProdOrder."AMC Planning Creation User Id" := USERID;
-                                        ProdOrder."AMC Forecast Order" := NOT ForecastPlanning."Set Tuesdy";
-                                        ProdOrder."Creation Date" := WORKDATE();
-                                        ProdOrder."Last Date Modified" := WORKDATE();
-                                        ProdOrder."AMC Planning Creation Date" := WORKDATE();
-                                        ProdOrder."Starting Time" := MfgSetup."Normal Starting Time";
-                                        ProdOrder."Ending Time" := MfgSetup."Normal Ending Time";
-                                        ProdOrder."Starting Date-Time" := CREATEDATETIME(ProdOrder."Starting Date", ProdOrder."Starting Time");
-                                        ProdOrder."Ending Date-Time" := CREATEDATETIME(ProdOrder."Ending Date", ProdOrder."Ending Time");
-
-                                        ProdOrder.MODIFY();
-                                        //---AL.03Jan13
-                                        RefreshOrder(ProdOrder);
-                                        //+++AL.03Jan13
-                                    END;
-                                END;
-
-                                IF ForecastPlanning.Wednesday <> 0 THEN BEGIN
-                                    ProdOrder.RESET();
-                                    ProdOrder.SETRANGE("AMC Forecast Planning Year", ForecastPlanning.Year);
-                                    ProdOrder.SETRANGE("AMC Forecast Planning Week", ForecastPlanning."Week No.");
-                                    ProdOrder.SETRANGE("Source Type", ProdOrder."Source Type"::Item);
-                                    ProdOrder.SETRANGE("Source No.", ForecastPlanning."Item No.");
-                                    ProdOrder.SETRANGE("Due Date", ProdDate[3]);
-                                    IF ProdOrder.FINDFIRST() THEN BEGIN
-                                        //---AL.05Jun13
-                                        OldQty := ProdOrder.Quantity;
-                                        //+++AL.05Jun13
-
-                                        ProdOrder.VALIDATE(Quantity, ForecastPlanning.Wednesday);
-                                        ProdOrder."Last Date Modified" := WORKDATE();
-                                        ProdOrder."AMC Planning Creation User Id" := USERID;
-                                        ProdOrder."AMC Forecast Order" := NOT ForecastPlanning."Set Wednesday";
-                                        ProdOrder.MODIFY();
-                                        //---AL.03Jan13
-                                        IF OldQty <> ProdOrder.Quantity THEN
-                                            RefreshOrder(ProdOrder);
-                                        //+++AL.03Jan13
-
-                                    END ELSE BEGIN
-                                        ProdOrder.INIT();
-                                        ProdOrder.Status := ProdOrder.Status::"Firm Planned";
-
-                                        ProdOrder."No." := NoSeriesMgt.GetNextNo(MfgSetup."Firm Planned Order Nos.", ProdOrder."Due Date", true);
-                                        ProdOrder."No. Series" := MfgSetup."Firm Planned Order Nos.";
-
-                                        ProdOrder."Location Code" := ForecastPlanning."Location Code";
-                                        ProdOrder."Source Type" := ProdOrder."Source Type"::Item;
-                                        ProdOrder.VALIDATE("Source No.", ForecastPlanning."Item No.");
-                                        ProdOrder."AMC Update End Time" := TRUE;
-                                        ProdOrder.INSERT();
-
-                                        ProdOrder.VALIDATE("Due Date", ProdDate[3]);
-                                        ProdOrder.VALIDATE(Quantity, ForecastPlanning.Wednesday);
-
-                                        ProdOrder."AMC Forecast Planning Year" := ForecastPlanning.Year;
-                                        ProdOrder."AMC Forecast Planning Week" := ForecastPlanning."Week No.";
-                                        ProdOrder."AMC Planning Creation User Id" := USERID;
-                                        ProdOrder."AMC Forecast Order" := NOT ForecastPlanning."Set Wednesday";
-                                        ProdOrder."Creation Date" := WORKDATE();
-                                        ProdOrder."Last Date Modified" := WORKDATE();
-                                        ProdOrder."AMC Planning Creation Date" := WORKDATE();
-                                        ProdOrder."Starting Time" := MfgSetup."Normal Starting Time";
-                                        ProdOrder."Ending Time" := MfgSetup."Normal Ending Time";
-                                        ProdOrder."Starting Date-Time" := CREATEDATETIME(ProdOrder."Starting Date", ProdOrder."Starting Time");
-                                        ProdOrder."Ending Date-Time" := CREATEDATETIME(ProdOrder."Ending Date", ProdOrder."Ending Time");
-
-                                        ProdOrder.MODIFY();
-                                        //---AL.03Jan13
-                                        RefreshOrder(ProdOrder);
-                                        //+++AL.03Jan13
-
-                                    END;
-                                END;
-
-                                IF ForecastPlanning.Thursday <> 0 THEN BEGIN
-                                    ProdOrder.RESET();
-                                    ProdOrder.SETRANGE("AMC Forecast Planning Year", ForecastPlanning.Year);
-                                    ProdOrder.SETRANGE("AMC Forecast Planning Week", ForecastPlanning."Week No.");
-                                    ProdOrder.SETRANGE("Source Type", ProdOrder."Source Type"::Item);
-                                    ProdOrder.SETRANGE("Source No.", ForecastPlanning."Item No.");
-                                    ProdOrder.SETRANGE("Due Date", ProdDate[4]);
-                                    IF ProdOrder.FINDFIRST() THEN BEGIN
-                                        //---AL.05Jun13
-                                        OldQty := ProdOrder.Quantity;
-                                        //+++AL.05Jun13
-
-                                        ProdOrder.VALIDATE(Quantity, ForecastPlanning.Thursday);
-                                        ProdOrder."Last Date Modified" := WORKDATE();
-                                        ProdOrder."AMC Planning Creation User Id" := USERID;
-                                        ProdOrder."AMC Forecast Order" := NOT ForecastPlanning."Set Thursday";
-                                        ProdOrder.MODIFY();
-                                        //---AL.03Jan13
-                                        IF OldQty <> ProdOrder.Quantity THEN
-                                            RefreshOrder(ProdOrder);
-                                        //+++AL.03Jan13
-
-                                    END ELSE BEGIN
-                                        ProdOrder.INIT();
-                                        ProdOrder.Status := ProdOrder.Status::"Firm Planned";
-
-                                        ProdOrder."No." := NoSeriesMgt.GetNextNo(MfgSetup."Firm Planned Order Nos.", ProdOrder."Due Date", true);
-                                        ProdOrder."No. Series" := MfgSetup."Firm Planned Order Nos.";
-
-                                        ProdOrder."Location Code" := ForecastPlanning."Location Code";
-                                        ProdOrder."Source Type" := ProdOrder."Source Type"::Item;
-                                        ProdOrder.VALIDATE("Source No.", ForecastPlanning."Item No.");
-                                        ProdOrder."AMC Update End Time" := TRUE;
-                                        ProdOrder.INSERT();
-
-                                        ProdOrder.VALIDATE("Due Date", ProdDate[4]);
-                                        ProdOrder.VALIDATE(Quantity, ForecastPlanning.Thursday);
-
-                                        ProdOrder."AMC Forecast Planning Year" := ForecastPlanning.Year;
-                                        ProdOrder."AMC Forecast Planning Week" := ForecastPlanning."Week No.";
-                                        ProdOrder."AMC Planning Creation User Id" := USERID;
-                                        ProdOrder."AMC Forecast Order" := NOT ForecastPlanning."Set Thursday";
-                                        ProdOrder."Creation Date" := WORKDATE();
-                                        ProdOrder."Last Date Modified" := WORKDATE();
-                                        ProdOrder."AMC Planning Creation Date" := WORKDATE();
-                                        ProdOrder."Starting Time" := MfgSetup."Normal Starting Time";
-                                        ProdOrder."Ending Time" := MfgSetup."Normal Ending Time";
-                                        ProdOrder."Starting Date-Time" := CREATEDATETIME(ProdOrder."Starting Date", ProdOrder."Starting Time");
-                                        ProdOrder."Ending Date-Time" := CREATEDATETIME(ProdOrder."Ending Date", ProdOrder."Ending Time");
-
-                                        ProdOrder.MODIFY();
-                                        //---AL.03Jan13
-                                        RefreshOrder(ProdOrder);
-                                        //+++AL.03Jan13
-
-                                    END;
-                                END;
-
-                                IF ForecastPlanning.Friday <> 0 THEN BEGIN
-                                    ProdOrder.RESET();
-                                    ProdOrder.SETRANGE("AMC Forecast Planning Year", ForecastPlanning.Year);
-                                    ProdOrder.SETRANGE("AMC Forecast Planning Week", ForecastPlanning."Week No.");
-                                    ProdOrder.SETRANGE("Source Type", ProdOrder."Source Type"::Item);
-                                    ProdOrder.SETRANGE("Source No.", ForecastPlanning."Item No.");
-                                    ProdOrder.SETRANGE("Due Date", ProdDate[5]);
-                                    IF ProdOrder.FINDFIRST() THEN BEGIN
-                                        //---AL.05Jun13
-                                        OldQty := ProdOrder.Quantity;
-                                        //+++AL.05Jun13
-
-                                        ProdOrder.VALIDATE(Quantity, ForecastPlanning.Friday);
-                                        ProdOrder."Last Date Modified" := WORKDATE();
-                                        ProdOrder."AMC Planning Creation User Id" := USERID();
-                                        ProdOrder."AMC Forecast Order" := NOT ForecastPlanning."Set Friday";
-                                        ProdOrder.MODIFY();
-                                        //---AL.03Jan13
-                                        IF OldQty <> ProdOrder.Quantity THEN
-                                            RefreshOrder(ProdOrder);
-                                        //+++AL.03Jan13
-
-                                    END ELSE BEGIN
-                                        ProdOrder.INIT();
-                                        ProdOrder.Status := ProdOrder.Status::"Firm Planned";
-
-                                        ProdOrder."No." := NoSeriesMgt.GetNextNo(MfgSetup."Firm Planned Order Nos.", ProdOrder."Due Date", true);
-                                        ProdOrder."No. Series" := MfgSetup."Firm Planned Order Nos.";
-
-                                        ProdOrder."Location Code" := ForecastPlanning."Location Code";
-                                        ProdOrder."Source Type" := ProdOrder."Source Type"::Item;
-                                        ProdOrder.VALIDATE("Source No.", ForecastPlanning."Item No.");
-                                        ProdOrder."AMC Update End Time" := TRUE;
-                                        ProdOrder.INSERT();
-
-                                        ProdOrder.VALIDATE("Due Date", ProdDate[5]);
-                                        ProdOrder.VALIDATE(Quantity, ForecastPlanning.Friday);
-
-                                        ProdOrder."AMC Forecast Planning Year" := ForecastPlanning.Year;
-                                        ProdOrder."AMC Forecast Planning Week" := ForecastPlanning."Week No.";
-                                        ProdOrder."AMC Planning Creation User Id" := USERID;
-                                        ProdOrder."AMC Forecast Order" := NOT ForecastPlanning."Set Friday";
-                                        ProdOrder."Creation Date" := WORKDATE();
-                                        ProdOrder."Last Date Modified" := WORKDATE();
-                                        ProdOrder."AMC Planning Creation Date" := WORKDATE();
-                                        ProdOrder."Starting Time" := MfgSetup."Normal Starting Time";
-                                        ProdOrder."Ending Time" := MfgSetup."Normal Ending Time";
-                                        ProdOrder."Starting Date-Time" := CREATEDATETIME(ProdOrder."Starting Date", ProdOrder."Starting Time");
-                                        ProdOrder."Ending Date-Time" := CREATEDATETIME(ProdOrder."Ending Date", ProdOrder."Ending Time");
-
-                                        ProdOrder.MODIFY();
-                                        //---AL.03Jan13
-                                        RefreshOrder(ProdOrder);
-                                        //+++AL.03Jan13
-                                    END;
-                                END;
-
-                                IF ForecastPlanning.Saturday <> 0 THEN BEGIN
-                                    ProdOrder.RESET();
-                                    ProdOrder.SETRANGE("AMC Forecast Planning Year", ForecastPlanning.Year);
-                                    ProdOrder.SETRANGE("AMC Forecast Planning Week", ForecastPlanning."Week No.");
-                                    ProdOrder.SETRANGE("Source Type", ProdOrder."Source Type"::Item);
-                                    ProdOrder.SETRANGE("Source No.", ForecastPlanning."Item No.");
-                                    ProdOrder."AMC Update End Time" := TRUE;
-                                    ProdOrder.SETRANGE("Due Date", ProdDate[6]);
-                                    IF ProdOrder.FINDFIRST() THEN BEGIN
-                                        //---AL.05Jun13
-                                        OldQty := ProdOrder.Quantity;
-                                        //+++AL.05Jun13
-
-                                        ProdOrder.VALIDATE(Quantity, ForecastPlanning.Saturday);
-                                        ProdOrder."Last Date Modified" := WORKDATE();
-                                        ProdOrder."AMC Planning Creation User Id" := USERID;
-                                        ProdOrder."AMC Forecast Order" := NOT ForecastPlanning."Set Saturday";
-                                        ProdOrder.MODIFY();
-                                        //---AL.03Jan13
-                                        IF OldQty <> ProdOrder.Quantity THEN
-                                            RefreshOrder(ProdOrder);
-                                        //+++AL.03Jan13
-
-                                    END ELSE BEGIN
-                                        ProdOrder.INIT();
-                                        ProdOrder.Status := ProdOrder.Status::"Firm Planned";
-
-                                        ProdOrder."No." := NoSeriesMgt.GetNextNo(MfgSetup."Firm Planned Order Nos.", ProdOrder."Due Date", true);
-                                        ProdOrder."No. Series" := MfgSetup."Firm Planned Order Nos.";
-
-                                        ProdOrder."Location Code" := ForecastPlanning."Location Code";
-                                        ProdOrder."Source Type" := ProdOrder."Source Type"::Item;
-                                        ProdOrder.VALIDATE("Source No.", ForecastPlanning."Item No.");
-                                        ProdOrder."AMC Update End Time" := TRUE;
-                                        //---AL.03Jun13
-                                        ProdOrder."AMC For Demand" := TRUE;
-                                        //+++AL.03Jun13
-                                        ProdOrder.INSERT();
-
-                                        ProdOrder.VALIDATE("Due Date", ProdDate[6]);
-                                        ProdOrder.VALIDATE(Quantity, ForecastPlanning.Saturday);
-                                        ProdOrder."AMC Forecast Planning Year" := ForecastPlanning.Year;
-                                        ProdOrder."AMC Forecast Planning Week" := ForecastPlanning."Week No.";
-                                        ProdOrder."AMC Planning Creation User Id" := USERID;
-                                        ProdOrder."AMC Forecast Order" := NOT ForecastPlanning."Set Saturday";
-                                        ProdOrder."Creation Date" := WORKDATE();
-                                        ProdOrder."Last Date Modified" := WORKDATE();
-                                        ProdOrder."AMC Planning Creation Date" := WORKDATE();
-                                        ProdOrder."Starting Time" := MfgSetup."Normal Starting Time";
-                                        ProdOrder."Ending Time" := MfgSetup."Normal Ending Time";
-                                        ProdOrder."Starting Date-Time" := CREATEDATETIME(ProdOrder."Starting Date", ProdOrder."Starting Time");
-                                        ProdOrder."Ending Date-Time" := CREATEDATETIME(ProdOrder."Ending Date", ProdOrder."Ending Time");
-
-                                        ProdOrder.MODIFY();
-                                        //---AL.03Jan13
-                                        RefreshOrder(ProdOrder);
-                                        //+++AL.03Jan13
-
-                                    END;
-                                END;
-
-                                IF ForecastPlanning.Sunday <> 0 THEN BEGIN
-
-                                    ProdOrder.RESET();
-                                    ProdOrder.SETRANGE("AMC Forecast Planning Year", ForecastPlanning.Year);
-                                    ProdOrder.SETRANGE("AMC Forecast Planning Week", ForecastPlanning."Week No.");
-                                    ProdOrder.SETRANGE("Source Type", ProdOrder."Source Type"::Item);
-                                    ProdOrder.SETRANGE("Source No.", ForecastPlanning."Item No.");
-                                    ProdOrder."AMC Update End Time" := TRUE;
-                                    ProdOrder.SETRANGE("Due Date", ProdDate[7]);
-                                    IF ProdOrder.FINDFIRST() THEN BEGIN
-                                        //---AL.05Jun13
-                                        OldQty := ProdOrder.Quantity;
-                                        //+++AL.05Jun13
-
-                                        ProdOrder.VALIDATE(Quantity, ForecastPlanning.Sunday);
-                                        ProdOrder."Last Date Modified" := WORKDATE();
-                                        ProdOrder."AMC Planning Creation User Id" := USERID;
-                                        ProdOrder."AMC Forecast Order" := NOT ForecastPlanning."Set Saturday";
-                                        ProdOrder.MODIFY();
-                                        //---AL.03Jan13
-                                        IF OldQty <> ProdOrder.Quantity THEN
-                                            RefreshOrder(ProdOrder);
-                                        //+++AL.03Jan13
-
-                                    END ELSE BEGIN
-                                        ProdOrder.INIT();
-                                        ProdOrder.Status := ProdOrder.Status::"Firm Planned";
-
-                                        ProdOrder."No." := NoSeriesMgt.GetNextNo(MfgSetup."Firm Planned Order Nos.", ProdOrder."Due Date", true);
-                                        ProdOrder."No. Series" := MfgSetup."Firm Planned Order Nos.";
-
-                                        ProdOrder."Location Code" := ForecastPlanning."Location Code";
-                                        ProdOrder."Source Type" := ProdOrder."Source Type"::Item;
-                                        ProdOrder.VALIDATE("Source No.", ForecastPlanning."Item No.");
-                                        ProdOrder."AMC Update End Time" := TRUE;
-                                        ProdOrder.INSERT();
-
-                                        ProdOrder.VALIDATE("Due Date", ProdDate[7]);
-                                        ProdOrder.VALIDATE(Quantity, ForecastPlanning.Sunday);
-
-                                        ProdOrder."AMC Forecast Planning Year" := ForecastPlanning.Year;
-                                        ProdOrder."AMC Forecast Planning Week" := ForecastPlanning."Week No.";
-                                        ProdOrder."AMC Planning Creation User Id" := USERID;
-                                        ProdOrder."AMC Forecast Order" := NOT ForecastPlanning."Set Saturday";
-                                        ProdOrder."Creation Date" := WORKDATE();
-                                        ProdOrder."Last Date Modified" := WORKDATE();
-                                        ProdOrder."AMC Planning Creation Date" := WORKDATE();
-                                        ProdOrder."Starting Time" := MfgSetup."Normal Starting Time";
-                                        ProdOrder."Ending Time" := MfgSetup."Normal Ending Time";
-                                        ProdOrder."Starting Date-Time" := CREATEDATETIME(ProdOrder."Starting Date", ProdOrder."Starting Time");
-                                        ProdOrder."Ending Date-Time" := CREATEDATETIME(ProdOrder."Ending Date", ProdOrder."Ending Time");
-
-                                        ProdOrder.MODIFY;
-                                        //---AL.03Jan13
-                                        RefreshOrder(ProdOrder);
-                                        //+++AL.03Jan13
-
-                                    END;
-                                END;
-                            UNTIL ForecastPlanning.NEXT = 0;
-                        RefreshOrders(); */
+                                IF ForecastPlanningLine.Sunday <> 0 THEN
+                                    UpdateProdOrder(Rec."Set Sunday", ForecastPlanningLine.Sunday, ForecastPlanningLine);
+                            UNTIL ForecastPlanningLine.NEXT = 0;
+                        RefreshOrders();
                     end;
                 }
             }
         }
-        area(Reporting)
-        {
-            action(Print)
-            {
-                ApplicationArea = All;
-                Caption = 'Print';
-
-                trigger OnAction()
-                var
-                    Filter_Pn: Text[50];
-                    Filter_Wt: Text[50];
-                    Filter_Sr: Text[50];
-                    Filter_Cz: Text[50];
-                    Filter_Pt: Text[50];
-                    SetDay: Enum "AMC Day of Week";
-                begin
-                    /* Filter_Pn := Rec.GETFILTER(Monday);
-                    Filter_Wt := Rec.GETFILTER(Tuesday);
-                    Filter_Sr := Rec.GETFILTER(Wednesday);
-                    Filter_Cz := Rec.GETFILTER(Thursday);
-                    Filter_Pt := Rec.GETFILTER(Friday);
-
-                    IF Filter_Pn <> '' THEN
-                        SetDay := SetDay::Pn
-                    ELSE
-                        IF Filter_Wt <> '' THEN
-                            SetDay := SetDay::Wt
-                        ELSE
-                            IF Filter_Sr <> '' THEN
-                                SetDay := SetDay::Sr
-                            ELSE
-                                IF Filter_Cz <> '' THEN
-                                    SetDay := SetDay::Cz
-                                ELSE
-                                    IF Filter_Pt <> '' THEN
-                                        SetDay := SetDay::Pt
-                                    ELSE
-                                        SetDay := SetDay::" ";
-
-                    ForecastPlanningList.SetInitDate(Rec.Year, Rec."Week No.", SetDay);
-                    ForecastPlanningList.RUN(); */
-                end;
-            }
-        }
     }
-
-    local procedure UpdateLine()
-    begin
-        /* Rec.CALCFIELDS("Total Week Forecast", "Total Monday", "Total Tuesdey", "Total Wednesday", "Total Thursday", "Total Friday",
-         "Total Saturday", "Total Sunday");
-        //rec.CalcFields("Date Filter CM", "Date Filter CM-1M", "Date Filter CM-2M", "Date Filter CM-3M", "Date Filter CM-4M", "Date Filter 5M");
-
-        RemainingForecast := Rec."Week Forecast Qty"
-                           - Rec.Monday
-                           - Rec.Tuesday
-                           - Rec.Wednesday
-                           - Rec.Thursday
-                           - Rec.Friday
-                           - Rec.Saturday
-                           - Rec.Sunday; */
-    end;
 
     trigger OnAfterGetRecord()
     begin
         UpdateForecast();
-        UpdateLine();
-    end;
-
-    trigger OnInsertRecord(BelowxRec: Boolean): Boolean
-    begin
-        SetDeleteLine := FALSE;
-    end;
-
-    trigger OnModifyRecord(): Boolean
-    begin
-        SetDeleteLine := FALSE;
     end;
 
     trigger OnNewRecord(BelowxRec: Boolean)
-    var c:Page "Customer Card";
     begin
         Rec.InitForecast();
     end;
 
     trigger OnOpenPage()
     begin
-        SetDeleteLine := FALSE;
-
         /* CurrMonth := DATE2DMY(WORKDATE(), 2);
 
         FirstDayofCM := DMY2DATE(1, CurrMonth, Rec.Year);
@@ -1029,17 +556,58 @@ page 50049 "AMC Item Forecast Plan. Card"
         //    Rec.SETRANGE("Prev. Forecast Filter", (Rec."Week No." - 1)); 
     end;
 
-    trigger OnDeleteRecord(): Boolean
+    local procedure UpdateProdOrder(SetDoW: Boolean; Qty: Decimal; ForecastPlanningLine: Record "AMC Forecast Planning Line")
+    var
+        ProdOrder: Record "Production Order";
+        OldQty: Decimal;
     begin
-        IF not SetDeleteLine THEN BEGIN
-            ForecastPlanning.RESET();
-            ForecastPlanning.SETRANGE("Forecast Planning No.", Rec."No.");
-            ForecastPlanning.SETFILTER("Week Forecast Qty", '<>0');
-            IF ForecastPlanning.FINDFIRST() THEN
-                IF CONFIRM(Text_001, FALSE) THEN
-                    SetDeleteLine := TRUE
-                ELSE
-                    ERROR(Text_002);
+        ProdOrder.RESET();
+        ProdOrder.SETRANGE("AMC Forecast Planning Year", ForecastPlanningLine.Year);
+        ProdOrder.SETRANGE("AMC Forecast Planning Week", ForecastPlanningLine."Week No.");
+        ProdOrder.SETRANGE("Source Type", ProdOrder."Source Type"::Item);
+        ProdOrder.SETRANGE("Source No.", ForecastPlanningLine."Item No.");
+        ProdOrder.SETRANGE("Due Date", ProdDate[1]);
+        IF ProdOrder.FINDFIRST() THEN BEGIN
+            OldQty := ProdOrder.Quantity;
+            ProdOrder.VALIDATE(Quantity, Qty);
+            ProdOrder."Last Date Modified" := WORKDATE();
+            ProdOrder."AMC Planning Creation User Id" := USERID;
+            ProdOrder."AMC Forecast Order" := NOT Rec."Set Monday";
+            ProdOrder.MODIFY();
+
+            IF OldQty <> ProdOrder.Quantity THEN
+                RefreshOrder(ProdOrder);
+        END ELSE BEGIN
+            ProdOrder.INIT();
+            ProdOrder.Status := ProdOrder.Status::"Firm Planned";
+
+            ProdOrder."No." := NoSeriesMgt.GetNextNo(
+                MfgSetup."Firm Planned Order Nos.",
+                ProdOrder."Due Date", true);
+            ProdOrder."No. Series" := MfgSetup."Firm Planned Order Nos.";
+
+            ProdOrder."Location Code" := ForecastPlanningLine."Location Code";
+            ProdOrder."Source Type" := ProdOrder."Source Type"::Item;
+            ProdOrder.VALIDATE("Source No.", ForecastPlanningLine."Item No.");
+            ProdOrder."AMC Update End Time" := TRUE;
+            ProdOrder.INSERT();
+
+            ProdOrder.VALIDATE("Due Date", ProdDate[1]);
+            ProdOrder.VALIDATE(Quantity, Qty);
+
+            ProdOrder."AMC Forecast Planning Year" := Rec.Year;
+            ProdOrder."AMC Forecast Planning Week" := Rec."Week No.";
+            ProdOrder."AMC Planning Creation User Id" := USERID;
+            ProdOrder."AMC Forecast Order" := NOT SetDoW;
+            ProdOrder."Creation Date" := WORKDATE();
+            ProdOrder."Last Date Modified" := WORKDATE();
+            ProdOrder."AMC Planning Creation Date" := WORKDATE();
+            ProdOrder."Starting Time" := MfgSetup."Normal Starting Time";
+            ProdOrder."Ending Time" := MfgSetup."Normal Ending Time";
+            ProdOrder."Starting Date-Time" := CREATEDATETIME(ProdOrder."Starting Date", ProdOrder."Starting Time");
+            ProdOrder."Ending Date-Time" := CREATEDATETIME(ProdOrder."Ending Date", ProdOrder."Ending Time");
+            ProdOrder.MODIFY();
+            RefreshOrder(ProdOrder);
         END;
     end;
 
@@ -1181,7 +749,6 @@ page 50049 "AMC Item Forecast Plan. Card"
             IF lrProdrouting.Status <> lrProdrouting.Status::Certified THEN
                 lRunStatus := FALSE;
 
-        //nie odświeżaj zleceñ zwolnionych
         IF lProdOrder.Status.AsInteger() > 2 THEN lRunStatus := FALSE;
 
         IF lRunStatus = TRUE THEN BEGIN
@@ -1194,26 +761,23 @@ page 50049 "AMC Item Forecast Plan. Card"
 
     local procedure RefreshOrders()
     var
-        lProdOrder: Record "Production Order";
+        ProdOrder: Record "Production Order";
     begin
         ProdOrderTemp.RESET();
         IF ProdOrderTemp.FINDSET() THEN
             REPEAT
-                lProdOrder.SETRANGE(Status, ProdOrderTemp.Status);
-                lProdOrder.SETRANGE("No.", ProdOrderTemp."No.");
-                REPORT.RUN(REPORT::"Refresh Production Order", FALSE, FALSE, lProdOrder);
+                ProdOrder.SETRANGE(Status, ProdOrderTemp.Status);
+                ProdOrder.SETRANGE("No.", ProdOrderTemp."No.");
+                REPORT.RUN(REPORT::"Refresh Production Order", FALSE, FALSE, ProdOrder);
             UNTIL ProdOrderTemp.NEXT() = 0;
     end;
 
     var
+        ProdOrderTemp: Record "Production Order" temporary;
+
         MfgSetup: Record "Manufacturing Setup";
-        ForecPlanning: Record "AMC Forecast Planning Line";
         SalesSetup: Record "Sales & Receivables Setup";
-        ItemRec: Record Item;
-        ForecastPlanning: Record "AMC Forecast Planning Line";
         ProdForectEntry: Record "Production Forecast Entry";
-        ItemCategory: Record "Item Category";
-        ProdOrder: Record "Production Order";
         NoSeriesMgt: Codeunit "No. Series";
         ItemList: Page "Item List";
         ForecastPlanningList: Report "AMC Forecast Planning List";
@@ -1244,12 +808,10 @@ page 50049 "AMC Item Forecast Plan. Card"
         LastDayofCM3: Date;
         LastDayofCM4: Date;
         CurrMonth: Integer;
-        ProdOrderTemp: Record "Production Order" temporary;
         SetLotQty: Decimal;
         SetMinimStock: Decimal;
         SetMaximStok: Decimal;
         QuestConfirm: Text[200];
-        Question2: Text[200];
         DateFilter_CM: Text[100];
         DateFilter_CM_1M: Text[100];
         DateFilter_CM_2M: Text[100];
@@ -1258,13 +820,13 @@ page 50049 "AMC Item Forecast Plan. Card"
         DateFilter_5M: Text[100];
 
         Text_001: Label 'Prognozy zawierają planowaną produkcję \ Czy usunąć oznaczone linie?';
-        Text_002: Label 'Zaniechano Usunięcia Linii';
-        Text_003: Label 'Zapas %1 posiada nierozpisaną ilość planowania.\ Czy kontynuować?';
+
+
         Text_004: Label 'Czy przypisać Ilość %1 \do Szarży Produkcji Zapasu: %2?';
         Text_005: Label 'Zaniechano zmiany Szarży Produkcji.';
         Text_006: Label 'Czy przypisać Ilość %1 \do Minimalnego Stanu Zapasu: %2?';
         Text_007: Label 'Zaniechano zmiany Bezpiecznego Stanu Wyrobu.';
-        Text_008: Label 'W okresie %1/%2 znaleziono wygenerowaną prognozę,\czy uzupełnić brakujące linie?';
+
         Text_009: Label 'Czy przypisać Ilość %1 \do Maks. Stoku Zapasu: %2?';
         Text_010: Label 'Zaniechano zmiany Maksymalnego Stoku Zapasu.';
 }

@@ -1,7 +1,7 @@
 page 50014 "AMC Forecast Planning Subpage"
 {
     ApplicationArea = All;
-    Caption = 'AMC Forecast Planning Subpage';
+    Caption = 'Forecast Planning Lines';
     PageType = ListPart;
     SourceTable = "AMC Forecast Planning Line";
     Editable = false;
@@ -15,14 +15,17 @@ page 50014 "AMC Forecast Planning Subpage"
                 field("Forecast Code"; Rec."Forecast Code")
                 {
                     ApplicationArea = All;
+                    Visible = false;
                 }
                 field(Year; Rec.Year)
                 {
                     ApplicationArea = All;
+                    Visible = false;
                 }
                 field("Week No."; Rec."Week No.")
                 {
                     ApplicationArea = All;
+                    Visible = false;
                 }
                 field("Item No."; Rec."Item No.")
                 {
@@ -140,6 +143,55 @@ page 50014 "AMC Forecast Planning Subpage"
                 {
                     ToolTip = 'Specifies the value of the Ilość Prognozy Tygodniowa field.', Comment = '%';
                 }
+            }
+        }
+    }
+
+    actions
+    {
+        area(Processing)
+        {
+            action(Print)
+            {
+                ApplicationArea = All;
+                Caption = 'Print';
+
+                trigger OnAction()
+                var
+                    ForecastPlanningList: Report "AMC Forecast Planning List";
+                    Filter_Pn: Text[50];
+                    Filter_Wt: Text[50];
+                    Filter_Sr: Text[50];
+                    Filter_Cz: Text[50];
+                    Filter_Pt: Text[50];
+                    SetDay: Enum "AMC Day of Week";
+                begin
+                    Filter_Pn := Rec.GETFILTER(Monday);
+                    Filter_Wt := Rec.GETFILTER(Tuesday);
+                    Filter_Sr := Rec.GETFILTER(Wednesday);
+                    Filter_Cz := Rec.GETFILTER(Thursday);
+                    Filter_Pt := Rec.GETFILTER(Friday);
+
+                    IF Filter_Pn <> '' THEN
+                        SetDay := SetDay::Pn
+                    ELSE
+                        IF Filter_Wt <> '' THEN
+                            SetDay := SetDay::Wt
+                        ELSE
+                            IF Filter_Sr <> '' THEN
+                                SetDay := SetDay::Sr
+                            ELSE
+                                IF Filter_Cz <> '' THEN
+                                    SetDay := SetDay::Cz
+                                ELSE
+                                    IF Filter_Pt <> '' THEN
+                                        SetDay := SetDay::Pt
+                                    ELSE
+                                        SetDay := SetDay::" ";
+
+                    ForecastPlanningList.SetInitDate(Rec.Year, Rec."Week No.", SetDay);
+                    ForecastPlanningList.RUN();
+                end;
             }
         }
     }
