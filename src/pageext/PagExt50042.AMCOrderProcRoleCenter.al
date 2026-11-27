@@ -54,7 +54,7 @@ pageextension 50042 "AMC Order Proc. Role Center" extends "Order Processor Role 
                 {
                     Caption = 'Item Forecast';
                     ApplicationArea = All;
-                    RunObject = page "AMC Item Forecast Planning";
+                    RunObject = page "AMC Forecast Planning List";
                 }
             }
         }

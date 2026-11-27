@@ -621,18 +621,6 @@ tableextension 50025 "AMC Item" extends Item
             DecimalPlaces = 0 : 2;
             DataClassification = CustomerContent;
         }
-        field(50208; "AMC Production Forecast"; Decimal)
-        {
-            BlankZero = true;
-            CalcFormula = sum("AMC Forecast Planning"."Week Forecast Qty" where("Forecast Code" = field("AMC Forecast Code Filter"),
-                                                                             Year = field("AMC Year Filter"),
-                                                                             "Week No." = field("AMC Week No Filter"),
-                                                                             "Location Code" = field("Location Filter"),
-                                                                             "Item No." = field("No.")));
-            Caption = 'Prognoza Zbiorcza';
-            DecimalPlaces = 0 : 2;
-            FieldClass = FlowField;
-        }
         field(50209; "AMC Forecast No Print Item"; Boolean)
         {
             Caption = 'Nie Drukuj na Prognozie Produkcji';

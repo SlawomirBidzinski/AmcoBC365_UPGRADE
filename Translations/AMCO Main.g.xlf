@@ -198,300 +198,355 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table AMC Dimension Value Transl. - Field Type - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 377124147 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Forecast Planning</source>
+        <trans-unit id="Table 1098862898 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AMC Forecast Planning Header</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Header - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 377124147 - Method 1974697554 - NamedType 3242185021" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Nie mozna przenieść zlecenia produkcyjnego na okres Rok:%1 Tydzień: %2\Nie znaleziono dla tego okresu harmonogramu dla Zapasu %3 Planowania Produkcji</source>
+        <trans-unit id="Table 1098862898 - Method 3934841919 - NamedType 1667094437" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Production forecast %1, year %2, week %3 already exists</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Method UpdateProdOrder - NamedType TextLoc_001</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Header - Method CheckForecastExists - NamedType RecExistsErrLbl</note>
         </trans-unit>
-        <trans-unit id="Table 377124147 - Field 1042015049 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Alergeny</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Alergeny - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 411531942 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Podst. jednostka miary</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Base Unit of Measure - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 1753967112 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Filtr Daty 5M</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Date Filter 5M - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 215976734 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Filtr Daty BM</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Date Filter CM - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 3189945749 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Filtr Daty BM-1M</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Date Filter CM-1M - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 2064107588 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Filtr Daty BM-2M</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Date Filter CM-2M - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 520580083 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Filtr Daty BM-3M</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Date Filter CM-3M - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 738029410 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Filtr Daty BM-4M</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Date Filter CM-4M - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Nr Zapisu</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Entry No. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 286036794 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 1098862898 - Field 286036794 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Kod Prognozy</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Forecast Code - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Header - Field Forecast Code - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 377124147 - Field 866398198 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Forecast Remarks</source>
+        <trans-unit id="Table 1098862898 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Forecast Remarks - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Header - Field No. - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 377124147 - Field 2850047899 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Prognoza Pt</source>
+        <trans-unit id="Table 1098862898 - Field 1351594800 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. Series</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Friday - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Header - Field No. Series - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 377124147 - Field 2105307182 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Zapasy</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Inventory - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 3187480636 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Zapasy / Magazyn</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Inventory / Location - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 903015998 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Inventory &lt;&gt; K.J.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Inventory &lt;&gt; M.KJ - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 2842094365 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Nazwa Zapasu</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Item Description - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 568743302 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Kod Zapasu</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Item No. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 2161572060 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Kod Lokalizacji</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Location Code - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 4274209627 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Max Stock Item</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Max Stock Item - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 3612571044 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Prognoza Pn</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Monday - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 3528210575 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Nie Drukuj na Prognozie</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field No Print Forecat Item - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 1818562394 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Jednostka miary opakowania</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Pack Unit of Measure - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 1306638392 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Filtr Poprzedniej Prognozy</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Prev. Forecast Filter - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 3883741812 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Ilość Poprzedniej Prognozy</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Prev. Forecast Qty - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 136483201 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 1098862898 - Field 136483201 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Data Prognozy Poprz. Tygodnia</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Previous Week From Date - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Header - Field Previous Week From Date - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 377124147 - Field 1423976409 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Stan bezpieczny wyrobu</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Product Safety Stock - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 1211261581 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>BOM Produkcyjny</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Production BOM - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 3680390400 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Szarża produkcji</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Production Lot - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 1356858446 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Planowana Il. Zl. Prod</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Production Order Forecast Qty - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 1563312764 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Zatwierdzona Il. Zl. Prod</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Production Order Realese Qty - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 3345871191 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Poziom Ponownego Zamówienia</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Reorder Point - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 3032621187 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Zasady Ponownego Zamówienia</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Reorder Policy - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 1141850366 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Ilość Ponownego zamówienia</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Reorder Quantity - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 3693365919 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Prognoza Sb</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Saturday - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 2054389685 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 1098862898 - Field 2054389685 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Potw. Pt</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Set Friday - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Header - Field Set Friday - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 377124147 - Field 3196750270 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 1098862898 - Field 3196750270 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Potw. Pn</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Set Monday - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Header - Field Set Monday - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 377124147 - Field 2787276489 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 1098862898 - Field 2787276489 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Potw. Sb</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Set Saturday - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Header - Field Set Saturday - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 377124147 - Field 2693814986 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 1098862898 - Field 2693814986 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Potw. Ni</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Set Sunday - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Header - Field Set Sunday - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 377124147 - Field 3409195346 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 1098862898 - Field 3409195346 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Potw. Cz</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Set Thursday - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Header - Field Set Thursday - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 377124147 - Field 4188393372 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 1098862898 - Field 4188393372 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Potw. Wt</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Set Tuesdy - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Header - Field Set Tuesdy - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 377124147 - Field 413792300 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 1098862898 - Field 413792300 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Potw. Śr</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Set Wednesday - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Header - Field Set Wednesday - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 377124147 - Field 2643887984 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Prognoza Ni</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Sunday - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 2259593336 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Prognoza Cz</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Thursday - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 4234938397 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 1098862898 - Field 4234938397 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Razem Pt</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Total Friday - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Header - Field Total Friday - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 377124147 - Field 202050054 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 1098862898 - Field 202050054 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Razem Pn</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Total Monday - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Header - Field Total Monday - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 377124147 - Field 643149857 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 1098862898 - Field 643149857 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Razem Sb</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Total Saturday - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Header - Field Total Saturday - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 377124147 - Field 1838538386 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 1098862898 - Field 1838538386 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Razem Ni</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Total Sunday - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Header - Field Total Sunday - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 377124147 - Field 3397544538 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 1098862898 - Field 3397544538 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Razem Cz</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Total Thursday - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Header - Field Total Thursday - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 377124147 - Field 2031204031 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 1098862898 - Field 2031204031 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Razem Wt</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Total Tuesdey - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Header - Field Total Tuesdey - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 377124147 - Field 2554505204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 1098862898 - Field 2554505204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Razem Śr</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Total Wednesday - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Header - Field Total Wednesday - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 377124147 - Field 629585551 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 1098862898 - Field 629585551 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Razem Zaplanowano w Tygodniu</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Total Week Forecast - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Header - Field Total Week Forecast - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 377124147 - Field 4237472533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Prognoza Wt</source>
+        <trans-unit id="Table 1098862898 - Field 1553678729 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Week Ending Date</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Tuesday - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Header - Field Week Ending Date - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 377124147 - Field 2039729766 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Prognoza Śr</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Wednesday - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 2693637933 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Ilość Prognozy Tygodniowa</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Week Forecast Qty - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 491813002 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Data Rozpoczęcia Tygodnia</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Week From Day - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 377124147 - Field 4135708453 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 1098862898 - Field 4135708453 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Nr Tygodnia</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Week No. - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Header - Field Week No. - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 377124147 - Field 2832340769 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Table 1098862898 - Field 527534332 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Week Starting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Header - Field Week Starting Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1098862898 - Field 2832340769 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Rok</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning - Field Year - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Header - Field Year - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Forecast Planning Line</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Method 1974697554 - NamedType 3242185021" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nie mozna przenieść zlecenia produkcyjnego na okres Rok:%1 Tydzień: %2\Nie znaleziono dla tego okresu harmonogramu dla Zapasu %3 Planowania Produkcji</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Method UpdateProdOrder - NamedType TextLoc_001</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 1042015049 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Alergeny</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Alergeny - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 411531942 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Podst. jednostka miary</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Base Unit of Measure - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 1753967112 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filtr Daty 5M</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Date Filter 5M - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 215976734 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filtr Daty BM</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Date Filter CM - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 3189945749 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filtr Daty BM-1M</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Date Filter CM-1M - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 2064107588 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filtr Daty BM-2M</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Date Filter CM-2M - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 520580083 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filtr Daty BM-3M</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Date Filter CM-3M - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 738029410 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filtr Daty BM-4M</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Date Filter CM-4M - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 286036794 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Kod Prognozy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Forecast Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 3059694755 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Forecast Planning No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Forecast Planning No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 866398198 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Forecast Remarks</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Forecast Remarks - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 2850047899 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prognoza Pt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Friday - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 2105307182 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zapasy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Inventory - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 3187480636 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zapasy / Magazyn</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Inventory / Location - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 903015998 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Inventory &lt;&gt; K.J.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Inventory &lt;&gt; M.KJ - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 2842094365 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nazwa Zapasu</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Item Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 568743302 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Kod Zapasu</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Item No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 2161572060 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Kod Lokalizacji</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Location Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 4274209627 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Max Stock Item</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Max Stock Item - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 3612571044 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prognoza Pn</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Monday - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 3528210575 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nie Drukuj na Prognozie</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field No Print Forecat Item - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 1818562394 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Jednostka miary opakowania</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Pack Unit of Measure - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 1306638392 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filtr Poprzedniej Prognozy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Prev. Forecast Filter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 3883741812 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ilość Poprzedniej Prognozy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Prev. Forecast Qty - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 136483201 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Data Prognozy Poprz. Tygodnia</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Previous Week From Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 1423976409 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Stan bezpieczny wyrobu</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Product Safety Stock - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 1211261581 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BOM Produkcyjny</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Production BOM - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 3680390400 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Szarża produkcji</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Production Lot - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 1356858446 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Planowana Il. Zl. Prod</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Production Order Forecast Qty - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 1351274258 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zatwierdzona Il. Zl. Prod</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Production Order Release Qty. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 3345871191 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Poziom Ponownego Zamówienia</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Reorder Point - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 3032621187 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zasady Ponownego Zamówienia</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Reorder Policy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 1141850366 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ilość Ponownego zamówienia</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Reorder Quantity - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 3693365919 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prognoza Sb</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Saturday - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 2643887984 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prognoza Ni</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Sunday - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 2259593336 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prognoza Cz</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Thursday - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 4237472533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prognoza Wt</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Tuesday - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 2039729766 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Prognoza Śr</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Wednesday - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 1553678729 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Week Ending Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Week Ending Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 2693637933 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ilość Prognozy Tygodniowa</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Week Forecast Qty - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 4135708453 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Nr Tygodnia</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Week No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 527534332 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Week Starting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Week Starting Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1638811865 - Field 2832340769 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Rok</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table AMC Forecast Planning Line - Field Year - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 85983439 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Budget Details</source>
@@ -3688,95 +3743,15 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning List - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 3300860381 - Control 1042015049 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Alergeny field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning List - Control Alergeny - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3300860381 - Control 411531942 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Podst. jednostka miary field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning List - Control Base Unit of Measure - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3300860381 - Control 866398198 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Forecast Remarks field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning List - Control Forecast Remarks - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3300860381 - Control 2850047899 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Prognoza Pt field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning List - Control Friday - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3300860381 - Control 2842094365 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Nazwa Zapasu field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning List - Control Item Description - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3300860381 - Control 568743302 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Kod Zapasu field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning List - Control Item No. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3300860381 - Control 3612571044 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Prognoza Pn field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning List - Control Monday - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3300860381 - Control 1818562394 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Jednostka miary opakowania field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning List - Control Pack Unit of Measure - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3300860381 - Control 1423976409 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Stan bezpieczny wyrobu field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning List - Control Product Safety Stock - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3300860381 - Control 3680390400 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Szarża produkcji field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning List - Control Production Lot - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3300860381 - Control 3693365919 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Prognoza Sb field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning List - Control Saturday - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3300860381 - Control 2643887984 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Prognoza Ni field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning List - Control Sunday - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3300860381 - Control 2259593336 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Prognoza Cz field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning List - Control Thursday - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3300860381 - Control 4237472533 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Prognoza Wt field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning List - Control Tuesday - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3300860381 - Control 2039729766 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Prognoza Śr field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning List - Control Wednesday - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3300860381 - Control 2693637933 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Ilość Prognozy Tygodniowa field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning List - Control Week Forecast Qty - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3300860381 - Control 491813002 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Data Rozpoczęcia Tygodnia field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning List - Control Week From Day - Property ToolTip</note>
-        </trans-unit>
         <trans-unit id="Page 3300860381 - Control 4135708453 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Nr Tygodnia field.</source>
           <note from="Developer" annotates="general" priority="2">%</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning List - Control Week No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3300860381 - Control 527534332 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Data Rozpoczęcia Tygodnia field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning List - Control Week Starting Date - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 3300860381 - Control 2832340769 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Rok field.</source>
@@ -3787,6 +3762,156 @@
           <source>Print</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning List - Action Print - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>AMC Forecast Planning Subpage</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 1042015049 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Alergeny field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Alergeny - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 411531942 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Podst. jednostka miary field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Base Unit of Measure - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 866398198 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Forecast Remarks field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Forecast Remarks - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 2850047899 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Prognoza Pt field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Friday - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 2105307182 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Zapasy field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Inventory - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 3187480636 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Zapasy / Magazyn field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Inventory / Location - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 903015998 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Inventory &lt;&gt; K.J. field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Inventory &lt;&gt; M.KJ - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 2842094365 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Nazwa Zapasu field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Item Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 568743302 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Kod Zapasu field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Item No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 2161572060 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Kod Lokalizacji field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Location Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 4274209627 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Max Stock Item field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Max Stock Item - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 3612571044 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Prognoza Pn field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Monday - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 3528210575 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Nie Drukuj na Prognozie field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control No Print Forecat Item - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 1818562394 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Jednostka miary opakowania field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Pack Unit of Measure - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 3883741812 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Ilość Poprzedniej Prognozy field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Prev. Forecast Qty - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 1423976409 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Stan bezpieczny wyrobu field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Product Safety Stock - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 1211261581 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the BOM Produkcyjny field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Production BOM - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 3680390400 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Szarża produkcji field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Production Lot - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 1356858446 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Planowana Il. Zl. Prod field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Production Order Forecast Qty - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 1351274258 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Zatwierdzona Il. Zl. Prod field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Production Order Release Qty. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 3345871191 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Poziom Ponownego Zamówienia field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Reorder Point - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 3032621187 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Zasady Ponownego Zamówienia field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Reorder Policy - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 1141850366 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Ilość Ponownego zamówienia field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Reorder Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 3693365919 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Prognoza Sb field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Saturday - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 2643887984 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Prognoza Ni field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Sunday - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 2259593336 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Prognoza Cz field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Thursday - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 4237472533 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Prognoza Wt field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Tuesday - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 2039729766 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Prognoza Śr field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Wednesday - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2000664186 - Control 2693637933 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Ilość Prognozy Tygodniowa field.</source>
+          <note from="Developer" annotates="general" priority="2">%</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Forecast Planning Subpage - Control Week Forecast Qty - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 4201730842 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Hierarchies</source>
@@ -5358,335 +5483,200 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Details Factbox - Control AMC Items on M.UT - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Item Forecast Planning</source>
+        <trans-unit id="Page 2365222500 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Forecast Planning Card</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - NamedType 3994261301" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - NamedType 3994261301" size-unit="char" translate="yes" xml:space="preserve">
           <source>Prognozy zawierają planowaną produkcję \ Czy usunąć oznaczone linie?</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - NamedType Text_001</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - NamedType Text_001</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - NamedType 3356564684" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - NamedType 3356564684" size-unit="char" translate="yes" xml:space="preserve">
           <source>Zaniechano Usunięcia Linii</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - NamedType Text_002</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - NamedType Text_002</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - NamedType 2718868067" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - NamedType 2718868067" size-unit="char" translate="yes" xml:space="preserve">
           <source>Zapas %1 posiada nierozpisaną ilość planowania.\ Czy kontynuować?</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - NamedType Text_003</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - NamedType Text_003</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - NamedType 2081171450" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - NamedType 2081171450" size-unit="char" translate="yes" xml:space="preserve">
           <source>Czy przypisać Ilość %1 \do Szarży Produkcji Zapasu: %2?</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - NamedType Text_004</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - NamedType Text_004</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - NamedType 1443474833" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - NamedType 1443474833" size-unit="char" translate="yes" xml:space="preserve">
           <source>Zaniechano zmiany Szarży Produkcji.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - NamedType Text_005</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - NamedType Text_005</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - NamedType 805778216" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - NamedType 805778216" size-unit="char" translate="yes" xml:space="preserve">
           <source>Czy przypisać Ilość %1 \do Minimalnego Stanu Zapasu: %2?</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - NamedType Text_006</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - NamedType Text_006</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - NamedType 168081599" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - NamedType 168081599" size-unit="char" translate="yes" xml:space="preserve">
           <source>Zaniechano zmiany Bezpiecznego Stanu Wyrobu.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - NamedType Text_007</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - NamedType Text_007</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - NamedType 1143596262" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - NamedType 1143596262" size-unit="char" translate="yes" xml:space="preserve">
           <source>W okresie %1/%2 znaleziono wygenerowaną prognozę,\czy uzupełnić brakujące linie?</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - NamedType Text_008</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - NamedType Text_008</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - NamedType 505899645" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - NamedType 505899645" size-unit="char" translate="yes" xml:space="preserve">
           <source>Czy przypisać Ilość %1 \do Maks. Stoku Zapasu: %2?</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - NamedType Text_009</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - NamedType Text_009</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - NamedType 81246701" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - NamedType 81246701" size-unit="char" translate="yes" xml:space="preserve">
           <source>Zaniechano zmiany Maksymalnego Stoku Zapasu.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - NamedType Text_010</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - NamedType Text_010</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 284195533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Control 284195533 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Filters</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control Filters - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Control Filters - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 3283982229 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Control 3283982229 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Filtr Daty 5M</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control DateFilter_5M - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Control DateFilter_5M - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 918958975 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Control 918958975 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Filtr Daty BM</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control DateFilter_CM - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Control DateFilter_CM - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 638748914 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Control 638748914 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Filtr Daty BM-1</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control DateFilter_CM_1M - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Control DateFilter_CM_1M - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 679246335 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Control 679246335 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Filtr Daty BM-2</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control DateFilter_CM_2M - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Control DateFilter_CM_2M - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 2222773840 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Control 2222773840 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Filtr Daty BM-3</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control DateFilter_CM_3M - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Control DateFilter_CM_3M - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 3090665253 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Control 3090665253 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Filtr Daty BM-4</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control DateFilter_CM_4M - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Control DateFilter_CM_4M - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>General</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control General - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Control General - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 2645047193 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Control 2645047193 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Show Low Levels</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control LowItemLevel - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Control LowItemLevel - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 2197681004 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Control 2197681004 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Show No Zero Forecast</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control NoZeroForecast - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Control NoZeroForecast - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 1804003004 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>From</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control SetDateFrom - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 1936745439 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>To</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control SetDateTo - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 3224610824 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Nazwa Prognozy Produkcji</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control SetForecastCode - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 1464938833 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Week</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control SetWeekNo - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 2024561183 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Year</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control SetYear - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 3989972045 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Control 3989972045 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Set Thursday</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control SetCz - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Control SetCz - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 2894088663 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Control 2894088663 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Set Sunday</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control SetNi - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Control SetNi - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 4059358888 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Control 4059358888 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Set Monday</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control SetPn - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Control SetPn - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 3459601746 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Control 3459601746 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Set Friday</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control SetPt - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Control SetPt - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 1616550789 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Control 1616550789 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Set Saturday</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control SetSb - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Control SetSb - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 3339509 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Control 3339509 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Set Wednesday</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control SetSr - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Control SetSr - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 2351269827 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Control 2351269827 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Set Tuesday</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control SetWt - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Control SetWt - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 4234938397 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Control 4234938397 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Total Friday</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control Total Friday - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Control Total Friday - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 202050054 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Control 202050054 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Total Monday</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control Total Monday - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Control Total Monday - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 3397544538 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Control 3397544538 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Total Thursday</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control Total Thursday - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Control Total Thursday - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 958666947 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Control 958666947 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Total Tuesday</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control Total Tuesday - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Control Total Tuesday - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 2554505204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Control 2554505204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Total Wednesday</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control Total Wednesday - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Control Total Wednesday - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 643149857 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Control 643149857 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Razem Sb.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control Total Saturday - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Control Total Saturday - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 1838538386 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Control 1838538386 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Razem Ni.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control Total Sunday - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Control Total Sunday - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 629585551 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Control 629585551 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Zapl. w tygod.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control Total Week Forecast - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Control Total Week Forecast - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 1042015049 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Alergeny field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control Alergeny - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 411531942 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Podst. jednostka miary field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control Base Unit of Measure - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 2850047899 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Prognoza Pt field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control Friday - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 2842094365 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Nazwa Zapasu field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control Item Description - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 568743302 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Kod Zapasu field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control Item No. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 3612571044 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Prognoza Pn field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control Monday - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 2934998417 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Remaining Forecast</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control RemainingForecast - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 3693365919 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Prognoza Sb field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control Saturday - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 2643887984 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Prognoza Ni field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control Sunday - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 2259593336 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Prognoza Cz field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control Thursday - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 4237472533 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Prognoza Wt field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control Tuesday - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 2039729766 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Prognoza Śr field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control Wednesday - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 4135708453 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Nr Tygodnia field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control Week No. - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 2832340769 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Rok field.</source>
-          <note from="Developer" annotates="general" priority="2">%</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control Year - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 1951672484 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Sales Orders</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control OrderLine - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 3158366035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Cust. Sales Statistics</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control Stats - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 2069624082 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Customer Sales Statistics</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control AMC Customer Sales Statistics - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 2166945456 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Summary</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control Summary - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 473398394 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Max. Stock Item</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control AMC Max Stock Item - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 2383505459 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Lot. Qty.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control SetLotQty - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 3081022419 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Max. Stock</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control SetMaximStok - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Control 4237669984 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Min. Stock</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Control SetMinimStock - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1692070376 - Action 2345348149 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Action 2345348149 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Initiate Forecast</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Action Initiate - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Action Initiate - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Action 642782499 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Action 642782499 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Update Forecast</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Action Update - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Action Update - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1692070376 - Action 1002420131 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Page 2365222500 - Action 1002420131 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Print</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Planning - Action Print - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page AMC Item Forecast Plan. Card - Action Print - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 728247339 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Led. Profit Con. Sub.</source>
@@ -12478,11 +12468,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Production EXP Label Date - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 418729054 - Field 991142057 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
-          <source>Prognoza Zbiorcza</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Item - Field AMC Production Forecast - Property Caption</note>
-        </trans-unit>
         <trans-unit id="TableExtension 418729054 - Field 691805653 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Production Lot</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -15602,6 +15587,11 @@
           <source>Serria num.zaks. faktury koryg.zbiorczej</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales &amp; Receivables Setup - Field AMC Posted Disc. Corr. Inv Nos - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 947627379 - Field 1458342193 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
+          <source>Prod. Forecast Nos.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension AMC Sales &amp; Receivables Setup - Field AMC Prod. Forecast Nos. - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 947627379 - Field 2607948422 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
           <source>Seria num. karty produktu</source>

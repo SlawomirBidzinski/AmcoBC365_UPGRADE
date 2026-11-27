@@ -58,6 +58,10 @@ pageextension 50025 "AMC Sales & Receivables Setup" extends "Sales & Receivables
             {
                 ApplicationArea = All;
             }
+            field("AMC Prod. Forecast Nos."; Rec."AMC Prod. Forecast Nos.")
+            {
+                ApplicationArea = All;
+            }
         }
         addafter("Number Series")
         {

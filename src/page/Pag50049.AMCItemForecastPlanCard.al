@@ -1,9 +1,10 @@
-page 50049 "AMC Item Forecast Planning"
+page 50049 "AMC Item Forecast Plan. Card"
 {
     ApplicationArea = All;
-    Caption = 'Item Forecast Planning';
+    Caption = 'Item Forecast Planning Card';
     PageType = Document;
-    SourceTable = "AMC Forecast Planning";
+    SourceTable = "AMC Forecast Planning Header";
+    DelayedInsert = true;
 
     layout
     {
@@ -12,48 +13,43 @@ page 50049 "AMC Item Forecast Planning"
             group(General)
             {
                 Caption = 'General';
+                field("No."; Rec."No.")
+                {
+                    ApplicationArea = All;
+
+                    trigger OnAssistEdit()
+                    begin
+                        if Rec.AssistEdit(xRec) then
+                            CurrPage.Update();
+                    end;
+                }
                 group(SetDate)
                 {
                     ShowCaption = false;
-                    field(SetForecastCode; SetForecastCode)
+                    field("Forecast Code"; Rec."Forecast Code")
                     {
                         ApplicationArea = All;
-                        Editable = false;
-                        Caption = 'Nazwa Prognozy Produkcji';
                     }
-                    field(SetYear; SetYear)
+                    field(Year; Rec.Year)
                     {
                         ApplicationArea = All;
-                        Caption = 'Year';
-                        trigger OnValidate()
-                        begin
-                            UpdateForecast();
-                            CurrPage.Update(false);
-                        end;
                     }
-                    field(SetWeekNo; SetWeekNo)
+                    field("Week No."; Rec."Week No.")
                     {
                         ApplicationArea = All;
-                        Caption = 'Week';
-
-                        trigger OnValidate()
-                        begin
-                            UpdateForecast();
-                            CurrPage.Update(false);
-                        end;
                     }
 
-                    field(SetDateFrom; SetDateFrom)
+                    field("Week Starting Date"; Rec."Week Starting Date")
                     {
                         ApplicationArea = All;
-                        Editable = false;
-                        Caption = 'From';
                     }
-                    field(SetDateTo; SetDateTo)
+                    field("Week Ending Date"; Rec."Week Ending Date")
                     {
                         ApplicationArea = All;
-                        Editable = false;
-                        Caption = 'To';
+                    }
+                    field("Previous Week From Date"; Rec."Previous Week From Date")
+                    {
+                        ApplicationArea = All;
                     }
                     field(LowItemLevel; LowItemLevel)
                     {
@@ -231,191 +227,12 @@ page 50049 "AMC Item Forecast Planning"
 
                 }
             }
-            repeater(Lines)
+            part("AMC Forecast Planning Subpage"; "AMC Forecast Planning Subpage")
             {
-                ShowCaption = false;
-
-                field("Forecast Code"; Rec."Forecast Code")
-                {
-                    ApplicationArea = All;
-                    Visible = (False);
-                    Editable = (False);
-                }
-                field(Year; Rec.Year)
-                {
-                    ToolTip = 'Specifies the value of the Rok field.', Comment = '%';
-                    Visible = (False);
-                    Editable = (False);
-                }
-                field("Week No."; Rec."Week No.")
-                {
-                    ToolTip = 'Specifies the value of the Nr Tygodnia field.', Comment = '%';
-                    Visible = (False);
-                    Editable = (False);
-                }
-                field("Item No."; Rec."Item No.")
-                {
-                    ToolTip = 'Specifies the value of the Kod Zapasu field.', Comment = '%';
-                    Editable = (False);
-                }
-                field("Item Description"; Rec."Item Description")
-                {
-                    ToolTip = 'Specifies the value of the Nazwa Zapasu field.', Comment = '%';
-                    Editable = (False);
-                }
-                field("Production BOM"; Rec."Production BOM")
-                {
-                    ApplicationArea = All;
-                    Editable = (False);
-
-                }
-                field("No Print Forecat Item"; Rec."No Print Forecat Item")
-                {
-                    ApplicationArea = All;
-                    Editable = (False);
-                }
-                field(Inventory; Rec.Inventory)
-                {
-                    ApplicationArea = All;
-                    Editable = (False);
-                }
-                field("Inventory <> M.KJ"; Rec."Inventory <> M.KJ")
-                {
-                    ApplicationArea = All;
-                    Editable = (False);
-                }
-                field("Inventory / Location"; Rec."Inventory / Location")
-                {
-                    ApplicationArea = All;
-                    Editable = (False);
-                }
-                field("Max Stock Item"; Rec."Max Stock Item")
-                {
-                    ApplicationArea = All;
-                    Editable = (False);
-                }
-                field(RemainingForecast; RemainingForecast)
-                {
-                    ApplicationArea = All;
-                    Caption = 'Remaining Forecast';
-                    Editable = (False);
-                }
-                field("Pack Unit of Measure"; Rec."Pack Unit of Measure")
-                {
-                    ApplicationArea = All;
-                    Editable = (False);
-                }
-                field("Base Unit of Measure"; Rec."Base Unit of Measure")
-                {
-                    ToolTip = 'Specifies the value of the Podst. jednostka miary field.', Comment = '%';
-                    Editable = (False);
-                }
-                field("Location Code"; Rec."Location Code")
-                {
-                    ApplicationArea = All;
-                    Editable = (False);
-                }
-                field(Alergeny; Rec.Alergeny)
-                {
-                    ToolTip = 'Specifies the value of the Alergeny field.', Comment = '%';
-                    Editable = (False);
-                }
-                field("Forecast Remarks"; Rec."Forecast Remarks")
-                {
-                    ApplicationArea = All;
-                }
-                field("Reorder Point"; Rec."Reorder Point")
-                {
-                    ApplicationArea = All;
-                    Editable = (False);
-                }
-                field("Reorder Policy"; Rec."Reorder Policy")
-                {
-                    ApplicationArea = All;
-                    Editable = (False);
-                }
-                field("Reorder Quantity"; Rec."Reorder Quantity")
-                {
-                    ApplicationArea = All;
-                    Editable = (False);
-                }
-                field("Production Lot"; Rec."Production Lot")
-                {
-                    ApplicationArea = All;
-                    Editable = (False);
-                }
-                field("Product Safety Stock"; Rec."Product Safety Stock")
-                {
-                    ApplicationArea = All;
-                    Editable = (False);
-                }
-                field("Prev. Forecast Qty"; Rec."Prev. Forecast Qty")
-                {
-                    ApplicationArea = All;
-                    Editable = (False);
-                }
-                field("Production Order Forecast Qty"; Rec."Production Order Forecast Qty")
-                {
-                    ApplicationArea = All;
-                    Editable = (False);
-                }
-                field("Production Order Realese Qty"; Rec."Production Order Realese Qty")
-                {
-                    ApplicationArea = All;
-                    Editable = (False);
-                }
-                field("Week Forecast Qty"; Rec."Week Forecast Qty")
-                {
-                    Style = StrongAccent;
-                    DecimalPlaces = 2 : 2;
-                    ApplicationArea = All;
-                    Editable = (False);
-                }
-                field(Monday; Rec.Monday)
-                {
-                    Style = StrongAccent;
-                    DecimalPlaces = 2 : 2;
-                    ToolTip = 'Specifies the value of the Prognoza Pn field.', Comment = '%';
-                }
-                field(Tuesday; Rec.Tuesday)
-
-                {
-                    Style = StrongAccent;
-                    DecimalPlaces = 2 : 2;
-                    ToolTip = 'Specifies the value of the Prognoza Wt field.', Comment = '%';
-                }
-                field(Wednesday; Rec.Wednesday)
-                {
-                    Style = StrongAccent;
-                    DecimalPlaces = 2 : 2;
-                    ToolTip = 'Specifies the value of the Prognoza Śr field.', Comment = '%';
-                }
-                field(Thursday; Rec.Thursday)
-                {
-                    Style = StrongAccent;
-                    DecimalPlaces = 2 : 2;
-                    ToolTip = 'Specifies the value of the Prognoza Cz field.', Comment = '%';
-                }
-                field(Friday; Rec.Friday)
-                {
-                    Style = StrongAccent;
-                    DecimalPlaces = 2 : 2;
-                    ToolTip = 'Specifies the value of the Prognoza Pt field.', Comment = '%';
-                }
-                field(Saturday; Rec.Saturday)
-                {
-                    Style = StrongAccent;
-                    DecimalPlaces = 2 : 2;
-                    ToolTip = 'Specifies the value of the Prognoza Sb field.', Comment = '%';
-                }
-                field(Sunday; Rec.Sunday)
-                {
-                    Style = StrongAccent;
-                    DecimalPlaces = 2 : 2;
-                    ToolTip = 'Specifies the value of the Prognoza Ni field.', Comment = '%';
-                }
+                SubPageLink = "Forecast Planning No." = field("No.");
+                ApplicationArea = All;
             }
-            group(Stats)
+            /* group(Stats)
             {
                 Caption = 'Cust. Sales Statistics';
                 part("AMC Customer Sales Statistics"; "AMC Customer Sales Statistics")
@@ -431,8 +248,8 @@ page 50049 "AMC Item Forecast Planning"
                               "AMC Date Filter CM-4M" = FIELD("Date Filter CM-4M"),
                               "AMC Date Filter 5M" = FIELD("Date Filter 5M");
                 }
-            }
-            group(OrderLine)
+            } */
+            /* group(OrderLine)
             {
                 Caption = 'Sales Orders';
                 part("AMC Sales Order Line"; "AMC Sales Order Line")
@@ -440,87 +257,42 @@ page 50049 "AMC Item Forecast Planning"
                     ApplicationArea = All;
                     SubPageLink = Type = CONST(Item), "No." = FIELD("Item No."), "Document Type" = CONST(Order);
                 }
-            }
-            group(Summary)
-            {
-                Caption = 'Summary';
-                field("AMC Item No."; Rec."Item No.")
-                {
-                    ApplicationArea = All;
-                }
-                field("AMC Item Description"; Rec."Item Description")
-                {
-                    ApplicationArea = All;
-                }
-                field("AMC Production Lot"; Rec."Production Lot")
-                {
-                    ApplicationArea = All;
-                }
-                field(SetMinimStock; SetMinimStock)
-                {
-                    ApplicationArea = All;
-                    Caption = 'Min. Stock';
-                }
-                field("AMC Product Safety Stock"; Rec."Product Safety Stock")
-                {
-                    ApplicationArea = All;
-                }
-                field(SetLotQty; SetLotQty)
-                {
-                    ApplicationArea = All;
-                    Caption = 'Lot. Qty.';
-                }
-                field("AMC Max Stock Item"; Rec."Max Stock Item")
-                {
-                    ApplicationArea = All;
-                    Caption = 'Max. Stock Item';
-                }
-                field(SetMaximStok; SetMaximStok)
-                {
-                    ApplicationArea = All;
-                    Caption = 'Max. Stock';
-                }
-            }
+            } */
+
             group(Filters)
             {
                 Caption = 'Filters';
 
-                //field("Date Filter CM"; Rec."Date Filter CM")
                 field(DateFilter_CM; DateFilter_CM)
                 {
                     Caption = 'Filtr Daty BM';
                     ApplicationArea = All;
                     Editable = false;
                 }
-                //field("Date Filter CM-1"; Rec."Date Filter CM-1M")
                 field(DateFilter_CM_1M; DateFilter_CM_1M)
                 {
                     Caption = 'Filtr Daty BM-1';
                     ApplicationArea = All;
                     Editable = false;
                 }
-                //field("Date Filter CM-2"; Rec."Date Filter CM-2M")
                 field(DateFilter_CM_2M; DateFilter_CM_2M)
                 {
                     Caption = 'Filtr Daty BM-2';
                     ApplicationArea = All;
                     Editable = false;
                 }
-                //field("Date Filter CM-3"; Rec."Date Filter CM-3M")
                 field(DateFilter_CM_3M; DateFilter_CM_3M)
                 {
                     Caption = 'Filtr Daty BM-3';
                     ApplicationArea = All;
                     Editable = false;
                 }
-                //field("Date Filter CM-4"; Rec."Date Filter CM-4M")
                 field(DateFilter_CM_4M; DateFilter_CM_4M)
                 {
                     Caption = 'Filtr Daty BM-4';
                     ApplicationArea = All;
                     Editable = false;
                 }
-                //field("Date Filter 5M"; Rec."Date Filter 5M")
                 field(DateFilter_5M; DateFilter_5M)
                 {
                     Caption = 'Filtr Daty 5M';
@@ -545,25 +317,25 @@ page 50049 "AMC Item Forecast Planning"
 
                     trigger OnAction()
                     begin
-                        ForecPlanning.RESET();
+                        /* ForecPlanning.RESET();
                         ForecPlanning.SETRANGE("Forecast Code", SetForecastCode);
-                        ForecPlanning.SETRANGE(Year, SetYear);
-                        ForecPlanning.SETRANGE("Week No.", SetWeekNo);
+                        ForecPlanning.SETRANGE(Year, Rec.Year);
+                        ForecPlanning.SETRANGE("Week No.", Rec."Week No.");
                         ForecPlanning.SetRange("Item No.", '');
                         ForecPlanning.DeleteAll();
 
                         ForecPlanning.RESET();
                         ForecPlanning.SETRANGE("Forecast Code", SetForecastCode);
-                        ForecPlanning.SETRANGE(Year, SetYear);
-                        ForecPlanning.SETRANGE("Week No.", SetWeekNo);
+                        ForecPlanning.SETRANGE(Year, Rec.Year);
+                        ForecPlanning.SETRANGE("Week No.", Rec."Week No.");
                         ForecPlanning.SetFilter("Item No.", '<>%1', '');
                         IF ForecPlanning.FINDFIRST() THEN BEGIN
-                            Question2 := STRSUBSTNO(Text_008, SetYear, SetWeekNo);
+                            Question2 := STRSUBSTNO(Text_008, Rec.Year, Rec."Week No.");
                             IF NOT CONFIRM(Question2, TRUE) THEN
                                 ERROR('Zaniechano Inicjowania Linii Prognozy');
                         END;
 
-                        IF (SetYear <> 0) AND (SetWeekNo <> 0) AND (SetForecastCode <> '') THEN BEGIN
+                        IF (Rec.Year <> 0) AND (Rec."Week No." <> 0) AND (SetForecastCode <> '') THEN BEGIN
                             ItemRec.RESET();
                             ItemRec.SETRANGE(Blocked, FALSE);
                             ItemRec.SETRANGE("Replenishment System", ItemRec."Replenishment System"::"Prod. Order");
@@ -576,14 +348,14 @@ page 50049 "AMC Item Forecast Planning"
                                         ItemRec.TESTFIELD("Item Category Code");
                                         ForecPlanning.RESET();
                                         ForecPlanning.SETRANGE("Forecast Code", SetForecastCode);
-                                        ForecPlanning.SETRANGE(Year, SetYear);
-                                        ForecPlanning.SETRANGE("Week No.", SetWeekNo);
+                                        ForecPlanning.SETRANGE(Year, Rec.Year);
+                                        ForecPlanning.SETRANGE("Week No.", Rec."Week No.");
                                         ForecPlanning.SETRANGE("Item No.", ItemRec."No.");
                                         IF NOT ForecPlanning.FINDFIRST() THEN BEGIN
                                             Rec.INIT();
                                             Rec."Forecast Code" := SetForecastCode;
-                                            Rec.Year := SetYear;
-                                            Rec."Week No." := SetWeekNo;
+                                            Rec.Year := Rec.Year;
+                                            Rec."Week No." := Rec."Week No.";
                                             Rec."Week From Day" := SetDateFrom;
                                             Rec."Previous Week From Date" := CALCDATE('<-7D>', SetDateFrom);
                                             ItemCategory.RESET();
@@ -595,7 +367,7 @@ page 50049 "AMC Item Forecast Planning"
                                         END;
                                     END;
                                 UNTIL ItemRec.NEXT() = 0;
-                        END;
+                        END; */
                     end;
                 }
                 action(Update)
@@ -609,7 +381,7 @@ page 50049 "AMC Item Forecast Planning"
                         ConfirmText: Text[200];
                         OldQty: Decimal;
                     begin
-                        //---AL.06Jun13
+                        /* //---AL.06Jun13
                         ProdOrderTemp.RESET();
                         ProdOrderTemp.DELETEALL();
                         CLEAR(ProdOrderTemp);
@@ -619,8 +391,8 @@ page 50049 "AMC Item Forecast Planning"
 
                         ForecastPlanning.RESET();
                         ForecastPlanning.SETRANGE("Forecast Code", Rec."Forecast Code");
-                        ForecastPlanning.SETRANGE(Year, SetYear);
-                        ForecastPlanning.SETRANGE("Week No.", SetWeekNo);
+                        ForecastPlanning.SETRANGE(Year, Rec.Year);
+                        ForecastPlanning.SETRANGE("Week No.", Rec."Week No.");
                         ForecastPlanning.SETFILTER("Week Forecast Qty", '<>0');
 
                         IF ForecastPlanning.FINDSet() THEN
@@ -647,8 +419,8 @@ page 50049 "AMC Item Forecast Planning"
 
                         ForecastPlanning.RESET();
                         ForecastPlanning.SETRANGE("Forecast Code", Rec."Forecast Code");
-                        ForecastPlanning.SETRANGE(Year, SetYear);
-                        ForecastPlanning.SETRANGE("Week No.", SetWeekNo);
+                        ForecastPlanning.SETRANGE(Year, Rec.Year);
+                        ForecastPlanning.SETRANGE("Week No.", Rec."Week No.");
                         ForecastPlanning.SETFILTER("Week Forecast Qty", '<>0');
                         IF ForecastPlanning.FINDSet() THEN
                             REPEAT
@@ -1062,7 +834,7 @@ page 50049 "AMC Item Forecast Planning"
                                     END;
                                 END;
                             UNTIL ForecastPlanning.NEXT = 0;
-                        RefreshOrders();
+                        RefreshOrders(); */
                     end;
                 }
             }
@@ -1083,7 +855,7 @@ page 50049 "AMC Item Forecast Planning"
                     Filter_Pt: Text[50];
                     SetDay: Enum "AMC Day of Week";
                 begin
-                    Filter_Pn := Rec.GETFILTER(Monday);
+                    /* Filter_Pn := Rec.GETFILTER(Monday);
                     Filter_Wt := Rec.GETFILTER(Tuesday);
                     Filter_Sr := Rec.GETFILTER(Wednesday);
                     Filter_Cz := Rec.GETFILTER(Thursday);
@@ -1107,7 +879,7 @@ page 50049 "AMC Item Forecast Planning"
                                         SetDay := SetDay::" ";
 
                     ForecastPlanningList.SetInitDate(Rec.Year, Rec."Week No.", SetDay);
-                    ForecastPlanningList.RUN();
+                    ForecastPlanningList.RUN(); */
                 end;
             }
         }
@@ -1115,8 +887,7 @@ page 50049 "AMC Item Forecast Planning"
 
     local procedure UpdateLine()
     begin
-
-        Rec.CALCFIELDS("Total Week Forecast", "Total Monday", "Total Tuesdey", "Total Wednesday", "Total Thursday", "Total Friday",
+        /* Rec.CALCFIELDS("Total Week Forecast", "Total Monday", "Total Tuesdey", "Total Wednesday", "Total Thursday", "Total Friday",
          "Total Saturday", "Total Sunday");
         //rec.CalcFields("Date Filter CM", "Date Filter CM-1M", "Date Filter CM-2M", "Date Filter CM-3M", "Date Filter CM-4M", "Date Filter 5M");
 
@@ -1127,7 +898,7 @@ page 50049 "AMC Item Forecast Planning"
                            - Rec.Thursday
                            - Rec.Friday
                            - Rec.Saturday
-                           - Rec.Sunday;
+                           - Rec.Sunday; */
     end;
 
     trigger OnAfterGetRecord()
@@ -1139,9 +910,6 @@ page 50049 "AMC Item Forecast Planning"
     trigger OnInsertRecord(BelowxRec: Boolean): Boolean
     begin
         SetDeleteLine := FALSE;
-        Rec."Forecast Code" := SetForecastCode;
-        Rec.Year := SetYear;
-        Rec."Week No." := SetWeekNo;
     end;
 
     trigger OnModifyRecord(): Boolean
@@ -1149,106 +917,95 @@ page 50049 "AMC Item Forecast Planning"
         SetDeleteLine := FALSE;
     end;
 
+    trigger OnNewRecord(BelowxRec: Boolean)
+    var c:Page "Customer Card";
+    begin
+        Rec.InitForecast();
+    end;
+
     trigger OnOpenPage()
     begin
         SetDeleteLine := FALSE;
-        SalesSetup.GET();
-        SalesSetup.TESTFIELD("AMC Production Forecast Code");
 
-        SetForecastCode := Rec."Forecast Code";
-        if SetForecastCode = '' then
-            SetForecastCode := SalesSetup."AMC Production Forecast Code";
+        /* CurrMonth := DATE2DMY(WORKDATE(), 2);
 
-        SetYear := Rec.Year;
-        if SetYear = 0 then
-            SetYear := DATE2DWY(WORKDATE(), 3);
-
-        SetWeekNo := Rec."Week No.";
-        if SetWeekNo = 0 then
-            SetWeekNo := DATE2DWY(WORKDATE(), 2);
-
-        SetDateFrom := DWY2DATE(1, SetWeekNo, SetYear);
-        SetDateTo := DWY2DATE(7, SetWeekNo, SetYear);
-
-        CurrMonth := DATE2DMY(WORKDATE(), 2);
-
-        FirstDayofCM := DMY2DATE(1, CurrMonth, SetYear);
+        FirstDayofCM := DMY2DATE(1, CurrMonth, Rec.Year);
         LastDayofCM := CALCDATE('<CM>', WORKDATE());
 
         IF CurrMonth >= 5 THEN BEGIN
-            "FirstDayofCM1" := DMY2DATE(1, CurrMonth - 1, SetYear);
+            "FirstDayofCM1" := DMY2DATE(1, CurrMonth - 1, Rec.Year);
             "LastDayofCM1" := CALCDATE('<-1D>', FirstDayofCM);
 
-            "FirstDayofCM2" := DMY2DATE(1, CurrMonth - 2, SetYear);
+            "FirstDayofCM2" := DMY2DATE(1, CurrMonth - 2, Rec.Year);
             "LastDayofCM2" := CALCDATE('<-1D>', "FirstDayofCM1");
 
-            "FirstDayofCM3" := DMY2DATE(1, CurrMonth - 3, SetYear);
+            "FirstDayofCM3" := DMY2DATE(1, CurrMonth - 3, Rec.Year);
             "LastDayofCM3" := CALCDATE('<-1D>', "FirstDayofCM2");
 
-            "FirstDayofCM4" := DMY2DATE(1, CurrMonth - 4, SetYear);
+            "FirstDayofCM4" := DMY2DATE(1, CurrMonth - 4, Rec.Year);
             "LastDayofCM4" := CALCDATE('<-1D>', "FirstDayofCM3");
         END;
 
         IF CurrMonth = 4 THEN BEGIN
-            "FirstDayofCM1" := DMY2DATE(1, CurrMonth - 1, SetYear);
+            "FirstDayofCM1" := DMY2DATE(1, CurrMonth - 1, Rec.Year);
             "LastDayofCM1" := CALCDATE('<-1D>', FirstDayofCM);
 
-            "FirstDayofCM2" := DMY2DATE(1, CurrMonth - 2, SetYear);
+            "FirstDayofCM2" := DMY2DATE(1, CurrMonth - 2, Rec.Year);
             "LastDayofCM2" := CALCDATE('<-1D>', "FirstDayofCM1");
 
-            "FirstDayofCM3" := DMY2DATE(1, CurrMonth - 3, SetYear);
+            "FirstDayofCM3" := DMY2DATE(1, CurrMonth - 3, Rec.Year);
             "LastDayofCM3" := CALCDATE('<-1D>', "FirstDayofCM2");
 
-            "FirstDayofCM4" := DMY2DATE(1, 12, SetYear - 1);
+            "FirstDayofCM4" := DMY2DATE(1, 12, Rec.Year - 1);
             "LastDayofCM4" := CALCDATE('<-1D>', "FirstDayofCM3");
         END;
 
         IF CurrMonth = 3 THEN BEGIN
-            "FirstDayofCM1" := DMY2DATE(1, CurrMonth - 1, SetYear);
+            "FirstDayofCM1" := DMY2DATE(1, CurrMonth - 1, Rec.Year);
             "LastDayofCM1" := CALCDATE('<-1D>', FirstDayofCM);
 
-            "FirstDayofCM2" := DMY2DATE(1, CurrMonth - 2, SetYear);
+            "FirstDayofCM2" := DMY2DATE(1, CurrMonth - 2, Rec.Year);
             "LastDayofCM2" := CALCDATE('<-1D>', "FirstDayofCM1");
 
-            "FirstDayofCM3" := DMY2DATE(1, 12, SetYear - 1);
+            "FirstDayofCM3" := DMY2DATE(1, 12, Rec.Year - 1);
             "LastDayofCM3" := CALCDATE('<-1D>', "FirstDayofCM2");
 
-            "FirstDayofCM4" := DMY2DATE(1, 11, SetYear - 1);
+            "FirstDayofCM4" := DMY2DATE(1, 11, Rec.Year - 1);
             "LastDayofCM4" := CALCDATE('<-1D>', "FirstDayofCM3");
         END;
 
         IF CurrMonth = 2 THEN BEGIN
-            "FirstDayofCM1" := DMY2DATE(1, CurrMonth - 1, SetYear);
+            "FirstDayofCM1" := DMY2DATE(1, CurrMonth - 1, Rec.Year);
             "LastDayofCM1" := CALCDATE('<-1D>', FirstDayofCM);
 
-            "FirstDayofCM2" := DMY2DATE(1, 12, SetYear - 1);
+            "FirstDayofCM2" := DMY2DATE(1, 12, Rec.Year - 1);
             "LastDayofCM2" := CALCDATE('<-1D>', "FirstDayofCM1");
 
-            "FirstDayofCM3" := DMY2DATE(1, 11, SetYear - 1);
+            "FirstDayofCM3" := DMY2DATE(1, 11, Rec.Year - 1);
             "LastDayofCM3" := CALCDATE('<-1D>', "FirstDayofCM2");
 
-            "FirstDayofCM4" := DMY2DATE(1, 10, SetYear - 1);
+            "FirstDayofCM4" := DMY2DATE(1, 10, Rec.Year - 1);
             "LastDayofCM4" := CALCDATE('<-1D>', "FirstDayofCM3");
         END;
 
         IF CurrMonth = 1 THEN BEGIN
-            "FirstDayofCM1" := DMY2DATE(1, 12, SetYear - 1);
+            "FirstDayofCM1" := DMY2DATE(1, 12, Rec.Year - 1);
             "LastDayofCM1" := CALCDATE('<-1D>', FirstDayofCM);
 
-            "FirstDayofCM2" := DMY2DATE(1, 11, SetYear - 1);
+            "FirstDayofCM2" := DMY2DATE(1, 11, Rec.Year - 1);
             "LastDayofCM2" := CALCDATE('<-1D>', "FirstDayofCM1");
 
-            "FirstDayofCM3" := DMY2DATE(1, 10, SetYear - 1);
+            "FirstDayofCM3" := DMY2DATE(1, 10, Rec.Year - 1);
             "LastDayofCM3" := CALCDATE('<-1D>', "FirstDayofCM2");
 
-            "FirstDayofCM4" := DMY2DATE(1, 9, SetYear - 1);
+            "FirstDayofCM4" := DMY2DATE(1, 9, Rec.Year - 1);
             "LastDayofCM4" := CALCDATE('<-1D>', "FirstDayofCM3");
-        END;
+        END; */
 
-        Rec.RESET();
+        /* Rec.RESET();
         Rec.SETRANGE("Forecast Code", SetForecastCode);
-        Rec.SETRANGE(Year, SetYear);
-        Rec.SETRANGE("Week No.", SetWeekNo);
+        Rec.SETRANGE(Year, Rec.Year);
+        Rec.SETRANGE("Week No.", Rec."Week No.");
 
         Rec.SETRANGE("Date Filter CM", FirstDayofCM, LastDayofCM);
         DateFilter_CM := StrSubstNo('%1..%2', FirstDayofCM, LastDayofCM);
@@ -1266,19 +1023,17 @@ page 50049 "AMC Item Forecast Planning"
         DateFilter_CM_4M := StrSubstNo('%1..%2', FirstDayofCM4, LastDayofCM4);
 
         Rec.SETRANGE("Date Filter 5M", "FirstDayofCM4", LastDayofCM);
-        DateFilter_5M := StrSubstNo('%1..%2', FirstDayofCM4, LastDayofCM);
+        DateFilter_5M := StrSubstNo('%1..%2', FirstDayofCM4, LastDayofCM);*/
 
-        IF SetWeekNo > 1 THEN
-            Rec.SETRANGE("Prev. Forecast Filter", (SetWeekNo - 1));
+        //IF Rec."Week No." > 1 THEN
+        //    Rec.SETRANGE("Prev. Forecast Filter", (Rec."Week No." - 1)); 
     end;
 
     trigger OnDeleteRecord(): Boolean
     begin
-        IF SetDeleteLine = FALSE THEN BEGIN
+        IF not SetDeleteLine THEN BEGIN
             ForecastPlanning.RESET();
-            ForecastPlanning.SETRANGE("Forecast Code", SetForecastCode);
-            ForecastPlanning.SETRANGE(Year, SetYear);
-            ForecastPlanning.SETRANGE("Week No.", SetWeekNo);
+            ForecastPlanning.SETRANGE("Forecast Planning No.", Rec."No.");
             ForecastPlanning.SETFILTER("Week Forecast Qty", '<>0');
             IF ForecastPlanning.FINDFIRST() THEN
                 IF CONFIRM(Text_001, FALSE) THEN
@@ -1290,7 +1045,7 @@ page 50049 "AMC Item Forecast Planning"
 
     local procedure UpdateForecast()
     begin
-        SetPn := FALSE;
+        /* SetPn := FALSE;
         SetWt := FALSE;
         SetSr := FALSE;
         SetCz := FALSE;
@@ -1298,18 +1053,18 @@ page 50049 "AMC Item Forecast Planning"
         SetSb := FALSE;
         SetNi := FALSE;
 
-        IF SetYear < 100 THEN
-            SetYear := 2000 + SetYear;
+        IF Rec.Year < 100 THEN
+            Rec.Year := 2000 + Rec.Year;
 
         //RESET;
         Rec.SETRANGE("Forecast Code", SetForecastCode);
-        Rec.SETRANGE(Year, SetYear);
-        Rec.SETRANGE("Week No.", SetWeekNo);
-        IF SetWeekNo > 1 THEN
-            Rec.SETRANGE("Prev. Forecast Filter", (SetWeekNo - 1));
+        Rec.SETRANGE(Year, Rec.Year);
+        Rec.SETRANGE("Week No.", Rec."Week No.");
+        IF Rec."Week No." > 1 THEN
+            Rec.SETRANGE("Prev. Forecast Filter", (Rec."Week No." - 1));
 
-        SetDateFrom := DWY2DATE(1, SetWeekNo, SetYear);
-        SetDateTo := DWY2DATE(7, SetWeekNo, SetYear);
+        SetDateFrom := DWY2DATE(1, Rec."Week No.", Rec.Year);
+        SetDateTo := DWY2DATE(7, Rec."Week No.", Rec.Year);
 
         //IF RemainingForecast < 0 THEN
         //  "Week Forecast Qty":="Week Forecast Qty" - RemainingForecast;
@@ -1327,8 +1082,8 @@ page 50049 "AMC Item Forecast Planning"
 
         ForecastPlanning.RESET();
         ForecastPlanning.SETRANGE("Forecast Code", Rec."Forecast Code");
-        ForecastPlanning.SETRANGE(Year, SetYear);
-        ForecastPlanning.SETRANGE("Week No.", SetWeekNo);
+        ForecastPlanning.SETRANGE(Year, Rec.Year);
+        ForecastPlanning.SETRANGE("Week No.", Rec."Week No.");
         IF ForecastPlanning.FINDSet() THEN
             REPEAT
                 IF ForecastPlanning."Set Monday" = TRUE THEN
@@ -1345,12 +1100,12 @@ page 50049 "AMC Item Forecast Planning"
                     SetSb := TRUE;
                 IF ForecastPlanning."Set Sunday" = TRUE THEN
                     SetNi := TRUE;
-            UNTIL ForecastPlanning.NEXT() = 0;
+            UNTIL ForecastPlanning.NEXT() = 0; */
     end;
 
     local procedure FilterLowItems()
     begin
-        IF LowItemLevel = TRUE THEN BEGIN
+        /* IF LowItemLevel = TRUE THEN BEGIN
             ItemRec.RESET();
             ItemRec.SETRANGE("Replenishment System", ItemRec."Replenishment System"::"Prod. Order");
             ItemRec.SETFILTER("Reorder Point", '<>0');
@@ -1358,7 +1113,7 @@ page 50049 "AMC Item Forecast Planning"
                 REPEAT
                     ItemRec.CALCFIELDS("AMC Items on M.GL");
                     IF ItemRec."AMC Items on M.GL" < ItemRec."Reorder Point" THEN
-                        IF Rec.GET(SetForecastCode, SetYear, SetWeekNo, ItemRec."No.") THEN
+                        IF Rec.GET(SetForecastCode, Rec.Year, Rec."Week No.", ItemRec."No.") THEN
                             Rec.MARK(TRUE);
                 UNTIL ItemRec.NEXT() = 0;
         END ELSE BEGIN
@@ -1374,26 +1129,26 @@ page 50049 "AMC Item Forecast Planning"
         ELSE
             Rec.MARKEDONLY(FALSE);
 
-        CurrPage.UPDATE();
+        CurrPage.UPDATE(); */
     end;
 
     local procedure InitProductDate()
     begin
-        ProdDate[1] := DWY2DATE(1, SetWeekNo, SetYear);
-        ProdDate[2] := DWY2DATE(2, SetWeekNo, SetYear);
-        ProdDate[3] := DWY2DATE(3, SetWeekNo, SetYear);
-        ProdDate[4] := DWY2DATE(4, SetWeekNo, SetYear);
-        ProdDate[5] := DWY2DATE(5, SetWeekNo, SetYear);
-        ProdDate[6] := DWY2DATE(6, SetWeekNo, SetYear);
-        ProdDate[7] := DWY2DATE(7, SetWeekNo, SetYear);
+        ProdDate[1] := DWY2DATE(1, Rec."Week No.", Rec.Year);
+        ProdDate[2] := DWY2DATE(2, Rec."Week No.", Rec.Year);
+        ProdDate[3] := DWY2DATE(3, Rec."Week No.", Rec.Year);
+        ProdDate[4] := DWY2DATE(4, Rec."Week No.", Rec.Year);
+        ProdDate[5] := DWY2DATE(5, Rec."Week No.", Rec.Year);
+        ProdDate[6] := DWY2DATE(6, Rec."Week No.", Rec.Year);
+        ProdDate[7] := DWY2DATE(7, Rec."Week No.", Rec.Year);
     end;
 
     local procedure UpdateForDay()
     begin
-        ForecastPlanning.RESET();
+        /* ForecastPlanning.RESET();
         ForecastPlanning.SETRANGE("Forecast Code", Rec."Forecast Code");
-        ForecastPlanning.SETRANGE(Year, SetYear);
-        ForecastPlanning.SETRANGE("Week No.", SetWeekNo);
+        ForecastPlanning.SETRANGE(Year, Rec.Year);
+        ForecastPlanning.SETRANGE("Week No.", Rec."Week No.");
         IF ForecastPlanning.FINDset() THEN
             REPEAT
                 ForecastPlanning."Set Monday" := SetPn;
@@ -1404,7 +1159,7 @@ page 50049 "AMC Item Forecast Planning"
                 ForecastPlanning."Set Saturday" := SetSb;
                 ForecastPlanning."Set Sunday" := SetNi;
                 ForecastPlanning.MODIFY();
-            UNTIL ForecastPlanning.NEXT() = 0;
+            UNTIL ForecastPlanning.NEXT() = 0; */
     end;
 
     local procedure RefreshOrder(Var lProdOrder: Record "Production Order")
@@ -1452,21 +1207,16 @@ page 50049 "AMC Item Forecast Planning"
 
     var
         MfgSetup: Record "Manufacturing Setup";
-        ForecPlanning: Record "AMC Forecast Planning";
+        ForecPlanning: Record "AMC Forecast Planning Line";
         SalesSetup: Record "Sales & Receivables Setup";
         ItemRec: Record Item;
-        ForecastPlanning: Record "AMC Forecast Planning";
+        ForecastPlanning: Record "AMC Forecast Planning Line";
         ProdForectEntry: Record "Production Forecast Entry";
         ItemCategory: Record "Item Category";
         ProdOrder: Record "Production Order";
         NoSeriesMgt: Codeunit "No. Series";
         ItemList: Page "Item List";
         ForecastPlanningList: Report "AMC Forecast Planning List";
-        SetYear: Integer;
-        SetWeekNo: Integer;
-        SetForecastCode: Code[20];
-        SetDateFrom: Date;
-        SetDateTo: Date;
         RemainingForecast: Decimal;
         NoZeroForecast: Boolean;
         LowItemLevel: Boolean;

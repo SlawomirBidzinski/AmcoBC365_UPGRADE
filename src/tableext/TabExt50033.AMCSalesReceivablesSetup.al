@@ -87,6 +87,12 @@ tableextension 50033 "AMC Sales & Receivables Setup" extends "Sales & Receivable
             TableRelation = "No. Series";
             DataClassification = CustomerContent;
         }
+        field(50015; "AMC Prod. Forecast Nos."; Code[20])
+        {
+            Caption = 'Prod. Forecast Nos.';
+            TableRelation = "No. Series";
+            DataClassification = CustomerContent;
+        }
         field(50016; "AMC Default Currency Bank Acc."; Boolean)
         {
             Caption = 'Domyślne konto bankowe waluty';

@@ -1,45 +1,61 @@
-table 50041 "AMC Forecast Planning"
+table 50041 "AMC Forecast Planning Line"
 {
-    Caption = 'Forecast Planning';
+    Caption = 'Forecast Planning Line';
     DataClassification = CustomerContent;
     DrillDownPageId = "AMC Forecast Planning List";
     LookupPageId = "AMC Forecast Planning List";
 
     fields
     {
-        field(1; "Forecast Code"; Code[10])
+        field(1; "Forecast Planning No."; Code[20])
+        {
+            Caption = 'Forecast Planning No.';
+            DataClassification = CustomerContent;
+            TableRelation = "AMC Forecast Planning Header";
+        }
+        field(2; "Forecast Code"; Code[10])
         {
             Caption = 'Kod Prognozy';
             TableRelation = "Production Forecast Name";
-        }
-        field(2; "Entry No."; Integer)
-        {
-            Caption = 'Nr Zapisu';
+            Editable = false;
         }
         field(3; Year; Integer)
         {
             Caption = 'Rok';
+            Editable = false;
         }
         field(4; "Week No."; Integer)
         {
             Caption = 'Nr Tygodnia';
+            Editable = false;
         }
-        field(5; "Week From Day"; Date)
+        field(5; "Week Starting Date"; Date)
         {
-            Caption = 'Data Rozpoczęcia Tygodnia';
+            Caption = 'Week Starting Date';
+            Editable = false;
         }
-        field(6; "Location Code"; Code[10])
+        field(6; "Week Ending Date"; Date)
+        {
+            Caption = 'Week Ending Date';
+            Editable = false;
+        }
+        field(7; "Previous Week From Date"; Date)
+        {
+            Caption = 'Data Prognozy Poprz. Tygodnia';
+            Editable = false;
+        }
+        field(8; "Location Code"; Code[10])
         {
             Caption = 'Kod Lokalizacji';
         }
-        field(7; "Item No."; Code[20])
+        field(9; "Item No."; Code[20])
         {
             Caption = 'Kod Zapasu';
             TableRelation = Item;
 
             trigger OnValidate()
             begin
-                if ItemRec.GET("Item No.") then begin
+                /* if ItemRec.GET("Item No.") then begin
                     "Item Description" := ItemRec.Description;
                     "Base Unit of Measure" := ItemRec."Base Unit of Measure";
                     "Pack Unit of Measure" := ItemRec."AMC Pack Unit of Measure";
@@ -69,32 +85,32 @@ table 50041 "AMC Forecast Planning"
                             if PrevForecEntry."Forecast Remarks" <> '' then
                                 "Forecast Remarks" := PrevForecEntry."Forecast Remarks";
                     end;
-                end;
+                end; */
             end;
         }
-        field(8; "Item Description"; Text[100])
+        field(10; "Item Description"; Text[100])
         {
             Caption = 'Nazwa Zapasu';
             Editable = false;
         }
-        field(9; "Base Unit of Measure"; Code[10])
+        field(11; "Base Unit of Measure"; Code[10])
         {
             Caption = 'Podst. jednostka miary';
             Editable = false;
             TableRelation = "Item Unit of Measure".Code where("Item No." = field("Item No."));
         }
-        field(10; "Pack Unit of Measure"; Code[10])
+        field(12; "Pack Unit of Measure"; Code[10])
         {
             Caption = 'Jednostka miary opakowania';
             Editable = false;
             TableRelation = "Unit of Measure";
         }
-        field(11; Alergeny; Text[200])
+        field(13; Alergeny; Text[200])
         {
             Caption = 'Alergeny';
             Editable = false;
         }
-        field(12; "Reorder Point"; Decimal)
+        field(14; "Reorder Point"; Decimal)
         {
             FieldClass = FlowField;
             BlankZero = true;
@@ -104,7 +120,7 @@ table 50041 "AMC Forecast Planning"
             Editable = false;
 
         }
-        field(13; "Reorder Quantity"; Decimal)
+        field(15; "Reorder Quantity"; Decimal)
         {
             FieldClass = FlowField;
             BlankZero = true;
@@ -114,14 +130,14 @@ table 50041 "AMC Forecast Planning"
             Editable = false;
 
         }
-        field(14; "Reorder Policy"; Enum "Reordering Policy")
+        field(16; "Reorder Policy"; Enum "Reordering Policy")
         {
             FieldClass = FlowField;
             CalcFormula = lookup(Item."Reordering Policy" where("No." = field("Item No.")));
             Caption = 'Zasady Ponownego Zamówienia';
 
         }
-        field(15; "Production BOM"; Code[20])
+        field(17; "Production BOM"; Code[20])
         {
             FieldClass = FlowField;
             CalcFormula = lookup(Item."Production BOM No." where("No." = field("Item No.")));
@@ -129,30 +145,26 @@ table 50041 "AMC Forecast Planning"
             Editable = false;
 
         }
-        field(16; "Production Lot"; Decimal)
+        field(18; "Production Lot"; Decimal)
         {
             FieldClass = FlowField;
             CalcFormula = lookup(Item."AMC Production Lot" where("No." = field("Item No.")));
             Caption = 'Szarża produkcji';
 
         }
-        field(17; "Product Safety Stock"; Decimal)
+        field(19; "Product Safety Stock"; Decimal)
         {
             FieldClass = FlowField;
             CalcFormula = lookup(Item."AMC Product Safety Stock" where("No." = field("Item No.")));
             Caption = 'Stan bezpieczny wyrobu';
 
         }
-        field(18; "Max Stock Item"; Decimal)
+        field(20; "Max Stock Item"; Decimal)
         {
             FieldClass = FlowField;
             CalcFormula = lookup(Item."AMC Max Item Stock" where("No." = field("Item No.")));
             Caption = 'Max Stock Item';
 
-        }
-        field(20; "Previous Week From Date"; Date)
-        {
-            Caption = 'Data Prognozy Poprz. Tygodnia';
         }
         field(21; "Week Forecast Qty"; Decimal)
         {
@@ -281,118 +293,11 @@ table 50041 "AMC Forecast Planning"
         field(91; "Prev. Forecast Qty"; Decimal)
         {
             FieldClass = FlowField;
-            CalcFormula = sum("AMC Forecast Planning"."Week Forecast Qty" where("Forecast Code" = field("Forecast Code"),
+            CalcFormula = sum("AMC Forecast Planning Line"."Week Forecast Qty" where("Forecast Planning No." = field("Forecast Planning No."),
                                                                             "Item No." = field("Item No."),
-                                                                             "Week From Day" = field("Previous Week From Date")));
+                                                                            "Week Starting Date" = field("Previous Week From Date")));
             Caption = 'Ilość Poprzedniej Prognozy';
 
-        }
-        field(100; "Total Week Forecast"; Decimal)
-        {
-            FieldClass = FlowField;
-            CalcFormula = sum("AMC Forecast Planning"."Week Forecast Qty" where("Forecast Code" = field("Forecast Code"),
-                                                                             Year = field(Year),
-                                                                             "Week No." = field("Week No.")));
-            Caption = 'Razem Zaplanowano w Tygodniu';
-
-        }
-        field(101; "Total Monday"; Decimal)
-        {
-            FieldClass = FlowField;
-            CalcFormula = sum("AMC Forecast Planning".Monday where("Forecast Code" = field("Forecast Code"),
-                                                                Year = field(Year),
-                                                                "Week No." = field("Week No."),
-                                                                Monday = filter(<> 0)));
-            Caption = 'Razem Pn';
-
-        }
-        field(102; "Total Tuesdey"; Decimal)
-        {
-            FieldClass = FlowField;
-            CalcFormula = sum("AMC Forecast Planning".Tuesday where("Forecast Code" = field("Forecast Code"),
-                                                                 Year = field(Year),
-                                                                 "Week No." = field("Week No."),
-                                                                 Tuesday = filter(<> 0)));
-            Caption = 'Razem Wt';
-
-        }
-        field(103; "Total Wednesday"; Decimal)
-        {
-            FieldClass = FlowField;
-            CalcFormula = sum("AMC Forecast Planning".Wednesday where("Forecast Code" = field("Forecast Code"),
-                                                                   Year = field(Year),
-                                                                   "Week No." = field("Week No."),
-                                                                   Wednesday = filter(<> 0)));
-            Caption = 'Razem Śr';
-
-        }
-        field(104; "Total Thursday"; Decimal)
-        {
-            FieldClass = FlowField;
-            CalcFormula = sum("AMC Forecast Planning".Thursday where("Forecast Code" = field("Forecast Code"),
-                                                                  Year = field(Year),
-                                                                  "Week No." = field("Week No."),
-                                                                  Thursday = filter(<> 0)));
-            Caption = 'Razem Cz';
-
-        }
-        field(105; "Total Friday"; Decimal)
-        {
-            FieldClass = FlowField;
-            CalcFormula = sum("AMC Forecast Planning".Friday where("Forecast Code" = field("Forecast Code"),
-                                                                Year = field(Year),
-                                                                "Week No." = field("Week No."),
-                                                                Friday = filter(<> 0)));
-            Caption = 'Razem Pt';
-
-        }
-        field(106; "Total Saturday"; Decimal)
-        {
-            FieldClass = FlowField;
-            CalcFormula = sum("AMC Forecast Planning".Saturday where("Forecast Code" = field("Forecast Code"),
-                                                                  Year = field(Year),
-                                                                  "Week No." = field("Week No."),
-                                                                  Saturday = filter(<> 0)));
-            Caption = 'Razem Sb';
-
-        }
-        field(107; "Total Sunday"; Decimal)
-        {
-            FieldClass = FlowField;
-            CalcFormula = sum("AMC Forecast Planning".Sunday where("Forecast Code" = field("Forecast Code"),
-                                                                Year = field(Year),
-                                                                "Week No." = field("Week No."),
-                                                                Sunday = filter(<> 0)));
-            Caption = 'Razem Ni';
-
-        }
-        field(111; "Set Monday"; Boolean)
-        {
-            Caption = 'Potw. Pn';
-        }
-        field(112; "Set Tuesdy"; Boolean)
-        {
-            Caption = 'Potw. Wt';
-        }
-        field(113; "Set Wednesday"; Boolean)
-        {
-            Caption = 'Potw. Śr';
-        }
-        field(114; "Set Thursday"; Boolean)
-        {
-            Caption = 'Potw. Cz';
-        }
-        field(115; "Set Friday"; Boolean)
-        {
-            Caption = 'Potw. Pt';
-        }
-        field(116; "Set Saturday"; Boolean)
-        {
-            Caption = 'Potw. Sb';
-        }
-        field(117; "Set Sunday"; Boolean)
-        {
-            Caption = 'Potw. Ni';
         }
         field(120; "Production Order Forecast Qty"; Decimal)
         {
@@ -406,7 +311,7 @@ table 50041 "AMC Forecast Planning"
             Caption = 'Planowana Il. Zl. Prod';
 
         }
-        field(121; "Production Order Realese Qty"; Decimal)
+        field(121; "Production Order Release Qty."; Decimal)
         {
             FieldClass = FlowField;
             CalcFormula = sum("Production Order".Quantity where(Status = const("Firm Planned"),
@@ -459,13 +364,9 @@ table 50041 "AMC Forecast Planning"
 
     keys
     {
-        key(Key1; "Forecast Code", Year, "Week No.", "Item No.")
+        key(Key1; "Forecast Planning No.", "Item No.")
         {
             Clustered = true;
-        }
-        key(Key2; "Forecast Code", Year, "Week No.", "Week From Day", "Location Code", "Item No.", Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday)
-        {
-            SumIndexFields = "Week Forecast Qty", Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday;
         }
     }
 
@@ -475,8 +376,8 @@ table 50041 "AMC Forecast Planning"
 
     var
         SalesSetup: Record "Sales & Receivables Setup";
-        ForecPlanning: Record "AMC Forecast Planning";
-        PrevForecEntry: Record "AMC Forecast Planning";
+        ForecPlanning: Record "AMC Forecast Planning Line";
+        PrevForecEntry: Record "AMC Forecast Planning Line";
         ItemRec: Record Item;
         ItemDimension: Record "AMC Item Dimension";
         DimValueTrans: Record "AMC Dimension Value Transl.";
@@ -504,8 +405,8 @@ table 50041 "AMC Forecast Planning"
 
     procedure UpdateProdOrder(var ProdOrder: Record "Production Order"; PrvDate: Date; PrvQty: Decimal)
     var
-        ForPlan: Record "AMC Forecast Planning";
-        ForPlanNew: Record "AMC Forecast Planning";
+        ForPlan: Record "AMC Forecast Planning Line";
+        ForPlanNew: Record "AMC Forecast Planning Line";
         SetNewYear: Integer;
         SetNewWeek: Integer;
         SetNewDay: Integer;

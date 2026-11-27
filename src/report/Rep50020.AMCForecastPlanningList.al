@@ -7,9 +7,9 @@ report 50020 "AMC Forecast Planning List"
     Caption = 'Forecast Planning List';
     dataset
     {
-        dataitem("Forecast Planning Line"; "AMC Forecast Planning")
+        dataitem("Forecast Planning Line"; "AMC Forecast Planning Line")
         {
-            DataItemTableView = SORTING("Forecast Code", Year, "Week No.", "Item No.");
+            DataItemTableView = SORTING("Forecast Planning No.", "Item No.");
 
             column(CompanyPicture; CompanyInfo.Picture) { }
             column(DocumentTitle; DocumentTitle) { }
@@ -30,7 +30,7 @@ report 50020 "AMC Forecast Planning List"
 
             trigger OnPreDataItem()
             begin
-                CompanyInfo.GET();
+                /* CompanyInfo.GET();
                 CompanyInfo.CalcFields(Picture);
 
                 DocumentTitle := Text_001;
@@ -86,7 +86,7 @@ report 50020 "AMC Forecast Planning List"
                 "Forecast Planning Line".SETRANGE("Forecast Code", SetForecastCode);
                 "Forecast Planning Line".SETRANGE(Year, SetYear);
                 "Forecast Planning Line".SETRANGE("Week No.", SetWeekNo);
-                "Forecast Planning Line".SETFILTER("Week Forecast Qty", '<>0');
+                "Forecast Planning Line".SETFILTER("Week Forecast Qty", '<>0'); */
             end;
 
             trigger OnAfterGetRecord()
@@ -259,7 +259,7 @@ report 50020 "AMC Forecast Planning List"
     end;
 
     var
-        ForecastPlanningHeader: Record "AMC Forecast Planning";
+        ForecastPlanningHeader: Record "AMC Forecast Planning Line";
         SalesSetup: Record "Sales & Receivables Setup";
         CompanyInfo: Record "Company Information";
         ItemRec: Record Item;

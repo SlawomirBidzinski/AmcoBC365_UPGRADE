@@ -3,17 +3,25 @@ page 50035 "AMC Forecast Planning List"
     ApplicationArea = All;
     Caption = 'Forecast Planning List';
     PageType = List;
-    SourceTable = "AMC Forecast Planning";
+    SourceTable = "AMC Forecast Planning Header";
     UsageCategory = Lists;
     Editable = false;
-    CardPageId = "AMC Item Forecast Planning";
-    
+    CardPageId = "AMC Item Forecast Plan. Card";
+
     layout
     {
         area(Content)
         {
             repeater(General)
             {
+                field("No."; Rec."No.")
+                {
+                    ApplicationArea = All;
+                }
+                field("Forecast Code"; Rec."Forecast Code")
+                {
+                    ApplicationArea = All;
+                }
                 field(Year; Rec.Year)
                 {
                     ToolTip = 'Specifies the value of the Rok field.', Comment = '%';
@@ -22,73 +30,17 @@ page 50035 "AMC Forecast Planning List"
                 {
                     ToolTip = 'Specifies the value of the Nr Tygodnia field.', Comment = '%';
                 }
-                field("Week From Day"; Rec."Week From Day")
+                field("Week Starting Date"; Rec."Week Starting Date")
                 {
                     ToolTip = 'Specifies the value of the Data Rozpoczęcia Tygodnia field.', Comment = '%';
                 }
-                field("Item No."; Rec."Item No.")
+                field("Week Ending Date"; Rec."Week Ending Date")
                 {
-                    ToolTip = 'Specifies the value of the Kod Zapasu field.', Comment = '%';
+                    ApplicationArea = All;
                 }
-                field("Item Description"; Rec."Item Description")
+                field("Previous Week From Date"; Rec."Previous Week From Date")
                 {
-                    ToolTip = 'Specifies the value of the Nazwa Zapasu field.', Comment = '%';
-                }
-                field("Base Unit of Measure"; Rec."Base Unit of Measure")
-                {
-                    ToolTip = 'Specifies the value of the Podst. jednostka miary field.', Comment = '%';
-                }
-                field("Week Forecast Qty"; Rec."Week Forecast Qty")
-                {
-                    ToolTip = 'Specifies the value of the Ilość Prognozy Tygodniowa field.', Comment = '%';
-                }
-                field(Monday; Rec.Monday)
-                {
-                    ToolTip = 'Specifies the value of the Prognoza Pn field.', Comment = '%';
-                }
-                field(Tuesday; Rec.Tuesday)
-                {
-                    ToolTip = 'Specifies the value of the Prognoza Wt field.', Comment = '%';
-                }
-                field(Wednesday; Rec.Wednesday)
-                {
-                    ToolTip = 'Specifies the value of the Prognoza Śr field.', Comment = '%';
-                }
-                field(Thursday; Rec.Thursday)
-                {
-                    ToolTip = 'Specifies the value of the Prognoza Cz field.', Comment = '%';
-                }
-                field(Friday; Rec.Friday)
-                {
-                    ToolTip = 'Specifies the value of the Prognoza Pt field.', Comment = '%';
-                }
-                field(Saturday; Rec.Saturday)
-                {
-                    ToolTip = 'Specifies the value of the Prognoza Sb field.', Comment = '%';
-                }
-                field(Sunday; Rec.Sunday)
-                {
-                    ToolTip = 'Specifies the value of the Prognoza Ni field.', Comment = '%';
-                }
-                field("Pack Unit of Measure"; Rec."Pack Unit of Measure")
-                {
-                    ToolTip = 'Specifies the value of the Jednostka miary opakowania field.', Comment = '%';
-                }
-                field("Production Lot"; Rec."Production Lot")
-                {
-                    ToolTip = 'Specifies the value of the Szarża produkcji field.', Comment = '%';
-                }
-                field("Product Safety Stock"; Rec."Product Safety Stock")
-                {
-                    ToolTip = 'Specifies the value of the Stan bezpieczny wyrobu field.', Comment = '%';
-                }
-                field("Forecast Remarks"; Rec."Forecast Remarks")
-                {
-                    ToolTip = 'Specifies the value of the Forecast Remarks field.', Comment = '%';
-                }
-                field(Alergeny; Rec.Alergeny)
-                {
-                    ToolTip = 'Specifies the value of the Alergeny field.', Comment = '%';
+                    ApplicationArea = All;
                 }
             }
         }
@@ -112,11 +64,11 @@ page 50035 "AMC Forecast Planning List"
                     Filter_Pt: Text[50];
                     SetDay: Enum "AMC Day of Week";
                 begin
-                    Filter_Pn := Rec.GETFILTER(Monday);
-                    Filter_Wt := Rec.GETFILTER(Tuesday);
-                    Filter_Sr := Rec.GETFILTER(Wednesday);
-                    Filter_Cz := Rec.GETFILTER(Thursday);
-                    Filter_Pt := Rec.GETFILTER(Friday);
+                    //Filter_Pn := Rec.GETFILTER(Monday);
+                    //Filter_Wt := Rec.GETFILTER(Tuesday);
+                    //Filter_Sr := Rec.GETFILTER(Wednesday);
+                    //Filter_Cz := Rec.GETFILTER(Thursday);
+                    //Filter_Pt := Rec.GETFILTER(Friday);
 
                     IF Filter_Pn <> '' THEN
                         SetDay := SetDay::Pn
