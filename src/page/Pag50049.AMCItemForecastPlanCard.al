@@ -57,7 +57,6 @@ page 50049 "AMC Item Forecast Plan. Card"
 
                         trigger OnValidate()
                         begin
-                            UpdateForDay();
                             FilterLowItems;
                             UpdateForecast();
                             CurrPage.Update(false);
@@ -70,7 +69,6 @@ page 50049 "AMC Item Forecast Plan. Card"
 
                         trigger OnValidate()
                         begin
-                            UpdateForDay();
                             UpdateForecast();
                             CurrPage.Update(false);
                         end;
@@ -80,81 +78,47 @@ page 50049 "AMC Item Forecast Plan. Card"
                 {
                     ShowCaption = false;
 
-                    field(SetPn; SetPn)
+                    field(SetMonday; Rec."Set Monday")
                     {
                         Caption = 'Set Monday';
                         ApplicationArea = All;
                         Style = StrongAccent;
-                        trigger OnValidate()
-                        begin
-                            UpdateForDay();
-                        end;
                     }
-                    field(SetWt; SetWt)
+                    field(SetTuesday; Rec."Set Tuesday")
                     {
                         Caption = 'Set Tuesday';
                         ApplicationArea = All;
                         Style = StrongAccent;
-                        trigger OnValidate()
-                        begin
-                            UpdateForDay();
-                        end;
                     }
-                    field(SetSr; SetSr)
+                    field(SetWednesday; Rec."Set Wednesday")
                     {
                         Caption = 'Set Wednesday';
                         ApplicationArea = All;
-
                         Style = StrongAccent;
-                        trigger OnValidate()
-                        begin
-                            UpdateForDay();
-                        end;
                     }
-                    field(SetCz; SetCz)
+                    field(SetThursday; Rec."Set Thursday")
                     {
                         Caption = 'Set Thursday';
                         ApplicationArea = All;
-
                         Style = StrongAccent;
-
-                        trigger OnValidate()
-                        begin
-                            UpdateForDay();
-                        end;
                     }
-                    field(SetPt; SetPt)
+                    field(SetFriday; Rec."Set Friday")
                     {
                         Caption = 'Set Friday';
                         ApplicationArea = All;
-
                         Style = StrongAccent;
-                        trigger OnValidate()
-                        begin
-                            UpdateForDay();
-                        end;
                     }
-                    field(SetSb; SetSb)
+                    field(SetSaturday; Rec."Set Saturday")
                     {
                         Caption = 'Set Saturday';
                         ApplicationArea = All;
-
                         Style = StrongAccent;
-                        trigger OnValidate()
-                        begin
-                            UpdateForDay();
-                        end;
                     }
-                    field(SetNi; SetNi)
+                    field(SetSunday; Rec."Set Sunday")
                     {
                         Caption = 'Set Sunday';
                         ApplicationArea = All;
-
                         Style = StrongAccent;
-                        trigger OnValidate()
-                        begin
-                            UpdateForDay();
-                        end;
                     }
                 }
             }
@@ -407,7 +371,6 @@ page 50049 "AMC Item Forecast Plan. Card"
 
                         CLEAR(ProdDate);
                         InitProductDate();
-                        MfgSetup.GET();
 
                         ForecastPlanningLine.RESET();
                         ForecastPlanningLine.SETRANGE("Forecast Planning No.", Rec."No.");
@@ -415,25 +378,25 @@ page 50049 "AMC Item Forecast Plan. Card"
                         IF ForecastPlanningLine.FindSet() THEN
                             REPEAT
                                 IF ForecastPlanningLine.Monday <> 0 THEN
-                                    UpdateProdOrder(Rec."Set Monday", ForecastPlanningLine.Monday, ForecastPlanningLine);
+                                    UpdateProdOrder(Rec."Set Monday", ForecastPlanningLine.Monday, ForecastPlanningLine, 1);
 
                                 IF ForecastPlanningLine.Tuesday <> 0 THEN
-                                    UpdateProdOrder(Rec."Set Tuesday", ForecastPlanningLine.Tuesday, ForecastPlanningLine);
+                                    UpdateProdOrder(Rec."Set Tuesday", ForecastPlanningLine.Tuesday, ForecastPlanningLine, 2);
 
                                 IF ForecastPlanningLine.Wednesday <> 0 Then
-                                    UpdateProdOrder(Rec."Set Wednesday", ForecastPlanningLine.Wednesday, ForecastPlanningLine);
+                                    UpdateProdOrder(Rec."Set Wednesday", ForecastPlanningLine.Wednesday, ForecastPlanningLine, 3);
 
                                 IF ForecastPlanningLine.Thursday <> 0 THEN
-                                    UpdateProdOrder(Rec."Set Thursday", ForecastPlanningLine.Thursday, ForecastPlanningLine);
+                                    UpdateProdOrder(Rec."Set Thursday", ForecastPlanningLine.Thursday, ForecastPlanningLine, 4);
 
                                 IF ForecastPlanningLine.Friday <> 0 THEN
-                                    UpdateProdOrder(Rec."Set Friday", ForecastPlanningLine.Friday, ForecastPlanningLine);
+                                    UpdateProdOrder(Rec."Set Friday", ForecastPlanningLine.Friday, ForecastPlanningLine, 5);
 
                                 IF ForecastPlanningLine.Saturday <> 0 THEN
-                                    UpdateProdOrder(Rec."Set Saturday", ForecastPlanningLine.Saturday, ForecastPlanningLine);
+                                    UpdateProdOrder(Rec."Set Saturday", ForecastPlanningLine.Saturday, ForecastPlanningLine, 6);
 
                                 IF ForecastPlanningLine.Sunday <> 0 THEN
-                                    UpdateProdOrder(Rec."Set Sunday", ForecastPlanningLine.Sunday, ForecastPlanningLine);
+                                    UpdateProdOrder(Rec."Set Sunday", ForecastPlanningLine.Sunday, ForecastPlanningLine, 7);
                             UNTIL ForecastPlanningLine.NEXT = 0;
                         RefreshOrders();
                     end;
@@ -556,17 +519,22 @@ page 50049 "AMC Item Forecast Plan. Card"
         //    Rec.SETRANGE("Prev. Forecast Filter", (Rec."Week No." - 1)); 
     end;
 
-    local procedure UpdateProdOrder(SetDoW: Boolean; Qty: Decimal; ForecastPlanningLine: Record "AMC Forecast Planning Line")
+    local procedure UpdateProdOrder(SetDoW: Boolean; Qty: Decimal;
+                                   ForecastPlanningLine: Record "AMC Forecast Planning Line"; DoW: Integer)
     var
         ProdOrder: Record "Production Order";
+        MfgSetup: Record "Manufacturing Setup";
+        NoSeriesMgt: Codeunit "No. Series";
         OldQty: Decimal;
     begin
+        MfgSetup.Get();
+
         ProdOrder.RESET();
         ProdOrder.SETRANGE("AMC Forecast Planning Year", ForecastPlanningLine.Year);
         ProdOrder.SETRANGE("AMC Forecast Planning Week", ForecastPlanningLine."Week No.");
         ProdOrder.SETRANGE("Source Type", ProdOrder."Source Type"::Item);
         ProdOrder.SETRANGE("Source No.", ForecastPlanningLine."Item No.");
-        ProdOrder.SETRANGE("Due Date", ProdDate[1]);
+        ProdOrder.SETRANGE("Due Date", ProdDate[DoW]);
         IF ProdOrder.FINDFIRST() THEN BEGIN
             OldQty := ProdOrder.Quantity;
             ProdOrder.VALIDATE(Quantity, Qty);
@@ -592,7 +560,7 @@ page 50049 "AMC Item Forecast Plan. Card"
             ProdOrder."AMC Update End Time" := TRUE;
             ProdOrder.INSERT();
 
-            ProdOrder.VALIDATE("Due Date", ProdDate[1]);
+            ProdOrder.VALIDATE("Due Date", ProdDate[DoW]);
             ProdOrder.VALIDATE(Quantity, Qty);
 
             ProdOrder."AMC Forecast Planning Year" := Rec.Year;
@@ -613,8 +581,8 @@ page 50049 "AMC Item Forecast Plan. Card"
 
     local procedure UpdateForecast()
     begin
-        /* SetPn := FALSE;
-        SetWt := FALSE;
+        Rec."Set Monday" := false;
+        /*SetWt := FALSE;
         SetSr := FALSE;
         SetCz := FALSE;
         SetPt := FALSE;
@@ -711,25 +679,6 @@ page 50049 "AMC Item Forecast Plan. Card"
         ProdDate[7] := DWY2DATE(7, Rec."Week No.", Rec.Year);
     end;
 
-    local procedure UpdateForDay()
-    begin
-        /* ForecastPlanning.RESET();
-        ForecastPlanning.SETRANGE("Forecast Code", Rec."Forecast Code");
-        ForecastPlanning.SETRANGE(Year, Rec.Year);
-        ForecastPlanning.SETRANGE("Week No.", Rec."Week No.");
-        IF ForecastPlanning.FINDset() THEN
-            REPEAT
-                ForecastPlanning."Set Monday" := SetPn;
-                ForecastPlanning."Set Tuesdy" := SetWt;
-                ForecastPlanning."Set Wednesday" := SetSr;
-                ForecastPlanning."Set Thursday" := SetCz;
-                ForecastPlanning."Set Friday" := SetPt;
-                ForecastPlanning."Set Saturday" := SetSb;
-                ForecastPlanning."Set Sunday" := SetNi;
-                ForecastPlanning.MODIFY();
-            UNTIL ForecastPlanning.NEXT() = 0; */
-    end;
-
     local procedure RefreshOrder(Var lProdOrder: Record "Production Order")
     var
         lrProdOrderTemp: Record "Production Order";
@@ -774,11 +723,8 @@ page 50049 "AMC Item Forecast Plan. Card"
 
     var
         ProdOrderTemp: Record "Production Order" temporary;
-
-        MfgSetup: Record "Manufacturing Setup";
-        SalesSetup: Record "Sales & Receivables Setup";
         ProdForectEntry: Record "Production Forecast Entry";
-        NoSeriesMgt: Codeunit "No. Series";
+
         ItemList: Page "Item List";
         ForecastPlanningList: Report "AMC Forecast Planning List";
         RemainingForecast: Decimal;
@@ -790,13 +736,6 @@ page 50049 "AMC Item Forecast Plan. Card"
         ProdOrderNo: Code[20];
         RemainForec: Decimal;
         ContrForRemain: Boolean;
-        SetPn: Boolean;
-        SetWt: Boolean;
-        SetSr: Boolean;
-        SetCz: Boolean;
-        SetPt: Boolean;
-        SetSb: Boolean;
-        SetNi: Boolean;
         FirstDayofCM: Date;
         FirstDayofCM1: Date;
         FirstDayofCM2: Date;
